@@ -80,6 +80,10 @@
   "reason": "API demos of pinneapple_data that write Zarr stores and stream them (loaders, prefetch threads, GPU pinning); 05 needs cadquery; nothing is computed or committed",
   "status": "not_convertible"
  },
+ "dc_microgrid_twin": {
+  "domain": "power systems",
+  "notes": "microgrid_twin: twin.dc_microgrid + examples.flatten, compared with the committed _out/summary.json (diagnosis accuracy, cases with a false alarm); quick = without the fast-model study"
+ },
  "design_from_intent": {
   "domain": "design",
   "notes": "the loop's full check needs NVIDIA Newton and the bracket's CalculiX + gmsh; without Newton that verification does not run"
