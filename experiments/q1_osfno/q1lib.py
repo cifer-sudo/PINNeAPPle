@@ -114,7 +114,21 @@ def run(task, model_name, fit_predict, rows, seed, exp, protocol="speed", config
             proba[te] = pr
         per[name] = metrics(y[te], p, n_cls)
         extra[name] = info or {}
-    res = {"task": task, "model": model_name, "seed": seed, "protocol": protocol, "dataset": dataset,
+    import platform
+    import subprocess
+    try:
+        commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+        dirty = bool(subprocess.check_output(["git", "status", "--porcelain", "--", "experiments/q1_osfno/q1lib.py",
+                                              "experiments/q1_osfno/models.py", "experiments/q1_osfno/models2.py",
+                                              "pinneapple_analysis/inspection/rotating"], cwd=ROOT, text=True).strip())
+    except Exception:  # noqa: BLE001
+        commit, dirty = "unknown", None
+    import sklearn
+    import torch
+    provenance = {"code_commit": commit, "code_dirty": dirty, "python": platform.python_version(),
+                  "numpy": np.__version__, "sklearn": sklearn.__version__, "torch": torch.__version__,
+                  "utc_finished": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+    res = {"provenance": provenance, "task": task, "model": model_name, "seed": seed, "protocol": protocol, "dataset": dataset,
            "classes": C.TASKS[task], "n": int(len(y)), "config": config or {},
            "partition_hash": partition_hash(paths, splits), "partitions": partition_record(paths, splits),
            "pooled": metrics(y, pred, n_cls), "per_split": per, "split_info": extra, "seconds_total": t_fit,

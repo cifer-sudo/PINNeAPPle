@@ -51,3 +51,12 @@ comparison family.
 
 ## Deviations
 (none yet)
+
+## Reproducibility and history (added 2026-11-04, does not change any decision rule)
+* `env/environment.txt`, `env/pip_freeze.txt`: exact environment.
+* `results/data_manifest_<dataset>.json`: every cached run with the SHA-1 of its raw CSV and the SHA-256 of its cache file.
+* `HISTORY.jsonl`: one line per result file registered (UTC, SHA-256, task, model, seed, partition hash, scores,
+  code commit); never rewritten, only appended; a re-run of an existing file is recorded as "changed".
+* `SUMMARY.md`: regenerated from HISTORY.jsonl.
+* `autosave.sh`: every 10 minutes, registers new results, commits and pushes a checkpoint.
+* From this point, every result JSON also carries `provenance` (code commit, dirty flag, library versions).
