@@ -230,3 +230,14 @@ REGISTRY = {
     "osfno-B-commonaug": osfno(speed="head", gain_mode="common"),
     "fno-trainonly": fno_trainonly(),
 }
+
+
+def _register_extra():
+    from models2 import EXTRA
+    REGISTRY.update(EXTRA)
+
+
+try:
+    _register_extra()
+except Exception as _e:  # noqa: BLE001  (models2 imports models; resolved lazily)
+    pass
