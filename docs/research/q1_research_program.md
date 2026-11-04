@@ -142,6 +142,11 @@ as expected from Shen et al. **Correction:** the FNO's unseen-speed result on T2
 with seed 1 (0.813); its seed-to-seed spread is large (T1 Pa 0.944 vs 0.986), so the claim "the FNO is clearly
 better for unbalance" is withdrawn until the 3-seed interval is in.
 
+**First FNO over 3 seeds (mean +- 95 % interval, standard deviation).** Pb: T1 0.800 +- 0.137 (sd 0.055), T2
+0.864 +- 0.187 (sd 0.075), T3 0.803 +- 0.059 (sd 0.024), T4 0.800 +- 0.043 (sd 0.017); random forest over 5 seeds
+0.876 / 0.852 / 0.866 / 0.878 with sd <= 0.008. The first FNO is below the random forest at unseen speeds on every
+task (T2 not significant) and its seed spread is 3-10 times larger. C2 is answered: no.
+
 **OC-FNO (order-conditioned FNO), criteria written 2026-11-04 before it was run.** Changes to the FNO, each with
 its reason: (1) training stabilised (lr 1e-3 cosine, gradient clipping 1, dropout 0.1, label smoothing 0.05,
 per-channel normalisation estimated on the training split only -- the first FNO used a median over all runs);
