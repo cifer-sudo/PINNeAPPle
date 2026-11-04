@@ -30,8 +30,19 @@ speed as the domain label), where the shift is reported to grow with the speed d
 
 ## Neural operators and physics-structured models for fault classification
 
-- No application of a Fourier neural operator to fault *classification* of rotating machinery was found; Fourier-based
-  work uses FFT / STFT preprocessing with CNNs or Fourier-enhanced transformers.
+- **Correction (2026-11-04):** a Fourier-neural-operator-based encoder has been used for rotating-machinery diagnosis:
+  Gao, Qi, Sun, Zhu, Chen, Dong, Sun, "Cross-Domain Open-Set Fault Diagnosis for Rotating Machinery Based on
+  Frequency-Aware Model With Neighborhood Invariance", IEEE Internet of Things Journal, 2025,
+  DOI 10.1109/JIOT.2025.3565810 (title, journal and date confirmed on Crossref; the FNO encoder is reported by a
+  reviewer of this programme, its full text still to read). A 2026 conference proposal combines spectral
+  normalisation with an FNO for bearings under varying conditions (to locate). The FNO here is therefore not a first
+  application; the question becomes whether an order-aware, physics-guided FNO generalises to unseen speeds and to
+  compound faults.
+- Neural-operator references for improving the FNO (to read in full): SirenFNO (IJCAI 2026, DOI
+  10.24963/ijcai.2026/535), sensitivity-constrained FNO (ICLR 2025), amortized FNO with MLP / KAN kernel generators
+  (NeurIPS 2024), DiffFNO frequency re-weighting (CVPR 2025), Spectral-Refiner (ICLR 2025), Laplace neural operator
+  (Nature Machine Intelligence 2024, DOI 10.1038/s42256-024-00844-4), "the false promise of zero-shot
+  super-resolution" (ICLR 2026).
 - Lagrangian networks: rotor balancing (Zhong & Hou, unsupervised deep Lagrangian network), not classification.
 - Port-Hamiltonian networks with inputs and dissipation: system identification (arXiv 2502.14432), not diagnosis.
 
@@ -39,7 +50,9 @@ speed as the domain label), where the shift is reported to grow with the speed d
 
 Dataset (Zenodo 8208454 / IEEE DataPort 10.21227/89ye-ap56, CC BY 4.0): 2162 runs, seven scenarios (normal,
 unbalance, horizontal and vertical misalignment, and three combinations), 50 kHz, 5 s, 12-60 Hz, tachometer, a
-capacitive and a piezoelectric triaxial accelerometer. **No classification result on COMFAULDA was found.**
+capacitive and a piezoelectric triaxial accelerometer. No classification result on COMFAULDA was found by the
+searches of this review; a reviewer reports a 2026 multi-fault diagnosis paper on it (Taylor & Francis, not located
+yet) -- so using COMFAULDA is not new in itself.
 
 ## Gaps this programme addresses
 
@@ -48,7 +61,7 @@ capacitive and a piezoelectric triaxial accelerometer. **No classification resul
    baseline.
 3. Recording-session effects (1X phase drift, faulty tachometers, an anomalous accelerometer) and a channel-screened
    severity estimate.
-4. First classification results on COMFAULDA, including combined faults recognised from single faults.
+4. Combined faults recognised from single faults never seen in training (COMFAULDA), under unseen speeds.
 
 ## Sources
 

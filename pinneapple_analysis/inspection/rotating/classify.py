@@ -65,11 +65,16 @@ def feature_matrix(rows: list[dict[str, Any]]) -> np.ndarray:
     return np.array(out)
 
 
-def spectrum_tensor(rows: list[dict[str, Any]], max_order: float = 8.0) -> tuple[np.ndarray, np.ndarray]:
-    """(n, 2 x channels, n_orders) log-scaled amplitude and envelope order spectra, and the speeds."""
+def spectrum_tensor(rows: list[dict[str, Any]], max_order: float = 8.0, raw: bool = False
+                    ) -> tuple[np.ndarray, np.ndarray]:
+    """(n, 2 x channels, n_orders) amplitude and envelope order spectra and the speeds; log-scaled by their median over
+    the given rows (``raw=True``: unscaled, for models that normalise on their training split)."""
     n = int(round(max_order / STEP)) + 1
     X = np.stack([np.concatenate([r["order_spectrum"][:n].T, r["envelope_spectrum"][:n].T], 0) for r in rows])
-    return np.log1p(X / np.median(X[X > 0])).astype(np.float32), np.array([r["speed_hz"] for r in rows], np.float32)
+    sp = np.array([r["speed_hz"] for r in rows], np.float32)
+    if raw:
+        return X.astype(np.float32), sp
+    return np.log1p(X / np.median(X[X > 0])).astype(np.float32), sp
 
 
 def splits(y: np.ndarray, speed: np.ndarray, protocol: str, k: int = 5, seed: int = 0):
@@ -212,11 +217,124 @@ class KANClassifier:
         with torch.no_grad():
             return self.net(torch.as_tensor((X - self.mu) / self.sd, dtype=torch.float32)).argmax(1).numpy()
 
+
+def order_channels(n_orders: int, step: float = STEP, width: float = 0.03) -> np.ndarray:
+    """Two physical order channels on the order grid: a comb of Gaussian bumps at the harmonics kX (k = 1, 2, ...)
+    and one at the bearing orders (FTF, BSF, BPFO, BPFI and their first harmonics)."""
+    o = np.arange(n_orders) * step
+    harm = np.zeros(n_orders)
+    for k in range(1, int(o[-1]) + 1):
+        harm += np.exp(-0.5 * ((o - k) / width) ** 2)
+    bear = np.zeros(n_orders)
+    for v in BEARING_ORDERS.values():
+        for h in (1, 2):
+            bear += np.exp(-0.5 * ((o - h * v) / width) ** 2)
+    return np.stack([harm, bear]).astype(np.float32)
+
+
+@dataclass
+class OCFNOClassifier:
+    """Order-conditioned FNO: raw order spectra normalised per channel on the training runs, two physical order
+    channels (:func:`order_channels`), spectral blocks (the library's 1-D spectral convolution) each modulated by FiLM
+    on the speed, mean and max pooling, a small head; AdamW with cosine decay, gradient clipping, dropout, label
+    smoothing, and a transfer-function augmentation (random log-normal gain per sensor)."""
+    width: int = 32
+    modes: int = 64
+    layers: int = 3
+    epochs: int = 100
+    lr: float = 1e-3
+    batch: int = 64
+    dropout: float = 0.1
+    smoothing: float = 0.05
+    gain_sigma: float = 0.3
+    film: bool = True
+    order_prior: bool = True
+    seed: int = 0
+
+    def _norm(self, X):
+        Z = np.log1p(X / self.med[None, :, None])
+        if self.order_prior:
+            Z = np.concatenate([Z, np.broadcast_to(self.prior, (len(Z),) + self.prior.shape)], 1)
+        return Z.astype(np.float32)
+
+    def _net(self, in_c, n_cls):
+        import torch
+        import torch.nn as nn
+        import torch.nn.functional as F
+
+        from pinneapple_neural.architectures.neural_operators.fno import _SpectralConv
+        W, film, drop = self.width, self.film, self.dropout
+
+        class Net(nn.Module):
+            def __init__(s):
+                super().__init__()
+                s.lift = nn.Conv1d(in_c + 1, W, 1)
+                s.spec = nn.ModuleList([_SpectralConv(W, W, self.modes) for _ in range(self.layers)])
+                s.loc = nn.ModuleList([nn.Conv1d(W, W, 1) for _ in range(self.layers)])
+                s.film = nn.ModuleList([nn.Linear(1, 2 * W) for _ in range(self.layers)]) if film else None
+                s.head = nn.Sequential(nn.Linear(2 * W + 1, 64), nn.GELU(), nn.Dropout(drop), nn.Linear(64, n_cls))
+
+            def forward(s, x, sp):
+                B, _, L = x.shape
+                grid = torch.linspace(0, 1, L, device=x.device).view(1, 1, L).expand(B, 1, L)
+                h = s.lift(torch.cat([x, grid], 1))
+                for k in range(len(s.spec)):
+                    h = F.gelu(s.spec[k](h) + s.loc[k](h))
+                    if s.film is not None:
+                        g, b = s.film[k](sp[:, None]).chunk(2, -1)
+                        h = h * (1 + g[..., None]) + b[..., None]
+                return s.head(torch.cat([h.mean(-1), h.amax(-1), sp[:, None]], 1))
+        return Net()
+
+    def fit(self, X, sp, y):
+        import torch
+        torch.manual_seed(self.seed)
+        rng = np.random.default_rng(self.seed)
+        self.med = np.maximum(np.median(X, axis=(0, 2)), 1e-12)
+        self.prior = order_channels(X.shape[2])
+        self.n_cls = int(y.max()) + 1
+        self.sp_mu, self.sp_sd = float(sp.mean()), float(sp.std() + 1e-9)
+        n_sensor_channels = X.shape[1]
+        self.net = self._net(n_sensor_channels + (2 if self.order_prior else 0), self.n_cls)
+        opt = torch.optim.AdamW(self.net.parameters(), lr=self.lr, weight_decay=1e-4)
+        steps = self.epochs * int(np.ceil(len(y) / self.batch))
+        sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=self.lr, total_steps=steps)
+        w = torch.as_tensor(len(y) / (self.n_cls * np.bincount(y, minlength=self.n_cls).clip(1)), dtype=torch.float32)
+        loss_fn = torch.nn.CrossEntropyLoss(weight=w, label_smoothing=self.smoothing)
+        S = torch.as_tensor((sp - self.sp_mu) / self.sp_sd, dtype=torch.float32)
+        yt = torch.as_tensor(y)
+        half = n_sensor_channels // 2                    # amplitude and envelope spectra of the same sensors
+        for _ in range(self.epochs):
+            self.net.train()
+            for idx in np.array_split(rng.permutation(len(y)), int(np.ceil(len(y) / self.batch))):
+                xb = X[idx]
+                if self.gain_sigma > 0:                   # same gain on a sensor's amplitude and envelope spectra
+                    gsens = np.exp(rng.normal(0, self.gain_sigma, (len(idx), half)))
+                    xb = xb * np.concatenate([gsens, gsens], 1)[:, :, None]
+                opt.zero_grad()
+                loss = loss_fn(self.net(torch.as_tensor(self._norm(xb)), S[idx]), yt[idx])
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.0)
+                opt.step()
+                sched.step()
+        return self
+
+    def predict(self, X, sp):
+        import torch
+        self.net.eval()
+        with torch.no_grad():
+            S = torch.as_tensor((sp - self.sp_mu) / self.sp_sd, dtype=torch.float32)
+            return self.net(torch.as_tensor(self._norm(X)), S).argmax(1).numpy()
+
 def _fit_predict(model, Xf, Xs, sp, y, tr, te, seed):
     if model == "fno":
         return FNOClassifier(seed=seed).fit(Xs[tr], sp[tr], y[tr]).predict(Xs[te], sp[te])
     if model == "kan":
         return KANClassifier(seed=seed).fit(Xf[tr], y[tr]).predict(Xf[te])
+    if model.startswith("ocfno"):                         # ocfno, ocfno-nofilm, ocfno-noprior, ocfno-noaug
+        kw = {"film": "nofilm" not in model, "order_prior": "noprior" not in model,
+              "gain_sigma": 0.0 if "noaug" in model else 0.3}
+        return OCFNOClassifier(seed=seed, **kw).fit(Xs[tr], sp[tr], y[tr]).predict(Xs[te], sp[te])
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.neural_network import MLPClassifier
     from sklearn.pipeline import make_pipeline
@@ -240,6 +358,7 @@ def run_task(rows, task, models=("rf", "mlp", "fno"), protocols=("folds", "speed
     sel, y = select(rows, task)
     Xf = feature_matrix(sel)
     Xs, sp = spectrum_tensor(sel)
+    Xraw = spectrum_tensor(sel, raw=True)[0] if any(m.startswith("ocfno") for m in models) else None
     out = {"task": task, "classes": TASKS[task], "n": int(len(y)), "counts": np.bincount(y).tolist(),
            "results": dict(done or {})}
     t_start = time.perf_counter()
@@ -255,7 +374,7 @@ def run_task(rows, task, models=("rf", "mlp", "fno"), protocols=("folds", "speed
             per = {}
             t0 = time.perf_counter()
             for name, tr, te in splits(y, sp, proto, seed=seed):
-                pred[te] = _fit_predict(model, Xf, Xs, sp, y, tr, te, seed)
+                pred[te] = _fit_predict(model, Xf, Xraw if model.startswith("ocfno") else Xs, sp, y, tr, te, seed)
                 per[name] = float(f1_score(y[te], pred[te], average="macro"))
             out["results"][key] = {
                 "macro_f1": float(f1_score(y, pred, average="macro")), "accuracy": float(np.mean(pred == y)),

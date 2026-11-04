@@ -142,6 +142,20 @@ as expected from Shen et al. **Correction:** the FNO's unseen-speed result on T2
 with seed 1 (0.813); its seed-to-seed spread is large (T1 Pa 0.944 vs 0.986), so the claim "the FNO is clearly
 better for unbalance" is withdrawn until the 3-seed interval is in.
 
+**OC-FNO (order-conditioned FNO), criteria written 2026-11-04 before it was run.** Changes to the FNO, each with
+its reason: (1) training stabilised (lr 1e-3 cosine, gradient clipping 1, dropout 0.1, label smoothing 0.05,
+per-channel normalisation estimated on the training split only -- the first FNO used a median over all runs);
+(2) FiLM conditioning of every spectral block on the speed; (3) two physical order channels, a comb at the
+harmonics kX and a comb at the bearing orders; (4) transfer-function augmentation (random log-normal gain per
+sensor, sigma 0.3), because the order of a line does not move with speed but its amplitude follows H(w).
+Evaluation under Pb only (Pa is saturated near 0.99), 5 seeds, tasks T1-T4 and COMFAULDA K1.
+
+- O1: OC-FNO beats the random forest under Pb by >= 0.03 macro-F1, with the 95 % interval of the paired
+  (same-seed) difference above 0, on at least two of the five tasks.
+- O2: ablations on T4 and COMFAULDA K1 (without FiLM, without order channels, without augmentation) say which
+  change carries the gain; a change whose removal costs less than 0.01 is not claimed.
+- O3: the seed-to-seed spread (standard deviation of macro-F1) of OC-FNO is at most half that of the first FNO.
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor

@@ -42,3 +42,21 @@ def test_models_learn_a_separable_problem(model, monkeypatch):
     monkeypatch.setattr(C.FNOClassifier, "epochs", 25)
     out = C.run_task(_rows(n_per=80), "misalignment", models=(model,), protocols=("folds",), log=lambda *_: None)
     assert out["results"][f"folds/{model}"]["macro_f1"] > 0.8          # chance is 1/3
+
+
+def test_order_conditioned_fno_learns_and_its_ablations_run(monkeypatch):
+    monkeypatch.setattr(C.OCFNOClassifier, "epochs", 30)
+    monkeypatch.setattr(C.OCFNOClassifier, "modes", 16)
+    monkeypatch.setattr(C.OCFNOClassifier, "width", 8)
+    out = C.run_task(_rows(n_per=30), "misalignment", models=("ocfno",), protocols=("speed",), log=lambda *_: None)
+    assert out["results"]["speed/ocfno"]["macro_f1"] > 0.45                     # chance is 1/3 (plumbing only)
+    monkeypatch.setattr(C.OCFNOClassifier, "epochs", 2)
+    for m in ("ocfno-nofilm", "ocfno-noprior", "ocfno-noaug"):                  # ablations run
+        C.run_task(_rows(n_per=10), "misalignment", models=(m,), protocols=("speed",), log=lambda *_: None)
+
+
+def test_order_channels_peak_at_harmonics_and_bearing_orders():
+    ch = C.order_channels(801)
+    assert ch.shape == (2, 801)
+    assert ch[0, 100] > 0.99 and ch[0, 150] < 1e-6                      # 1X yes, 1.5X no
+    assert ch[1, int(round(C.BEARING_ORDERS["BSF"] / C.STEP))] > 0.9
