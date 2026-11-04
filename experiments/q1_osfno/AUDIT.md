@@ -2,7 +2,7 @@
 
 Branch audited: `claude/laughing-carson-yotf6f` at `243841cd`. Experimental branch: `exp/q1-audit-osfno`
 (nothing on the audited branch is modified; the manuscript is untouched).
-Status: **items marked [DATA] are completed after the feature re-extraction finishes** (see the bottom of this file).
+Status: MAFAULDA [DATA] items completed 2026-11-04 from the full re-extraction (`results/audit_data.json`); COMFAULDA items pending its extraction.
 
 ## A. Traceability JSON → tables → manuscript
 
@@ -41,10 +41,10 @@ Status: **items marked [DATA] are completed after the feature re-extraction fini
 | Check | Finding |
 |---|---|
 | 1951 runs in the archive | **PASS**: full.zip lists 2004 members, 1951 CSV (folder counts in `LOG.md`) |
-| 1895 used / 56 excluded | consistent arithmetic: T4 1895 = 1951 − 56; T1 547 = 49 + 197 + 301; T2 382 = 49 + 333; T3 1064 = 49 + 1071 − 56 ✓. [DATA] recomputed `tach_ok` from the re-extracted features |
-| 98 flagged tachometers (research log) vs 56 exclusions (manuscript) | the log reports 81 underhang + 17 overhang runs with spurious/missing pulses **before** the pulse detector gained a minimum width and a refractory period; the manuscript's 56 (39 + 17) is after that change. Plausible (42 underhang runs recovered by the better detector) but must be shown: [DATA] count runs flagged by the old rule vs the new one |
-| Duplicates | [DATA] SHA-1 of every raw CSV + near-duplicate spectra (cosine > 0.9999) |
-| Folders with 50-51 files (HM 0.5 mm, UH ball 0 g, VM 0.51 mm) vs 49 nominal speeds | [DATA] check for repeated nominal speeds inside a folder (two recordings at the same speed would be dependent samples) |
+| 1895 used / 56 excluded | consistent arithmetic: T4 1895 = 1951 − 56; T1 547 = 49 + 197 + 301; T2 382 = 49 + 333; T3 1064 = 49 + 1071 − 56 ✓. **Recomputed: 1951 read without error; 56 fail `tach_ok` (underhang ball 37, underhang cage 2, overhang outer race 11, overhang cage 6; 40 by period spread > 5 %, 16 by both spread and speed ratio); 1895 used — exactly the manuscript's numbers.** |
+| 98 flagged tachometers (research log) vs 56 exclusions (manuscript) | the log reports 81 underhang + 17 overhang runs with spurious/missing pulses **before** the pulse detector gained a minimum width and a refractory period; the manuscript's 56 (39 + 17) is after that change. The new rule gives 56, as in the manuscript. The old count (98) cannot be recomputed from the cache (raw tachometer not stored); the manuscript should say which detector produced which count |
+| Duplicates | **PASS: no identical CSV (SHA-1) and no pair of runs with spectral cosine > 0.9999** |
+| Folders with 50-51 files (HM 0.5 mm, UH ball 0 g, VM 0.51 mm) vs 49 nominal speeds | **PASS: no repeated nominal speed inside any folder** (the extra files are extra speeds); speed range of used runs 11.8-60.7 Hz; Pb tercile edges per task: T1 11.8/28.0/43.8/60.7, T2 11.8/27.9/43.5/60.5, T3 11.9/26.6/41.2/60.6, T4 11.8/27.0/42.3/60.7 Hz |
 | Sessions | each folder (state × level) is a recording session; all sessions span all speeds → Pb never holds out a session. A session-disjoint check (e.g. underhang vs overhang folders of the same fault type) is a stronger OOD test (Phase 8) |
 | COMFAULDA 2162 vs 2161 | one CRC error inside the published archive (documented); [DATA] re-checked during the COMFAULDA re-extraction |
 

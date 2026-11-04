@@ -1,6 +1,6 @@
 """Run a queue of (dataset, task, model, seeds) jobs sequentially, skipping finished result files.
 
-usage: python queue.py <queue_name>
+usage: python jobqueue.py <queue_name>
 """
 import sys
 import time
@@ -14,6 +14,8 @@ MAF = ["misalignment", "unbalance", "bearings", "all"]
 SEEDS = [0, 1, 2, 3, 4]
 QUEUES = {
     # fast feature baselines first (per-run predictions on the locked partitions)
+    "features_maf": [("mafaulda", t, m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb") for t in MAF],
+    "osfno_core_maf": [("mafaulda", t, m, SEEDS) for m in ("osfno-B-head", "osfno-C-film", "osfno-A-nospeed") for t in MAF],
     "features": [("mafaulda", t, m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb") for t in MAF]
                 + [("comfaulda", "comfaulda7", m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb")],
     # Phase 1/3 core: speed handling in the spectral operator

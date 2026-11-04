@@ -1,0 +1,147 @@
+{
+ "mafaulda": {
+  "n_rows": 1951,
+  "n_errors": 0,
+  "errors": [],
+  "tach_excluded": 56,
+  "tach_excluded_by_folder": {
+   "overhang/cage_fault": 6,
+   "overhang/outer_race": 11,
+   "underhang/ball_fault": 37,
+   "underhang/cage_fault": 2
+  },
+  "tach_excluded_reason": {
+   "cv>5%": 40,
+   "cv>5%speed_ratio": 16
+  },
+  "n_used": 1895,
+  "folders_with_repeated_nominal_speed": {},
+  "exact_duplicate_files": [],
+  "near_duplicate_spectra_cos>0.9999": [],
+  "n_near_duplicates": 0,
+  "grid_points_cache": 1201,
+  "speed_range_hz": [
+   11.781303024478445,
+   80.2622556941023
+  ],
+  "states": {
+   "horizontal-misalignment": 197,
+   "imbalance": 333,
+   "normal": 49,
+   "overhang/ball_fault": 137,
+   "overhang/cage_fault": 188,
+   "overhang/outer_race": 188,
+   "underhang/ball_fault": 186,
+   "underhang/cage_fault": 188,
+   "underhang/outer_race": 184,
+   "vertical-misalignment": 301
+  },
+  "task_misalignment": {
+   "n": 547,
+   "counts": [
+    49,
+    197,
+    301
+   ],
+   "tercile_edges_hz": [
+    11.8,
+    27.99,
+    43.84,
+    60.73
+   ]
+  },
+  "task_unbalance": {
+   "n": 382,
+   "counts": [
+    49,
+    333
+   ],
+   "tercile_edges_hz": [
+    11.78,
+    27.92,
+    43.51,
+    60.52
+   ]
+  },
+  "task_bearings": {
+   "n": 1064,
+   "counts": [
+    49,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "tercile_edges_hz": [
+    11.9,
+    26.58,
+    41.15,
+    60.6
+   ]
+  },
+  "task_all": {
+   "n": 1895,
+   "counts": [
+    49,
+    333,
+    197,
+    301,
+    149,
+    186,
+    184,
+    137,
+    182,
+    177
+   ],
+   "tercile_edges_hz": [
+    11.78,
+    26.96,
+    42.33,
+    60.73
+   ]
+  }
+ },
+ "comfaulda": {
+  "n_rows": 800,
+  "n_errors": 0,
+  "errors": [],
+  "folders_with_repeated_nominal_speed": {
+   "Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_6_g+Hor. Misalignment_1_mm.zip": {
+    "25.0": 2
+   }
+  },
+  "exact_duplicate_files": [],
+  "near_duplicate_spectra_cos>0.9999": [],
+  "n_near_duplicates": 0,
+  "grid_points_cache": 1201,
+  "speed_range_hz": [
+   12.351474955846856,
+   60.53119952224329
+  ],
+  "states": {
+   "unbalance+horizontal": 351,
+   "unbalance+vertical": 351,
+   "horizontal+vertical": 98
+  },
+  "task_comfaulda7": {
+   "n": 800,
+   "counts": [
+    0,
+    0,
+    0,
+    0,
+    351,
+    351,
+    98
+   ],
+   "tercile_edges_hz": [
+    12.35,
+    25.37,
+    38.51,
+    60.53
+   ]
+  }
+ }
+}
