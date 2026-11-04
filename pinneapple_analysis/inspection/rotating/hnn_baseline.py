@@ -39,9 +39,9 @@ def trajectories(row: dict[str, Any], n: int = 2000) -> list[tuple[np.ndarray, n
 @dataclass
 class HNNEnergy:
     hidden: int = 64
-    epochs: int = 300
+    epochs: int = 80
     lr: float = 1e-3
-    points_per_run: int = 400
+    points_per_run: int = 300
     seed: int = 0
 
     def fit(self, rows: list[dict[str, Any]]) -> HNNEnergy:
