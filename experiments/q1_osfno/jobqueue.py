@@ -16,6 +16,14 @@ QUEUES = {
     # fast feature baselines first (per-run predictions on the locked partitions)
     "features_maf": [("mafaulda", t, m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb") for t in MAF],
     "osfno_core_maf": [("mafaulda", t, m, SEEDS) for m in ("osfno-B-head", "osfno-C-film", "osfno-A-nospeed") for t in MAF],
+    # remote worker shards (cloud sessions, slim cache)
+    "R1": [("mafaulda", t, "osfno-C-film", SEEDS) for t in MAF],
+    "R2": [("mafaulda", t, "osfno-A-nospeed", SEEDS) for t in MAF],
+    "R3": [("mafaulda", t, "osfno-E-phys", SEEDS) for t in MAF]
+          + [("mafaulda", "all", m, SEEDS) for m in ("osfno-B-noaug", "osfno-B-noprior", "osfno-B-commonaug")],
+    "R4": [("mafaulda", t, m, SEEDS) for m in ("cnn-spec", "fno-trainonly") for t in MAF],
+    "R5": [("mafaulda", t, m, SEEDS) for m in ("osfno-B-dro", "osfno-B-supcon") for t in MAF],
+    "local_B_rest": [("mafaulda", t, "osfno-B-head", SEEDS) for t in ("bearings", "all")],
     "features": [("mafaulda", t, m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb") for t in MAF]
                 + [("comfaulda", "comfaulda7", m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb")],
     # Phase 1/3 core: speed handling in the spectral operator

@@ -34,7 +34,12 @@ BANDS = ("low", "mid", "high")
 
 # ------------------------------------------------------------------ data
 def load_rows(dataset: str = "mafaulda") -> list[dict[str, Any]]:
+    """Per-run caches if present (full extraction), else the committed slim cache data_slim/<dataset>_slim.npz
+    (identical spectra 0-8X and features; verified equal inputs and partitions). Q1_SLIM=1 forces the slim cache."""
     cache = MAF_CACHE if dataset == "mafaulda" else COM_CACHE
+    slim = Path(__file__).resolve().parent / "data_slim" / f"{dataset}_slim.npz"
+    if os.environ.get("Q1_SLIM") == "1" or not glob.glob(os.path.join(cache, "*.npz")):
+        return list(np.load(slim, allow_pickle=True)["rows"])
     rows = []
     for f in sorted(glob.glob(os.path.join(cache, "*.npz"))):
         z = np.load(f, allow_pickle=True)
