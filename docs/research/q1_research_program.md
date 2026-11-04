@@ -92,6 +92,21 @@ runs split into three speed terciles, train on two, test on the third (the outer
 - C4: the drop of macro-F1 from Pa to Pb is reported for every model and task: a model whose drop exceeds 0.15 does
   not generalise across speed.
 
+**Results T1-T2 (2026-11-04, macro-F1; 880 runs of normal, imbalance, horizontal and vertical misalignment).**
+
+| Task | Model | Pa: 5 folds by run | Pb: unseen speed tercile (low / mid / high) |
+|---|---|---|---|
+| T1 misalignment | random forest | 0.986 | 0.874 (0.84 / 1.00 / 0.70) |
+| T1 misalignment | MLP | 0.987 | 0.810 (0.85 / 0.96 / 0.58) |
+| T1 misalignment | FNO on spectra | 0.944 | 0.856 (0.78 / 0.99 / 0.80) |
+| T2 unbalance | random forest | 0.994 | 0.848 (0.82 / 1.00 / 0.66) |
+| T2 unbalance | MLP | 0.994 | 0.879 (0.88 / 1.00 / 0.70) |
+| T2 unbalance | FNO on spectra | 0.982 | 0.951 (0.88 / 1.00 / 0.96) |
+
+C1 fails narrowly (FNO 0.944 < 0.95 on T1; the feature models pass). C2 so far: FNO gain over the random forest
+under Pb is +0.10 on T2 and -0.02 on T1 (T3, T4 pending). C4: drops from Pa to Pb of 0.11-0.18 for the feature
+models, 0.03-0.09 for the FNO; the MLP exceeds 0.15 on T1. The container restarted during T3-T4 (re-run).
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor
