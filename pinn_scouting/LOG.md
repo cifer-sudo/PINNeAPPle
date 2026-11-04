@@ -107,3 +107,12 @@ D_nasa_randomized, D_embedded_tc, D_paderborn_tnn; single-work lookups in lit/ke
 | D17 | sklearn >= 1.8 API: MLPRegressor's first positional argument is no longer hidden_layer_sizes; first C5 run crashed and was rerun with keyword arguments. | Bug, not a result. |
 | D18 | C5 OOD fold crashed (NaN feature: RW3 cycle with no valid temperature); fixed by imputing training-set medians for the data-driven features only; full rerun (results/run_log.txt). | Bug, not a result. |
 | D19 | Final order: C5, C1, C4, C13, C11. C1 lowered after its prototype (physics depth 3 -> 2, total 3.85); C5 unchanged (4.00). Recorded in scoring.csv column post_prototype_note and in TOP5*.md. | Prototypes are evidence; the change is disclosed rather than silently re-scored. |
+
+## Follow-up 2026-11-04 — user-supplied PDF and build prompt
+- Read in full: Wang & Zhao, J. Energy Storage 155 (2026) 121685, doi:10.1016/j.est.2026.121685 (user upload
+  S2352152X26013496). DPINN = 3 MLPs -> differentiable Rint/1RC/2RC ECM, voltage-only loss, smoothness penalty;
+  ONE EVE 18650 cell, HPPC 22 C, private data; 2RC MAE 2.67 mV; R0 vs DCIR 4.1 mOhm; second cell at 10 C MAE 12.6 mV.
+  Capacity NOT identified (nominal capacity in Coulomb counting), no ageing, no temperature model.
+- D20: This is NOT doi:10.1016/j.est.2026.125097 (still unread). It is close to C5 in architecture but not in task
+  (no capacity/health tracking, no ageing, no OOD, single private cell): C5 survives; DPINN becomes baseline B3.
+- Wrote pinn_scouting/PROMPT_build_C5_C11_C1.md (self-contained Claude Code prompt for weeks 1-3 with decision gates).
