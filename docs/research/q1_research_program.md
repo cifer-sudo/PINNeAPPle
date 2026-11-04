@@ -76,7 +76,38 @@ inverter, a feedback sensor, the grid and the MPPT controller.
 | Step | Status | Result |
 |---|---|---|
 | Simulated four-bus DC microgrid twin | done | 80/80 controlled cases right (kind and target), 1 case with a false alarm; one confusable pair (joints next to bus 2, 25 % of operating points); PINN fast model 1.4 sigma with 8 labels against 13.4 sigma for the same network without physics |
-| GPVS-Faults: signals, residuals that the measured quantities allow, benchmark | planned | |
+| GPVS-Faults: signals, residuals that the measured quantities allow, benchmark | in progress | 16 files (F0-F7 x IPPT/MPPT), about 10 kHz in the CSVs, 14 s each, fault introduced halfway; Ipv, Vpv, Vdc, ia-ic, va-vc, PLL magnitudes and frequencies. Faults (arXiv 2112.14842): F1 inverter IGBT, F2 feedback sensor of one phase voltage, F3 grid voltage fluctuations, F4 partial shading, F5 15 % open circuit of the array, F6 boost PI gain, F7 boost PI time constant |
+
+**Criteria of the GPVS-Faults pilot (written 2026-11-04, after reading only the column statistics of F0L, before
+any fault file was analysed).** Residuals per grid cycle (20 ms): R1 = ia + ib + ic over the current RMS (three-wire
+Kirchhoff, current sensors only); R2 = va + vb + vc over the voltage RMS (phase voltages of a three-wire system,
+voltage sensors only); R3 = DC-link power balance Vpv Ipv - sum(v i) - d(C Vdc^2 / 2)/dt - P_loss, with C and a
+loss model fitted on the first half of F0 and checked on its second half. Thresholds: 1.25 x the largest windowed
+value over the first 40 % of F0L and F0M.
+
+- G1 sensor fault: R2 exceeds its threshold after the onset in F2L and F2M, and the phase whose voltage best
+  explains R2 (least squares on the three phase voltages) is the same through the faulty half.
+- G2 not a sensor fault: R1 and R2 stay below their thresholds after the onset in F1, F3, F4, F5, F6 and F7 (both
+  modes), while those faults are visible in the process variables (a change of Vdc, Vpv, Ipv or of the current
+  waveform against the first half).
+- G3 false alarms: no residual exceeds its threshold in the first 40 % of any file.
+- G4 power balance: R3 has a median absolute value on the second half of F0 below 5 % of the PV power, and its
+  behaviour in each fault file is reported (no criterion fixed: which faults break the power balance is the
+  question).
+
+**GPVS-Faults pilot results (2026-11-04).** Pre-registered: G1 FAIL (R2, the voltage sum, never breaks in F2: the
+data show that F2 is a *current* sensor stuck at a constant -- ib at about -0.22 A in F2M, ic in F2L; correlation with
+its phase voltage drops from -1.0 to -0.02 -- not a voltage sensor as the secondary description says); G2 FAIL as
+written (R1 exceeds after F1M, F5L, F5M, where the inverter shuts down and its current falls below 30 %); G3 FAIL
+(false alarms of R1 before the onset: 33 and 53 windows in the F5 sessions, 4 in F4L, 1 in F3L and F6L); G4 PASS
+(power balance within 2 % of the PV power on the healthy halves; it explodes when the system shuts down).
+Exploratory (added after the first run): with residuals evaluated only while the inverter delivers current, R1 flags
+F2L and F2M in 84 % and 88 % of the faulty windows and the admittance rule (each phase current against the common
+admittance of the three phases) names phase c and phase b -- the stuck sensors seen in the waveforms; in the twelve
+process-fault files R1 exceeds in at most 3 % of the operating windows, so no sensor is blamed. To do: per-session
+offset of the current sensors (the F5 false alarms), the IPPT/MPPT and shutdown states, a process-change detector for
+the faults that keep the laws (F3, F4, F6, F7 hardly move the process variables), and a comparison with the PCA-KDE
+detector of Bakdi et al.
 
 **Venue if the conditions are met:** IEEE Trans. Industrial Electronics, IEEE Trans. Industrial Informatics,
 International Journal of Electrical Power and Energy Systems.
