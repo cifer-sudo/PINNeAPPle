@@ -64,6 +64,34 @@ example `examples/mafaulda_unbalance_pilot/`.
 **Venue if the conditions are met:** Mechanical Systems and Signal Processing, Measurement, IEEE Trans.
 Instrumentation and Measurement.
 
+## P1b -- MAFAULDA fault classification: Fourier neural operator on order spectra vs chosen features
+
+**Question.** Does a Fourier neural operator on the order and envelope spectra classify MAFAULDA faults better than
+classical models on chosen features, and does either hold at rotation speeds it was not trained on?
+
+**Tasks.** T1 misalignment: normal / horizontal / vertical. T2 unbalance: normal / imbalance. T3 bearings: normal /
+underhang ball, cage, outer race / overhang ball, cage, outer race. T4 all: the ten states together.
+
+**Inputs.** Chosen features per channel (seven channels): RMS, kurtosis, skewness, crest factor, peak, amplitudes at
+1X, 2X, 3X, 4X, envelope amplitudes at FTF, BSF, about 3X and about 5X, plus the speed. The FNO takes the amplitude
+and envelope order spectra (0-8 orders, 0.01 step, 14 channels, log-scaled) and the speed.
+
+**Models.** Random forest and MLP on the features; FNO on the spectra (spectral layers, mean over the order axis, a
+linear classifier); same splits for all.
+
+**Protocols.** Every file is one sample (no window of a run is split). Pa: stratified 5-fold. Pb: speed bands --
+runs split into three speed terciles, train on two, test on the third (the outer terciles are extrapolation in speed).
+
+**Criteria (written 2026-11-04, before the misalignment folders were opened and before any classifier was run).**
+
+- C1: under Pa, macro-F1 >= 0.95 for T1 and T2 with every model (expected easy; if not, the features or the
+  labels are wrong).
+- C2: under Pb, the FNO's macro-F1 exceeds the random forest's by at least 0.03 on at least two of T1-T4;
+  otherwise no claim that the operator adds anything.
+- C3: under Pa, macro-F1 >= 0.90 on T3, with its confusion matrix reported (which bearing faults look alike).
+- C4: the drop of macro-F1 from Pa to Pb is reported for every model and task: a model whose drop exceeds 0.15 does
+  not generalise across speed.
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor

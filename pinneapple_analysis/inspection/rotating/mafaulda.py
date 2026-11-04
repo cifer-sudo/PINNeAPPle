@@ -81,6 +81,11 @@ def features(run: Run, orders=ORDERS, spectra: bool = False) -> dict[str, Any]:
            "level_unit": run.level_unit, "nominal_hz": run.nominal_hz, "speed_hz": ang.speed_hz,
            "speed_cv": ang.speed_cv, "tach_ok": ang.reliable and 0.9 < ang.speed_hz / run.nominal_hz < 1.05,
            "revolutions": ang.revolutions, "order_resolution": order_resolution(ang), "phasors": order_phasors(X[:, 1:], ang, orders), "rms": X[:, 1:].std(0)}
+    from scipy.stats import kurtosis, skew
+    x = X[:, 1:] - X[:, 1:].mean(0)
+    peak = np.abs(x).max(0)
+    out.update(kurtosis=kurtosis(x, axis=0, fisher=False), skewness=skew(x, axis=0), peak=peak,
+               crest=peak / np.maximum(x.std(0), 1e-12))
     if spectra:
         _, out["order_spectrum"] = order_spectrum(X[:, 1:], ang, FS)
         _, out["envelope_spectrum"] = order_spectrum(X[:, 1:], ang, FS, envelope_band=ENVELOPE_BAND)
