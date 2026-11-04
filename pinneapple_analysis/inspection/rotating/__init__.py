@@ -12,13 +12,25 @@ from .influence import (
     AmplitudeInfluence,
     ModalInfluence,
     PhaseNuisanceInfluence,
+    ScreenedEstimator,
     SplineInfluence,
+    channel_estimates,
     estimate_mass,
+    estimate_mass_robust,
     level_unbalance,
     nearest_level,
 )
-from .orders import ShaftAngle, order_phasors, order_resolution, pulse_times, shaft_angle
+from .orders import (
+    ShaftAngle,
+    angle_resample,
+    order_phasors,
+    order_resolution,
+    order_spectrum,
+    pulse_times,
+    shaft_angle,
+)
 
-__all__ = ["AmplitudeInfluence", "ModalInfluence", "PhaseNuisanceInfluence", "SplineInfluence", "estimate_mass",
-           "level_unbalance", "nearest_level", "ShaftAngle", "order_phasors", "order_resolution", "pulse_times",
+__all__ = ["AmplitudeInfluence", "ModalInfluence", "PhaseNuisanceInfluence", "ScreenedEstimator", "SplineInfluence",
+           "channel_estimates", "estimate_mass", "estimate_mass_robust", "level_unbalance", "nearest_level",
+           "ShaftAngle", "angle_resample", "order_phasors", "order_resolution", "order_spectrum", "pulse_times",
            "shaft_angle"]

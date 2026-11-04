@@ -28,23 +28,31 @@ from .influence import (
     AmplitudeInfluence,
     ModalInfluence,
     PhaseNuisanceInfluence,
+    ScreenedEstimator,
     SplineInfluence,
     estimate_mass,
+    estimate_mass_robust,
     level_unbalance,
     nearest_level,
 )
+
+#: biweight constant of the screened estimator, selected on the development set (calibration sessions + underhang)
+#: as the value of the grid 4.685 ... 48 with the smallest worst-case error; see docs/research/q1_research_program.md
+SCREEN_C = 12.0
 
 CRITERIA = {"T1_min_R2_linear": 0.90, "T1_quadratic_gain_max": 0.01, "T2_max_mae_g": 2.0, "T3_interp_max_mae_g": 3.0}
 PREREGISTERED = ("spline", "modal3", "modal4", "amplitude", "rf_phase", "rf_amplitude")
 EXPLORATORY = ("nuisance_mass_angle", "nuisance_tach", "modal3_rephased", "modal4_rephased")
 
 
-def load_table(rows: list[dict[str, Any]]) -> dict[str, np.ndarray]:
-    """Mass, speed and 1X phasors of the six accelerometers from :func:`.mafaulda.feature_table` rows of the normal
-    and imbalance runs."""
-    rows = [r for r in rows if "error" not in r and r["state"] in ("normal", "imbalance")]
+def load_table(rows: list[dict[str, Any]], states=("normal", "imbalance")) -> dict[str, np.ndarray]:
+    """Mass, speed and 1X phasors of the six accelerometers from :func:`.mafaulda.feature_table` rows (of the given
+    states; ``None``: every row whose level is in grams or empty)."""
+    rows = [r for r in rows if "error" not in r and r.get("tach_ok", True)
+            and (r["state"] in states if states else r["level_unit"] in ("g", ""))]
     return {"m": np.array([r["level_value"] for r in rows]), "w": np.array([r["speed_hz"] for r in rows]),
-            "A": np.array([r["phasors"][0, :6] for r in rows]), "paths": [r["path"] for r in rows]}
+            "A": np.array([r["phasors"][0, :6] for r in rows]), "paths": [r["path"] for r in rows],
+            "state": np.array([r["state"] for r in rows])}
 
 
 def _scores(mh, mt, levels):
@@ -70,6 +78,10 @@ def fit_estimate(name: str, w, m, A, w_te, A_te, seed: int = 0) -> np.ndarray:
         return estimate_mass(ModalInfluence(n_modes=int(name[-1]), seed=seed).fit(w, m, A), w_te, A_te)
     if name == "amplitude":
         return estimate_mass(AmplitudeInfluence().fit(w, m, A), w_te, A_te)
+    if name == "amplitude_robust_median":
+        return estimate_mass_robust(AmplitudeInfluence().fit(w, m, A), w_te, A_te)[0]
+    if name == "amplitude_screened":
+        return ScreenedEstimator(c=SCREEN_C, seed=seed).fit(w, m, A).estimate(w_te, A_te)[0]
     if name in ("rf_phase", "rf_amplitude"):
         from sklearn.ensemble import RandomForestRegressor
         phase = name == "rf_phase"
@@ -227,3 +239,37 @@ def write_report(out: dict[str, Any], folder: str | Path) -> dict[str, str]:
           "Figures: [level unbalance](level_unbalance.png), [mass errors](mass_errors.png)"]
     Path(files["report"]).write_text("\n".join(L) + "\n", encoding="utf-8")
     return files
+
+
+def cross_session(cal: dict[str, np.ndarray], test: dict[str, np.ndarray], *,
+                  models=("amplitude", "spline", "nuisance_tach", "rf_amplitude"), seed: int = 0) -> dict[str, Any]:
+    """Step A: models calibrated on one set of recording sessions (``cal``, e.g. normal + imbalance) estimate the added
+    mass of runs recorded in other sessions (``test``, e.g. the bearing-fault folders, which carry 0/6/20/35 g):
+    scores overall and per state (A1); the free complex unbalance of each test state, to see whether the 1X phase
+    reference drifts there too (A2); and the same phase-free model calibrated inside each test state, leave one run
+    out (A3)."""
+    levels = sorted(set(test["m"]))
+    out: dict[str, Any] = {"n_cal": int(len(cal["m"])), "n_test": int(len(test["m"])), "test_levels_g": levels,
+                           "states": sorted(set(test["state"].tolist())), "A1": {}, "A2": {}, "A3": {}}
+    w_rng = (float(cal["w"].min()), float(cal["w"].max()))
+    inside = (test["w"] >= w_rng[0]) & (test["w"] <= w_rng[1])
+    for name in models:
+        mh = fit_estimate(name, cal["w"], cal["m"], cal["A"], test["w"], test["A"], seed)
+        row = {"all": _scores(mh[inside], test["m"][inside], levels)}
+        for st in out["states"]:
+            s_ = (test["state"] == st) & inside
+            row[st] = _scores(mh[s_], test["m"][s_], levels)
+        out["A1"][name] = row
+    for st in out["states"]:
+        s_ = test["state"] == st
+        lu = level_unbalance(test["w"][s_], test["m"][s_], test["A"][s_])
+        ang = [a for lv, a in zip(lu["levels"], lu["angle_deg"], strict=True) if lv > 0]
+        out["A2"][st] = {**lu, "angle_span_deg": float(np.ptp(ang)) if ang else None}
+        idx = np.flatnonzero(s_)
+        mh = np.zeros(len(idx))
+        for j, i in enumerate(idx):
+            tr = np.setdiff1d(idx, [i])
+            mh[j] = estimate_mass(AmplitudeInfluence().fit(test["w"][tr], test["m"][tr], test["A"][tr]),
+                                  test["w"][[i]], test["A"][[i]])[0]
+        out["A3"][st] = _scores(mh, test["m"][idx], levels)
+    return out

@@ -17,6 +17,7 @@ from pinneapple_analysis.inspection.rotating import (
     order_resolution,
     shaft_angle,
 )
+from pinneapple_analysis.inspection.rotating.influence import ScreenedEstimator
 
 FS = 50_000.0
 
@@ -95,3 +96,44 @@ def test_phase_drift_between_levels_breaks_the_phase_reference_but_not_the_magni
     nuis = PhaseNuisanceInfluence("tach_reference", n_knots=20).fit(w, m, A)    # the whole response rotates
     assert np.mean(np.abs(nuis.estimate(wt, At) - mt)) < 2.0
     assert np.mean(np.abs(estimate_mass(amp, wt, At) - mt)) < 4.0
+
+
+def test_spurious_tachometer_spikes_are_rejected_and_a_missing_pulse_is_flagged():
+    tach, x, f = _run(30.0, {1: 0.5})
+    noisy = tach.copy()
+    rng = np.random.default_rng(3)
+    for i in rng.choice(len(tach), 40, replace=False):           # short spikes between pulses
+        noisy[i:i + 3] = 5.0
+    ang = shaft_angle(noisy, FS)
+    assert ang.reliable
+    assert ang.speed_hz == pytest.approx(f[ang.first:ang.last].mean(), rel=2e-3)
+    edges = np.flatnonzero((tach[:-1] < 2.5) & (tach[1:] >= 2.5))
+    gap = tach.copy()
+    gap[edges[10]:edges[10] + 400] = 0.0                          # one pulse lost
+    assert not shaft_angle(gap, FS).reliable
+
+
+def test_screened_estimator_rejects_a_faulty_channel_that_the_joint_estimate_believes():
+    w, m, A = _synthetic()
+    wt, mt, At = _synthetic(n_per=5, seed=1)
+    bad = At.copy()
+    bad[:, 4] *= 40.0                                              # one accelerometer with a wrong gain
+    amp = AmplitudeInfluence(n_knots=40).fit(w, m, A)
+    assert np.mean(np.abs(estimate_mass(amp, wt, bad) - mt)) > 10.0
+    scr = ScreenedEstimator(make=lambda: AmplitudeInfluence(n_knots=40), c=12.0).fit(w, m, A)
+    est, flags = scr.estimate(wt, bad)
+    assert np.mean(np.abs(est - mt)) < 2.0
+    assert flags[:, 4].mean() > 0.9 and flags[:, [0, 1, 2, 3, 5]].mean() < 0.1
+    clean, _ = scr.estimate(wt, At)
+    assert np.mean(np.abs(clean - mt)) < np.mean(np.abs(estimate_mass(amp, wt, At) - mt)) + 0.5
+
+
+def test_order_spectrum_grid_keeps_peaks():
+    from pinneapple_analysis.inspection.rotating import (
+        mafaulda as _m,  # noqa: F401  (module imports cleanly)
+    )
+    from pinneapple_analysis.inspection.rotating.orders import order_spectrum
+    tach, x, _ = _run(30.0, {1: 0.8, 3: 0.2}, seconds=3.0)
+    grid, S = order_spectrum(x, shaft_angle(tach, FS), FS)
+    assert S[100, 0] == pytest.approx(0.8, rel=0.02) and S[300, 0] == pytest.approx(0.2, rel=0.05)
+    assert np.delete(S[:, 0], [100, 300]).max() < 0.01

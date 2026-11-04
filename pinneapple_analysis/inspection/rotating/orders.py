@@ -33,15 +33,57 @@ class ShaftAngle:
     speed_cv: float            # coefficient of variation of the revolution periods
     revolutions: int
 
+    @property
+    def reliable(self) -> bool:
+        """The pulses look like one per revolution: revolution periods within 5 % of each other (coefficient of
+        variation). A missing or extra pulse doubles or halves a period and fails this test."""
+        return self.speed_cv <= 0.05
 
-def pulse_times(tach: np.ndarray, fs: float, threshold: float | None = None) -> np.ndarray:
-    """Rising-edge times (s) of a pulse tachometer, refined by linear interpolation; ``threshold`` defaults to the
-    middle of the signal's range."""
+
+def _fundamental_hz(tach: np.ndarray, fs: float, f_min: float = 2.0, f_max: float = 400.0) -> float:
+    """Repetition rate of a pulse train: the strongest line of its spectrum in [f_min, f_max] that is not a harmonic
+    of a stronger lower line (spikes are broadband, the pulses put their energy at the rate and its harmonics)."""
+    x = tach - tach.mean()
+    S = np.abs(np.fft.rfft(x * np.hanning(len(x))))
+    f = np.fft.rfftfreq(len(x), 1.0 / fs)
+    band = (f >= f_min) & (f <= f_max)
+    k = np.flatnonzero(band)[np.argmax(S[band])]
+    f0 = f[k]
+    for div in (2, 3, 4):                         # a sub-harmonic nearly as strong is the true rate
+        j = np.argmin(np.abs(f - f0 / div))
+        lo, hi = max(j - 3, 0), j + 4
+        if f0 / div >= f_min and S[lo:hi].max() > 0.5 * S[k]:
+            f0 = f[lo + np.argmax(S[lo:hi])]
+    return float(f0)
+
+
+def pulse_times(tach: np.ndarray, fs: float, threshold: float | None = None, refractory: float = 0.6,
+                min_width: float = 0.3) -> np.ndarray:
+    """Rising-edge times (s) of a once-per-revolution pulse tachometer, refined by linear interpolation. Edges cross
+    ``threshold`` (default: the middle of the signal's range); a pulse must stay above it for at least ``min_width``
+    x the median width of the pulses, and an edge closer than ``refractory`` x the period of the train (its spectral
+    fundamental) to the previous kept edge is dropped -- spikes between pulses are rejected either way."""
     tach = np.asarray(tach, float)
     th = 0.5 * (np.max(tach) + np.min(tach)) if threshold is None else float(threshold)
-    i = np.flatnonzero((tach[:-1] < th) & (tach[1:] >= th))
-    frac = (th - tach[i]) / np.maximum(tach[i + 1] - tach[i], 1e-300)
-    return (i + frac) / fs
+    above = tach >= th
+    up = np.flatnonzero(~above[:-1] & above[1:])
+    dn = np.flatnonzero(above[:-1] & ~above[1:])
+    if len(up) == 0:
+        return np.empty(0)
+    ends = np.searchsorted(dn, up)
+    width = np.where(ends < len(dn), dn[np.minimum(ends, len(dn) - 1)] - up, len(tach) - up)
+    wide = width >= min_width * np.median(width[width >= np.median(width)])
+    up = up[wide]
+    frac = (th - tach[up]) / np.maximum(tach[up + 1] - tach[up], 1e-300)
+    tp = (up + frac) / fs
+    if len(tp) > 2:
+        period = 1.0 / _fundamental_hz(tach, fs)
+        out = [tp[0]]
+        for x in tp[1:]:
+            if x - out[-1] >= refractory * period:
+                out.append(x)
+        tp = np.asarray(out)
+    return tp
 
 
 def shaft_angle(tach: np.ndarray, fs: float, threshold: float | None = None) -> ShaftAngle:
@@ -74,3 +116,45 @@ def order_phasors(x: np.ndarray, angle: ShaftAngle, orders=(1, 2, 3)) -> np.ndar
 def order_resolution(angle: ShaftAngle) -> float:
     """Smallest order separation a record of this length resolves (about 1 / revolutions)."""
     return 1.0 / angle.revolutions
+
+
+def angle_resample(x: np.ndarray, angle: ShaftAngle, fs: float, samples_per_rev: int = 64) -> np.ndarray:
+    """Computed order tracking: ``x`` (n_samples,) or (n_samples, n_channels) low-passed below the new Nyquist order
+    (0.8 x samples_per_rev / 2 at the run's mean speed) and resampled at ``samples_per_rev`` equal angle steps over the
+    whole revolutions; returns (revolutions x samples_per_rev, n_channels)."""
+    from scipy.signal import butter, sosfiltfilt
+    x = np.asarray(x, float)
+    x = x[:, None] if x.ndim == 1 else x
+    cut = 0.4 * samples_per_rev * angle.speed_hz
+    if cut < 0.45 * fs:
+        x = sosfiltfilt(butter(6, cut, fs=fs, output="sos"), x, axis=0)
+    seg = x[angle.first:angle.last]
+    t = (angle.first + np.arange(len(seg))) / fs
+    th_u = np.arange(angle.revolutions * samples_per_rev) * (2 * np.pi / samples_per_rev) + angle.theta[0]
+    t_u = np.interp(th_u, angle.theta, t)
+    return np.stack([np.interp(t_u, t, seg[:, c]) for c in range(seg.shape[1])], 1)
+
+
+def order_spectrum(x: np.ndarray, angle: ShaftAngle, fs: float, samples_per_rev: int = 64, envelope_band=None,
+                   max_order: float = 12.0, step: float = 0.01) -> tuple[np.ndarray, np.ndarray]:
+    """Amplitude order spectrum (or envelope order spectrum when ``envelope_band = (f_lo, f_hi)`` Hz: band-pass,
+    Hilbert envelope, then order tracking) on a fixed grid of orders ``0, step, ..., max_order``: the largest line of
+    the record inside each grid cell, so peaks survive whatever the record's resolution. Returns (grid, (n_grid,
+    n_channels))."""
+    from scipy.signal import butter, hilbert, sosfiltfilt
+    x = np.asarray(x, float)
+    x = x[:, None] if x.ndim == 1 else x
+    if envelope_band is not None:
+        x = sosfiltfilt(butter(4, envelope_band, btype="bandpass", fs=fs, output="sos"), x, axis=0)
+        x = np.abs(hilbert(x, axis=0))
+    y = angle_resample(x, angle, fs, samples_per_rev)
+    y = y - y.mean(0)
+    n = len(y)
+    spec = 2.0 / n * np.abs(np.fft.rfft(y, axis=0))
+    orders = np.fft.rfftfreq(n, d=1.0 / samples_per_rev)
+    grid = np.arange(0.0, max_order + step / 2, step)
+    keep = orders <= max_order + step / 2
+    cell = np.clip(np.round(orders[keep] / step).astype(int), 0, len(grid) - 1)
+    out = np.zeros((len(grid), x.shape[1]))
+    np.maximum.at(out, cell, spec[keep])
+    return grid, out

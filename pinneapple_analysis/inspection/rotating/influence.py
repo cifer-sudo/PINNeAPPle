@@ -153,12 +153,41 @@ class ModalInfluence:
 
 @dataclass
 class AmplitudeInfluence:
-    """Phase-free classical calibration: ``|A_c| = a_c(w) + b_c(w) m`` with cubic B-splines in ``w``."""
+    """Phase-free classical calibration: ``|A_c| = a_c(w) + b_c(w) m`` with cubic B-splines in ``w``.
+
+    Outside the calibrated speed range, ``extrapolate`` says how ``a`` and ``b`` continue: ``"hold"`` (their value at
+    the edge), ``"physics"`` (the power laws of an unbalance response in acceleration: ``w^4`` below the resonances,
+    where the structure is stiffness-controlled, ``w^2`` above them, where it is mass-controlled) or ``"logslope"``
+    (the log-log slope of the fitted curve over the outer ``edge_frac`` of the range, clipped to [-2, 6])."""
     n_knots: int = 8
+    extrapolate: str = "hold"
+    edge_frac: float = 0.15
     lo: float = 0.0
     hi: float = 0.0
     coef: np.ndarray = field(default=None, repr=False)
     w_ch: np.ndarray = field(default=None, repr=False)
+
+    def _edge_exponents(self):
+        if self.extrapolate == "physics":
+            return 4.0, 2.0
+        span = self.hi - self.lo
+        w_lo = np.array([self.lo, self.lo + self.edge_frac * span])
+        w_hi = np.array([self.hi - self.edge_frac * span, self.hi])
+
+        def slope(ww):
+            a, b = self._raw(ww)
+            out = []
+            for v in (a, b):
+                r = np.abs(v[1]) / np.maximum(np.abs(v[0]), 1e-300)
+                out.append(np.clip(np.log(np.maximum(r, 1e-300)) / np.log(ww[1] / ww[0]), -2.0, 6.0))
+            return out
+
+        return slope(w_lo), slope(w_hi)
+
+    def _raw(self, w):
+        B = _bspline_design(np.atleast_1d(w), self.lo, self.hi, self.n_knots)
+        k = B.shape[1]
+        return B @ self.coef[:k], B @ self.coef[k:]
 
     def fit(self, w, m, A):
         w, m = np.asarray(w, float), np.asarray(m, float)
@@ -171,9 +200,22 @@ class AmplitudeInfluence:
         return self
 
     def alpha_beta(self, w):
-        B = _bspline_design(np.atleast_1d(w), self.lo, self.hi, self.n_knots)
-        k = B.shape[1]
-        return B @ self.coef[:k], B @ self.coef[k:]
+        w = np.atleast_1d(np.asarray(w, float))
+        a, b = self._raw(w)
+        if self.extrapolate == "hold":
+            return a, b
+        below, above = (w < self.lo)[:, None], (w > self.hi)[:, None]
+        if self.extrapolate == "physics":
+            p_lo, p_hi = 4.0, 2.0
+            f_lo = (w / self.lo)[:, None] ** p_lo
+            f_hi = (w / self.hi)[:, None] ** p_hi
+            return (np.where(below, a * f_lo, np.where(above, a * f_hi, a)),
+                    np.where(below, b * f_lo, np.where(above, b * f_hi, b)))
+        (pa_lo, pb_lo), (pa_hi, pb_hi) = self._edge_exponents()
+        r_lo, r_hi = (w / self.lo)[:, None], (w / self.hi)[:, None]
+        a = np.where(below, a * r_lo ** pa_lo[None, :], np.where(above, a * r_hi ** pa_hi[None, :], a))
+        b = np.where(below, b * r_lo ** pb_lo[None, :], np.where(above, b * r_hi ** pb_hi[None, :], b))
+        return a, b
 
 
 def estimate_mass(model, w, A, *, phase_free: bool | None = None) -> np.ndarray:
@@ -298,3 +340,91 @@ class PhaseNuisanceInfluence:
             mm = np.clip(np.real(np.sum(wc * np.conj(al[i])[None, :] * y, 1)) / den, 0.0, None)
             out[i] = mm[np.argmin(np.sum(wc * np.abs(y - mm[:, None] * al[i][None, :]) ** 2, 1))]
         return out
+
+
+def channel_estimates(model, w, A) -> tuple[np.ndarray, np.ndarray]:
+    """Per-channel mass estimates of each run and their weights (inverse variance of each estimate): phase-free
+    ``(|A_c| - a_c) / b_c`` for :class:`AmplitudeInfluence`, the complex projection otherwise."""
+    w = np.atleast_1d(np.asarray(w, float))
+    A = np.atleast_2d(A)
+    a, b = model.alpha_beta(w)
+    wc = model.w_ch[None, :]
+    if isinstance(model, AmplitudeInfluence):
+        est = (np.abs(A) - b) / np.where(np.abs(a) > 1e-300, a, 1e-300)
+        weight = wc * a * a
+    else:
+        est = np.real(np.conj(a) * (A - b)) / np.maximum(np.abs(a) ** 2, 1e-300)
+        weight = wc * np.abs(a) ** 2
+    return est, weight
+
+
+def estimate_mass_robust(model, w, A, k: float = 3.0) -> tuple[np.ndarray, np.ndarray]:
+    """Channel-robust mass estimate: the weighted median of the per-channel estimates (one mass, many channels: a
+    channel that disagrees with the others is not believed), and a flag per channel that lies more than ``k`` robust
+    standard deviations of its own estimate from that median (a sensor, cable or mounting problem, not unbalance)."""
+    est, weight = channel_estimates(model, w, A)
+    out = np.empty(len(est))
+    for i in range(len(est)):
+        o = np.argsort(est[i])
+        cw = np.cumsum(weight[i][o])
+        out[i] = est[i][o][np.searchsorted(cw, 0.5 * cw[-1])]
+    sd = 1.0 / np.sqrt(np.maximum(weight, 1e-300))
+    flags = np.abs(est - out[:, None]) > k * np.maximum(sd, 1e-12)
+    return out, flags
+
+
+@dataclass
+class ScreenedEstimator:
+    """A channel-robust mass estimate. Every channel gives its own estimate with a weight ``W_c`` (its sensitivity at
+    that speed squared over its calibration residual variance: the terms of the joint least squares of
+    :func:`estimate_mass`); cross-validation on the calibration runs measures the spread ``s_c`` of each channel's
+    standardised error ``(est_c - m) sqrt(W_c)``, and the biweight constant ``c`` is set to the ``quantile`` of the
+    absolute standardised errors ``|est_c - m| sqrt(W_c) / s_c`` over all channels (0.5 % false rejection on the
+    calibration sessions: their errors are heavier-tailed than a normal). At inversion the common mass is the
+    Tukey-biweight M-estimate of the channel estimates (distances standardised by ``sqrt(W_c) / s_c``, weights
+    ``W_c``), iterated from their unweighted median, so one very sensitive but faulty channel cannot become the
+    centre; a channel at a standardised distance of ``c`` or more gets zero weight and is flagged (a sensor, cable or
+    mounting problem: the mass is the same for every channel). With every channel well inside ``c`` the estimate is
+    close to the joint one."""
+    make: object = None                         # callable returning an unfitted influence model
+    quantile: float = 0.995
+    c: float | None = None                      # None: calibrated at ``quantile``; a number: used as given
+    n_folds: int = 10
+    iters: int = 30
+    seed: int = 0
+    model: object = field(default=None, repr=False)
+    scale: np.ndarray = field(default=None, repr=False)
+    c_: float = field(default=float("nan"), repr=False)
+
+    def fit(self, w, m, A):
+        make = self.make or AmplitudeInfluence
+        rng = np.random.default_rng(self.seed)
+        z = np.zeros(np.atleast_2d(A).shape)
+        for te in np.array_split(rng.permutation(len(m)), self.n_folds):
+            tr = np.setdiff1d(np.arange(len(m)), te)
+            est, W = channel_estimates(make().fit(w[tr], m[tr], A[tr]), w[te], A[te])
+            z[te] = (est - m[te][:, None]) * np.sqrt(W)
+        self.scale = np.maximum(1.4826 * np.median(np.abs(z - np.median(z, 0)), 0), 1e-12)
+        self.c_ = float(np.quantile(np.abs(z) / self.scale[None, :], self.quantile)) if self.c is None else float(self.c)
+        self.model = make().fit(w, m, A)
+        return self
+
+    def estimate(self, w, A) -> tuple[np.ndarray, np.ndarray]:
+        est, W = channel_estimates(self.model, w, A)
+        P = W / self.scale[None, :] ** 2
+        out, flags = np.empty(len(est)), np.zeros(est.shape, bool)
+        for i in range(len(est)):
+            mu = np.median(est[i])
+            for _ in range(self.iters):
+                u = (est[i] - mu) * np.sqrt(P[i]) / self.c_
+                h = np.where(np.abs(u) < 1, (1 - u ** 2) ** 2, 0.0)
+                if h.sum() == 0:
+                    break
+                new = np.sum(h * W[i] * est[i]) / np.sum(h * W[i])
+                if abs(new - mu) < 1e-9:
+                    mu = new
+                    break
+                mu = new
+            flags[i] = np.abs(est[i] - mu) * np.sqrt(P[i]) >= self.c_
+            out[i] = mu
+        return out, flags

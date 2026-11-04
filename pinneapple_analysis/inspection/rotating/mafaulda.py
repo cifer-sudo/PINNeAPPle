@@ -21,7 +21,7 @@ from typing import Any
 
 import numpy as np
 
-from .orders import order_phasors, order_resolution, shaft_angle
+from .orders import order_phasors, order_resolution, order_spectrum, shaft_angle
 
 FS = 50_000.0
 COLUMNS = ("tachometer", "ub_axial", "ub_radial", "ub_tangential", "ob_axial", "ob_radial", "ob_tangential",
@@ -67,27 +67,38 @@ def read(path: str | Path) -> np.ndarray:
     return pd.read_csv(path, header=None, dtype=np.float64, engine="c").to_numpy()
 
 
-def features(run: Run, orders=ORDERS) -> dict[str, Any]:
+#: band of the envelope spectra (Hz): above the shaft harmonics, inside the accelerometers' flat range
+ENVELOPE_BAND = (1000.0, 10000.0)
+
+
+def features(run: Run, orders=ORDERS, spectra: bool = False) -> dict[str, Any]:
     """Speed from the tachometer and the order phasors (orders x channels, complex) of one run, with the record's
-    order resolution and the RMS of every channel."""
+    order resolution and the RMS of every channel; ``spectra``: also the amplitude and envelope order spectra of the
+    seven channels on a grid of 0.01 orders up to 12 (float32)."""
     X = read(run.path)
     ang = shaft_angle(X[:, 0], FS)
-    return {"path": run.path, "state": run.state, "level": run.level, "level_value": run.level_value,
-            "level_unit": run.level_unit, "nominal_hz": run.nominal_hz, "speed_hz": ang.speed_hz,
-            "speed_cv": ang.speed_cv, "revolutions": ang.revolutions, "order_resolution": order_resolution(ang),
-            "phasors": order_phasors(X[:, 1:], ang, orders), "rms": X[:, 1:].std(0)}
+    out = {"path": run.path, "state": run.state, "level": run.level, "level_value": run.level_value,
+           "level_unit": run.level_unit, "nominal_hz": run.nominal_hz, "speed_hz": ang.speed_hz,
+           "speed_cv": ang.speed_cv, "tach_ok": ang.reliable and 0.9 < ang.speed_hz / run.nominal_hz < 1.05,
+           "revolutions": ang.revolutions, "order_resolution": order_resolution(ang), "phasors": order_phasors(X[:, 1:], ang, orders), "rms": X[:, 1:].std(0)}
+    if spectra:
+        _, out["order_spectrum"] = order_spectrum(X[:, 1:], ang, FS)
+        _, out["envelope_spectrum"] = order_spectrum(X[:, 1:], ang, FS, envelope_band=ENVELOPE_BAND)
+        out["order_spectrum"] = out["order_spectrum"].astype(np.float32)
+        out["envelope_spectrum"] = out["envelope_spectrum"].astype(np.float32)
+    return out
 
 
 def _one(args):
-    run, orders = args
+    run, orders, spectra = args
     try:
-        return features(run, orders)
+        return features(run, orders, spectra)
     except Exception as e:                       # a broken file is reported, not fatal to the table
         return {"path": run.path, "error": f"{type(e).__name__}: {e}"}
 
 
-def feature_table(runs: list[Run], cache: str | Path | None = None, orders=ORDERS, workers: int = 4
-                  ) -> list[dict[str, Any]]:
+def feature_table(runs: list[Run], cache: str | Path | None = None, orders=ORDERS, workers: int = 4,
+                  spectra: bool = False) -> list[dict[str, Any]]:
     """:func:`features` of every run (``workers`` processes), cached in ``cache`` (.npz) when given; runs already in
     the cache are not read again."""
     done: dict[str, dict] = {}
@@ -99,9 +110,9 @@ def feature_table(runs: list[Run], cache: str | Path | None = None, orders=ORDER
         if workers > 1:
             import multiprocessing as mp
             with mp.get_context("fork").Pool(workers) as pool:
-                new = pool.map(_one, [(r, orders) for r in todo])
+                new = pool.map(_one, [(r, orders, spectra) for r in todo])
         else:
-            new = [_one((r, orders)) for r in todo]
+            new = [_one((r, orders, spectra)) for r in todo]
         done.update({r["path"]: r for r in new})
         if cache:
             np.savez(cache, rows=np.array(list(done.values()), dtype=object))
