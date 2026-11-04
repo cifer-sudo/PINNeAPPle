@@ -118,6 +118,14 @@ hold only when the test speeds are seen in training; at unseen speeds every mode
 spectra is not better in general, but it is clearly better for unbalance (0.951 against 0.848). Results file:
 `docs/research/results/mafaulda_classification.json`.
 
+**Comparison with published methods, same protocol (written 2026-11-04, before the KAN and HNN baselines were run
+on MAFAULDA).** KAN: a shallow KAN on the same chosen features (Rigas et al. report F1 97.24 % with their own
+features and selection); expectation if their result transfers: macro-F1 >= 0.95 under Pa on T4. HNN: energy
+features of a Hamiltonian network fitted to healthy orbits, with a logistic regression (Shen et al.) and a random
+forest; Shen et al. report AUC 0.78 / 0.84, so an HNN-energy model below the feature models is expected. Both are
+re-implementations, not the authors' code. Seeds: 5 for random forest, MLP and KAN, 3 for the FNO; mean and 95 %
+interval (t distribution) of macro-F1 per task and protocol.
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor

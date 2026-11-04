@@ -71,7 +71,15 @@ def read(path: str | Path) -> np.ndarray:
 ENVELOPE_BAND = (1000.0, 10000.0)
 
 
-def features(run: Run, orders=ORDERS, spectra: bool = False) -> dict[str, Any]:
+def snippet(X: np.ndarray, factor: int = 10, seconds: float = 1.0) -> np.ndarray:
+    """The six accelerometers, low-passed and decimated by ``factor`` (5 kHz from 50 kHz), first ``seconds`` (float32):
+    enough for models that need the waveform (an HNN on the measured trajectories) once the raw CSVs are deleted."""
+    from scipy.signal import decimate
+    y = decimate(X[:, 1:7], factor, axis=0, zero_phase=True)
+    return y[: int(seconds * FS / factor)].astype(np.float32)
+
+
+def features(run: Run, orders=ORDERS, spectra: bool = False, waveform: bool = False) -> dict[str, Any]:
     """Speed from the tachometer and the order phasors (orders x channels, complex) of one run, with the record's
     order resolution and the RMS of every channel; ``spectra``: also the amplitude and envelope order spectra of the
     seven channels on a grid of 0.01 orders up to 12 (float32)."""
@@ -86,6 +94,8 @@ def features(run: Run, orders=ORDERS, spectra: bool = False) -> dict[str, Any]:
     peak = np.abs(x).max(0)
     out.update(kurtosis=kurtosis(x, axis=0, fisher=False), skewness=skew(x, axis=0), peak=peak,
                crest=peak / np.maximum(x.std(0), 1e-12))
+    if waveform:
+        out["snippet"] = snippet(X)
     if spectra:
         _, out["order_spectrum"] = order_spectrum(X[:, 1:], ang, FS)
         _, out["envelope_spectrum"] = order_spectrum(X[:, 1:], ang, FS, envelope_band=ENVELOPE_BAND)
@@ -95,15 +105,15 @@ def features(run: Run, orders=ORDERS, spectra: bool = False) -> dict[str, Any]:
 
 
 def _one(args):
-    run, orders, spectra = args
+    run, orders, spectra, waveform = args
     try:
-        return features(run, orders, spectra)
+        return features(run, orders, spectra, waveform)
     except Exception as e:                       # a broken file is reported, not fatal to the table
         return {"path": run.path, "error": f"{type(e).__name__}: {e}"}
 
 
 def feature_table(runs: list[Run], cache: str | Path | None = None, orders=ORDERS, workers: int = 4,
-                  spectra: bool = False) -> list[dict[str, Any]]:
+                  spectra: bool = False, waveform: bool = False) -> list[dict[str, Any]]:
     """:func:`features` of every run (``workers`` processes), cached in ``cache`` (.npz) when given; runs already in
     the cache are not read again."""
     done: dict[str, dict] = {}
@@ -115,9 +125,9 @@ def feature_table(runs: list[Run], cache: str | Path | None = None, orders=ORDER
         if workers > 1:
             import multiprocessing as mp
             with mp.get_context("fork").Pool(workers) as pool:
-                new = pool.map(_one, [(r, orders, spectra) for r in todo])
+                new = pool.map(_one, [(r, orders, spectra, waveform) for r in todo])
         else:
-            new = [_one((r, orders, spectra)) for r in todo]
+            new = [_one((r, orders, spectra, waveform)) for r in todo]
         done.update({r["path"]: r for r in new})
         if cache:
             np.savez(cache, rows=np.array(list(done.values()), dtype=object))
