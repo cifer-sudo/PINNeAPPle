@@ -10,3 +10,4 @@ phase1 unbalance    osfno-C-film           s3 speed macro-F1 0.920 (low 0.94, mi
 phase1 unbalance    osfno-C-film           s4 speed macro-F1 0.931 (low 0.82, mid 1.00, high 1.00) 120s
 phase1 bearings     osfno-C-film           s0 speed macro-F1 0.784 (low 0.73, mid 0.99, high 0.68) 329s
 phase1 bearings     osfno-C-film           s1 speed macro-F1 0.800 (low 0.78, mid 0.99, high 0.66) 344s
+phase1 bearings     osfno-C-film           s2 speed macro-F1 0.820 (low 0.80, mid 0.98, high 0.71) 352s
