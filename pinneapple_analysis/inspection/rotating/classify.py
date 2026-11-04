@@ -160,26 +160,41 @@ def _fit_predict(model, Xf, Xs, sp, y, tr, te, seed):
     return clf.fit(Xf[tr], y[tr]).predict(Xf[te])
 
 
-def run_task(rows, task, models=("rf", "mlp", "fno"), protocols=("folds", "speed"), seed=0, log=print):
+def run_task(rows, task, models=("rf", "mlp", "fno"), protocols=("folds", "speed"), seed=0, log=print,
+             done: dict | None = None, save=None, budget_s: float | None = None):
+    """Every (protocol, model) of a task. ``done``: results already computed (``"protocol/model"`` keys), skipped;
+    ``save(out)`` is called after each new result and ``budget_s`` stops before starting a new one once the time is
+    spent, so a long study can be resumed after an interruption."""
     from sklearn.metrics import confusion_matrix, f1_score
     sel, y = select(rows, task)
     Xf = feature_matrix(sel)
     Xs, sp = spectrum_tensor(sel)
-    out = {"task": task, "classes": TASKS[task], "n": int(len(y)), "counts": np.bincount(y).tolist(), "results": {}}
+    out = {"task": task, "classes": TASKS[task], "n": int(len(y)), "counts": np.bincount(y).tolist(),
+           "results": dict(done or {})}
+    t_start = time.perf_counter()
     for proto in protocols:
         for model in models:
+            key = f"{proto}/{model}"
+            if key in out["results"]:
+                continue
+            if budget_s is not None and time.perf_counter() - t_start > budget_s:
+                out["incomplete"] = True
+                return out
             pred = np.full(len(y), -1)
             per = {}
             t0 = time.perf_counter()
             for name, tr, te in splits(y, sp, proto, seed=seed):
                 pred[te] = _fit_predict(model, Xf, Xs, sp, y, tr, te, seed)
                 per[name] = float(f1_score(y[te], pred[te], average="macro"))
-            out["results"][f"{proto}/{model}"] = {
+            out["results"][key] = {
                 "macro_f1": float(f1_score(y, pred, average="macro")), "accuracy": float(np.mean(pred == y)),
                 "per_split_macro_f1": per, "confusion": confusion_matrix(y, pred).tolist(),
                 "seconds": time.perf_counter() - t0}
-            log(f"{task:12s} {proto:5s} {model:4s} macro-F1 {out['results'][f'{proto}/{model}']['macro_f1']:.3f} "
+            log(f"{task:12s} {proto:5s} {model:4s} macro-F1 {out['results'][key]['macro_f1']:.3f} "
                 f"({', '.join(f'{k} {v:.2f}' for k, v in per.items())})")
+            if save:
+                save(out)
+    out.pop("incomplete", None)
     return out
 
 

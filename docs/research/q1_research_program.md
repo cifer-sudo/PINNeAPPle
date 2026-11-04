@@ -107,6 +107,17 @@ C1 fails narrowly (FNO 0.944 < 0.95 on T1; the feature models pass). C2 so far: 
 under Pb is +0.10 on T2 and -0.02 on T1 (T3, T4 pending). C4: drops from Pa to Pb of 0.11-0.18 for the feature
 models, 0.03-0.09 for the FNO; the MLP exceeds 0.15 on T1. The container restarted during T3-T4 (re-run).
 
+**Results T3-T4 and decision (2026-11-04).** T3 bearings (7 classes, 1051 runs): Pa random forest 0.992, MLP
+0.991, FNO 0.985; Pb 0.866 / 0.836 / 0.828. T4 all ten states (1951 runs): Pa 0.992 / 0.987 / 0.969; Pb 0.881 /
+0.814 / 0.805 (FNO low-speed tercile 0.62). Against the criteria: C1 FAIL (FNO 0.944 on T1); C2 FAIL (FNO gain over
+the random forest under Pb: T1 -0.02, T2 +0.10, T3 -0.04, T4 -0.08 -- only T2); C3 PASS for all three models; C4:
+drops from Pa to Pb of 0.11-0.18, the FNO the most robust on T1 (0.09) and T2 (0.03) but not on T3 (0.16) and T4
+(0.16); the MLP above 0.15 on three tasks. Under Pb the bearing confusions are mainly overhang cage vs overhang outer
+race (41 runs) and normal vs overhang outer race / cage. Message for a paper: published scores near 99 % on MAFAULDA
+hold only when the test speeds are seen in training; at unseen speeds every model loses 0.03-0.18; an FNO on order
+spectra is not better in general, but it is clearly better for unbalance (0.951 against 0.848). Results file:
+`docs/research/results/mafaulda_classification.json`.
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor
