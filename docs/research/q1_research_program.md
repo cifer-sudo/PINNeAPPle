@@ -126,6 +126,22 @@ forest; Shen et al. report AUC 0.78 / 0.84, so an HNN-energy model below the fea
 re-implementations, not the authors' code. Seeds: 5 for random forest, MLP and KAN, 3 for the FNO; mean and 95 %
 interval (t distribution) of macro-F1 per task and protocol.
 
+**Seeds, KAN and HNN (2026-11-04).** Macro-F1, mean +- 95 % interval over 5 seeds (folds change with the seed):
+
+| Task | Pa: RF / MLP / KAN | Pb: RF / MLP / KAN |
+|---|---|---|
+| T1 misalignment | 0.988+-0.003 / 0.985+-0.003 / 0.986+-0.003 | 0.876+-0.009 / 0.838+-0.029 / 0.858+-0.016 |
+| T2 unbalance | 0.990+-0.006 / 0.991+-0.006 / 0.991+-0.006 | 0.852+-0.010 / 0.884+-0.015 / 0.873+-0.009 |
+| T3 bearings | 0.994+-0.001 / 0.988+-0.004 / 0.992+-0.001 | 0.866+-0.010 / 0.837+-0.004 / 0.811+-0.011 |
+| T4 all | 0.992+-0.001 / 0.986+-0.001 / 0.989+-0.002 | 0.878+-0.003 / 0.817+-0.006 / 0.824+-0.017 |
+
+KAN reproduces the level reported by Rigas et al. under Pa (0.989 on T4, expectation >= 0.95 met) and loses
+0.17 at unseen speeds. HNN-energy baseline (seed 0), logistic regression / random forest: T2 0.913 / 0.932 (Pa),
+0.744 / 0.759 (Pb); T1 0.577 / 0.758, 0.514 / 0.629; T4 0.536 / 0.760, 0.371 / 0.508 -- below every feature model,
+as expected from Shen et al. **Correction:** the FNO's unseen-speed result on T2 (0.951 with seed 0) does not hold
+with seed 1 (0.813); its seed-to-seed spread is large (T1 Pa 0.944 vs 0.986), so the claim "the FNO is clearly
+better for unbalance" is withdrawn until the 3-seed interval is in.
+
 ## P2 -- Process, sensor or model? Physics-residual diagnosis on a real PV microgrid
 
 **Question.** Do whitened physics residuals with a likelihood ratio per hypothesis tell process faults from sensor
