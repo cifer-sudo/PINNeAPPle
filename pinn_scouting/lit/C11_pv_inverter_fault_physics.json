@@ -1,0 +1,84 @@
+{
+ "tag": "C11_pv_inverter_fault_physics",
+ "expr": "(\"GPVS\" OR \"grid-connected PV\" OR photovoltaic) (fault) (\"physics-informed\" OR \"physics-guided\" OR \"residual\") (\"sensor fault\" OR inverter)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22GPVS%22+OR+%22grid-connected+PV%22+OR+photovoltaic%29+%28fault%29+%28%22physics-informed%22+OR+%22physics-guided%22+OR+%22residual%22%29+%28%22sensor+fault%22+OR+inverter%29&per-page=8&sort=relevance_score%3Adesc",
+ "count": 76,
+ "by_year": {
+  "2026": 30,
+  "2025": 14,
+  "2022": 8,
+  "2024": 6,
+  "2023": 4,
+  "2016": 3,
+  "2019": 3,
+  "2020": 3,
+  "2014": 2,
+  "2017": 2
+ },
+ "works": [
+  {
+   "title": "Sensors fault diagnosis and fault tolerant control for grid connected PV system",
+   "year": 2016,
+   "doi": "https://doi.org/10.1016/j.ijhydene.2016.11.147",
+   "venue": "International Journal of Hydrogen Energy",
+   "cited_by": 33,
+   "abstract": ""
+  },
+  {
+   "title": "Fault diagnosis in grid\u2010connected PV NPC inverters by a model\u2010based and data processing combined approach",
+   "year": 2019,
+   "doi": "https://doi.org/10.1049/iet-pel.2018.5237",
+   "venue": "IET Power Electronics",
+   "cited_by": 48,
+   "abstract": "This study presents a fault detection and isolation (FDI) method for open\u2010circuit faults (OCFs) in the switching devices of a grid\u2010connected neutral\u2010point\u2010clamped (NPC) inverter for photovoltaic (PV) applications. The proposed methodology addresses the fault diagnosis problem by a combined model\u2010based and data processing perspective to study single and simultaneous faults in the NPC inverter. For the model\u2010based scheme, a bank of sliding\u2010mode proportional\u2013integral observers is suggested to estimate the fault profiles under an additive model. Thus, from the estimated fault profiles, and by performing a directional residual evaluation in a fixed reference frame, single and simultaneous fault scenarios can be isolated in the NPC inverter. However, for some fault classes, there is some ambiguity by just the model\u2010based approach that is overcome by employing the average line currents to construct extra fault signatures. The proposed FDI scheme only requires the measurements of line currents and grid voltages in the diagnosis media and can isolate single OCFs and simultaneous OCFs in the order or lower than a fundamental period of the grid frequency. Our new FDI methodology is validated through experimental data from a practical PV system in a closed\u2010loop grid\u2010connected NPC inverter under single and simultaneous OCF conditions."
+  },
+  {
+   "title": "Sensor Fault Analysis of an Isolated Photovoltaic Generator",
+   "year": 2022,
+   "doi": "https://doi.org/10.1007/978-3-031-16159-9_23",
+   "venue": "Lecture notes in networks and systems",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "A Simple Open-Circuit Detection Strategy for a Single-Phase Grid-Connected PV Inverter Fed From Power Optimizers",
+   "year": 2017,
+   "doi": "https://doi.org/10.1109/tpel.2017.2751508",
+   "venue": "IEEE Transactions on Power Electronics",
+   "cited_by": 28,
+   "abstract": "A simple and real-time open-circuit fault (OCF) detection method is proposed for a single-phase grid-connected photovoltaic inverter fed by series-connected power optimizers (POs). To implement the proposed method, PO controllers periodically monitor POs' output voltage variations and calculate output voltage residual errors. Then, on the PO side, the OCF identification rule for the inverter is developed, which is based on the amount of voltage variation and the improved judgment criterion derived from voltage residual error and power. The proposed OCF detection method is of low cost and is real time, needing no extra hardware and no communication between the inverter and POs. Generally speaking, the method provides a reliable and fast solution to detect OCFs in the series-connected distributed dc power or energy storage systems. Its effectiveness and reliability are verified by experimental results."
+  },
+  {
+   "title": "Fault-Diagnosis and Virtual Flux-Based Tolerant Control for Grid Connected PV System",
+   "year": 2020,
+   "doi": "https://doi.org/10.1080/15325008.2020.1829185",
+   "venue": "Electric Power Components and Systems",
+   "cited_by": 0,
+   "abstract": "This article presents easy and robust Measurement Fault Detection and Isolation (MFDI) and Fault Tolerant Control (FTC) technique against grid voltage measurement failure, where scaling and dc-offset errors are considered. The proposed MFDI method is based on grid voltages orientation, which enables to generate two residuals. It does not require an extra hardware and is insensitive to system parameters variation; therefore, the model knowledge is not necessary. FTC technique is applied to overcome the fault. It is focused on Virtual Flux using Second-Order Generalized Integrator with a Frequency Locked-Loop. The estimated quantity is injected into the system control instead of the erroneous measurement. Simulation results prove the effectiveness of the proposed MFDI and FTC methods against different magnitude and type of grid sensor faults, and well identify the occurrence fault in each phase. In addition, it is characterized by a lower software capacity compared with model-based methods. An experimental platform was used to validate the obtained results and to show the reliability of the proposed techniques."
+  },
+  {
+   "title": "Fault diagnosis and fault-tolerant control of photovoltaic micro-inverter",
+   "year": 2016,
+   "doi": "https://doi.org/10.1007/s11771-016-3286-7",
+   "venue": "Journal of Central South University",
+   "cited_by": 8,
+   "abstract": ""
+  },
+  {
+   "title": "Sliding Mode Observer-Based Sensor Fault Diagnosis in a Photovoltaic System",
+   "year": 2025,
+   "doi": "https://doi.org/10.3390/su172411030",
+   "venue": "Sustainability",
+   "cited_by": 0,
+   "abstract": "This work focuses on the development of a diagnostic approach for detecting and localizing sensor faults in an autonomous photovoltaic system. The considered system is composed of a photovoltaic module and a resistive load. However, an adaptation stage formed by a DC/DC voltage boost converter is necessary to transfer energy from the source to the load. The diagnostic scheme is based on a sliding mode observer (SMO) that is robust to uncertainties and parametric variations. The SMO incorporates adaptive gains optimized via parametric adaptation laws, with stability rigorously verified through Lyapunov analysis. The method effectively identifies both independent and simultaneous sensor faults, employing an optimized threshold selection strategy to balance detection sensitivity and false alarm resistance. Simulation results under varying environmental conditions, system parameter fluctuations, and noisy measurement demonstrate the approach\u2019s superior performance, achieving a 20% reduction in mean absolute percentage error (MAPE) and 90% faster settling time compared to existing techniques. These enhancements immediately increase the dependability, efficiency, and lifetime of the PV system, which are critical for lowering carbon emissions and ensuring the economic feasibility of solar energy investments. Key innovations include a novel residual generation mechanism, seamless integration with backstepping sliding mode maximum power point tracking (MPPT) control, and enhanced tran"
+  },
+  {
+   "title": "Represent Before Classifying: Frugal Physics-Informed Fusion for Multiclass Fault Diagnosis in Photovoltaic Systems",
+   "year": 2026,
+   "doi": null,
+   "venue": "HAL",
+   "cited_by": 0,
+   "abstract": "Do photovoltaic fault diagnosis performance primarily depend on the classifier used or on how the physical system is represented? This study addresses this question through a controlled benchmark combining simulation, physics-based signal engineering, and frugal machine learning.A 250 kW photovoltaic power plant is modeled in MATLAB/Simulink under varying irradiance and temperature profiles. The balanced dataset comprises twelve classes: healthy operation and eleven faults affecting modules, strings, or electrical connections. Four data representations are compared: (1) raw currents, (2) residuals between the affected string and a reference string, (3) residuals enriched with irradiance and temperature information, and (4) a complete physics-informed fusion combining currents, residuals, ratios, and meteorological context. Time- and frequency-domain features are extracted after resampling. Six machine-learning methods are evaluated using stratified five-fold cross-validation: logistic regression, radial-basis-function support vector machines, k-nearest neighbors, random forests, extra trees, and gradient boosting.The results highlight the decisive role of data representation. The macro-F1 score computed from aggregated predictions is approximately 0.31 using raw currents, 0.69 using residuals, 0.64 using weather-enriched residuals, and 0.80 using the complete physics-informed fusion. Combined with gradient boosting, the latter provides the most balanced performance, with F1-s"
+  }
+ ]
+}

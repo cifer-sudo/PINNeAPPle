@@ -1,0 +1,77 @@
+{
+ "tag": "C10_ev_charging_physics",
+ "expr": "(\"EV charging\" OR \"charging session\" OR \"charging station\") (\"physics-informed\" OR \"physics-guided\") (battery OR \"state of charge\" OR load)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22EV+charging%22+OR+%22charging+session%22+OR+%22charging+station%22%29+%28%22physics-informed%22+OR+%22physics-guided%22%29+%28battery+OR+%22state+of+charge%22+OR+load%29&per-page=8&sort=relevance_score%3Adesc",
+ "count": 41,
+ "by_year": {
+  "2026": 30,
+  "2025": 7,
+  "2024": 4
+ },
+ "works": [
+  {
+   "title": "Hybrid Renewable Energy System for EV Charging Station Integrating with Battery Management and Energy Storage Units Using LOA-FBPINNs Approach",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/s42417-026-02716-0",
+   "venue": "Journal of Vibration Engineering & Technologies",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Deep Learning Control of Power Converters for Renewable Energy Integrated EV Charging Systems",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/icoici69824.2026.11724232",
+   "venue": "International Conference on Intelligent Cyber Physical Systems and Internet of Things (ICoICI)",
+   "cited_by": 0,
+   "abstract": "The growing concern for rapid fluctuations in source power, charging demand, and grid-support operation due to the widespread use of renewable generation and electric mobility requires the controls associated with these power-converter technologies to be stable within a larger bandwidth. This work proposes a physics-informed deep learning control approach for a bidirectional electric vehicle charging system enhanced by renewable energy sources. Training uses measured operating data with converter equations, direct-current (DC)-link power balance, battery constraints, and switching limits. The learned control action is constrained by prior samples and physical invariance. The framework includes direct-current-link voltage regulation, coordination of grid-to-vehicle charging and vehicle-to-grid discharging, duty-ratio settings that allow for fast transitions while maintaining variations within design limits, and restrictions on the battery's state of charge level to ensure it follows a desired trajectory within an operating region, all aimed at extending the battery's service life. These include a 10-kW converter, 8-kW renewable source, 400 V DC-link, and a 40-kWh battery. The responses demonstrate fast recovery from renewable-power and load disturbances, accurate tracking of battery power and converter current, smooth transitions between charging and discharging, and stable loss convergence during training. The proposed method reduces transient deviation and oscillatory behavi"
+  },
+  {
+   "title": "A Physics-Informed Learning Approach for Demand Response Potential Assessment of EV Charging Stations",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/pesim67009.2026.11438565",
+   "venue": "IEEE PES International Meeting (PES IM)",
+   "cited_by": 0,
+   "abstract": "With the proliferation of electric vehicles (EVs), EV Charging Stations (EVCSs) become controllable loads that can provide demand response (DR) to distribution system operators (DSOs). Efficient DR potential assessment (DRPA) of EVCSs can help DSOs rationalize incentive pricing. Some studies leverage data-driven deep learning-based methods to conduct proper assessments while avoiding concerns like unrealistic assumptions. However, these methods suffer from limited interpretability, particularly in the economic correlation between incentive pricing and response potential. Therefore, this paper proposes a physics-informed learning (PIL) approach for DRPA of EVCSs. First, we develop a simulation module that integrates the EVCS operational model with predefined economic laws, such as the price elasticity mechanism, to generate sufficient samples. Furthermore, during training, the approach incorporates these economic laws into the loss functions of the physics-informed long short-term memory (PILSTM) networks to enhance interpretability. We generate 8,640 incentive price-response power data pairs using the proposed simulation method. Experiments show that PIL achieves accurate assessment performance and makes the model more interpretable."
+  },
+  {
+   "title": "Physics Guided Reinforcement Learning for Voltage-Aware EV Charging Coordination with PV and V2G Interaction",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/pesgm58988.2026.11693806",
+   "venue": "IEEE Power Engineering Society General Meeting",
+   "cited_by": 0,
+   "abstract": "This work investigates the grid-coupled dynamics of distributed photovoltaic (PV) generation and bidirectional Vehicle to Grid (V2G) operation within a reinforcement learning based electric vehicle (EV) charging control. Building on the physics informed Twin Delayed Deep Deterministic Policy Gradient (PI TD3) framework, two controlled configurations are examined, one excluding photovoltaic generation and another restricting Vehicle to Grid (V2G) discharge, to isolate the individual effects of renewable support and bidirectional energy exchange. The framework embeds differentiable power flow and battery dynamics within the learning process, enabling physics consistent policy updates. Experiments on a modified IEEE 34 bus network with 150 EV chargers show that removing PV increases operational cost by 6% and voltage violations by 23%, while disabling V2G leads to a 12% cost rise and 17% higher voltage deviation. These results confirm that renewable generation and bidirectional flexibility can be crucial for achieving stable, efficient, and user centric grid operation, demonstrating the potential of physics guided reinforcement learning for scalable and resilient grid control."
+  },
+  {
+   "title": "Physics-Informed Reinforcement Learning Framework for Real-Time Coordination of EV Charging with Renewable Energy Sources",
+   "year": 2026,
+   "doi": "https://doi.org/10.13052/dgaej2156-3306.41411",
+   "venue": "Distributed Generation & Alternative Energy Journal",
+   "cited_by": 0,
+   "abstract": "We made a Physics-Informed Reinforcement Learning (PI-RL) framework to coordinate the charging stations for electric vehicles (EVs) in real time. These stations are powered by different renewable energy sources (RES), like wind and photovoltaic (PV). Our methodology explicitly integrates energy conservation laws, state-of-charge (SOC) dynamics, and inverter limitations into the training process, unlike previous reinforcement learning (RL)-based methodologies that are confined to single-source renewable energy systems (RES) and do not incorporate physical system constraints. We changed the Soft Actor-Critic (SAC) algorithm by adding domain-informed reward shaping and adaptive Lagrangian multipliers in order to make sure that constraints were met. We subsequently structured the EV-RES coordination issue as a physics-constrained Markov Decision Process (MDP). We evaluated the proposed PI-RL approach using actual datasets of solar irradiance, synthetic wind generation profiles, and electric vehicle arrival patterns. In terms of operational profit, safety (constraint violation rate), and use of renewable energy, our approach worked better than traditional SAC and model-based rolling optimization. Also, our model made it much less common for charge-discharge switching to happen, which led to control strategies that are easier to understand and that help the battery last longer. These results show that the PI-RL framework is a reliable and widely applicable way to manage energy in r"
+  },
+  {
+   "title": "Operation of Ultrafast Charging Stations With Virtual Batteries on Voltage Constraints Using Physics-Informed Neural Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/tte.2025.3608233",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 4,
+   "abstract": "The proliferation of battery electric vehicles (BEVs) necessitates advanced ultra-fast charging station (UFCS) operation strategies to satisfy megawatt charging demands with the safety constraints of lithium-ion batteries. While existing virtual battery (VB) models facilitate aggregated charging control, they critically neglect dynamic voltage constraints and voltage variation limits inherent to battery dynamics, leading to overestimated power flexibility regions and operational risks. To mitigate this problem, we propose (1) an event-driven UFCS operation framework integrated with a physics-constrained VB model, where dynamic voltage and voltage variation constraints are rigorously derived from the battery RC model; (2) a physics-informed voltage estimation (PIVE) model that incorporates real-time battery information, including state-of-charge (SOC) and current, is developed to reconstruct voltage-SOC relationships into constraints of the UFCS operation framework. The PIVE, trained on a dataset of 10,000 BEV charging processes involving four types of widely used lithium-ion batteries, demonstrates superior voltage estimation accuracy compared to conventional data-driven models. In case studies, the violation frequency and SOC deviation severity indexes are developed to evaluate the influences of VB models on the BEV charging process. Experiments on the UFCS with 200 to 500 daily BEV arrivals demonstrate the effectiveness of dynamic voltage and voltage variation constraints i"
+  },
+  {
+   "title": "Battery-Degradation-Aware Routing to Nearest Feasible Charging Station for Electric Vehicles: A Simulation-Based Framework",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/wevj17050264",
+   "venue": "World Electric Vehicle Journal",
+   "cited_by": 0,
+   "abstract": "This study presents a simulation-based framework for battery-degradation-aware routing in electric vehicles by integrating physics-informed battery state estimation with decision-level navigation logic. A hybrid estimation approach combining spatially distributed fiber-optic sensing with complementary Kalman filtering strategies is used to reconstruct core temperature, surface temperature, state-of-charge, and mechanical degradation indicators in real time. These estimated states are supplied directly to an intelligent routing module, enabling charging station selection that is both physically reachable and aware of thermal- and health-related constraints. The results demonstrate that routing decisions informed by battery state estimation consistently avoid high-risk thermal and swelling conditions while maintaining range feasibility. By explicitly incorporating mechanical degradation indicators into the routing logic, the framework addresses a key gap in prior studies where battery swelling and navigation were treated independently. Overall, the findings confirm that estimator-driven, degradation-aware routing can improve operational safety, reduce range anxiety, and support more reliable electric vehicle navigation. The study establishes a simulation-first foundation for future experimental validation, adaptive policy refinement, and broader deployment of battery-degradation-aware decision-making in electric mobility systems."
+  },
+  {
+   "title": "Physics-Informed Graph-Based Safe RL with Constraint-Specific Critics for Community Battery Coordination in Distribution Network",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tsg.2026.3736659",
+   "venue": "IEEE Transactions on Smart Grid",
+   "cited_by": 0,
+   "abstract": "High penetrations of distributed energy resources (DERs) and fast-varying electric vehicle (EV) charging intensify voltage and line-limit violations in distribution networks (DNs), making safe, low-cost operation increasingly challenging. This paper proposes a physics-informed safe deep reinforcement learning (DRL) framework for coordinating community battery energy storage systems to mitigate constraint violations while minimizing operating cost. To represent nonlocal spatiotemporal interactions, we develop a dual-level physics-informed graph representation in which line impedance and capacity shape spatial information propagation, while power-balance, voltage-profile, and flow-reconstruction losses regularize the latent state toward control-relevant physical consistency. Building on this representation, we develop Lagrangian Dedicated-Critic PPO (LDCPPO), which implements constraint-specific value decomposition: independent reward and cost critics preserve heterogeneous voltage- and line-loading-related learning signals and combine their advantages only during the Lagrangian policy update. Case studies on DNs with high rooftop photovoltaic penetration and EV charging demonstrate that the proposed method reduces the key voltage-violation degree by up to 80.5% compared with the tested baselines, while also achieving the lowest voltage-violation count and line-overload degree with competitive operating cost."
+  }
+ ]
+}

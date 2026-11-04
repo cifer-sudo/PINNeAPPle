@@ -1,0 +1,92 @@
+{
+ "tag": "C8_itsc_pinn",
+ "expr": "(\"inter-turn\" OR \"interturn\" OR \"turn-to-turn\") (\"short circuit\" OR fault) (\"physics-informed\" OR \"physics-guided\" OR \"model-informed\") (neural OR learning)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22inter-turn%22+OR+%22interturn%22+OR+%22turn-to-turn%22%29+%28%22short+circuit%22+OR+fault%29+%28%22physics-informed%22+OR+%22physics-guided%22+OR+%22model-informed%22%29+%28neural+OR+learning%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 13,
+ "by_year": {
+  "2026": 11,
+  "2025": 2
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Domain Adaptation for Stator Inter-Turn Short Circuit Diagnosis in Synchronous Machines Using Excitation Current Signatures",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/en19092231",
+   "venue": "Energies",
+   "cited_by": 0,
+   "abstract": "Inter-turn short-circuit faults (ITSC) in the stator winding of large synchronous machines are among the most critical failures in power systems and may lead to severe insulation damage and unplanned outages. At the same time, such faults, due to their nature in critical industrial scenarios, make it difficult to collect sufficiently rich labeled datasets for data-driven and deep-learning-based diagnostic methods. Training diagnostic models purely on simulated signals often results in a severe domain shift between the digital twin and the physical machine due to nonlinearities, mechanical noise, and measurement imperfections, causing a significant degradation of performance when the model is deployed in practice. This paper proposes a hybrid diagnostic framework that combines a nonlinear physics-based digital twin of a synchronous machine, formulated using an extended Park\u2019s transformation model with a dedicated fault loop, with a Domain-Adversarial Neural Network (DANN) driven by a minimal physics-guided feature vector composed of the 100 Hz and 200 Hz harmonic amplitudes of the excitation current. Simulated data from the digital twin are used as a labeled source domain, whereas test-bench measurements of the excitation current form an unlabeled target domain, enabling unsupervised sim-to-real transfer of the stator fault resistance. The proposed architecture achieves accurate regression of the stator fault-loop resistance on a laboratory machine without any labeled measurem"
+  },
+  {
+   "title": "Inter-turn Short Circuit Fault Detection for PMSMs Based on Co-Simulation Residuals",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/safeprocess67117.2025.11267811",
+   "venue": "CAA Symposium on Fault Detection, Supervision and Safety for Technical Processes (SAFEPROCESS)",
+   "cited_by": 0,
+   "abstract": "This paper presents a novel framework for detecting inter-turn short-circuit (ITSC) faults for permanent magnet synchronous motors (PMSMs). A high-fidelity co-simulation model integrating PSpice for circuit-level motor dynamics and Simulink for field-oriented control is developed, enabling accurate ITSC fault injection and residual generation. Control and angular position residuals are derived by transfer function analysis, enhancing fault-induced harmonic features. A position-based feature extraction network is proposed to address spectral smearing under variable-speed conditions. The framework employs speed-synchronized resampling, short-time Fourier transform (STFT), and an RNN-convolutional architecture for spatiotemporal feature fusion. Experimental validation demonstrates significant improvements: residual-based detection achieves 89.4% fault detection accuracy (vs. 73.2% with raw signals), while position-based features elevate classification accuracy to 94.4% (vs. 71.4% with traditional methods). The results validate the effectiveness of model-informed residuals and position-based learning in early ITSC fault diagnosis."
+  },
+  {
+   "title": "Predicting stator winding short-circuit faults in induction motors using machine learning: a comparative study",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/s10791-026-09984-0",
+   "venue": "Discover Computing",
+   "cited_by": 4,
+   "abstract": "Abstract Induction motors play a critical role in industrial operations and electric vehicles, yet their reliability is often compromised by stator winding inter-turn short-circuit (ITSC) faults. To mitigate costly downtimes, this study investigates machine learning-based fault detection methods, comparing Artificial Neural Networks (ANN), Long Short-Term Memory (LSTM) networks, and Physics-Informed Neural Networks (PINNs). A benchmark dataset comprising stator current signals, leakage flux, and varying load conditions was employed to train and evaluate the models. While classification across seven fault categories remained challenging, the proposed framework achieved outstanding results in binary classification (healthy vs. faulty). In particular, the LSTM model attained a near-perfect accuracy of 100%, and the PINN model achieved 99.32%, both surpassing the baseline ANN performance of 99.01%. These findings highlight the effectiveness of temporal modeling with LSTM and the added value of incorporating motor physics into PINNs, especially in scenarios with limited data. The results confirm that advanced machine learning models can significantly improve early fault detection, enabling more reliable predictive maintenance and reduced operational costs in industrial systems."
+  },
+  {
+   "title": "Physics informed spectrogram normalization and domain adaptation for intermittent fault diagnosis",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/s42452-026-09263-z",
+   "venue": "Discover Applied Sciences",
+   "cited_by": 0,
+   "abstract": "Intermittent faults are characterized by short duration and random occurrence. They are often missed by machine learning models trained exclusively on permanent fault data. This work proposes a novel physics-informed normalization of spectrograms and unsupervised domain adaptation for efficient diagnosis of intermittent faults using permanent fault data. Domain Adversarial Neural Network (DANN), Wasserstein Distance Guided Representation Learning (WDGRL) and Conditional Domain Adaptation Network (CDAN) are used as the domain adaptation techniques. The approach is validated using a newly developed experimental setup for generating intermittent inter-turn short fault data in a synchronous generator. The results validate the effectiveness of the proposed physics-informed pre-processing and domain adaptation for diagnosing intermittent faults using permanent fault data. Further the results open up possibility of application of various types of domain adaptation techniques to solve many practical problems in the domain of intermittent fault diagnosis"
+  },
+  {
+   "title": "Physics-Guided Machine Learning for Joint Fault Diagnosis in Inverter-Fed Induction Motor Drives",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/en19204830",
+   "venue": "Energies",
+   "cited_by": 0,
+   "abstract": "In intelligent electric vehicle (EV) traction drives, pulse-width modulation and field-oriented control (FOC) introduce broadband harmonics and non-stationary start-up transients. These dynamics obscure incipient inter-turn stator faults (ITSF), particularly when inverter switch failures and measurement interference co-occur. To meet the low-latency requirements of on-board vehicle control units (VCUs), this paper proposes a data-centric, physics-guided diagnosis pipeline. Relying exclusively on current measurements, the framework jointly detects and localises ITSF (1\u20133% severity), open-circuit IGBT faults, and additive white Gaussian noise (5\u201320 dB SNR). A compact 27-dimensional feature vector is constructed by fusing db4 discrete wavelet transform sub-band energies, residualised negative-sequence phasors, \u03b1\u03b2 hodograph descriptors, and harmonic energy ratios. This targeted extraction empowers an ensemble of bagged decision trees to perform lightweight classification suitable for embedded edge hardware. In a simulation-based evaluation across four scenarios (transient and steady state, with and without AWGN), the pipeline achieves cross-validated accuracies of 91.63\u201398.97% and hold-out test accuracies of 93.13\u201398.75%. Unlike traditional threshold detectors that conflate inverter or sensing artefacts with ITSF, this approach achieves subsystem-level localisation across motor, inverter, and sensing hardware, providing the reliable condition monitoring required for cyber\u2013physica"
+  },
+  {
+   "title": "Physics-Guided Cycle-Consistency Training for Stator Winding Fault Diagnosis in Synchronous Generators without Experimental Fault Data",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tte.2026.3727756",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 0,
+   "abstract": "Stator inter-turn short circuit faults in shipboard synchronous generators (SGs) can rapidly escalate from minor insulation degradation into catastrophic failures, threatening the operational continuity and safety of electrified vessels. Therefore, early fault severity estimation of SGs is essential to prevent extensive downtime and ensure the resilience of shipboard power systems. However, the conventional data-driven approaches typically require labeled faulty data, which are rarely obtainable in practical maritime operations. To address this limitation, this article proposes a machine learning framework that enables early fault severity estimation without the need for experimental fault samples for training. The proposed method couples two neural networks through a physics-guided cycle-consistency (PGCC) training strategy. This approach facilitates both high-fidelity synthetic data generation and domain adaptation from analytical simulations to experimental measurements. The framework is validated on an in-house 7.5 kW test bench, demonstrating that the proposed method achieves high-accuracy prediction of unseen experimental fault severities. Ablation studies confirm the contribution of each network component and the PGCC training strategy. Furthermore, a comparative study demonstrates that the proposed method outperforms the tested domain adaptation and generative adversarial networks-based methods, particularly under limited training data."
+  },
+  {
+   "title": "CM-FMINN: Complex Mamba With Fault-Model-Informed Neural Network for PMSM Multifault Diagnosis Under Untrained Torque Conditions",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tie.2026.3743674",
+   "venue": "IEEE Transactions on Industrial Electronics",
+   "cited_by": 0,
+   "abstract": "This article proposes a complex Mamba with fault-model-informed neural network (CM-FMINN) for simultaneous diagnosis of inter-turn short circuit (ITSC) and demagnetization (DM) faults in permanent magnet synchronous machines (PMSMs) under untrained operating torque conditions. Existing methods show degraded diagnostic accuracy when the operating point deviates from the training distribution. The proposed CM-FMINN addresses this limitation through two synergistic components: a Complex Mamba (CM) backbone whose state matrix is physically motivated by the eigenvalue structure of the PMSM dynamics, and a Fault-Model-Informed Neural Network (FMINN) supervision strategy that regularizes the latent space using physics-derived targets from the motor fault model, biasing the learned representation toward features robust to torque variation. Experimental validation on a 2.2-kW interior PMSM with 13 severity-graded fault classes at a fixed operating speed demonstrates 97.4% and 97.0% overall accuracy under interpolation and extrapolation torque protocols, respectively, and the torque generalization is reproduced at a second operating speed. Comparisons with six existing methods confirm that CM-FMINN outperforms all comparison methods in overall accuracy under both protocols. Ablation studies confirm that both components are essential and synergistic: CM captures the motor\u2019s oscillatory dynamics to reduce the trained\u2013untrained gap, while FMINN constrains the representation through physic"
+  },
+  {
+   "title": "Physics-Informed ITSC Diagnosis in Induction Motors via CPT-Based V\u2013I Trajectories",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/ojies.2026.3716567",
+   "venue": "IEEE Open Journal of the Industrial Electronics Society",
+   "cited_by": 0,
+   "abstract": "This article presents a physics-informed representation approach for supervised classification of predefined stator interturn short-circuit (ITSC) severity classes in three-phase induction motors. The term physics-informed is used here in a representation-level sense: physical knowledge is introduced through deterministic input construction, not through physics-constrained neural-network losses or architecture modifications. The proposed formulation constructs voltage\u2013current trajectories from the measured phase currents ( $v$ \u2013 $i_{\\phi }$ ) and from current components obtained with the conservative power theory (CPT). CPT provides a time-domain, projection-based decomposition of the stator-current vector into active ( $\\boldsymbol{i}_{\\mathrm{a}}$ ), reactive ( $\\boldsymbol{i}_{\\mathrm{r}}$ ), unbalanced ( $\\boldsymbol{i}_{\\mathrm{u}}$ ), and void ( $\\boldsymbol{i}_{\\mathrm{v}}$ ) components in $L^{2}[0,T]^{3}$ . Pairing phase voltages with each CPT component yields componentwise trajectory families whose geometry is associated, respectively, with average power transfer, magnetic energy exchange, interphase asymmetry, and residual distortion. At the terminal-variable level, ITSC progression is interpreted as a redistribution of current energy from the balanced active\u2013reactive subspace toward imbalance and distortion subspaces, quantified through $\\mathcal {F}_{\\text{ITSC}}$ and expressed in trajectory deformation, slope variation, phase asymmetry, and loop thickening. The a"
+  },
+  {
+   "title": "Few-Shot Learning for Precise Excitation-Winding Fault Localization in Resolvers",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/icemd68435.2025.11441812",
+   "venue": null,
+   "cited_by": 1,
+   "abstract": "Resolvers play a critical role in rotor-angle sensing for high-performance electric drives, where even small measurement deviations can destabilize control loops and reduce system reliability. Among various failure modes, excitation-winding interturn short-circuit (ITSC) faults are particularly challenging to detect and localize due to their subtle electromagnetic signatures and strong dependence on operating conditions. This paper proposes a physics-informed, few-shot learning framework for precise localization of excitation-winding ITSC faults using minimal labeled data. A validated hybrid resolver model\u201496% faster than full finite-element analysis and within 13% of its accuracy\u2014serves as a high-fidelity data engine to synthesize diverse, labeled fault samples under varying severities and operating conditions. These synthetic signals train a Siamese metric-learning network that operates directly on raw sine-cosine resolver voltages, learning a robust similarity space that generalizes to unseen fault locations with only a few exemplars per class. Experimental and simulation results demonstrate that the proposed approach achieves accurate, noise-tolerant fault localization while dramatically reducing data and computational requirements. By uniting model-based synthesis with few-shot inference, the framework enables scalable, data-efficient, and field-deployable diagnostics for resolver-equipped electric drives."
+  },
+  {
+   "title": "A Hierarchical Differential Transfer Learning Network for BLDCM Fault Diagnosis Across Complex Conditions",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tte.2026.3728894",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 0,
+   "abstract": "The Brushless Direct Current Motor (BLDCM) is widely adopted for electric vehicles due to its high efficiency and reliability. However, speed fluctuations and load changes under cross-operating conditions lead to significant feature distribution drift. This phenomenon severely limits the generalization performance of traditional models. Moreover, existing data-driven solutions face a critical trade-off between diagnostic accuracy and computational efficiency. This often results in models that are either too fragile for dynamic environments or too resource-intensive for edge deployment. To address these challenges, this paper proposes a lightweight Temporal Differential Fusion Attention Neural Network (TDFANN). This network is combined with a physics-informed hierarchical transfer learning strategy to enable efficient inter-turn short-circuit diagnosis under cross-operating conditions. First, the TDFANN integrates a feature decoupling module, a backbone for long-range temporal feature extraction, and a lightweight attention mechanism. Second, a grouped transfer strategy based on parameter sensitivity analysis is introduced. This strategy enables low-data and low-latency adaptation from a single source domain to complex target domains. Finally, experiments on the platform validate the generalization and effectiveness of the model. Experimental results demonstrate that the proposed model achieves a fault diagnosis accuracy of 98.84% under complex operating conditions. With a mod"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "tag": "D_embedded_tc",
+ "expr": "(\"embedded thermocouple\" OR \"instrumented cell\" OR \"core thermocouple\" OR \"in-situ temperature\") (\"lithium-ion\" OR battery) (estimation OR model OR observer)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22embedded+thermocouple%22+OR+%22instrumented+cell%22+OR+%22core+thermocouple%22+OR+%22in-situ+temperature%22%29+%28%22lithium-ion%22+OR+battery%29+%28estimation+OR+model+OR+observer%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 22,
+ "by_year": {
+  "2026": 7,
+  "2020": 4,
+  "2017": 3,
+  "2023": 2,
+  "2025": 2,
+  "2018": 1,
+  "2019": 1,
+  "2022": 1,
+  "2024": 1
+ },
+ "works": [
+  {
+   "title": "Review\u2014Online Monitoring of Internal Temperature in Lithium-Ion Batteries",
+   "year": 2023,
+   "doi": "https://doi.org/10.1149/1945-7111/acd586",
+   "venue": "Journal of The Electrochemical Society",
+   "cited_by": 42,
+   "abstract": "In recent years, fire and explosion accidents caused by high temperature of lithium-ion batteries have become increasingly frequent, and the safety and reliability of batteries have been of great concern. Battery temperature monitoring is an important means to prevent the occurrence of safety accidents, but at present, it mainly focuses on the external temperature and lacks the monitoring of internal temperature changes and measurement of physical parameters of the battery, which makes it difficult to effectively solve the safety problem of the battery. In this paper, starting from the thermal runaway safety problem faced by Li-ion batteries, we analyze the heat generation principle and temperature effect during battery operation, and discuss various methods of internal battery temperature monitoring, including in situ temperature measurement, multi-parameter measurement inside the battery, temperature measurement based on thin-film sensors and distributed fiber optic sensors, and impedance-based temperature estimation. Also, the advantages and disadvantages of different sensing techniques are compared, and the challenges of inserting temperature sensors into real batteries are reviewed. Finally, this paper presents directions and difficulties for future research on internal temperature monitoring of Li-ion batteries."
+  },
+  {
+   "title": "Testing methodologies for automotive lithium-ion batteries: innovation report",
+   "year": 2026,
+   "doi": "https://doi.org/10.82444/warw.33909103",
+   "venue": "Warwick Research Archive Portal (University of Warwick)",
+   "cited_by": 0,
+   "abstract": "This innovation report presents the research conducted as part of an Engineering Doctorate (EngD) programme sponsored by Millbrook Proving Ground UK/UTAC, a global leader in automotive testing services. The research programme aimed to address key challenges in lithium-ion battery testing for electric vehicles, focusing on three main areas: measuring and estimating cell core temperatures, influence of relaxation on accelerated ageing tests and non-invasive degradation diagnostics for blended anode electrodes. In-situ temperature monitoring experiments were conducted using commercially available 21700 cylindrical cells instrumented with embedded temperature sensors. Performance and abuse tests revealed significant temperature differences between the cell core and surface, highlighting the limitations of the established surface temperature measurements. A previously proposed low-cost parameterisation method capable of estimating fundamental cell thermal parameters was validated with instrumented cells, and two lumped parameter thermal models (1D and 2D) were parameterised to estimate the cell core temperature based on the surface temperature measurements. A novel non-invasive diagnostic framework was developed for silicon-graphite blended anodes, expanding on the currently established differential voltage and incremental capacity analysis techniques. The proposed methodology enables the separation and quantification of silicon and graphite active material losses, addressing a ke"
+  },
+  {
+   "title": "Experimental and numerical study of internal pressure of lithium-ion batteries under overheating",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.est.2025.116066",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 19,
+   "abstract": "The safety of lithium-ion batteries remains one of the major public concerns as electric vehicle fires are frequently reported. Currently, understanding the thermal runaway characteristics and mechanisms via the combination of thermal runaway modelling and tests using in-situ internal pressure measurements in 21,700-format lithium-ion cells has rarely been reported. This work presents a lumped thermal runaway model and thermal runaway experimental results with instrumented 21,700-format cells (equipped with pressure/temperature sensors) to understand thermal runaway characteristics and mechanisms based on the evolution of the internal pressure. The internal temperature recorded by an embedded thermocouple reached up to 1008.9 \u00b0C. The average internal pressures for the first peak (vent disc pressure) and the second peak (during thermal runaway) were 20.43 bar and 18.27 bar, respectively. The thermal runaway mechanisms were further explained based on experimental results and the developed model. Finally, the influence of both vent area and gas generation on the evolution of internal pressure was investigated based on the developed model. A larger opening in the bottom vent would decrease the internal pressure, which would reduce the risk of sidewall rupture. The study addressed the key role of bottom vent played during thermal runaway especially the evolution of internal pressure."
+  },
+  {
+   "title": "Investigation of Drying Curves of Lithium\u2010Ion Battery Electrodes with a New Gravimetrical Double\u2010Side Batch Dryer Concept Including Setup Characterization and Model Simulations",
+   "year": 2020,
+   "doi": "https://doi.org/10.1002/ente.202000889",
+   "venue": "Energy Technology",
+   "cited_by": 42,
+   "abstract": "Herein, an experimental setup comprised of a stationary convection dryer (Comb Nozzle Dryer) supplemented by a measurement for gravimetric drying curves is introduced. The drying process of anodes for lithium\u2010ion batteries is experimentally investigated and compared to modeling results, showing very good agreement for the investigated films. Heat transfer coefficients of the issued impinging nozzles are characterized and measured quantitatively and are used for the drying simulation of the gravimetric drying experiments. In situ temperature changes in the films are measured and presented using an infrared camera setup."
+  },
+  {
+   "title": "Internal Temperature Monitoring of Lithium-Ion Batteries Based on Deep Learning With Ultrasonic Multifeature Decoupling",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tie.2026.3720684",
+   "venue": "IEEE Transactions on Industrial Electronics",
+   "cited_by": 0,
+   "abstract": "Accurate monitoring of the internal temperature of lithium-ion batteries (LIBs) is essential for ensuring operational safety and optimizing performance. Nondestructive ultrasonic sensing shows great potential for in situ temperature diagnostics due to its high sensitivity to internal thermophysical variations, but its practical accuracy under dynamic conditions is constrained by two major challenges: the insufficient representational capacity of single-acoustic features and strong nonlinear interference from the state of charge (SOC). To overcome these challenges, this study proposes a hybrid framework that integrates ultrasonic multifeature decoupling with a convolutional neural network (CNN)\u2013bidirectional long short-term memory (BiLSTM)\u2013Attention network for internal temperature estimation of LIBs. Specifically, a comprehensive multidimensional acoustic feature set\u2014comprising ultrasonic time-of-flight (TOF), surface wave amplitude (SWA), and bottom-wave phase shift (BPS)\u2014is first constructed to enhance physical representativeness. A feature-selective decoupling strategy is then applied to isolate temperature-sensitive components from SOC-induced interference. Finally, a hybrid CNN\u2013BiLSTM\u2013Attention architecture is employed to accurately capture the complex nonlinear relationship between the decoupled features and internal temperature. The proposed method achieves an average root mean square error (RMSE) of 0.270${}^{\\boldsymbol{\\circ}}$C in internal temperature estimation ac"
+  },
+  {
+   "title": "A Predictive Model of Design Performance for Lithium-Ion Capacitors",
+   "year": 2019,
+   "doi": null,
+   "venue": "DigiNole (Florida State University)",
+   "cited_by": 0,
+   "abstract": "Recent years have seen developments in lithium-ion capacitor (LIC) technology. However, there has been scant work in mathematical models to predict the performance of LICs. Existing models have focused upon cell degradation over time or simple Randles circuits to describe laboratory work. Experimentalists have determined that LICs\u2019 energy storage capabilities are inversely proportional to their charge or discharge (dis/charge) current. But this phenomenon is not well understood, a serious barrier to LIC market entry as designers struggle to predict the energy storage of LICs under design. This study begins with an experiment on applying lithium to LICs. Then it discusses a study on the cycle life of LICs. Earlier studies had found the degradation of LICs cycled at constant current but different temperatures can be described by an Arrhenius equation. This cycle life study found that when an LIC is cycled at a constant temperature but different cycle currents the results can also be described by an Arrhenius equation, which can be derived from the Arrhenius equation describing degradation as a function of current. The Butler-Volmer equation anticipates these results because it predicts direct proportionality between a LIC\u2019s cycle current and temperature. The predictive model, which comprises the bulk of this research, began with electrochemical impedance spectroscopy experiments (EIS) on an LIC to build a Randles equivalent circuit model (ECM) describing the same LIC. This LIC "
+  },
+  {
+   "title": "Core temperature estimation in a cylindrical lithium-ion cell: analysis code, identifiability study, and scored predictions",
+   "year": 2026,
+   "doi": "https://doi.org/10.5281/zenodo.21976252",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "cited_by": 0,
+   "abstract": "Core temperature of cylindrical lithium-ion cells from surface, ambient and current channels, validated against measured core thermocouples. The quasi-steady relation T_core = T_surf + G (T_surf - T_inf), with G = Bi/2, is calibrated against a core thermocouple on one drive cycle of an A123 26650 cell and reproduces the other with 0.130 K RMSE; a Monte Carlo uncertainty evaluation following JCGM 100 and JCGM 101 gives 0.24 K standard uncertainty at peak gradient. The relation's dynamic error is derived in closed form and does not depend on Bi. Identifying Bi from the surface alone amplifies errors in heat capacity and heat input by 1 + 4/Bi; version 1.0.0 used a heat capacity identified with both thermocouples, which version 1.1.0 corrects. LG M50 21700 cells with embedded thermocouples confirm the relation and show that the calibrated gain depends on the surface-sensor installation. A transient finite-volume inverse and an inverse physics-informed neural network are less accurate on the same information. A companion phase-change study and a Cramer-Rao identifiability analysis are included."
+  },
+  {
+   "title": "Portable in situ temperature\u2010dependent spectroscopy on a low\u2010cost microfluidic platform integrated with a battery\u2010powered thermofoil heater",
+   "year": 2023,
+   "doi": "https://doi.org/10.1002/viw.20220053",
+   "venue": "Open Research (University of Surrey)",
+   "cited_by": 12,
+   "abstract": "A low-cost microfluidic platform integrated with a flexible heater was developed for in situ temperature-dependent spectroscopic measurement at the point of care. After verifying the system by comparing on-chip spectroscopic measurement of methylene blue with the conventional spectroscopy, we demonstrated its applications in temperature-dependent absorption spectroscopy of a model biomolecule, curcumin. The system is portable, battery-powered and requires ultra-low volumes of analytes, which is highly suitable for point-of-care characterization."
+  },
+  {
+   "title": "Battery Internal Temperature Estimation for LiFePO4 Battery Based on Impedance Phase Shift under Operating Conditions",
+   "year": 2017,
+   "doi": "https://doi.org/10.3390/en10010060",
+   "venue": "Energies",
+   "cited_by": 56,
+   "abstract": "An impedance-based temperature estimation method is investigated considering the electrochemical non-equilibrium with short-term relaxation time for facilitating the vehicular application. Generally, sufficient relaxation time is required for battery electrochemical equilibrium before the impedance measurement. A detailed experiment is performed to investigate the regularity of the battery impedance in short-term relaxation time after switch-off current excitation, which indicates that the impedance can be measured and also has systematical decrement with the relaxation time growth. Based on the discussion of impedance variation in electrochemical perspective, as well as the monotonic relationship between impedance phase shift and battery internal temperature in the electrochemical equilibrium state, an exponential equation that accounts for both measured phase shift and relaxation time is established to correct the measuring deviation caused by electrochemical non-equilibrium. Then, a multivariate linear equation coupled with ambient temperature is derived considering the temperature gradients between the active part and battery surface. Equations stated above are all identified with the embedded thermocouple experimentally. In conclusion, the temperature estimation method can be a valuable alternative for temperature monitoring during cell operating, and serve the functionality as an efficient implementation in battery thermal management system for electric vehicles (EVs) a"
+  },
+  {
+   "title": "Improvements to Temperature, Warburg Impedance, and Voltage Computations for a Design-Based Predictive Model for Lithium-Ion Capacitors",
+   "year": 2020,
+   "doi": "https://doi.org/10.4236/msa.2020.116024",
+   "venue": "Materials Sciences and Applications",
+   "cited_by": 1,
+   "abstract": "An earlier study manipulated the Butler-Volmer equation to effectively model a lithium-ion capacitor\u2019s (LIC) energy storage as a function of its constituent components and charge current. However, this model had several shortcomings: computed temperature values were too low, voltage was inaccurate, and the model required Warburg impedance values that were two orders of magnitude higher than experimental results. This study began by analyzing the model\u2019s temperature and voltage computations in order to justify output values. Ultimately, these justifications failed. Therefore, in situ temperature rise was measured during charge cycles. Experimental results indicated that temperature increases minimally during a charge cycle (\u00b7kg-1) temperature increase is negligible. After it was found that LIC temperature change is minimal during a charge cycle, the model accurately computed LIC voltage during the charge cycle and computed Warburg impedance that agreed with values derived from earlier experimental studies, even falling within the measurements\u2019 precision error."
+  }
+ ]
+}

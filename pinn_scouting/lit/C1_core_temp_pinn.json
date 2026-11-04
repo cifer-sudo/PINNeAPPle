@@ -1,0 +1,146 @@
+{
+ "tag": "C1_core_temp_pinn",
+ "expr": "(\"physics-informed\" OR \"physics-guided\" OR hybrid) battery (\"core temperature\" OR \"internal temperature\")",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22physics-informed%22+OR+%22physics-guided%22+OR+hybrid%29+battery+%28%22core+temperature%22+OR+%22internal+temperature%22%29&per-page=15&sort=relevance_score%3Adesc",
+ "count": 139,
+ "by_year": {
+  "2026": 40,
+  "2025": 21,
+  "2024": 12,
+  "2016": 8,
+  "2022": 8,
+  "2023": 8,
+  "2020": 7,
+  "2014": 6,
+  "2019": 6,
+  "2017": 5,
+  "2018": 5,
+  "2021": 4,
+  "2013": 3,
+  "2015": 3,
+  "2012": 2,
+  "2001": 1
+ },
+ "works": [
+  {
+   "title": "Internal Temperature Distribution Estimation of Lithium-ion Batteries with Physics-informed Neural Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/intelec63987.2025.11214734",
+   "venue": "International Telecommunications Energy Conference (INTELEC)",
+   "cited_by": 1,
+   "abstract": "The large-scale deployment of lithium-ion batteries necessitates careful thermal management to ensure safety, performance, and longevity. Internal thermal gradients can pose safety risks and accelerate battery degradation, making internal temperature monitoring both critical and challenging. This paper presents a physics-informed neural network approach that enables accurate, real-time, and high-resolution estimation of the internal temperature distribution within LIBs by integrating sparse sensor measurements with governing physical laws. The proposed framework leverages the complementary strengths of data-driven learning and physics-based modeling, allowing a lightweight neural network to match or even surpass the performance of the full-order model in internal temperature estimation. Furthermore, the proposed method demonstrates robustness to imperfect physics-based prior knowledge, offering a practical and scalable solution for advanced battery thermal monitoring."
+  },
+  {
+   "title": "Data\u2010Driven Hybrid Internal Temperature Estimation Approach for Battery Thermal Management",
+   "year": 2018,
+   "doi": "https://doi.org/10.1155/2018/9642892",
+   "venue": "Complexity",
+   "cited_by": 94,
+   "abstract": "Temperature is a crucial state to guarantee the reliability and safety of a battery during operation. The ability to estimate battery temperature, especially the internal temperature, is of paramount importance to the battery management system for monitoring and thermal control purposes. In this paper, a data\u2010driven approach combining the RBF neural network (NN) and the extended Kalman filter (EKF) is proposed to estimate the internal temperature for lithium\u2010ion battery thermal management. To be specific, the suitable input terms and the number of hidden nodes for the RBF NN are first optimized by a two\u2010stage stepwise identification algorithm (TSIA). Then, the teaching\u2010learning\u2010based optimization (TLBO) algorithm is developed to optimize the centres and widths in every neuron of basis function. After optimizing the RBF NN model, a battery lumped thermal model is adopted as the state function with the EKF to filter out the outliers of the RBF model and reduce the estimation error. This data\u2010driven approach is validated under four different conditions in comparison with the linear NN models. The experimental results demonstrate that the proposed RBF data\u2010driven approach outperforms the other approaches and can be extended to other types of batteries for thermal monitoring and management."
+  },
+  {
+   "title": "A Physics-Informed TCN-LSTM Approach for Interpretable Internal Temperature Estimation of NMC811 Lithium-Ion Batteries",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/batteries12100420",
+   "venue": "Batteries",
+   "cited_by": 0,
+   "abstract": "Accurate internal temperature estimation is of great significance to the safe and dependable working performance of lithium-ion batteries (LIBs). Nevertheless, conventional purely data-driven prediction models suffer from inherent limitations, including insufficient physical interpretability and degraded generalization capability under complex dynamic driving conditions. To tackle this challenge, the present study puts forward a physics-informed temporal convolutional network and long short-term memory (PI-TCN-LSTM) framework for high-precision LIB internal temperature estimation, which depends solely on readily obtainable external sensor measurements. The proposed hybrid architecture synergistically integrates the strengths of two temporal modules: TCN captures fast transient thermal dynamic characteristics, while LSTM effectively mines long-term thermal inertia dependencies of batteries. To make up for the absence of physical constraints in pure data-driven methods, a two-state lumped thermal model is adopted to characterize battery internal heat generation and heat transfer mechanisms. Specifically, the governing thermodynamic differential equations covering irreversible Joule heat, reversible entropic heat, and convective heat dissipation are directly embedded into the network loss function as physical constraints, achieving tight coupling of domain physical laws and data-driven learning. Comprehensive experimental validations on commercial NMC811 batteries demonstrate th"
+  },
+  {
+   "title": "Internal Temperature Field Construction with Physics-Guided Neural Network for Lithium-ion Battery",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tte.2026.3708851",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 0,
+   "abstract": "Accurate estimation of the internal temperature field is critical for the management and safety of lithium-ion batteries. To address this issue, a novel data-physics fusion framework based on a physics-guided neural network (PGNN) is proposed. The main novelty lies in integrating a high-fidelity electrothermal model with a physics-constrained learning framework, enabling reliable and generalizable temperature field reconstruction under limited measurement. Specifically, a three-dimensional (SOC-temperature-current) parameter identification is first conducted to establish an electrothermal coupling model for accurate heat generation estimation across diverse operating conditions. Then, a CNN-based neural network with NTK-based loss balancing method is proposed to effectively reconcile heat conduction PDE constraints with sparse surface temperature measurements, eliminating the need for internal temperature data. In addition, transfer learning strategy is employed to efficiently adapt the model across different conditions with lower cost. It demonstrates strong generalization across different temperatures (15\u00b0C-45\u00b0C) and current conditions (1C, 2C, UDDS), with a root mean square error (RMSE) below 0.3\u00b0C in most cases. Moreover, the computational cost is significantly reduced, with a prediction time of only 0.22s for entire discharge cycle, enabling easy deployment for online applications. This study provides an efficient solution for real-time temperature field estimation, offe"
+  },
+  {
+   "title": "Internal temperature sensing for lithium-ion battery under ultrahigh-rate discharge conditions using physics-informed neural network",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.apenergy.2026.127394",
+   "venue": "Applied Energy",
+   "cited_by": 6,
+   "abstract": ""
+  },
+  {
+   "title": "Core Temperature Estimation of Lithium-Ion Batteries Using Physics Informed Neural Network and Kolmogorov-Arnold Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/iecon58223.2025.11221787",
+   "venue": "Annual Conference of the IEEE Industrial Electronics Society (IECON)",
+   "cited_by": 0,
+   "abstract": "Accurate temperature estimation is crucial for safety and increased lifespan for lithium-ion batteries (LIBs) batteries. LIBs surface and core temperatures can differentiate by up to 10\u00b0C under dynamic current loadings. Considering only surface temperature for battery management contributes to battery degradation and may result in thermal runaway. Therefore, this paper introduces a Physics Informed Neural Network (PINN) utilizing Kolmogorov-Arnold Network (KAN) to estimate surface and core temperature and compares the results with a Feedforward Neural Network and a Long Short-Therm Memory (LSTM) network. The experimental validation at CC-CV and dynamic conditions demonstrated a mean absolute error (MAE) of 0.752 \u00b0C and 0.824 \u00b0C for core and surface temperature, respectively, through CC-CV cycles at a broad range of ambient temperatures. While PINN generally demonstrates the potential for accurately estimating the core and surface temperatures of LIBs, KAN exhibits lower accuracies compared to the LSTM-PINN (0.644 \u00b0C / 0.454 \u00b0C) and FNN-PINN (0.761 \u00b0C / 0.475 \u00b0C) models."
+  },
+  {
+   "title": "Online Internal Temperature Estimation Method for Prismatic Li-Ion Battery Using Embedded Physics-Informed Neural Networks",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/batteries12060189",
+   "venue": "Batteries",
+   "cited_by": 1,
+   "abstract": "Accurate estimation of internal battery temperature is critical for the safety and state-of-health assessment of lithium-ion batteries, yet it remains challenging due to the trade-off between model accuracy and computational feasibility on resource-constrained edge hardware. This work targets stationary large-scale battery energy storage stations (BESS), where ambient temperatures are actively regulated within a narrow range (typically 15\u201335 \u00b0C), and is developed and validated on large-format prismatic LFP cells. We propose ThermaPhysLite, a lightweight physics-informed neural network (PINN) framework with three innovations: (i) a lightweight PINN architecture tailored for edge devices; (ii) integration of a simplified electro\u2013thermal model\u2014a lumped-parameter thermal circuit coupled with the Bernardi heat generation equation\u2014into a multi-scale temporal convolutional network (MS-TCN) through the PINN paradigm; and (iii) real-time online deployment on the ESP32-S3 embedded platform. Ground-truth internal temperatures were obtained via side-drilled thermocouple embedding in disassembled cells. Offline validation under three operating conditions demonstrates RMSE values of 0.15\u20130.20 \u00b0C. Following INT8 quantization (compressed to 84.29 KB), online deployment yields RMSE values of 0.17\u20130.24 \u00b0C with single-cell inference latency of 120 ms, demonstrating practical viability for BMS in large-scale energy storage systems."
+  },
+  {
+   "title": "An Online Internal Temperature Estimation Method for Lithium-Ion Batteries Based on Physics-Informed Neural Networks and Embedded Deployment",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/978-981-95-4294-9_11",
+   "venue": "Lecture notes in electrical engineering",
+   "cited_by": 1,
+   "abstract": ""
+  },
+  {
+   "title": "A novel hybrid data-driven method for li-ion battery internal temperature estimation",
+   "year": 2016,
+   "doi": "https://doi.org/10.1109/control.2016.7737560",
+   "venue": "UKACC International Conference on Control",
+   "cited_by": 19,
+   "abstract": "Accurate battery internal temperature estimation is a key for safe battery operation of electric vehicles. In this paper, a novel hybrid data-driven method combining a linear neural network (NN) model and an extended Kalman filter (EKF) is developed to estimate the internal temperature of a LiFePo4 battery. In order to select the proper input terms of the linear NN model and estimate the associated parameters, a fast recursive algorithm (FRA) is firstly used. Then an EKF with a battery lumped thermal model as the state function is used to filter out the outliers and reduce the errors in estimating the internal temperature based on the linear NN model. The test results from two different experiment data demonstrate that the hybrid method can achieve good estimation accuracy, and the method can be easily applied to other type of batteries."
+  },
+  {
+   "title": "An online hybrid estimation method for core temperature of Lithium-ion battery with model noise compensation",
+   "year": 2022,
+   "doi": "https://doi.org/10.1016/j.apenergy.2022.120037",
+   "venue": "Applied Energy",
+   "cited_by": 48,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-guided feature engineering for sensorless internal temperature estimation of lithium-ion batteries under forced convection in energy storage stations",
+   "year": 2026,
+   "doi": "https://doi.org/10.2139/ssrn.7583671",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Cloud-Edge Deployed Physics-Guided Bi-LSTM Framework for Real-Time Battery Core Temperature Estimation and Thermal Safety Control",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/tte.2025.3649230",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 1,
+   "abstract": "This paper presents a cloud\u2013edge deployed, physics-guided bidirectional long short-term memory (Bi-LSTM)-based framework for real-time core temperature estimation of automotive lithium-ion batteries (LIBs), enabling enhanced thermal safety and predictive control. Unlike existing approaches that rely on surface temperature sensors or offline models, the proposed framework integrates standard BMS signals (voltage, current, surface, and ambient temperature) with physics-guided feature engineering to capture electrothermal dynamics while maintaining low computational cost. The model, trained across a wide range of C-rates, dynamic drive cycles, and ambient conditions, achieves a mean absolute error (MAE) of 0.16\u00b0C and an RMSE of 0.26\u00b0C, outperforming comparable sequence-learning architectures. Realtime validation demonstrates accurate estimation across unseen cells, achieving 0.31\u00b0C MAE and 0.40\u00b0C RMSE at the module level. Integration with CAN-based closed-loop control improves the thermal response by at least 2 minutes compared to state-of-the-art surface-temperature-based strategies. This improvement provides a critical safety margin for preventing thermal runaway. The framework is deployed on both local and cloud servers, achieving latency as low as 30 ms (local) and 85 ms (cloud), with real-time visualization through InfluxDB\u2013Grafana, enabling remote monitoring and long-term data storage."
+  },
+  {
+   "title": "Hybrid Electrical Circuit Model and Deep Learning-Based Core Temperature Estimation of Lithium-Ion Battery Cell",
+   "year": 2022,
+   "doi": "https://doi.org/10.1109/tte.2022.3170359",
+   "venue": "IEEE Transactions on Transportation Electrification",
+   "cited_by": 45,
+   "abstract": "Aiming to improve the reliability and durability of lithium-ion battery (LIB) systems, a hybrid electrical circuit model (ECM) and two-dimensional grid long short-term memory (2-D GLSTM) neural network (NN)-based cell core temperature estimation technique is proposed in this article to leverage their respective strengths. The ECM is used to estimate the total heat generation ($Q$) inside the cell using the measured physical parameters such as voltage, current, and temperature. Furthermore, the value of$Q$and other external measurements are used by the 2-D GLSTM NN (deep learning (DL) approach) to estimate the core temperature of the battery cell. An experimentally validated Kalman filter (KF) and equivalent electrothermal model (EETM) are used to generate a large quantity of training and testing data, under a wide range of dynamic loading and ambient temperature to validate the proposed concept. The results showed that the proposed technique can achieve root-mean-squared-error of less than 1% with unknown test data which is quite satisfactory for practical applications. A comparative study with the state-of-the-art techniques in core temperature estimation showed that the proposed scheme performed better. The highly accurate prediction results under a comprehensive operating condition confirm the reliability and generalization ability with solid robustness to the external uncertainties."
+  },
+  {
+   "title": "Battery Internal Temperature Estimation for LiFePO4 Battery Based on Impedance Phase Shift under Operating Conditions",
+   "year": 2017,
+   "doi": "https://doi.org/10.3390/en10010060",
+   "venue": "Energies",
+   "cited_by": 56,
+   "abstract": "An impedance-based temperature estimation method is investigated considering the electrochemical non-equilibrium with short-term relaxation time for facilitating the vehicular application. Generally, sufficient relaxation time is required for battery electrochemical equilibrium before the impedance measurement. A detailed experiment is performed to investigate the regularity of the battery impedance in short-term relaxation time after switch-off current excitation, which indicates that the impedance can be measured and also has systematical decrement with the relaxation time growth. Based on the discussion of impedance variation in electrochemical perspective, as well as the monotonic relationship between impedance phase shift and battery internal temperature in the electrochemical equilibrium state, an exponential equation that accounts for both measured phase shift and relaxation time is established to correct the measuring deviation caused by electrochemical non-equilibrium. Then, a multivariate linear equation coupled with ambient temperature is derived considering the temperature gradients between the active part and battery surface. Equations stated above are all identified with the embedded thermocouple experimentally. In conclusion, the temperature estimation method can be a valuable alternative for temperature monitoring during cell operating, and serve the functionality as an efficient implementation in battery thermal management system for electric vehicles (EVs) a"
+  },
+  {
+   "title": "Data Analytics for Core Temperature Estimation in Battery Management System for Electric and Hybrid Vehicles",
+   "year": 2023,
+   "doi": "https://doi.org/10.1109/icepe57949.2023.10201536",
+   "venue": "International Conference on Energy, Power and Environment (ICEPE)",
+   "cited_by": 1,
+   "abstract": "Compared to conventional means of transport thatuse fossil fuels, electric vehicles are known to reduce pollution levels as they take power from renewable sources of energy stored in energy storage devices like batteries and fuel cells. Core temperature estimation of batteriesis extremely important inbattery management systems for preventing thermal runaway and ensuring safe operation. In this study, core temperature is estimated using a Kalman filter for two different battery chemistries viz; lithium polymer and lithium iron phosphate using a second-order thermal model. Further, a linear regression model is applied to verify the prediction over the trained and tested dataset. The lithium iron phosphate prediction curvehad a fit of approximately 82-83%, whilelithium polymerhad a fit of 72-82% during the charging and discharging of OCV-SOC variation."
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "tag": "C5_ecm_param_pinn",
+ "expr": "\"physics-informed\" battery (\"equivalent circuit\" OR \"internal resistance\" OR impedance) (identification OR \"parameter\") (aging OR ageing OR \"state of health\")",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%22physics-informed%22+battery+%28%22equivalent+circuit%22+OR+%22internal+resistance%22+OR+impedance%29+%28identification+OR+%22parameter%22%29+%28aging+OR+ageing+OR+%22state+of+health%22%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 26,
+ "by_year": {
+  "2026": 19,
+  "2025": 6,
+  "2023": 1
+ },
+ "works": [
+  {
+   "title": "Physics-informed learning of health-aware equivalent circuit parameter evolution for lithium-ion batteries",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.est.2026.125097",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Aging-Sensitive Equivalent Circuit Model for Predicting the Knee in Lithium-Ion Batteries",
+   "year": 2025,
+   "doi": "https://doi.org/10.1149/1945-7111/adf9cb",
+   "venue": "Journal of The Electrochemical Society",
+   "cited_by": 5,
+   "abstract": "Predicting the lifetime of lithium-ion batteries is a complex task due to the nonlinear and strongly coupled interactions of various aging mechanisms, resulting in nonlinear aging dynamics, referred to as \u201cknee\u201d phenomenon. While physicochemical models capture these dynamics, they are often computationally intensive and involve complex parameter derivation. In this study, a physics-informed equivalent circuit model is proposed. The model integrates key aging modes (loss of active material at positive and negative electrodes and loss of lithium inventory) and describes their kinetics using physics-informed rate laws. Rate expressions for each aging mode include a calendric component (dependent on half-cell potential) and a cycle component (dependent on current and relative volume changes in active materials). The model was calibrated using measured degradation modes of a 3.35 Ah nickel cobalt aluminium oxide and graphite lithium-ion cell, which was aged calendarically and cyclically using a dynamic stress test. The equivalent circuit model demonstrates good agreement with experimental aging data (capacity loss, internal resistance increase) and successfully predicts the knee in the capacity loss curve, where the knee formation could be primarily attributed to the onset of lithium plating. This occurs when increased resistance at the negative electrode causes its potential to drop below plating potential."
+  },
+  {
+   "title": "Physics-informed battery aging and degradation modelling",
+   "year": 2026,
+   "doi": null,
+   "venue": "DR-NTU (Nanyang Technological University)",
+   "cited_by": 0,
+   "abstract": "This research focuses on battery degradation as the growing demand for electric vehicles has driven governments around the world to implement policies promoting low carbon emission transportation, emphasizing the importance of battery performance and environmental concerns. Current electric vehicles are using conventional lithium-ion batteries, which pose safety concerns due to fire hazards and temperature sensitivity. Hybrid Solid State Batteries will be a more practical and viable option, which offers safety and stability. However, there are limited studies on the performance of the battery, and traditional machine learning are insufficient to provide accurate predictions of battery health due to lack in the implementation of physics governing theoretical laws. This study proposes in using Physics Informed Neural Network to predict the rate of degradation of the battery and to understand the degradation mechanisms. The objective is to understand battery performance and behaviour under different situations and differentiate degradation characteristics between mechanically and nonmechanically stressed batteries. The method of use will be Electrochemical Impedance Spectroscopy for measurement of internal impedance, Equivalent Circuit Model fitting for parameter estimation, and PyBaMM for verification. The key findings revealed that mechanically stressed batteries tend to degrade faster than the nonmechanical stressed batteries, where supporting evidence by the EOL estimation r"
+  },
+  {
+   "title": "PLT-GRU: physics-informed lightweight Transformer-GRU algorithm for few-shot battery state-of-health estimation",
+   "year": 2025,
+   "doi": "https://doi.org/10.1088/1361-6501/ae0495",
+   "venue": "Measurement Science and Technology",
+   "cited_by": 6,
+   "abstract": "Abstract Recent years have witnessed increased demands on battery systems due to the rapid global transition to renewable energy storage, necessitating reliable performance analysis under diverse conditions, ranging from low-power edge computing and Internet of Things applications to high-throughput materials screening in digital twin simulations. However, obtaining sufficient, high-quality battery performance and status-monitoring data remains challenging, particularly with limited or noisy datasets. To address this, this article proposes PLT-GRU, a physics-informed lightweight Transformer-GRU algorithm for few-shot battery state-of-health estimation. That is, a few-shot cross-domain adaptation is developed within the Transformer-GRU architecture to reduce the need for a complete set of different target battery degradation data and improve the predictive robustness. In addition, a lightweight architecture is proposed to minimize parameter counts to reduce inference time and memory overhead, reducing reliance on considerable prior knowledge and more intricate architectures. Then, a physics-informed capacity-resistance soft coupling is proposed to gather additional data for model training by capturing crucial physical priors, including internal resistance, constant current charge test, constant voltage charge test, and battery capacity, improving stability and interpretability with few-shot data. In order to demonstrate the advantage of the proposed PLT-GRU, the experiment con"
+  },
+  {
+   "title": "Physics-informed neural networks for degradation diagnosis of lithium-ion batteries via electrochemical impedance spectroscopy",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.est.2025.119127",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 16,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Feature Engineering and Deep Embedded Clustering Framework for Lithium-Ion Battery State-of-Health Analysis",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/aic70896.2026.11716889",
+   "venue": "IEEE World Conference on Applied Intelligence and Computing (AIC)",
+   "cited_by": 0,
+   "abstract": "Accurate identification of battery health states is critical for ensuring the safety, reliability, and longevity of lithium-ion cells in electric vehicles and energy storage systems. Existing approaches predominantly treat feature engineering and clustering as independent stages, limiting the discriminative quality of the learned representations. This paper proposes a unified framework that integrates physics-informed feature engineering, autoencoder-based dimensionality reduction, and Deep Embedded Clustering (DEC) for unsupervised State-of-Health (SoH) analysis of lithium-ion batteries. Seven electrochemically motivated cycle-level features\u2014capacity fade, SoH, degradation rate (\u2206SoH), voltage slope, energy efficiency, mean cycle temperature, and C-rate\u2014are extracted from a real-world cylindrical cell dataset (LR1865SZ, 329,164 records, 101 cycles). A deep autoencoder compresses the \u211d101\u00d77feature matrix into a structured 2-dimensional latent space, reducing reconstruction loss by 72.5% (from 0.8531 to 0.2345 over 50 epochs). DEC jointly refines the latent space and cluster assignments through iterative Kullback\u2013Leibler divergence minimization, identifying three physically meaningful health states: Healthy (mean SoH = 65.49%, 31 cycles), Moderate (41.48%, 28 cycles), and Critical (25.24%, 42 cycles). The framework achieves a Silhouette Score of 0.6063, Davies\u2013Bouldin Index of 0.5799, and Calinski\u2013Harabasz Score of 255.64, with non-overlapping SoH ranges across all three clust"
+  },
+  {
+   "title": "ECMpare: A systematic framework for comparing parameter estimation methods in lithium-ion battery equivalent circuit models",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.ijoes.2026.101527",
+   "venue": "International Journal of Electrochemical Science",
+   "cited_by": 0,
+   "abstract": "Accurate parameter estimation of equivalent circuit models (ECMs) is essential for reliable electrochemical modelling, control, and state of charge (SOC) and state of health (SOH) estimation of lithium-ion batteries. This work presents a systematic comparison framework for least-squares-based parameter estimation methods applied to Thevenin-type ECMs (0RC, 1RC, and 2RC). A physics-informed synthetic dataset is generated using a many-particle Doyle-Fuller-Newman (MP-DFN) model implemented in PyBaMM, ensuring internal electrochemical consistency while enabling controlled variation of operating conditions. The framework integrates multiple estimation strategies, including linear least squares, nonlinear least squares, trust-region optimisation, and sequential least-squares programming, with consistent parameter bounds and initialisation. A cycle-based data segmentation approach is introduced to associate locally estimated parameters with specific operating conditions defined by SOC current, and temperature. SOC is derived from electrode stoichiometry, and the open-circuit voltage (OCV) is reconstructed accordingly, thereby avoiding inconsistencies associated with nominal-capacity-based definitions. The comparative analysis is performed using data generated specifically for this study from a range of dynamic protocols, including HPPC-derived, drive-cycle-based, and application-relevant load profiles, with performance evaluated using voltage-prediction error metrics. The proposed "
+  },
+  {
+   "title": "Battery health diagnosis and prognosis using physics-informed data-driven methods",
+   "year": 2025,
+   "doi": "https://doi.org/10.5287/ora-rdn0qmqxm",
+   "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+   "cited_by": 0,
+   "abstract": "Estimation and prediction of battery state of health (SOH) are critical to ensuring operational safety and reliability. Due to complex degradation mechanisms and the limitations of measurement techniques in real-world environments, accurate SOH estimation and prediction remain challenging. This thesis begins with a review of health diagnosis and prognosis approaches in the battery literature, focusing on two problem settings: battery lifetime prediction and SOH estimation. For battery lifetime prediction, a hierarchical Bayesian regression model is proposed and thoroughly evaluated. The approach is motivated by the observed variation in the relationship between extracted health features and lifetime labels under different aging conditions. Health features are categorized into two groups: individual cell-level features (reflecting intrinsic variability across cells) and population-level features (capturing the influence of cycling conditions on the average behaviour of the population). It is shown how this relationship can be explicitly modeled through a hierarchical dependency between these two types of features. The proposed method is validated using a public dataset consisting of cells subjected to fast-aging experiments, as well as a self-tested dataset that covers more realistic and diverse cycling conditions. For state of health estimation, an aging-aware equivalent circuit model is proposed that combines the flexibility of data-driven methods with a model-based framewor"
+  },
+  {
+   "title": "Physics-augmented state of health estimation for lithium-ion batteries with relaxation voltage features: Evaluation of two lightweight physics-informed neural network -driven approaches",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.est.2026.123974",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 5,
+   "abstract": ""
+  },
+  {
+   "title": "Physics\u2011Informed LSTM and EKF Fusion for Robust Battery SoC Estimation",
+   "year": 2026,
+   "doi": "https://doi.org/10.55525/tjst.1812986",
+   "venue": "Turkish Journal of Science and Technology",
+   "cited_by": 2,
+   "abstract": "Reliable state\u2011of\u2011charge estimation remains difficult in the presence of long\u2011term ageing, open\u2011circuit\u2011voltage hysteresis, and variable operating profiles. We investigate a hybrid estimator that marries a first\u2011principles equivalent\u2011circuit model with sequence learners, coupled through a residual\u2011aware fusion rule. Using a minute\u2011resolution ageing dataset from a lithium\u2011titanate (LTO) cell (236,282 samples across 2500 cycles), we identify phase\u2011aware OCV\u2011to\u2011SoC lookup tables for charge and discharge, deploy an extended Kalman filter with soft half\u2011cycle anchoring, and train LSTM, 1D\u2011CNN, and Transformer baselines with physics\u2011informed regularization promoting Coulomb consistency and concordance between OCV and terminal voltage. The phase\u2011aware EKF attains MAE 0.04535 and RMSE 0.05057 on cycle\u2011wise averages. A stitched LSTM yields MAE 0.03023 and RMSE 0.05192. Residual\u2011weighted fusion of EKF and LSTM produces MAE 0.03049 and RMSE 0.03991, which represents a 21% reduction relative to EKF while preserving the LSTM\u2019s low bias. A coarse parameter sweep over the circuit model confirms expected early\u2011life behavior, namely lower resistance and a longer polarization time constant. At the window level, a physics\u2011informed LSTM achieves MAE 0.0184. The fusion is model\u2011agnostic, requires no retraining of the base estimators, and adds negligible computational overhead. We release phase\u2011aware OCV tables, a trained LSTM, and configuration files for seamless one\u2011command reproduction."
+  }
+ ]
+}

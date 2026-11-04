@@ -1,0 +1,99 @@
+{
+ "tag": "D_nasa_randomized",
+ "expr": "(\"randomized battery usage\" OR \"random walk\" OR \"randomized usage\") (battery OR \"lithium-ion\") (NASA OR \"state of health\" OR \"remaining useful life\")",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22randomized+battery+usage%22+OR+%22random+walk%22+OR+%22randomized+usage%22%29+%28battery+OR+%22lithium-ion%22%29+%28NASA+OR+%22state+of+health%22+OR+%22remaining+useful+life%22%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 56,
+ "by_year": {
+  "2026": 20,
+  "2025": 8,
+  "2024": 7,
+  "2022": 6,
+  "2023": 6,
+  "2020": 4,
+  "2021": 3,
+  "2018": 1,
+  "2019": 1
+ },
+ "works": [
+  {
+   "title": "Event-Window Transformer for Lithium-Ion Battery State-of-Health Estimation Under Randomized Usage",
+   "year": 2026,
+   "doi": "https://doi.org/10.5281/zenodo.23179283",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "cited_by": 0,
+   "abstract": "Reproducibility code, processed modeling data, trained-model outputs, evaluation results, and manuscript figures for event-window Transformer state-of-health estimation using NASA randomized battery usage cells RW9, RW10, and RW11."
+  },
+  {
+   "title": "A novel deep learning framework for state of health estimation of lithium-ion battery",
+   "year": 2020,
+   "doi": "https://doi.org/10.1016/j.est.2020.101741",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 414,
+   "abstract": ""
+  },
+  {
+   "title": "Remaining useful life prediction of lithium-ion batteries based on autoregression with exogenous variables model",
+   "year": 2024,
+   "doi": "https://doi.org/10.1016/j.ress.2024.110485",
+   "venue": "Reliability Engineering & System Safety",
+   "cited_by": 26,
+   "abstract": ""
+  },
+  {
+   "title": "Interpretable event-window transformer for lithium-ion battery state-of-health estimation under randomized usage",
+   "year": 2026,
+   "doi": "https://doi.org/10.1088/2515-7655/aebb63",
+   "venue": "Journal of Physics Energy",
+   "cited_by": 0,
+   "abstract": "Abstract Lithium-ion batteries support a wide range of transportation, energy-storage, and industrial applications, where reliable knowledge of degradation is required for safe operation and effective asset management. State-of-health (SOH) assessment is nevertheless constrained by the intermittent availability of diagnostic capacity measurements during routine operation. This study presents an event-window Transformer for SOH estimation using the National Aeronautics and Space Administration (NASA) Randomized Battery Usage dataset. Random-walk charge and discharge events are represented by interpretable descriptors of voltage response, current loading, duration, charge throughput, energy, power, and local charge\u2013voltage behavior. Chronological windows of 32 consecutive events provide the model input, while reference-discharge capacities supply diagnostic SOH targets through an explicitly defined next-reference labeling strategy. Previous SOH values, previous capacity measurements, future observations, and reference identifiers are excluded from the model inputs. In the primary battery-level transfer experiment, the Transformer was trained on RW9 and RW10 and evaluated on the held-out RW11 cell, achieving an event-window R\u00b2 of 0.9551, a mean absolute error of 2.387, and a root mean square error of 3.039 SOH percentage points. Aggregating the same predictions at diagnostic checkpoints produced an R\u00b2 of 0.9664 and a root mean square error of 2.535 percentage points. Leave-one-c"
+  },
+  {
+   "title": "Processed Event-Level Dataset for Lithium-Ion Battery State-of-Health Estimation Under Randomized Usage (RW9\u2013RW11)",
+   "year": 2026,
+   "doi": "https://doi.org/10.5281/zenodo.23180065",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "cited_by": 0,
+   "abstract": "This record provides the processed event-level dataset used for lithium-ion battery state-of-health estimation under randomized charge-discharge operation. The data were derived from cells RW9, RW10, and RW11 of the NASA Randomized Battery Usage dataset. The archive contains 141,455 extracted random-walk operating events: 47,741 events from RW9, 47,224 events from RW10, and 46,490 events from RW11. Each row represents one charge or discharge operating event and includes event metadata, reference-discharge capacity and state-of-health targets, and engineered descriptors of voltage response, current loading, duration, charge throughput, energy, power, and local charge-voltage behavior. The processed table contains 34 columns, no missing values, no infinite numerical values, and no duplicated battery/event-order identifiers. Reference-discharge capacity and state-of-health columns are diagnostic targets assigned to random-walk events and must not be treated as model input features. The archive also contains the extracted reference-discharge capacity records, source extraction summaries, quality-control results, documentation. The associated source code, model outputs, evaluation results, and figure-generation resources are available through the linked software record and GitHub repository. The underlying source measurements originate from the NASA Randomized Battery Usage dataset. Users should also cite the original NASA dataset when using these processed data."
+  },
+  {
+   "title": "Remaining useful life prediction of lithium-ion batteries: Semimartingale approximation of fractional Poisson process",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.chaos.2025.116982",
+   "venue": "Chaos Solitons & Fractals",
+   "cited_by": 4,
+   "abstract": ""
+  },
+  {
+   "title": "Remaining Useful Life Prediction of Lithium-Ion Batteries: Semimartingale Approximation of Fractional Poisson Process",
+   "year": 2025,
+   "doi": "https://doi.org/10.2139/ssrn.5238413",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Online prognostication of remaining useful life for random discharge lithium-ion batteries using a gamma process model",
+   "year": 2019,
+   "doi": "https://doi.org/10.1109/eurosime.2019.8724567",
+   "venue": "International Conference on Thermal, Mechanical and Multi-Physics Simulation and Experiments in Microelectronics and Microsystems (EuroSimE)",
+   "cited_by": 12,
+   "abstract": "The prediction of remaining useful life (RUL) of lithium-ion batteries is an essential part of the prognostics and health management (PHM) for electric vehicles (EVs). The conventional method to estimate the RUL of batteries based on offline laboratory experiment data may give rise to a considerable amount of error by ignoring the uncertainties occurred in random charge-discharge cycles under operation. To overcome this problem, an online prognostic method based on a gamma process model was presented, and verified by using the experimental data from a set of four batteries test with random discharge recorded by National Aeronautics and Space Administration (NASA). In addition, the probability density function (PDF) and the reliability curve of the batteries were established along with the 0.95 confidence interval to reveal the statistical profile of predicted RULs. Compared to the conventional RUL prediction methods, the proposed method merely requires a small quantity of training data to achieve accurate RUL prediction for randomized usage batteries on EVs."
+  },
+  {
+   "title": "State of Health Estimation of Lithium-Ion Batteries Under Random Walk Operation Based on Probability Density Functions",
+   "year": 2024,
+   "doi": "https://doi.org/10.2139/ssrn.4706895",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 1,
+   "abstract": ""
+  },
+  {
+   "title": "State of Health Estimation of Lithium-Ion Batteries Under Random Walk Operation Based on Probability Density Functions",
+   "year": 2024,
+   "doi": "https://doi.org/10.2139/ssrn.4938994",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  }
+ ]
+}

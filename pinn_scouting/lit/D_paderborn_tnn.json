@@ -1,0 +1,19 @@
+{
+ "tag": "D_paderborn_tnn",
+ "expr": "(\"thermal neural network\" OR \"electric motor temperature\" OR \"deep residual\") (PMSM OR \"permanent magnet\") Paderborn",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22thermal+neural+network%22+OR+%22electric+motor+temperature%22+OR+%22deep+residual%22%29+%28PMSM+OR+%22permanent+magnet%22%29+Paderborn&per-page=6&sort=relevance_score%3Adesc",
+ "count": 1,
+ "by_year": {
+  "2025": 1
+ },
+ "works": [
+  {
+   "title": "OLTEM: Lumped Thermal and Deep Neural Model for PMSM Temperature",
+   "year": 2025,
+   "doi": "https://doi.org/10.3390/ai6080173",
+   "venue": "AI",
+   "cited_by": 10,
+   "abstract": "Background and Objective: Temperature management is key for reliable operation of permanent magnet synchronous motors (PMSMs). The lumped-parameter thermal network (LPTN) is fast and interpretable but struggles with nonlinear behavior under high power density. We propose OLTEM, a physics-informed deep model that combines LPTN with a thermal neural network (TNN) to improve prediction accuracy while keeping physical meaning. Methods: OLTEM embeds LPTN into a recurrent state-space formulation and learns three parameter sets: thermal conductance, inverse thermal capacitance, and power loss. Two additions are introduced: (i) a state-conditioned squeeze-and-excitation (SC-SE) attention that adapts feature weights using the current temperature state, and (ii) an enhanced power-loss sub-network that uses a deep MLP with SC-SE and non-negativity constraints. The model is trained and evaluated on the public Electric Motor Temperature dataset (Paderborn University/Kaggle). Performance is measured by mean squared error (MSE) and maximum absolute error across permanent-magnet, stator-yoke, stator-tooth, and stator-winding temperatures. Results: OLTEM tracks fast thermal transients and yields lower MSE than both the baseline TNN and a CNN\u2013RNN model for all four components. On a held-out generalization set, MSE remains below 4.0 \u00b0C2 and the maximum absolute error is about 4.3\u20138.2 \u00b0C. Ablation shows that removing either SC-SE or the enhanced power-loss module degrades accuracy, confirming th"
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "tag": "C12_magnet_pinn",
+ "expr": "(\"core loss\" OR \"magnetic core\" OR hysteresis) (\"physics-informed\" OR \"physics-guided\") (neural OR learning)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22core+loss%22+OR+%22magnetic+core%22+OR+hysteresis%29+%28%22physics-informed%22+OR+%22physics-guided%22%29+%28neural+OR+learning%29&per-page=8&sort=relevance_score%3Adesc",
+ "count": 159,
+ "by_year": {
+  "2026": 106,
+  "2025": 26,
+  "2024": 12,
+  "2022": 5,
+  "2023": 4,
+  "2020": 2,
+  "2021": 2,
+  "1961": 1
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Meta-Feature-Guided Sequence Learning for Magnetic Core-Loss Prediction",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tmag.2026.3697524",
+   "venue": "IEEE Transactions on Magnetics",
+   "cited_by": 0,
+   "abstract": "Magnetic core loss significantly impacts the efficiency and power density of modern power electronics, necessitating accurate modeling under multidimensional operating conditions. Classical analytical formulations exhibit systematic residuals under non-sinusoidal excitations, whereas purely data-driven models often fail to disentangle static nonlinearities from dynamic hysteresis, leading to physically inconsistent extrapolations. To address these challenges, this work proposes a physics-informed meta-feature\u2013 guided sequence-learning framework. A tree-based learner first extracts a compact structural prior from static variables via leakage-safe out-of-fold predictions to capture high-order nonlinear interactions. This meta-feature then guides a parameter-efficient FDHT-LSTM encoder to model excitation-history-dependent dynamics from flux-density waveforms. Meanwhile, the classical Steinmetz equation is incorporated as a physical anchor through residual learning with Steinmetz-consistency regularization, enforcing physically plausible predictions. Experiments on the MagNet benchmark demonstrate superior predictive accuracy over representative baselines and improved cross-material robustness within the investigated ferrite materials under leave-one-material-out validation."
+  },
+  {
+   "title": "A Physics-Informed Neural Network with Hybrid Architecture for Magnetic Core Loss Prediction Under Complex Conditions",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/magnetochemistry12010007",
+   "venue": "Magnetochemistry",
+   "cited_by": 7,
+   "abstract": "Magnetic core loss is an important indicator for describing the performance of magnetic elements. The traditional physical model has an insufficient performance for predicting the magnetic core loss of magnetic elements under complex conditions such as high temperature, non-sinusoidal waveform, and high frequency. To address this issue, this study proposes a physics-informed neural network (PINN)-based model for magnetic core loss prediction. In particular, this PINN-based model is constructed with a hybrid network architecture as a baseline algorithm, which combines a convolutional long short-term memory network (Conv-LSTM), power spectral density (PSD), and an ensemble learning method (including extreme gradient boosting (XGB), gradient boosting regression (GBR), and random forest (RF)). This design aims to address the complexity of magnetic core loss prediction. Moreover, the Steinmetz equation (SE) is improved to enhance the adaptability under complex conditions, and this improved Steinmetz equation (ISE) is integrated as physical constraints embedded in the neural network for magnetic core loss prediction. Based on the traditional data-driven loss term, the physical residual term is introduced as a regularization constraint to enable the prediction to satisfy both the observed data distribution and physical law. The experimental results show that the PINN-based model has a good prediction performance of magnetic core loss under complex conditions."
+  },
+  {
+   "title": "Convolutional Physics-Informed Neural Networks for Fast Prediction of Core Losses in Axisymmetric Transformers",
+   "year": 2024,
+   "doi": "https://doi.org/10.1109/tmag.2024.3431703",
+   "venue": "IEEE Transactions on Magnetics",
+   "cited_by": 11,
+   "abstract": "In this paper, solutions of the magnetostatic Maxwell\u2019s Equation on parametric axisymmetric transformer geometries are approximated by a convolutional approach on Physics-Informed Neural Networks (ConvPINN). The trained ConvPINN is capable of predicting magnetic vector potentials (MVPs) and magnetic flux densities in a matter of milliseconds for a range of geometries described by a total of 18-20 degrees of freedom (DoF). The combination of ConvPINN with an existing framework for core loss prediction yields a super fast workflow for the approximation of core losses on a wide range of geometric setups. The combination of inference speed and accuracy enables new orders of magnitude for the optimization of transformer designs going forward."
+  },
+  {
+   "title": "Identifying Force-Velocity Hysteresis in Drilling with Physics-Informed Neural Networks",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/978-3-032-29029-8_7",
+   "venue": "Mechanisms and machine science",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Convolutional Physics- Informed Neural Networks for Fast Prediction of Core Losses in Axisymmetric Transformers",
+   "year": 2024,
+   "doi": "https://doi.org/10.1109/cefc61729.2024.10585678",
+   "venue": "Digest of the Fifth Biennial IEEE Conference on Electromagnetic Field Computation",
+   "cited_by": 2,
+   "abstract": "We adapt a convolutional approach on Physics-Informed Neural Networks (PINNs) for solving the magnetostatic Maxwell's Equation on parametric axisymmetric transformer geometries. The trained PINN is capable of solving the physical equations in a matter of milliseconds for arbitrary geometries constrained by a total of 18 degrees of freedom (DoF). The results are analysed with respect to a numerical reference solution based on derived inductances and squared magnetic flux densities as an indication for resulting core losses. The combination of inference speed and accuracy enables new orders of magnitude for the optimization of transformer designs going forward."
+  },
+  {
+   "title": "Convolutional Physics-Informed Neural Networks for Fast Prediction of Core Losses in Axisymmetric Transformers",
+   "year": 2024,
+   "doi": "https://doi.org/10.24406/publica-6285",
+   "venue": "Fraunhofer-Publica (Fraunhofer-Gesellschaft)",
+   "cited_by": 0,
+   "abstract": "In this article, solutions of the magnetostatic Maxwell's equation on parametric axisymmetric transformer geometries are approximated by a convolutional approach on physics-informed neural networks (ConvPINNs). The trained ConvPINN is capable of predicting magnetic vector potentials (MVPs) and magnetic flux densities in a matter of milliseconds for a range of geometries described by a total of 18-20 degrees of freedom (DoFs). The combination of ConvPINN with an existing framework for core loss prediction yields a super fast workflow for the approximation of core losses on a wide range of geometric setups. The combination of inference speed and accuracy enables new orders of magnitude for the optimization of transformer designs going forward."
+  },
+  {
+   "title": "A Physics\u2010Informed Hysteretic Neural Network for Duhem Hysteresis Modeling and Parameters Identification",
+   "year": 2025,
+   "doi": "https://doi.org/10.1002/adts.202500957",
+   "venue": "Advanced Theory and Simulations",
+   "cited_by": 2,
+   "abstract": "Abstract The Duhem model is widely used for modeling hysteresis in smart materials due to its explicit differential equations and accuracy in capturing Preisach\u2010like nonlinearities. However, its non\u2010smooth switching operator presents challenges in parameter identification due to the nonconvex optimization involved. This paper introduces a physics\u2010informed hybrid neural network, namely hysteretic neural network\u2010long short\u2010term memory (HNN\u2010LSTM), for identifying Duhem model parameters and modeling the hysteresis nonlinearity. First, a LSTM network with an expanded input is constructed to describe the nonlinear hysteresis between input and output. The resulting LSTM sub\u2010model achieves universal approximation of the Duhem hysteresis and accurate estimation of the internal state. Second, a physics\u2010informed sub\u2010model, HNN, is then introduced to impose physical constraints on LSTM training by embedding Duhem model parameters into network weights. Then, by minimizing a composite loss combining numerical and physical errors, the model achieves both numerical accuracy and physical consistency. Thus, parameter identification is thereby accomplished by solving the inverse problem of the HNN\u2010LSTM while ensuring consistency with the original differential model. Finally, simulation and experimental results confirm the effectiveness of the proposed method. This approach offers a promising solution for modeling non\u2010smooth systems and estimating their parameters accurately."
+  },
+  {
+   "title": "Physics-Informed Neural Anhysteresis Surrogate for Magneto-Elastic Vector Hysteresis in Device Simulations",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/tmag.2025.3614063",
+   "venue": "IEEE Transactions on Magnetics",
+   "cited_by": 2,
+   "abstract": "In many applications, accurately capturing the magneto-mechanical coupling and dissipative effects at the material level is essential for realistic simulations. Embedding the Simplified Multiscale Model (SMSM) inside an energy-based hysteresis framework yields high fidelity but is computationally intensive for three dimensional finite element (FE) analyses. This paper introduces NNSMSM, a physics-informed multi-task deep neural network that emulates the expensive SMSM operator. A hybrid Latin-hypercube/Sobol sampling strategy efficiently explores the magneto-mechanical loading space. The network is trained with a composite loss that simultaneously fits magnetisation and magnetostrictive strain while enforcing reciprocity and positive definiteness of the susceptibility tensor. The traced TorchScript model is linked to the open source FE software openCFS, replacing the SMSM inside the Vector Play Model (VPM) hysteresis model with zero code changes. The benchmark of a PMSM device simulation shows a speed-up of wall clock time by a factor of 11 while preserving global accuracy of hysteresis losses."
+  }
+ ]
+}

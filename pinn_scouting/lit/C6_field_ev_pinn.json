@@ -1,0 +1,113 @@
+{
+ "tag": "C6_field_ev_pinn",
+ "expr": "(\"physics-informed\" OR \"physics-guided\" OR hybrid) (\"real-world\" OR field OR \"on-board\" OR fleet) (\"electric vehicle\" OR EV) battery (\"state of health\" OR resistance OR degradation)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22physics-informed%22+OR+%22physics-guided%22+OR+hybrid%29+%28%22real-world%22+OR+field+OR+%22on-board%22+OR+fleet%29+%28%22electric+vehicle%22+OR+EV%29+battery+%28%22state+of+health%22+OR+resistance+OR+degradation%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 379,
+ "by_year": {
+  "2026": 135,
+  "2025": 78,
+  "2024": 33,
+  "2023": 19,
+  "2020": 15,
+  "2021": 14,
+  "2015": 13,
+  "2022": 12,
+  "2016": 11,
+  "2017": 11,
+  "2019": 7,
+  "2013": 6,
+  "2018": 5,
+  "2012": 4,
+  "2014": 4,
+  "2002": 2,
+  "2003": 2,
+  "2007": 2,
+  "2010": 2,
+  "1997": 1,
+  "2005": 1,
+  "2006": 1,
+  "2009": 1
+ },
+ "works": [
+  {
+   "title": "A Review of Battery State of Health Estimation Methods: Hybrid Electric Vehicle Challenges",
+   "year": 2020,
+   "doi": "https://doi.org/10.3390/wevj11040066",
+   "venue": "World Electric Vehicle Journal",
+   "cited_by": 265,
+   "abstract": "To cope with the new transportation challenges and to ensure the safety and durability of electric vehicles and hybrid electric vehicles, high performance and reliable battery health management systems are required. The Battery State of Health (SOH) provides critical information about its performances, its lifetime and allows a better energy management in hybrid systems. Several research studies have provided different methods that estimate the battery SOH. Yet, not all these methods meet the requirement of automotive real-time applications. The real time estimation of battery SOH is important regarding battery fault diagnosis. Moreover, being able to estimate the SOH in real time ensure an accurate State of Charge and State of Power estimation for the battery, which are critical states in hybrid applications. This study provides a review of the main battery SOH estimation methods, enlightening their main advantages and pointing out their limitations in terms of real time automotive compatibility and especially hybrid electric applications. Experimental validation of an online and on-board suited SOH estimation method using model-based adaptive filtering is conducted to demonstrate its real-time feasibility and accuracy."
+  },
+  {
+   "title": "HYBRID MODELING OF ELECTRIC VEHICLE BATTERY DEGRADATION USING PHYSICS-INFORMED MACHINE LEARNING",
+   "year": 2025,
+   "doi": "https://doi.org/10.61784/msme3016",
+   "venue": "Journal of Manufacturing Science and Mechanical Engineering",
+   "cited_by": 0,
+   "abstract": "Accurate prediction of battery degradation is crucial for ensuring the reliability, safety, and performance of electric vehicles (EVs). While data-driven machine learning (ML) models offer high prediction accuracy, they often lack physical interpretability, limiting their application in critical systems. On the other hand, purely physics-based models provide deeper understanding but struggle to generalize across diverse operating conditions. This paper proposes a hybrid modeling approach that combines physics-informed machine learning (PIML) with empirical battery aging data to achieve both accuracy and interpretability. The model incorporates domain knowledge\u2014such as electrochemical degradation mechanisms, capacity fade laws, and thermal effects\u2014into a learning framework based on recurrent neural networks (RNNs) and gradient boosting. Experimental results on real-world EV battery datasets demonstrate that the hybrid model outperforms standalone physics-based and ML models in both prediction precision and consistency. This approach opens new avenues for predictive maintenance, extended battery lifespan, and optimized battery usage strategies."
+  },
+  {
+   "title": "Physics-Guided Transfer Learning for Robust State of Health Estimation of Real-World Electric Vehicle Batteries under Cross-Vehicle Domain Shift",
+   "year": 2026,
+   "doi": "https://doi.org/10.2139/ssrn.6626316",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Influence of plug-in hybrid electric vehicle charging strategies on charging and battery degradation costs",
+   "year": 2012,
+   "doi": "https://doi.org/10.1016/j.enpol.2012.04.017",
+   "venue": "Energy Policy",
+   "cited_by": 231,
+   "abstract": ""
+  },
+  {
+   "title": "Laboratory-to-Field State-of-Health Estimation for On-Road EV Battery Using Physics-Informed Domain Adaptation",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tie.2026.3708921",
+   "venue": "IEEE Transactions on Industrial Electronics",
+   "cited_by": 0,
+   "abstract": "Accurate state-of-health (SOH) estimation for on-road electric vehicles (EVs) is fundamentally hindered by the absence of ground-truth SOH labels in field operation, since real-world users rarely perform the complete charge\u2013discharge cycles required for capacity calibration. Although laboratory aging experiments provide well-labeled data, models trained on laboratory data suffer significant accuracy degradation when deployed in the field, due to the distribution shift between standardized laboratory protocols and the highly variable conditions of actual EV operation. To address these challenges, we propose a physics-informed unsupervised domain adaptation framework that transfers SOH estimation capability from labeled laboratory data to unlabeled on-road EV data. A decoupled physics-informed neural network embeds battery capacity degradation dynamics as a physics-consistent regularization term on unlabeled field samples. A pseudoinverse Gram matrix alignment strategy further aligns regression-relevant feature structures between laboratory data and on-road EV data. Experiments on a self-collected laboratory dataset and a public on-road EV dataset show that the proposed framework achieves an average root mean square error below 2.0% and outperforms the state-of-the-art method by over 38.8%."
+  },
+  {
+   "title": "EV-PINN: A Physics-Informed Neural Network for Predicting Electric Vehicle Dynamics",
+   "year": 2024,
+   "doi": "https://doi.org/10.48550/arxiv.2411.14691",
+   "venue": "arXiv (Cornell University)",
+   "cited_by": 1,
+   "abstract": "An onboard prediction of dynamic parameters (e.g. Aerodynamic drag, rolling resistance) enables accurate path planning for EVs. This paper presents EV-PINN, a Physics-Informed Neural Network approach in predicting instantaneous battery power and cumulative energy consumption during cruising while generalizing to the nonlinear dynamics of an EV. Our method learns real-world parameters such as motor efficiency, regenerative braking efficiency, vehicle mass, coefficient of aerodynamic drag, and coefficient of rolling resistance using automatic differentiation based on dynamics and ensures consistency with ground truth vehicle data. EV-PINN was validated using 15 and 35 minutes of in-situ battery log data from the Tesla Model 3 Long Range and Tesla Model S, respectively. With only vehicle speed and time as inputs, our model achieves high accuracy and generalization to dynamics, with validation losses of 0.002195 and 0.002292, respectively. This demonstrates EV-PINN's effectiveness in estimating parameters and predicting battery usage under actual driving conditions without the need for additional sensors."
+  },
+  {
+   "title": "A PHYSICS-INFORMED NEURAL NETWORK DIGITAL TWIN FOR BATTERY STATE ON HEALTH PROGNOSTICS IN EV FLEETS.",
+   "year": 2026,
+   "doi": "https://doi.org/10.5281/zenodo.18627271",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "cited_by": 0,
+   "abstract": "This study presents a novel Digital Twin framework for the prognostics of Battery State of Health (SOH) in Electric Vehicle (EV) fleets. The core of the framework is a Physics-Informed Neural Network (PINN) designed to overcome the limitations of purely data-driven models, which often lack generalize-ability and physical interpretability. By embedding governing equations of battery degradation as soft constraints within its architecture, the PINN leverages operational fleet data while adhering to fundamental electrochemical principles. This hybrid approach enables accurate, real-time SOH estimation and reliable prediction of the battery, Remaining Useful Life (RUL) directly from vehicle telematics. Validation using real-world fleet data demonstrates the model's robustness in managing varied usage patterns and its superior performance over conventional methods. The proposed digital twin provides fleet operators with a scalable, predictive tool for health-aware management, aiming to enhance operational reliability, optimize maintenance, and reduce the total cost of ownership."
+  },
+  {
+   "title": "On-board Thermal Fault Diagnosis of Lithium-ion Batteries For Hybrid Electric Vehicle Application",
+   "year": 2015,
+   "doi": "https://doi.org/10.1016/j.ifacol.2015.10.056",
+   "venue": "IFAC-PapersOnLine",
+   "cited_by": 41,
+   "abstract": "Lithium-ion batteries with different applications in industries need to be safe, reliable and long-lasting energy storage systems. The internal temperature of the battery, which is higher and more critical compared to the surface temperature, can be affected by internal thermal failures. Hence, internal temperature estimation and fault diagnosis is necessary for Lithium-ion batteries to avoid the problem of overheating. In this paper, a Luenberger observer is designed to detect and isolate three main thermal failures in the battery, consisting of thermal runaway, convective cooling resistance fault, and internal thermal resistance fault. The primary residuals generated by the observer are fed into two designed filters to create secondary residuals. By using the secondary residuals, an estimation of effect of the faults on the system can be obtained."
+  },
+  {
+   "title": "Cross-Vehicle Battery Health Estimation Through Physics-Guided Two-Stage Residual Learning From Real-World Electric Vehicle Data",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tii.2026.3725383",
+   "venue": "IEEE Transactions on Industrial Informatics",
+   "cited_by": 0,
+   "abstract": "Battery state-of-health (SOH) estimation from real-world electric vehicle (EV) data remains challenging due to weak SOH supervision, sparse physical features, cross-vehicle distribution shifts, and nonlinear degradation in late-aging regions. Conventional physics-based models often generalize poorly under parameter drift and recalibration requirements, while data-driven models are prone to distribution-shift-induced prediction failure. To address these issues, this article proposes a physics-guided two-stage residual learning framework for robust cross-vehicle battery health estimation using large-scale real-world EV data from vehicles equipped with nickel\u2013cobalt\u2013manganese lithium-ion batteries. First, a missing-aware physical baseline is constructed using a gradient-boosting prior model to primarily learn from dynamic charging statistics and incorporate conditionally available relaxation features without artificial imputation, producing a stable global health prior state. Then, a state-aware Transformer residual network uses the prior health state to learn the remaining systematic residuals and to correct nonlinear residual errors across vehicles and aging regions. The proposed framework is evaluated on real-world battery operation data from 300 EVs, containing approximately 850 million samples. Under a strict leave-one-group-out validation protocol, on 299 sequence-valid folds, the proposed method reduces the global mean absolute error (MAE) from 2.18% to 1.69%, correspondi"
+  },
+  {
+   "title": "Lithium-ion battery state-of-health estimation for fragmented charging segments in real-world fleets",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.apenergy.2026.128377",
+   "venue": "Applied Energy",
+   "cited_by": 1,
+   "abstract": ""
+  }
+ ]
+}

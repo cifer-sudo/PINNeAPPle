@@ -1,0 +1,94 @@
+{
+ "tag": "C9_igbt_pinn",
+ "expr": "(IGBT OR MOSFET OR \"power module\") (aging OR ageing OR \"remaining useful life\" OR degradation) (\"physics-informed\" OR \"physics-guided\")",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28IGBT+OR+MOSFET+OR+%22power+module%22%29+%28aging+OR+ageing+OR+%22remaining+useful+life%22+OR+degradation%29+%28%22physics-informed%22+OR+%22physics-guided%22%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 42,
+ "by_year": {
+  "2026": 24,
+  "2025": 12,
+  "2024": 4,
+  "2023": 2
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Machine Learning for Robust Remaining Useful Life estimation of Power MOSFETs",
+   "year": 2024,
+   "doi": "https://doi.org/10.1109/icphm61352.2024.10626501",
+   "venue": "IEEE Conference on Prognostics and Health Management",
+   "cited_by": 8,
+   "abstract": "Power semiconductor devices are vital in modern power converters, accounting for a fifth of reported system downfalls. Failures in these devices, especially power MOSFETs, pose therefore significant reliability challenges of power converter systems. In this context, predicting the Remaining Useful Life (RUL) of components like power MOSFETs is crucial for effective predictive maintenance. Conventional data-driven approaches using neural networks have been applied to address this challenge. However, due to ignoring the physical properties of the target RUL function, neural networks can result in unreasonable RUL estimates. In response, we propose a Physics-Informed Machine Learning (PIML) implementation that integrates physical laws into the learning process. Our framework not only demonstrates substantial improvements in both precision and physical consistency for the RUL estimation but also exhibits faster learning convergence and better generalizability. This method lays a robust foundation for enhancing RUL prediction in power MOSFETs, addressing critical needs in predictive maintenance for power systems."
+  },
+  {
+   "title": "Remaining Useful Life Prediction of Power MOSFETs Using a Physics-Guided Incremental Autoformer Residual Network",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/jsen.2026.3743425",
+   "venue": "IEEE Sensors Journal",
+   "cited_by": 0,
+   "abstract": "Power metal\u2013oxide\u2013semiconductor field-effect transistors (MOSFETs) are frequently utilized as critical components in power electronic systems, and precise remaining useful life (RUL) prediction is essential for reliability-oriented operation and maintenance. However, practical on-state drain-source resistance (RDS(on))-based RUL prediction is challenging becauseRDS(on) is not only an aging indicator but also a temperature-sensitive electrical quantity. Junction-temperature fluctuation, load-current-induced self-heating, and measurement timing errors cause transient resistance spikes or local nonmonotonic variations. When a fixed end-of-life (EOL) threshold is directly applied to the raw trajectory, these reversible electrothermal disturbances may be mistaken for irreversible degradation, leading to premature threshold crossings and biased EOL estimation. To address this issue, this paper proposes a framework where a physics-guided incremental network (PGIN) is developed as the physical degradation backbone and a bounded Autoformer-based residual learner is introduced to compensate for the remaining prediction bias without using test-segment ground truth. The proposed method is validated on the NASA PCoE \u201c MOSFET Thermal Overstress Aging \u201d dataset. Under the strict 70/30 closed-loop forecasting setting, the proposed PGIN-Autoformer Residual (PGIN-AR) model achieves an average RMSE of 0.652 \u00b1 0.059 m\u03a9, an R\u00b2 of 0.9950 \u00b1 0.0009, a MAPE of 1.275 \u00b1 0.396%, and an average absolute "
+  },
+  {
+   "title": "PDRUL-Net: a novel physics-informed network of power device remaining useful life prediction",
+   "year": 2025,
+   "doi": "https://doi.org/10.1049/icp.2025.3276",
+   "venue": "IET conference proceedings.",
+   "cited_by": 0,
+   "abstract": "Accurate Remaining Useful Lifetime (RUL) prediction for Insulated-Gate Bipolar Transistors (IGBTs) is critical for power device (PD) reliability and health management, yet challenged by the inherent dilemma between the limited generalization of physics-based models and the poor interpretability/heavy data dependency of data-driven approaches. To bridge this gap, this work proposes PDRUL-Net, a novel physics-informed deep learning framework. PDRUL-Net uniquely integrates the Coffin-Manson-Arrhenius (CMA) degradation model into a deep neural network through a physics-guided architecture featuring parametric embedding and multi-stage modeling (junction temperature estimation, thermal stress characterization, and RUL mapping). A composite physics-informed loss function, incorporating monotonicity and boundary constraints, is specifically designed to explicitly enforce physical laws during training. Evaluated on the NASA IGBT dataset, PDRUL-Net demonstrates significantly enhanced statistical consistency and a substantially higher statistical significance level for RUL predictions compared to baseline models. While achieving competitive predictive performance, maintaining comparable or superior accuracy to state-of-the-art methods, the explicit embedding of physical laws primarily yields improved statistical robustness and interpretability. This study presents an intelligent operation and maintenance solution for PDs, leveraging the synergy of physical credibility and data adaptabi"
+  },
+  {
+   "title": "Remaining Useful Life Prediction of Power Electronic Devices With Physics-Informed Deep Learning and Sparse Data",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/tpel.2025.3563853",
+   "venue": "IEEE Transactions on Power Electronics",
+   "cited_by": 9,
+   "abstract": "Accurate remaining useful life (RUL) prediction of silicon carbide (SiC) MOSFETs is essential for ensuring the reliability of power electronic systems, particularly under irradiation environments. However, most existing deep learning approaches rely on densely sampled degradation data, making them unsuitable for sparse-data conditions where degradation observations are limited. To address this limitation, we propose a physics-informed deep learning (PIDL) method designed for sparse RUL prediction. The proposed method integrates total ionizing dose (TID)-induced degradation mechanisms, specifically interface and oxide trapped charge accumulation, into a Transformer-based neural architecture via a customized physicsinformed loss function. This loss explicitly penalizes deviations from on-state resistance degradation trajectories, thereby embedding domain knowledge into the model training process. Subsequently, particle swarm optimization (PSO) is employed to optimize the model hyperparameters. We benchmark our method against a baseline Transformer model without physics-informed components, using four evaluation metrics: mean absolute error (MAE), root mean square error (RMSE), coefficient of determination (R2), and a composite Score. Under 90% data sparsity conditions, the PIDL approach achieves 27.90% reduction in MAE, 26.51% in RMSE, and 22.90% in Score, demonstrating substantial gains in predictive accuracy and reliability. These results highlight the potential of PIDL in ad"
+  },
+  {
+   "title": "Physics-informed Markov chains for remaining useful life prediction of wire bonds in power electronic modules",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.microrel.2025.115644",
+   "venue": "Microelectronics Reliability",
+   "cited_by": 6,
+   "abstract": "This paper presents a new approach to estimate the remaining useful life of a power electronic module where failure is caused by degradation in the wire bonds. The novelty of this work is that estimation is given for each loading cycle as opposed to estimating only the number of cycles to failure. A direct consequence is that one can make predictions on variable loading profiles using the proposed method, whereas classical solutions assume periodic loading, which limits their applicability. Experimental data of failure tests are used alongside finite element simulation to mechanically describe the state of the power module at each cycle. Using these mechanical quantities, we iteratively infer how the degradation evolves using Markov chains until failure. A first machine learning algorithm is used to establish a relationship between the degradation and the health indicator, and a second algorithm is used as a surrogate model for finite element simulations to drastically reduce computational time. Results show high extrapolation and interpolation capabilities of the obtained model, meaning that precise predictions can be obtained from experimental data where loading conditions are significantly different from realistic conditions. \u2022 A remaining useful life estimation pipeline is proposed for real life applications. \u2022 The pipeline is tested for difficult tasks such as extrapolation and interpolation. \u2022 Machine learning is used to leverage knowledge from physics. \u2022 Previously amb"
+  },
+  {
+   "title": "Physics-Informed Condition Monitoring of SiC Power Modules",
+   "year": 2026,
+   "doi": "https://doi.org/10.36001/phmconf.2026.v18i1.4803",
+   "venue": "Annual Conference of the PHM Society",
+   "cited_by": 0,
+   "abstract": "Silicon carbide (SiC) power modules are increasingly deployed in automotive traction inverters, where reliable condition monitoring is essential to prevent in-service failures and reduce maintenance costs. Despite extensive qualification procedures standardized under AQG 324, no consolidated approach exists for in-field health state estimation of SiC devices. Existing methods range from physics-of-failure lifetime models, which lack real-time applicability, to purely data-driven architectures that require large labeled datasets and offer limited generalization, to physics-informed machine learning frameworks that, while promising, remain computationally demanding for embedded deployment. This work addresses condition monitoring of SiC MOSFET power modules assembled with sintered packaging technology, which prevents solder degradation and thereby produces aging behavior qualitatively distinct from previously studied devices. In solder-based modules, the forward voltage drop $V_{DS}$ follows smooth quasi-exponential trajectories driven by progressive solder delamination. With sintered packaging this mechanism is suppressed, and $V_{DS}$ instead exhibits multi-regime degradation profiles; modules are additionally subject to wirebond liftoff events that introduce abrupt, non-monotonic perturbations directly onto $V_{DS}$, posing new challenges for condition monitoring approaches. To address these challenges, we propose a condition monitoring framework integrating three complement"
+  },
+  {
+   "title": "Physics-Informed Calculation of the Remaining Useful Life of a Power Converter: Impact of Reducing the Load Level and of the Damage Accumulation Rule",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/ecceeurope67962.2026.11737800",
+   "venue": "Energy Conversion Congress and Expo Europe (ECCE Europe)",
+   "cited_by": 0,
+   "abstract": "A physics-informed workflow is presented to estimate the remaining useful life of a 1200 V silicon carbide (SiC) power MOSFET module under Worldwide Harmonized Light Vehicles Test Procedure (WLTP) mission profile. An experimentally validated sequential global-local finite-element model couples electro-thermal and thermo-mechanical analyses to compute solder creep strain in the die attach. A surrogate \u201cdigital shadow\u201d with two long short-term memory networks is trained on FE-generated data: one predicts junction temperature from current, the other incremental inelastic die-attach strain from current and its derivative plus the predicted temperature and its derivative. For a 1800 s WLTP segment, temperature and integrated strain histories are reproduced in about 140 s (about 8% of real time). Remaining useful life is evaluated by rainflow counting of the temperature profile, mapping cycle amplitudes to strain ranges and using a Coffin-Manson model with different damage accumulation rules. For repeated WLTP cycles, the Palmgren-Miner rule predicts a lifetime of 554 h; reducing the load once the state of health reaches 20% markedly extends life. Substantial discrepancies among damage accumulation rules are observed."
+  },
+  {
+   "title": "Simple Hybrid Model for Estimating Remaining Useful Life of SiC MOSFETs in Power Cycling Experiments",
+   "year": 2023,
+   "doi": "https://doi.org/10.36001/phmap.2023.v4i1.3744",
+   "venue": "PHM Society Asia-Pacific Conference",
+   "cited_by": 2,
+   "abstract": "Recording and prediction of the accumulated damage, which will eventually lead to the failure of power electronic modules, is an aspect of high importance for power electronic systems design and, in particular, for development of Prognostic and Health Management (PHM) schemes for in-field applications. To this end, this paper presents a simple and cost-effective prognostic method for predicting the remaining useful life (RUL) of TO-247 packaged silicon carbide (SiC) metal-oxide semiconductor field-effect transistors (MOSFETs) subjected to power cycling experiments. The model assumes that the major failure mode is bond-wire lift-off and uses a damage accumulation scheme based on Paris\u2019 crack law. The only inputs to the model are historical data on the average junction temperature swing and the temperature-compensated drain-source ON-state resistance at the peak temperature of the current cycle. Using only these two input values, the model is shown to predict RUL with surprising accuracy for the range of constant current loads determining cycling conditions under which the test data series have been acquired. This work is a first step in an ongoing project towards building more elaborate prognostic schemes for RUL-determination of SiC power MOSFETs in actual working conditions, using physics-informed neural networks (PINNs)."
+  },
+  {
+   "title": "Assessment Of The Degradation Of Igbts Used In Wind Turbine Power Converters By A Method Based On Physics-Informed Transformers",
+   "year": 2026,
+   "doi": "https://doi.org/10.3850/esrel2026061419_esrel26-p30436-cd",
+   "venue": "European Safety and Reliability Conference (ESREL)",
+   "cited_by": 0,
+   "abstract": "Insulated Gate Bipolar Transistors (IGBTs) are key components in modern energy conversion systems such as power grids and wind turbines.Their degradation and failure can lead to significant downtime and maintenance costs.Among various degradation mechanisms, we consider thermal stress, which accelerates material fatigue and increases the IGBT thermal resistance (R th ), and, in turn, reduces heat dissipation efficiency, further increasing junction temperature and promoting failures.This work proposes a method based on physics-informed Transformers for assessing IGBT degradation.It combines features related to IGBT degradation, extracted by relying on physicsbased knowledge with Transformer encoders.A case study about power converters of wind turbines demonstrates that the proposed method outperforms baseline approaches, including DNN, LSTM and CNN models."
+  },
+  {
+   "title": "A Physics-Informed Unsupervised Domain Adaptation Regression Network for Lifetime Prediction of IGBTs",
+   "year": 2024,
+   "doi": "https://doi.org/10.1109/icsmd64214.2024.10920531",
+   "venue": "International Conference on Sensing, Measurement & Data Analytics in the era of Artificial Intelligence (ICSMD)",
+   "cited_by": 0,
+   "abstract": "Deep learning (DL)-based remaining useful life (RUL) prediction methods are widely used in the reliability assessment of power semiconductor devices. However, they oftentimes lack the incorporation of physical constraints and laws, leading to less reliable predictions. Moreover, owing to the heterogeneity, DL models achieve accurate lifetime prediction remains challenging in the unknown domain. To address these limitations, taking the insulated gate bipolar transistors (IGBTs) as example, a physics-informed unsupervised domain adaptation regression network (PI-UDARN) is developed for their RUL prediction. In brief, the aging properties of IGBTs are represented from empirical degradation equations and the corresponding loss function constrains the training process of the network. The deep CORAL domain modeling strategy is used to align the various target and source domains. It can also improve the model's generalization and knowledge matching. Experiments on a laboratory dataset to validate the effectiveness of the proposed PI- UDARN."
+  }
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "tag": "C7_pmsm_temp",
+ "expr": "(\"permanent magnet\" OR PMSM) temperature (\"physics-informed\" OR \"thermal neural network\" OR \"lumped-parameter thermal network\") (neural OR learning)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22permanent+magnet%22+OR+PMSM%29+temperature+%28%22physics-informed%22+OR+%22thermal+neural+network%22+OR+%22lumped-parameter+thermal+network%22%29+%28neural+OR+learning%29&per-page=12&sort=relevance_score%3Adesc",
+ "count": 52,
+ "by_year": {
+  "2026": 21,
+  "2025": 11,
+  "2024": 9,
+  "2023": 6,
+  "2022": 2,
+  "2017": 1,
+  "2019": 1,
+  "2020": 1
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Machine Learning Based Permanent Magnet Synchronous Motor Temperature Estimation",
+   "year": 2023,
+   "doi": "https://doi.org/10.1109/icmee59781.2023.10525605",
+   "venue": "International Conference on Mechanical and Electronics Engineering",
+   "cited_by": 5,
+   "abstract": "Permanent magnet synchronous motor (PMSM) temperature estimation is essential to ensure motor works safely, and the temperature at critical locations needs to be estimated accurately and quickly. To this end, this paper combines data-driven method with physical knowledge to realize an end-to-end trainable temperature calculation framework. Firstly, a lumped parameter thermal network (LPTN) of a PMSM is established by an electromagnetic simulation software, and the simulated thermal parameters like capacitance, resistance, and loss are used as the initial values. Three independent neural networks are incorporated into the framework, and then the simulated parameters are corrected in real time according to working condition and internal temperature distribution. Finally, the temperature is updated through the ordinary differential equations of LPTN. Many physical constraints are considered, and a physics-informed loss term is added into loss function. The effectiveness of the proposed algorithm is verified with measured temperature data, and the final mean absolute error is 1.71\u00b0C, showing that this physics-informed framework can achieve high accuracy, excellent generalization, and robustness even with small dataset that lacks diversity."
+  },
+  {
+   "title": "Temperature Prediction Method of Permanent Magnet Motor Based on GNN-LSTM and Lumped Parameter Thermal Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1007/s42835-025-02421-0",
+   "venue": "Journal of Electrical Engineering and Technology",
+   "cited_by": 1,
+   "abstract": ""
+  },
+  {
+   "title": "Estimating the real-time temperature of a 48V permanent magnet synchronous motor using a thermal neural network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.ecmx.2025.101140",
+   "venue": "Energy Conversion and Management X",
+   "cited_by": 7,
+   "abstract": "Accurate real-time temperature monitoring in electric motors, particularly within the rotor of Permanent Magnet Synchronous Motors (PMSMs), is crucial for enhancing power density and preventing overheating that can lead to irreversible damage. Traditional temperature estimation methods, such as sensor-based techniques and parameter-based models, often face challenges related to accuracy, cost, and scalability. This paper presents a novel approach to real-time temperature estimation in a 48V PMSM using a Thermal Neural Network (TNN) with virtual node integrated into the machine control software. The TNN integrates principles from Lumped Parameter Thermal Networks (LPTNs) with data-driven machine learning to enable precise real-time rotor temperature predictions. The TNN model is trained on measurement data from 36 diverse drive cycles, including both dynamic and steady-state operating conditions. Validation results demonstrate high accuracy, achieving a mean absolute error (MAE) of less than 1.56 \u00b0C. Furthermore, the TNN is successfully implemented on an embedded controller for real-time application. While the model performs reliably across various operating conditions in real-time, some deviations are observed during extended cooldown periods due to limited training data. \u2022 Training and real-time application of a Thermal Neural Network with virtual node. \u2022 Validation under realistic operation on a testbench for electric traction machines. \u2022 The validation results achieve a me"
+  },
+  {
+   "title": "Estimating the Real-Time Temperature of a 48v Permanent Magnet Synchronous Motor Using a Thermal Neural Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.2139/ssrn.5236403",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 1,
+   "abstract": ""
+  },
+  {
+   "title": "Thermal Control of a Permanent Magnet Synchronous Machine with a Thermal Neural Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1109/iccad64771.2025.11099105",
+   "venue": "International Conference on Control, Automation and Diagnosis (ICCAD)",
+   "cited_by": 1,
+   "abstract": "This paper explores the application of a Thermal Neural Network (TNN) with a virtual node for advanced thermal control of a permanent magnet synchronous machine (PMSM). A thermal control scheme can lead to a better utilization of the electric machine power, increasing the achievable efficiency and overload capacity in specific operating areas. In the base-speed area, the utilization of the TNN enables the implementation of a more dynamic and responsive winding temperature-based derating strategy, which enhances safety and increases both efficiency and overload capacity in overload scenarios. In the field-weakening area, the TNN contributes to a reduction in the necessary field-weakening current by adjusting the current depending on the rotor temperature thus resulting in an increase in efficiency in the high-speed low-load area. In this work, the efficiency increase is shown using a Co-Simulation. The TNN is trained using simulation data from MotorCAD across a variety of drive scenarios. Implemented within the control loop of the PMSM, the TNN achieves precise real-time temperature estimation of crucial components, including the permanent magnet and stator. Using these estimated temperatures in real-time for control, the efficiency of the machine can be increased. The findings show the TNN\u2019s capabilities in optimizing thermal management in PMSMs, thus improving both the safety and performance of electric machines in real-time applications. Future work will focus on operating "
+  },
+  {
+   "title": "Study on the Interpretability of Thermal Neural Networks for Permanent Magnet Synchronous Machines",
+   "year": 2026,
+   "doi": "https://doi.org/10.1007/s42154-025-00428-x",
+   "venue": "Automotive Innovation",
+   "cited_by": 5,
+   "abstract": "Abstract Accurately estimating electrical machine temperatures, particularly the magnet temperature, remains a challenging task. Data-driven approaches can be a new method if they offer highly accurate temperature predictions with compact models suitable for real-time embedded systems. This paper presents an investigation on thermal neural networks, a data-driven modeling approach. The main goal of this study is to investigate the benefits and drawbacks of this approach. Firstly, the model architecture and the input dataset from simulations in the ANSYS MotorCAD design software are presented, followed by the training routine. The initial analysis evaluates the best number of nodes for the model, already indicating its strong performance, with a maximum absolute error of the permanent magnet temperature of 1.37 K on an unknown validation dataset. The result of this first analysis is the base model with four internal nodes. This study then explores methods to enhance the physical interpretability of this thermal neural network. Firstly, a sparsing technique reduces the model\u2019s parameters by removing connections that lack physical meaning. Secondly, in an experiment the ambient node is eliminated and a virtual node with constant temperature is introduced to isolate the influence of the ambient node. This model with virtual node has a maximum absolute error of the permanent magnet temperature of 2.75 K and offers faster training with fewer parameters than the base model. The pape"
+  },
+  {
+   "title": "Real-time Temperature Estimation of Permanent Pagnets in a PMSM Using a Hybrid ANN and Lumped-Parameters Thermal Network",
+   "year": 2024,
+   "doi": "https://doi.org/10.1109/icemd64575.2024.10963570",
+   "venue": null,
+   "cited_by": 1,
+   "abstract": "Since Permanent Magnet Synchronous Motors (PMSM) have high popularity in EVs accurate temperature estimation of the Permanent Magnets (PMs) as the most vulnerable components of these motors has a high degree of importance. Lumped Parameter Thermal Network (LPTN) is one of the conventional methods, used for temperature estimation. Despite some merits of this method like simplicity and low computational burden, finding some of the parameters like airgap thermal resistance and updating the parameters during the lifespan in different conditions are still open problems. In this paper, a novel PM temperature estimation method is proposed using both LPTN and Artificial Neural Network (ANN). In this method, equivalent thermal resistances of motor airgap in the LPTN are estimated and updated in realtime using an ANN considering the motor operating conditions. The ANN is trained just once and can be deployed for the rest of the PMSM lifespan. By updating the parameters of the LPTN in real-time, negligible error in the estimation of PM temperature is guaranteed. The effectiveness of the proposed method is validated using a 1.5 kW PMSM prototype. It is shown that compared with the conventional methods in which airgap the resistances of LPTN have been derived analytically, the estimation error is reduced significantly by the proposed method. The results show that the temperature estimation error of this method lies under 0.5 oK frequently with the MSE of 0.05. However, using the considere"
+  },
+  {
+   "title": "A Physics-Informed Neural Network for PMSM Temperature Estimation Under Sparse Sampling Conditions",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/en19153701",
+   "venue": "Energies",
+   "cited_by": 2,
+   "abstract": "Permanent magnet synchronous motors (PMSMs) are widely used in new energy vehicles, electric drive systems, and industrial servo applications. Excessive permanent magnet temperature may lead to magnetic performance degradation or even irreversible demagnetization; therefore, accurate estimation of permanent magnet temperature is of considerable importance. However, existing data-driven methods generally rely heavily on high-frequency measurements, and their prediction accuracy tends to deteriorate under low-frequency sampling conditions. Moreover, purely data-driven models lack explicit physical constraints, which limits their interpretability and generalization capability. To address these issues, this study proposes a physics-informed long short-term memory model for permanent magnet temperature prediction. A physics-based loss function is formulated using the PMSM d\u2013q-axis voltage balance equations, while the d- and q-axis inductances are treated as trainable parameters during network optimization. This design enables the temperature prediction task and the electromagnetic constraints to be optimized jointly. Multi-operating-condition experiments are conducted using a publicly available electric motor temperature dataset, and the proposed model is compared with CNN, GRU, MLP-PINN and TNN models. In addition, experiments involving different downsampling ratios, errors in the high-temperature region, parameter sensitivity, physical parameter identification, and input-feature"
+  },
+  {
+   "title": "Dynamic Thermal Modeling of Permanent Magnet Synchronous Motors using Physics-Informed Neural Networks",
+   "year": 2026,
+   "doi": null,
+   "venue": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+   "cited_by": 0,
+   "abstract": "To prevent component failures like magnet demagnetization and insulation degradation, thermal analysis is important for ensuring electric motors operate within safe temperature limits. While current industrial standards rely on Lumped Parameter Thermal Network (LPTN) models, these often lack the accuracy needed to capture complex thermal dynamics effectively. This thesis investigates whether Physics-Informed Neural Networks (PINNs) can enhance dynamic temperature prediction accuracy in Battery Electric Vehicle propulsion motors compared to traditional LPTNs, with a specific focus on Permanent Magnet Synchronous Motors (PMSM). The performance of a PINN is compared to the Feedforward Neural Network (FNN) foundation model and a 4-node LPTN. Models were trained and evaluated on data from a PMSM motor prototype, utilizing dynamic random walk driving cycles to simulate realistic thermal behavior. To enhance the performance of the PINN, the dataset was enriched with physically relevant features, such as copper and residual losses. Exponentially Weighted Moving Averages were added to capture temporal patterns. The PINN uniquely integrates physics by embedding LPTN derived Ordinary Differential Equations (ODEs) directly into its composite loss function. The results demonstrate that both neural network architectures significantly outperform the traditional LPTN, which exhibited an average Root Mean Square Error (RMSE) of 2.074. The purely data-driven FNN achieved the highest overall pr"
+  },
+  {
+   "title": "Temperature Estimation in Permanent Magnet Synchronous Motor (PMSM) Components using Machine Learning",
+   "year": 2020,
+   "doi": null,
+   "venue": "TRAP@NCI (National College of Ireland)",
+   "cited_by": 4,
+   "abstract": "The ubiquitous adoption of permanent magnet synchronous motors (PMSMs) as the electric motors of choice for traction drive applications especially in manufacturing and the electric vehicle industries birthed the need for monitoring the temperatures of its critical components to control the effects of overheating. In proffering solutions, several techniques have been employed by researchers spanning decades. These include the sensor-based method, methods based on classic thermal theory, electric circuit theory and the hybrid lumped-parameter thermal networks (LPTNs). These however have deficiencies ranging from requiring expertise for efficient modelling to one or the other of lacking interpretability and not meeting reliability requirements. Recent studies have seen an increased application of machine learning techniques to other fields like healthcare with convincing results. In this work, several machine learning (ML) models were evaluated on their estimation error after training on test bench data from a PMSM for the task of predicting the temperatures of the rotor, stator yoke, stator tooth and stator winding. Diverse regression algorithms were applied and include linear regression (LR), k-nearest neighbours (kNN) regression, random forest (RF) and decision tree (DT). It is observed that the stator yoke records the least error of prediction while the pm records the highest and in general, the stator components record the least error compared to the rotor component. Keywor"
+  },
+  {
+   "title": "Transfer Learning for PMSM Multinode Temperature Estimation Using a Shared-Node Thermal Neural Network With Extend-Node Residuals",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/tie.2026.3688721",
+   "venue": "IEEE Transactions on Industrial Electronics",
+   "cited_by": 0,
+   "abstract": "Accurate multinode temperature estimation is crucial for the safe operation of permanent magnet synchronous machines (PMSMs) in more-electric aircraft (MEA) applications. Existing methods rely on large amounts of training data and suffer from poor transferability across PMSMs with different materials. To bridge this gap, this article proposes a shared-node thermal neural network with extend-node residuals (STNN-ERs). STNN captures the shared thermal characteristics of different PMSMs. Shared nodes are selected by a proposed nearest-neighbor assignment method based on similarity analysis. To extend temperature estimation from shared nodes to multiple nodes of a specific PMSM, ERs are introduced. Small networks of ERs are used to compensate for the thermal differences between multiple nodes and shared nodes. Based on the STNN-ERs architecture, transfer learning (TL) across different PMSMs is applied. The proposed method significantly reduces the required training dataset size while achieving improved estimation accuracy. Experimental results show that STNN with TL reduces training data by 60%. Moreover, the proposed method achieves high accuracy across multiple nodes, with a maximum mean square error of 0.68\u00b0C2and a maximum absolute error of 2.8\u00b0C under 16.5-h dataset."
+  },
+  {
+   "title": "Temperature estimation and hot-spot forecasting of PMSM based on physics-informed neural network",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.applthermaleng.2026.132461",
+   "venue": "Applied Thermal Engineering",
+   "cited_by": 1,
+   "abstract": ""
+  }
+ ]
+}

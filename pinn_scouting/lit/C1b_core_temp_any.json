@@ -1,0 +1,52 @@
+{
+ "tag": "C1b_core_temp_any",
+ "expr": "battery (\"core temperature\" OR \"internal temperature\") estimation",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3Abattery+%28%22core+temperature%22+OR+%22internal+temperature%22%29+estimation&per-page=3&sort=relevance_score%3Adesc",
+ "count": 370,
+ "by_year": {
+  "2025": 85,
+  "2026": 81,
+  "2024": 41,
+  "2023": 34,
+  "2022": 25,
+  "2020": 17,
+  "2021": 17,
+  "2015": 12,
+  "2016": 12,
+  "2019": 10,
+  "2013": 9,
+  "2014": 8,
+  "2018": 7,
+  "2017": 5,
+  "2010": 3,
+  "2012": 2,
+  "2009": 1,
+  "2011": 1
+ },
+ "works": [
+  {
+   "title": "Battery internal temperature estimation by combined impedance and surface temperature measurement",
+   "year": 2014,
+   "doi": "https://doi.org/10.1016/j.jpowsour.2014.04.129",
+   "venue": "Journal of Power Sources",
+   "cited_by": 286,
+   "abstract": ""
+  },
+  {
+   "title": "Sensorless Battery Internal Temperature Estimation Using a Kalman Filter With Impedance Measurement",
+   "year": 2015,
+   "doi": "https://doi.org/10.1109/tste.2015.2420375",
+   "venue": "IEEE Transactions on Sustainable Energy",
+   "cited_by": 193,
+   "abstract": "This study presents a method of estimating battery- cell core and surface temperature using a thermal model coupled with electrical impedance measurement, rather than using direct surface temperature measurements. This is advantageous over previous methods of estimating temperature from impedance, which only estimate the average internal temperature. The performance of the method is demonstrated experimentally on a 2.3-Ah lithium-ion iron phosphate cell fitted with surface and core thermocouples for validation. An extended Kalman filter (EKF), consisting of a reduced-order thermal model coupled with current, voltage, and impedance measurements, is shown to accurately predict core and surface temperatures for a current excitation profile based on a vehicle drive cycle. A dual-extended Kalman filter (DEKF) based on the same thermal model and impedance measurement input is capable of estimating the convection coefficient at the cell surface when the latter is unknown. The performance of the DEKF using impedance as the measurement input is comparable to an equivalent dual Kalman filter (DKF) using a conventional surface temperature sensor as measurement input."
+  },
+  {
+   "title": "Real-time estimation of battery internal temperature based on a simplified thermoelectric model",
+   "year": 2015,
+   "doi": "https://doi.org/10.1016/j.jpowsour.2015.10.052",
+   "venue": "Journal of Power Sources",
+   "cited_by": 177,
+   "abstract": ""
+  }
+ ]
+}

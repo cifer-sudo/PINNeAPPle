@@ -1,0 +1,80 @@
+{
+ "tag": "C4_aging_law_pinn",
+ "expr": "(\"physics-informed\" OR \"physics-guided\") battery (\"calendar aging\" OR \"calendar ageing\" OR \"SEI growth\" OR Arrhenius) (lifetime OR degradation OR capacity)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22physics-informed%22+OR+%22physics-guided%22%29+battery+%28%22calendar+aging%22+OR+%22calendar+ageing%22+OR+%22SEI+growth%22+OR+Arrhenius%29+%28lifetime+OR+degradation+OR+capacity%29&per-page=8&sort=relevance_score%3Adesc",
+ "count": 49,
+ "by_year": {
+  "2026": 33,
+  "2025": 7,
+  "2023": 4,
+  "2024": 3,
+  "2020": 1,
+  "2022": 1
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Optimal Experiment Design of Calendar Aging Tests and Sensitivity Analysis for SEI Parameters Estimation in Lithium-ion Batteries",
+   "year": 2023,
+   "doi": "https://doi.org/10.1016/j.ifacol.2023.12.062",
+   "venue": "IFAC-PapersOnLine",
+   "cited_by": 6,
+   "abstract": "This paper focuses on sensitivity analysis and optimal experiment design for calendar aging tests tofind SEI (solid-electrolyte interface) degradation parameters. This parameterization facilitates predicting theLi-ion battery end-of-life. To this end, a physics-based model of SEI layer is used to develop a closed formsolution for loss of Lithium inventory during calendar aging. This model is shown to match experimental data.Further, the developed model is used to find the sensitivity of LLI (loss of Lithium inventory) to SEIparameters in diffusion-limited and kinetically limited SEI patterns.Through this sensitivity analysis, we show that in the kinetically limited case, performing calendar aging testsat high SOCs gives the most accurate results. For the diffusion limited case, we use optimal experiment designtechniques to find the optimal calendar aging SOCs. It is also shown that, these optimal SOC values result inhigher accuracy estimations compared to sub-optimal SOCs."
+  },
+  {
+   "title": "PiDDM: Physics-Informed Differentiable Degradation Modeling for Lithium-Ion Battery State-of-Health Prediction",
+   "year": 2026,
+   "doi": "https://doi.org/10.2139/ssrn.7213804",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Hybrid physics-informed machine learning framework for calibration-free degradation prediction of lithium-ion batteries",
+   "year": 2026,
+   "doi": "https://doi.org/10.1038/s41598-026-56439-z",
+   "venue": "Scientific Reports",
+   "cited_by": 3,
+   "abstract": "Lithium-ion battery degradation prediction traditionally requires chemistry-specific laboratory calibration, limiting scalability across diverse operating conditions and cathode materials. This work proposes a Hybrid Physics-Informed Machine Learning Degradation Model (PIML-DM) that enables calibration-free and physics-guided SoH prediction without chemistry-specific laboratory parameterization using only operational telemetry. The framework integrates a dual-branch architecture in which an LSTM network learns nonlinear aging residuals, while a physics-constrained loss enforces Arrhenius temperature kinetics, W\u00f6hler fatigue stress, and strict monotonicity. To rigorously evaluate cross-chemistry robustness, the framework is trained on the NASA LCO dataset, validated on the Oxford NCA dataset, and benchmarked using a locally acquired LFP dataset. Despite the substantially different voltage signatures and degradation pathways across these chemistries, the PIML-DM achieves sub-0.5% RMSE and maintains physically consistent SoH trajectories without prior calibration. The results demonstrate that shared physics-guided degradation priors enable robust generalization across previously unseen battery chemistries, including LFP systems, while substantially reducing the need for chemistry-specific laboratory characterization and calibration procedures. This establishes the PIML-DM as a scalable, deployment-ready prognostic solution for grid-storage and EV BMS applications."
+  },
+  {
+   "title": "PiDDM: Physics-Informed Differentiable Degradation Modeling for Lithium-Ion Battery State-of-Health Prediction",
+   "year": 2026,
+   "doi": "https://doi.org/10.48550/arxiv.2607.29095",
+   "venue": "arXiv (Cornell University)",
+   "cited_by": 0,
+   "abstract": "Accurate prediction of lithium-ion battery state of health (SOH) is essential for reliable energy storage operation. However, purely data-driven models may generalize poorly across cycling protocols and produce physically implausible behavior during long-term extrapolation. We developed a physics-informed differentiable degradation modeling framework (PiDDM) for battery SOH prediction. PiDDM incorporates empirical Arrhenius degradation kinetics associated with solid electrolyte interphase growth and loss of lithium inventory into the training objective, encouraging physically consistent capacity fade under diverse operating conditions. The framework was evaluated using a public dataset of 55 batteries cycled under six operating protocols. PiDDM achieved the lowest average prediction error among the evaluated models and substantially reduced mean squared error relative to a multilayer perceptron and a baseline physics-informed neural network. For extrapolation, the models were trained on the first 90% of each battery's cycle life and evaluated on the unseen final 10%. PiDDM captured accelerated end-of-life degradation while avoiding the nonphysical capacity regeneration produced by the baseline models. These results show that incorporating degradation physics into neural network training improves predictive accuracy and physical consistency, providing a promising approach for practical battery health monitoring."
+  },
+  {
+   "title": "Physics-informed machine learning model for battery state of health prognostics using partial charging segments",
+   "year": 2022,
+   "doi": "https://doi.org/10.1016/j.ymssp.2022.109002",
+   "venue": "Mechanical Systems and Signal Processing",
+   "cited_by": 147,
+   "abstract": ""
+  },
+  {
+   "title": "A generic physics-informed neural network framework for lithium-ion batteries state of health estimation",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.energy.2025.137215",
+   "venue": "Energy",
+   "cited_by": 72,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Design of Hybrid Pulse Power Characterization Tests for Rechargeable Batteries",
+   "year": 2024,
+   "doi": "https://doi.org/10.1149/1945-7111/ad4394",
+   "venue": "Journal of The Electrochemical Society",
+   "cited_by": 29,
+   "abstract": "Industry-standard diagnostic methods for rechargeable batteries, such as hybrid pulse power characterization (HPPC) tests for hybrid electric vehicles, provide some indications of state of health (SoH), but lack a physical basis to guide protocol design and identify degradation mechanisms. We develop a physics-based theoretical framework for HPPC tests, which are able to accurately determine specific mechanisms for battery degradation in porous electrode simulations. We show that voltage pulses are generally preferable to current pulses, since voltage-resolved linearization more rapidly quantifies degradation without sacrificing accuracy or allowing significant state changes during the measurement. In addition, asymmetric amounts of information gain between charge /discharge pulses are found from differences in electrode kinetic scales. We demonstrate our approach of physics-informed HPPC on simulated Li-ion batteries with nickel-rich cathodes and graphite anodes. Multivariable optimization by physics-informed HPPC rapidly determines kinetic parameters that correlate with degradation phenomena at the anode, such as solid-electrolyte interphase (SEI) growth and lithium plating, as well as at the cathode, such as oxidation-induced cation disorder. If validated experimentally, standardized voltage protocols for HPPC tests could play a pivotal role in expediting battery SoH assessment and accelerating materials design by providing new electrochemical features for interpretable ma"
+  },
+  {
+   "title": "Physics-Informed Digital Twin Model for Lithium-Ion Batteries",
+   "year": 2025,
+   "doi": "https://doi.org/10.1149/ma2025-023480mtgabs",
+   "venue": "ECS Meeting Abstracts",
+   "cited_by": 1,
+   "abstract": "Lithium-ion batteries (LiBs) are a reliable alternative for transportation sector electrification due to their stable specific capacity and reliability [1, 2]. LiBs, with graphitic anodes, are popular due to their high energy density and low self-discharge, but they lack desirable performance during rapid charging. Due to the closer open circuit potential (vs. Li + /Li) of graphite, Li + ions in the electrolyte (LiPF 6 ) are reduced on the graphite electrode, forming a stable and irreversible solid electrolyte interphase (SEI) layer [3]. This layer grows and becomes much thicker during service due to the continuous deposition of the reaction product. During fast charging (e.g., > 1C), overcharging, or charging at low temperatures, slow anodic kinetics can lead to Li + ion accumulation near the anode surface, increasing the likelihood of lithium plating [4]. Some parts of plated lithium undergo irreversible reactions and are unavailable for further cycling, resulting in a rapid capacity loss and, in some cases, damage to the separator, leading to thermal runaway of the cell [5]. In order to enhance design safety, it is crucial to incorporate lithium plating-induced failure into the battery model for an accurate assessment of the cell's overall health. Previous research also shows variation in plating tendency with the aging of cells [6, 7]. A physics-informed model that includes various irreversible degradation mechanisms may forecast the cumulative impact of multiple fast cha"
+  }
+ ]
+}

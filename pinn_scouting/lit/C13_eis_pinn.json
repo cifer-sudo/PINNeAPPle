@@ -1,0 +1,80 @@
+{
+ "tag": "C13_eis_pinn",
+ "expr": "(\"physics-informed\" OR \"physics-guided\") (\"impedance spectroscopy\" OR EIS OR \"distribution of relaxation times\") battery",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%28%22physics-informed%22+OR+%22physics-guided%22%29+%28%22impedance+spectroscopy%22+OR+EIS+OR+%22distribution+of+relaxation+times%22%29+battery&per-page=8&sort=relevance_score%3Adesc",
+ "count": 57,
+ "by_year": {
+  "2026": 45,
+  "2025": 6,
+  "2023": 2,
+  "2024": 2,
+  "2020": 1,
+  "2022": 1
+ },
+ "works": [
+  {
+   "title": "Physics-Informed Deep Learning for Lithium-Ion Battery Diagnostics Using Electrochemical Impedance Spectroscopy",
+   "year": 2023,
+   "doi": "https://doi.org/10.1016/j.rser.2023.113807",
+   "venue": "Renewable and Sustainable Energy Reviews",
+   "cited_by": 59,
+   "abstract": ""
+  },
+  {
+   "title": "Online Passive Electrochemical Impedance Spectroscopy Acquisition of Parallel Battery Modules and Branch Eis Estimation Based on Physics-Informed Neural Networks",
+   "year": 2024,
+   "doi": "https://doi.org/10.2139/ssrn.5056769",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-informed neural networks for degradation diagnosis of lithium-ion batteries via electrochemical impedance spectroscopy",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.est.2025.119127",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 16,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Neural Network for Anomaly Detection in Second-Life EV Batteries via Electrochemical Impedance Spectroscopy",
+   "year": 2026,
+   "doi": "https://doi.org/10.1109/seai70065.2026.11751124",
+   "venue": null,
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "A trustworthy pipeline for data-driven estimation of lithium-ion battery electrochemical impedance spectroscopy using a Physics-Guided Neural Network",
+   "year": 2025,
+   "doi": "https://doi.org/10.1016/j.est.2025.116454",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 11,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-informed transfer learning for multi-temperature state of health estimation of lithium-ion batteries using electrochemical impedance spectroscopy",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.est.2026.124621",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-Informed Neural Network Integrated Electrochemical Impedance Spectroscopy for Non-invasive Temperature Mapping of Large-Format LiFePO 4 Batteries",
+   "year": 2026,
+   "doi": "https://doi.org/10.1088/1742-6596/3214/1/012066",
+   "venue": "Journal of Physics Conference Series",
+   "cited_by": 0,
+   "abstract": "Abstract The rapid expansion of renewable energy integration requires large-format lithium iron phosphate batteries with higher capacity and extended lifetime, which also introduces new safety and monitoring challenges. Internal temperature is a key determinant of battery performance, degradation, and safety, yet conventional methods such as embedded thermocouples or thermal simulations are impractical for large cells. Here, we present a non-invasive strategy using electrochemical impedance spectroscopy to reconstruct internal temperature. By integrating equivalent circuit model and distribution of relaxation times with mutual information-based frequency selection, we establish reliable impedance\u2013temperature correlations. Furthermore, a physics-informed neural network embedding Arrhenius constraints improves accuracy, reducing prediction error to 1.092 \u00b0C. The method is validated not only at the single-cell level but also scaled to a 30-cell module while maintaining high precision. This impedance-based thermal mapping provides a scalable, accurate, and non-destructive tool for monitoring large-capacity lithium iron phosphate batteries, with potential to enhance the safety, reliability, and intelligent thermal management of grid-scale energy storage systems."
+  },
+  {
+   "title": "Physics-Informed Multi-Task Learning with Equivalent Circuit Modeling for EIS-Based Battery State Estimation",
+   "year": 2026,
+   "doi": "https://doi.org/10.2139/ssrn.7570662",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  }
+ ]
+}

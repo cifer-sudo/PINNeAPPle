@@ -1,0 +1,58 @@
+{
+ "tag": "C3_soh_pinn",
+ "expr": "\"physics-informed\" battery (\"state of health\" OR capacity OR degradation)",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3A%22physics-informed%22+battery+%28%22state+of+health%22+OR+capacity+OR+degradation%29&per-page=5&sort=relevance_score%3Adesc",
+ "count": 833,
+ "by_year": {
+  "2026": 545,
+  "2025": 181,
+  "2024": 48,
+  "2023": 34,
+  "2022": 12,
+  "2021": 6,
+  "2020": 5,
+  "2018": 1
+ },
+ "works": [
+  {
+   "title": "Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis",
+   "year": 2024,
+   "doi": "https://doi.org/10.1038/s41467-024-48779-z",
+   "venue": "Nature Communications",
+   "cited_by": 902,
+   "abstract": "Accurate state-of-health (SOH) estimation is critical for reliable and safe operation of lithium-ion batteries. However, reliable and stable battery SOH estimation remains challenging due to diverse battery types and operating conditions. In this paper, we propose a physics-informed neural network (PINN) for accurate and stable estimation of battery SOH. Specifically, we model the attributes that affect the battery degradation from the perspective of empirical degradation and state space equations, and utilize neural networks to capture battery degradation dynamics. A general feature extraction method is designed to extract statistical features from a short period of data before the battery is fully charged, enabling our method applicable to different battery types and charge/discharge protocols. Additionally, we generate a comprehensive dataset consisting of 55 lithium-nickel-cobalt-manganese-oxide (NCM) batteries. Combined with three other datasets from different manufacturers, we use a total of 387 batteries with 310,705 samples to validate our method. The mean absolute percentage error (MAPE) is 0.87%. Our proposed PINN has demonstrated remarkable performance in regular experiments, small sample experiments, and transfer experiments when compared to alternative neural networks. This study highlights the promise of physics-informed machine learning for battery degradation modeling and SOH estimation."
+  },
+  {
+   "title": "Physics-Informed Neural Networks for State of Health Estimation in Lithium-Ion Batteries",
+   "year": 2023,
+   "doi": "https://doi.org/10.1149/1945-7111/acf0ef",
+   "venue": "Journal of The Electrochemical Society",
+   "cited_by": 109,
+   "abstract": "One of the most challenging tasks of modern battery management systems is the accurate state of health estimation. While physico-chemical models are accurate, they have high computational cost. Neural networks lack physical interpretability but are efficient. Physics-informed neural networks tackle the aforementioned shortcomings by combining the efficiency of neural networks with the accuracy of physico-chemical models. A physics-informed neural network is developed and evaluated against three different datasets: A pseudo-two-dimensional Newman model generates data at various state of health points. This dataset is fused with experimental data from laboratory measurements and vehicle field data to train a neural network in which it exploits correlation from internal modeled states to the measurable state of health. The resulting physics-informed neural network performs best with the synthetic dataset and achieves a root mean squared error below 2% at estimating the state of health. The root mean squared error stays within 3% for laboratory test data, with the lowest error observed for constant current discharge samples. The physics-informed neural network outperforms several other purely data-driven methods and proves its advantage. The inclusion of physico-chemical information from simulation increases accuracy and further enables broader application ranges."
+  },
+  {
+   "title": "Battery state-of-health diagnostics during fast cycling using physics-informed deep-learning",
+   "year": 2023,
+   "doi": "https://doi.org/10.1016/j.jpowsour.2023.233582",
+   "venue": "Journal of Power Sources",
+   "cited_by": 67,
+   "abstract": ""
+  },
+  {
+   "title": "Physics-informed machine learning model for battery state of health prognostics using partial charging segments",
+   "year": 2022,
+   "doi": "https://doi.org/10.1016/j.ymssp.2022.109002",
+   "venue": "Mechanical Systems and Signal Processing",
+   "cited_by": 147,
+   "abstract": ""
+  },
+  {
+   "title": "PiDDM: Physics-Informed Differentiable Degradation Modeling for Lithium-Ion Battery State-of-Health Prediction",
+   "year": 2026,
+   "doi": "https://doi.org/10.48550/arxiv.2607.29095",
+   "venue": "arXiv (Cornell University)",
+   "cited_by": 0,
+   "abstract": "Accurate prediction of lithium-ion battery state of health (SOH) is essential for reliable energy storage operation. However, purely data-driven models may generalize poorly across cycling protocols and produce physically implausible behavior during long-term extrapolation. We developed a physics-informed differentiable degradation modeling framework (PiDDM) for battery SOH prediction. PiDDM incorporates empirical Arrhenius degradation kinetics associated with solid electrolyte interphase growth and loss of lithium inventory into the training objective, encouraging physically consistent capacity fade under diverse operating conditions. The framework was evaluated using a public dataset of 55 batteries cycled under six operating protocols. PiDDM achieved the lowest average prediction error among the evaluated models and substantially reduced mean squared error relative to a multilayer perceptron and a baseline physics-informed neural network. For extrapolation, the models were trained on the first 90% of each battery's cycle life and evaluated on the unseen final 10%. PiDDM captured accelerated end-of-life degradation while avoiding the nonphysical capacity regeneration produced by the baseline models. These results show that incorporating degradation physics into neural network training improves predictive accuracy and physical consistency, providing a promising approach for practical battery health monitoring."
+  }
+ ]
+}

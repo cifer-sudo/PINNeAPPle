@@ -1,0 +1,98 @@
+{
+ "tag": "C1c_coretemp_ageing",
+ "expr": "battery (\"core temperature\" OR \"internal temperature\") (ageing OR aging) (estimation OR observer) (\"thermal model\" OR \"physics\")",
+ "url": "https://api.openalex.org/works?filter=title_and_abstract.search%3Abattery+%28%22core+temperature%22+OR+%22internal+temperature%22%29+%28ageing+OR+aging%29+%28estimation+OR+observer%29+%28%22thermal+model%22+OR+%22physics%22%29&per-page=10&sort=relevance_score%3Adesc",
+ "count": 19,
+ "by_year": {
+  "2026": 8,
+  "2023": 3,
+  "2025": 3,
+  "2013": 1,
+  "2015": 1,
+  "2016": 1,
+  "2020": 1,
+  "2022": 1
+ },
+ "works": [
+  {
+   "title": "Indirect Battery Internal-Temperature Estimation: A Fractional-Order Thermal Modeling Approach",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/math14203814",
+   "venue": "Mathematics",
+   "cited_by": 0,
+   "abstract": "The internal temperature of a lithium-ion cell governs aging and safety, but commercial cells cannot be measured without invasive sensors. We survey direct and indirect (thermoelectric-model, PDE-observer, impedance-based) estimation methods and find that fractional-order operators appear in battery electrical models but have not been used in thermal state equations for internal-temperature estimation. In this paper, we generalize the classical two-state lumped thermal model by Caputo derivatives of orders \u03b11,\u03b12\u2208(0,1] and give a Caputo-consistent Gr\u00fcnwald\u2013Letnikov discretization, verified against Mittag-Leffler and L1 reference solutions. In a numerical study with drive-cycle-like excitation, we compare the fractional plant and two independent integer-order plants (one with unmodeled entropic heat) with integer chains of the same parameter count. Identification from surface temperature alone is ill-conditioned for all models; a better surface fit does not guarantee a better core estimate, and the fractional model is advantageous only when the plant dynamics are indeed fractional. When calibrated with an internal sensor, the core temperature is estimated from the surface within 0.01\u20131.1\u00b0C. The results are simulation-based; experimental validation is the next step."
+  },
+  {
+   "title": "Core Temperature Observer Design and Model Parameter Uncertainty Analysis for a Lithium Battery",
+   "year": 2020,
+   "doi": "https://doi.org/10.1016/j.ifacol.2020.12.1774",
+   "venue": "IFAC-PapersOnLine",
+   "cited_by": 1,
+   "abstract": "Temperature monitoring for Lithium ion batteries is an important factor for its properties. Since the core temperature is difficult to measure, a thermal model is used for estimation. In this paper, an offline parameter identification procedure is applied, by which the parameters of a three state lumped thermal model can be identified. Based on the model a Luenberger observer is designed with the strength of compensating variations of the model parameters. Only the easily accessible and measurable temperature of the copper pole is fed back to the observer. The paper deals with the robustness analysis of the proposed observer in that the actual plant differs from the model considered in the observer. The capability of the approach is beneficial as an online (and computational power consuming) parameter identification is no longer required. Instead, the thermal model is obtained offline and the observer is robust against model parameter variations, e. g. ageing, so that a continuous update of the model is not required."
+  },
+  {
+   "title": "Lithium-ion battery electro-thermal modelling and internal states co-estimation for electric vehicles",
+   "year": 2023,
+   "doi": "https://doi.org/10.1016/j.est.2023.107072",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 63,
+   "abstract": ""
+  },
+  {
+   "title": "Predicting internal temperature distribution in large-format LiFePO4 batteries via an embedded-sensor-validated electrochemical\u2013thermal model",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.est.2026.123024",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 2,
+   "abstract": ""
+  },
+  {
+   "title": "A method for the lifetime sensorless estimation of surface and core temperature in lithium-ion batteries via online updating of electrical parameters",
+   "year": 2022,
+   "doi": "https://doi.org/10.1016/j.est.2022.106260",
+   "venue": "Journal of Energy Storage",
+   "cited_by": 21,
+   "abstract": ""
+  },
+  {
+   "title": "Passive EIS-based battery state of health estimation using internal temperature modelling under dynamic operating conditions",
+   "year": 2026,
+   "doi": "https://doi.org/10.1016/j.jpowsour.2026.241361",
+   "venue": "Journal of Power Sources",
+   "cited_by": 0,
+   "abstract": "Reliable onboard estimation of the State of Health of lithium-ion batteries remains challenging because battery impedance is simultaneously affected by ageing, temperature, and operating conditions. Although Passive Electrochemical Impedance Spectroscopy enables impedance estimation under dynamic operating conditions without dedicated excitation signals, the resulting impedance measurements must account for temperature effects before being exploited for diagnostic purposes. This work proposes a diagnostic framework combining passive impedance measurements, internal temperature estimation, and supervised learning for battery SoH estimation. The approach relies on a thermal model identified using Thermal Impedance Spectroscopy to estimate the internal cell temperature and separate temperature-induced impedance variations from ageing-related effects. The charge-transfer resistance extracted from passive impedance measurements is then combined with the estimated temperature and State of Charge to estimate battery SoH using a supervised neural network. Unlike previous studies, which generally address passive impedance estimation, thermal modelling, or data-driven diagnosis separately, the proposed methodology integrates these components into a unified framework. The methodology is experimentally validated on lithium-ion cells under representative dynamic driving conditions and different ageing levels. The results demonstrate that coupling PEIS with internal temperature estimation "
+  },
+  {
+   "title": "State of Temperature Estimation for Lithium-Ion Batteries Based on Physics-Informed Neural Network",
+   "year": 2026,
+   "doi": "https://doi.org/10.2139/ssrn.7133988",
+   "venue": "SSRN Electronic Journal",
+   "cited_by": 0,
+   "abstract": ""
+  },
+  {
+   "title": "SENSOR-LESS BATTERY CORE TEMPERATURE ESTIMATION VIA HIGH FREQUENCY INVERTER-INDUCED IMPEDANCE ANALYTICS AND RECURRENT GRU-BASED RECURRENT ESTIMATORS",
+   "year": 2025,
+   "doi": "https://doi.org/10.65009/rachjy18",
+   "venue": "Phoenix International Multidisciplinary Research Journal ( Peer reviewed High Impact Journal )",
+   "cited_by": 0,
+   "abstract": "Accurate estimation of battery core temperature is essential for ensuring the safety, reliability, and efficiency of lithium-ion batteries in electric vehicles and energy storage systems. Traditional surveying methods involve complex thermal modeling simulation or embedding sensors in the product, increasing hardware complexity and level of equipment. In this paper, a framework is introduced for core temperature estimation without the use of embedded internal sensors, utilizing the features of the impedance measurement and the use of recurrent estimators. The experiment used an open experimental set of battery aging data to perform the evaluations, capturing the voltage, surface temperature, core temperature, current and ambient temperature at resolutions suitable for impedance-related analysis. The results showed that the Maximum Error (ME) was less than 1.2 \u00b0C, Mean Absolute Error (MAE) was 0.41 \u00b0C, Root Mean Square Error (RMSE) was 0.55 \u00b0C, the Average Inference Time (AIT) was 4.87 ms, and the Coefficient of Determination (R\u00b2) was 0.996. The implementation of the inverter-harmonic impedance extraction as a conceptual extension for future high-bandwidth BMS hardware is shown, however, GRU-based estimator is validated from the available signals in this study. The approach offers high precision, real-time & cost effective thermal monitoring for future Battery Management systems."
+  },
+  {
+   "title": "Improved electric-thermal-aging multi-physics domain coupling modeling and identification decoupling of complex kinetic processes based on timescale quantification in lithium-ion batteries",
+   "year": 2023,
+   "doi": "https://doi.org/10.1016/j.apenergy.2023.122174",
+   "venue": "Applied Energy",
+   "cited_by": 30,
+   "abstract": ""
+  },
+  {
+   "title": "Lithium-Ion Battery Temperature Estimation Based on Electrochemical Impedance Spectroscopy",
+   "year": 2026,
+   "doi": "https://doi.org/10.3390/batteries12080309",
+   "venue": "Batteries",
+   "cited_by": 0,
+   "abstract": "The electrification of commercial vehicles demands precise battery thermal management, but direct measurement of the cell core temperature is challenging. This paper presents an electrochemical impedance spectroscopy (EIS)-based approach for rapid indirect estimation of the mean internal temperature in 2170 NMC lithium-ion cells. Three measurement approaches and various fitting methods, including Steinhart\u2013Hart, least-squares polynomials, and nonlinear Arrhenius-based fits, are compared using experimental data. The results indicate that estimation accuracy is more strongly influenced by the selection of measurement frequency than by the choice of fitting approach. The optimal method combines a single optimized frequency with a nonlinear polynomial incorporating an Arrhenius term, achieving a maximum deviation of 0.23K and a mean deviation of 0.14K. This framework enables indirect EIS-based estimation of the cell core temperature and can be further refined through measurements on multiple cells or by combining different fitting methods. Future work should extend the proposed approach to dynamic EIS measurements, battery ageing, and integration with thermal models for early overheating warning and identification of the first thermal runaway warning stage in high-power commercial vehicles."
+  }
+ ]
+}

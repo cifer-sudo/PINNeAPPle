@@ -1,0 +1,612 @@
+{
+ "doi": {
+  "10.1038/s41560-019-0356-8": {
+   "title": "Data-driven prediction of battery cycle life before capacity degradation",
+   "venue": "Nature Energy",
+   "year": 2019,
+   "authors": [
+    "Severson",
+    "Attia",
+    "Jin",
+    "Perkins"
+   ],
+   "err": null
+  },
+  "10.1038/s41586-020-1994-5": {
+   "title": "Closed-loop optimization of fast-charging protocols for batteries with machine learning",
+   "venue": "Nature",
+   "year": 2020,
+   "authors": [
+    "Attia",
+    "Grover",
+    "Jin",
+    "Severson"
+   ],
+   "err": null
+  },
+  "10.1038/s41467-024-48779-z": {
+   "title": "Physics-informed neural network for lithium-ion battery degradation stable modeling and prognosis",
+   "venue": "Nature Communications",
+   "year": 2024,
+   "authors": [
+    "Wang",
+    "Zhai",
+    "Zhao",
+    "Di"
+   ],
+   "err": null
+  },
+  "10.1038/s41467-022-29837-w": {
+   "title": "Data-driven capacity estimation of commercial lithium-ion batteries from voltage relaxation",
+   "venue": "Nature Communications",
+   "year": 2022,
+   "authors": [
+    "Zhu",
+    "Wang",
+    "Huang",
+    "Bhushan Gopaluni"
+   ],
+   "err": null
+  },
+  "10.1038/s41467-020-15235-7": {
+   "title": "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning",
+   "venue": "Nature Communications",
+   "year": 2020,
+   "authors": [
+    "Zhang",
+    "Tang",
+    "Zhang",
+    "Wang"
+   ],
+   "err": null
+  },
+  "10.1149/1945-7111/abae37": {
+   "title": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+   "venue": "Journal of The Electrochemical Society",
+   "year": 2020,
+   "authors": [
+    "Preger",
+    "Barkholtz",
+    "Fresquez",
+    "Campbell"
+   ],
+   "err": null
+  },
+  "10.1145/3307772.3328313": {
+   "title": "ACN-Data",
+   "venue": "Proceedings of the Tenth ACM International Conference on Future Energy Systems",
+   "year": 2019,
+   "authors": [
+    "Lee",
+    "Li",
+    "Low"
+   ],
+   "err": null
+  },
+  "10.1016/j.est.2022.105260": {
+   "title": "In-situ temperature monitoring of a lithium-ion battery using an embedded thermocouple for smart battery applications",
+   "venue": "Journal of Energy Storage",
+   "year": 2022,
+   "authors": [
+    "Gulsoy",
+    "Vincent",
+    "Sansom",
+    "Marco"
+   ],
+   "err": null
+  },
+  "10.1016/j.dib.2022.107995": {
+   "title": "Lithium-ion battery aging dataset based on electric vehicle real-driving profiles",
+   "venue": "Data in Brief",
+   "year": 2022,
+   "authors": [
+    "Pozzato",
+    "Allam",
+    "Onori"
+   ],
+   "err": null
+  },
+  "10.3390/wevj11020041": {
+   "title": "Range Extension via Electrothermal Recuperation",
+   "venue": "World Electric Vehicle Journal",
+   "year": 2020,
+   "authors": [
+    "Steinstraeter",
+    "Lewke",
+    "Buberger",
+    "Hentrich"
+   ],
+   "err": null
+  },
+  "10.1145/3711896.3737372": {
+   "title": "BatteryLife: A Comprehensive Dataset and Benchmark for Battery Life Prediction",
+   "venue": "Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+   "year": 2025,
+   "authors": [
+    "Tan",
+    "Hong",
+    "Tang",
+    "Lu"
+   ],
+   "err": null
+  },
+  "10.1016/j.ensm.2022.06.007": {
+   "title": "Battery state-of-charge estimation amid dynamic usage with physics-informed deep learning",
+   "venue": "Energy Storage Materials",
+   "year": 2022,
+   "authors": [
+    "Tian",
+    "Xiong",
+    "Lu",
+    "Chen"
+   ],
+   "err": null
+  },
+  "10.1016/j.jpowsour.2011.08.040": {
+   "title": "Prognostics of lithium-ion batteries based on Dempster\u2013Shafer theory and the Bayesian Monte Carlo method",
+   "venue": "Journal of Power Sources",
+   "year": 2011,
+   "authors": [
+    "He",
+    "Williard",
+    "Osterman",
+    "Pecht"
+   ],
+   "err": null
+  },
+  "10.1016/j.apenergy.2016.08.138": {
+   "title": "State-of-health estimation of lithium-ion battery packs in electric vehicles based on genetic resampling particle filter",
+   "venue": "Applied Energy",
+   "year": 2016,
+   "authors": [
+    "Bi",
+    "Zhang",
+    "Yu",
+    "Kang"
+   ],
+   "err": null
+  },
+  "10.5287/bodleian:KO2kdmYGg": {
+   "title": "",
+   "venue": "",
+   "year": null,
+   "authors": [],
+   "err": "HTTP Error 429: Too Many Requests"
+  }
+ },
+ "title": {
+  "Estimating Electric Motor Temperatures with Deep Residual Machine Learning": [
+   {
+    "doi": "10.1109/tpel.2020.3045596",
+    "title": "Estimating Electric Motor Temperatures With Deep Residual Machine Learning",
+    "venue": "IEEE Transactions on Power Electronics",
+    "year": 2021,
+    "authors": [
+     "Kirchgassner",
+     "Wallscheid",
+     "Bocker"
+    ]
+   },
+   {
+    "doi": "10.1109/ic3et64989.2026.11467260",
+    "title": "Deep Residual Learning for Precise Electric Motor Temperature Estimation",
+    "venue": "2026 International Conference on Communication, Computing and Emerging Technologies (IC3ET)",
+    "year": 2026,
+    "authors": [
+     "B",
+     "D",
+     "D",
+     "Rajan"
+    ]
+   }
+  ],
+  "Thermal neural networks: Lumped-parameter thermal modeling with state-space machine learning": [
+   {
+    "doi": "10.1016/j.engappai.2022.105537",
+    "title": "Thermal neural networks: Lumped-parameter thermal modeling with state-space machine learning",
+    "venue": "Engineering Applications of Artificial Intelligence",
+    "year": 2023,
+    "authors": [
+     "Kirchg\u00e4ssner",
+     "Wallscheid",
+     "B\u00f6cker"
+    ]
+   },
+   {
+    "doi": "10.1201/9781315101323-4",
+    "title": "Thermal Dose Modeling for Thermal Ablative Cancer Treatments by Cellular Neural Networks",
+    "venue": "Machine Learning in Medicine",
+    "year": 2021,
+    "authors": [
+     "Zhang",
+     "Chauhan",
+     "Cheung",
+     "Roberts"
+    ]
+   }
+  ],
+  "Adaptation of an Electrochemistry-based Li-Ion Battery Model to Account for Deterioration Observed Under Randomized Use": [
+   {
+    "doi": "10.36001/phmconf.2014.v6i1.2490",
+    "title": "Adaptation of an Electrochemistry-based Li-Ion Battery Model to Account for Deterioration Observed Under Randomized Use",
+    "venue": "Annual Conference of the PHM Society",
+    "year": 2014,
+    "authors": [
+     "Bole",
+     "S. Kulkarni",
+     "Daigle"
+    ]
+   },
+   {
+    "doi": "10.61558/2993-074x.3468",
+    "title": "Aging Characteristics of Lithium-ion Battery under Fast Charging Based on Electrochemical-thermal-mechanical Coupling Model",
+    "venue": "Journal of Electrochemistry",
+    "year": 2024,
+    "authors": [
+     "Zuo",
+     "Li"
+    ]
+   }
+  ],
+  "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions": [
+   {
+    "doi": "10.1149/1945-7111/abae37",
+    "title": "Degradation of Commercial Lithium-Ion Cells as a Function of Chemistry and Cycling Conditions",
+    "venue": "Journal of The Electrochemical Society",
+    "year": 2020,
+    "authors": [
+     "Preger",
+     "Barkholtz",
+     "Fresquez",
+     "Campbell"
+    ]
+   },
+   {
+    "doi": "10.1149/ma2019-01/6/605",
+    "title": "Durability and Reliability of Commercial Lithium-Ion Cells As a Function of Chemistry and Cycling Conditions",
+    "venue": "ECS Meeting Abstracts",
+    "year": 2019,
+    "authors": [
+     "Preger",
+     "Barkholtz",
+     "Fresquez",
+     "Mier"
+    ]
+   }
+  ],
+  "Analysis and key findings from real-world electric vehicle field data": [
+   {
+    "doi": "10.1016/j.joule.2023.07.018",
+    "title": "Analysis and key findings from real-world electric vehicle field data",
+    "venue": "Joule",
+    "year": 2023,
+    "authors": [
+     "Pozzato",
+     "Allam",
+     "Pulvirenti",
+     "Negoita"
+    ]
+   },
+   {
+    "doi": "10.2139/ssrn.6800664",
+    "title": "Electric Vehicle Charging Across Locations: Real-World Data from Sweden",
+    "venue": "",
+    "year": 2026,
+    "authors": [
+     "Kobayashi",
+     "Taljegard",
+     "Johnsson"
+    ]
+   }
+  ],
+  "ACN-Data: Analysis and Applications of an Open EV Charging Dataset": [
+   {
+    "doi": "10.1145/3307772.3328313",
+    "title": "ACN-Data",
+    "venue": "Proceedings of the Tenth ACM International Conference on Future Energy Systems",
+    "year": 2019,
+    "authors": [
+     "Lee",
+     "Li",
+     "Low"
+    ]
+   },
+   {
+    "doi": "10.2139/ssrn.5297940",
+    "title": "Ev-Insights: Open Source Framework for Electric Vehicle Charging Data, Analysis, and Forecasting",
+    "venue": "",
+    "year": 2025,
+    "authors": [
+     "Derboni",
+     "Salani"
+    ]
+   }
+  ],
+  "Fault diagnosis and monitoring of grid-connected PV systems GPVS-Faults": [
+   {
+    "doi": "10.1002/9781119873785.ch1",
+    "title": "Overview and Impact of Faults in Grid\u2010Connected Photovoltaic Systems",
+    "venue": "Fault Analysis and its Impact on Grid\u2010connected Photovoltaic Systems Performance",
+    "year": 2022,
+    "authors": [
+     "Khan"
+    ]
+   },
+   {
+    "doi": "10.1109/icee-b.2017.8192117",
+    "title": "Online model-based fault detection for grid connected PV systems monitoring",
+    "venue": "2017 5th International Conference on Electrical Engineering - Boumerdes (ICEE-B)",
+    "year": 2017,
+    "authors": [
+     "Harrou",
+     "Sun",
+     "Saidi"
+    ]
+   }
+  ],
+  "Vibration, acoustic, temperature, and motor current dataset of rotating machine under varying operating conditions for fault diagnosis": [
+   {
+    "doi": "10.1016/j.dib.2023.109049",
+    "title": "Vibration, acoustic, temperature, and motor current dataset of rotating machine under varying operating conditions for fault diagnosis",
+    "venue": "Data in Brief",
+    "year": 2023,
+    "authors": [
+     "Jung",
+     "Kim",
+     "Yun",
+     "Bae"
+    ]
+   },
+   {
+    "doi": "10.36001/ijphm.2025.v16i2.4208",
+    "title": "Vibration-based Data-driven Fault Diagnosis of Rotating Machines Operating Under Varying Working Conditions",
+    "venue": "International Journal of Prognostics and Health Management",
+    "year": 2025,
+    "authors": [
+     "Latil",
+     "Hou\u00e9 Ngouna",
+     "MEDJAHER",
+     "LHUISSET"
+    ]
+   }
+  ],
+  "Vibration and current dataset of three-phase permanent magnet synchronous motors with stator faults": [
+   {
+    "doi": "10.1016/j.dib.2023.108952",
+    "title": "Vibration and current dataset of three-phase permanent magnet synchronous motors with stator faults",
+    "venue": "Data in Brief",
+    "year": 2023,
+    "authors": [
+     "Jung",
+     "Yun",
+     "Lim",
+     "Cheong"
+    ]
+   },
+   {
+    "doi": "10.3390/act13010025",
+    "title": "Diagnosis of Power Switch Faults in Three-Phase Permanent Magnet Synchronous Motors via Current-Signature Technique",
+    "venue": "Actuators",
+    "year": 2024,
+    "authors": [
+     "Suti",
+     "Di Rito"
+    ]
+   }
+  ],
+  "LG 18650HG2 Li-ion battery data Kollmeyer state of charge deep neural network": [
+   {
+    "doi": "10.3390/en15031185",
+    "title": "A Convolutional Neural Network Approach for Estimation of Li-Ion Battery State of Health from Charge Profiles",
+    "venue": "Energies",
+    "year": 2022,
+    "authors": [
+     "Chemali",
+     "Kollmeyer",
+     "Preindl",
+     "Fahmy"
+    ]
+   },
+   {
+    "doi": "10.1109/itec.2019.8790543",
+    "title": "Li-ion Battery State of Charge Estimation Using Long Short-Term Memory Recurrent Neural Network with Transfer Learning",
+    "venue": "2019 IEEE Transportation Electrification Conference and Expo (ITEC)",
+    "year": 2019,
+    "authors": [
+     "Vidal",
+     "Kollmeyer",
+     "Chemali",
+     "Emadi"
+    ]
+   }
+  ],
+  "Long short-term memory networks for accurate state-of-charge estimation of Li-ion batteries": [
+   {
+    "doi": "10.2139/ssrn.5701745",
+    "title": "Accurate state of charge estimation for lithium-ion batteries using a temporal convolutional network and bidirectional long short-term memory hybrid model",
+    "venue": "",
+    "year": 2025,
+    "authors": [
+     "Qiu",
+     "Zhang",
+     "Zhu",
+     "Luo"
+    ]
+   },
+   {
+    "doi": "10.3390/batteries12020050",
+    "title": "Accurate State of Charge Estimation for Lithium-Ion Batteries Using a Temporal Convolutional Network and Bidirectional Long Short-Term Memory Hybrid Model",
+    "venue": "Batteries",
+    "year": 2026,
+    "authors": [
+     "Qiu",
+     "Zhang",
+     "Zhu",
+     "Luo"
+    ]
+   }
+  ],
+  "Intrinsic variability in the degradation of a batch of commercial 18650 lithium-ion cells": [
+   {
+    "doi": "10.3390/en11051031",
+    "title": "Intrinsic Variability in the Degradation of a Batch of Commercial 18650 Lithium-Ion Cells",
+    "venue": "Energies",
+    "year": 2018,
+    "authors": [
+     "Devie",
+     "Baure",
+     "Dubarry"
+    ]
+   },
+   {
+    "doi": "10.1149/ma2015-02/1/129",
+    "title": "Intrinsic Degradation Variability in Commercial Lithium-Ion Batteries",
+    "venue": "ECS Meeting Abstracts",
+    "year": 2015,
+    "authors": [
+     "Devie",
+     "Dubarry",
+     "Liaw"
+    ]
+   }
+  ],
+  "Predicting battery lifetime under varying usage conditions from early aging data": [
+   {
+    "doi": "10.1016/j.xcrp.2024.101891",
+    "title": "Predicting battery lifetime under varying usage conditions from early aging data",
+    "venue": "Cell Reports Physical Science",
+    "year": 2024,
+    "authors": [
+     "Li",
+     "Zhou",
+     "Thelen",
+     "Howey"
+    ]
+   },
+   {
+    "doi": "10.1038/s41560-024-01688-3",
+    "title": "Cycling under real-world conditions increases battery lifetime",
+    "venue": "Nature Energy",
+    "year": 2025,
+    "authors": []
+   }
+  ],
+  "In-situ temperature monitoring of a lithium-ion battery using an embedded thermocouple for smart battery applications": [
+   {
+    "doi": "10.1016/j.est.2022.105260",
+    "title": "In-situ temperature monitoring of a lithium-ion battery using an embedded thermocouple for smart battery applications",
+    "venue": "Journal of Energy Storage",
+    "year": 2022,
+    "authors": [
+     "Gulsoy",
+     "Vincent",
+     "Sansom",
+     "Marco"
+    ]
+   },
+   {
+    "doi": "10.1021/acsomega.5c07124.s001",
+    "title": "In Situ Optical Fiber Sensing of Internal Temperature Evolution during Lithium-Ion Battery Cycling",
+    "venue": "",
+    "year": null,
+    "authors": []
+   }
+  ],
+  "MagNet: An Open-Source Database for Data-Driven Magnetic Core Loss Modeling": [
+   {
+    "doi": "10.1109/apec43599.2022.9773372",
+    "title": "MagNet: An Open-Source Database for Data-Driven Magnetic Core Loss Modeling",
+    "venue": "2022 IEEE Applied Power Electronics Conference and Exposition (APEC)",
+    "year": 2022,
+    "authors": [
+     "Li",
+     "Serrano",
+     "Guillod",
+     "Dogariu"
+    ]
+   },
+   {
+    "doi": "10.1109/eccst68196.2025.11441077",
+    "title": "Data-driven core loss modeling of magnetic components",
+    "venue": "2025 5th International Conference on Electronic Communication, Computer Science and Technology (ECCST)",
+    "year": 2025,
+    "authors": [
+     "Yang"
+    ]
+   }
+  ],
+  "Battery and heating data in real driving cycles electrothermal recuperation BMW i3": [
+   {
+    "doi": "10.4271/2022-01-5088",
+    "title": "Utilizing Machine Learning Algorithms in a Data-Driven Approach to\n                    the Prediction of Vehicle Battery State of Charge with BMW i3\n                    Datasets",
+    "venue": "SAE Technical Paper Series",
+    "year": 2022,
+    "authors": [
+     "Puri"
+    ]
+   },
+   {
+    "doi": "10.5220/0006291701880195",
+    "title": "Derivation of Real Driving Emission Cycles based on Real-world Driving Data - Using Markov Models and Threshold Accepting",
+    "venue": "Proceedings of the 3rd International Conference on Vehicle Technology and Intelligent Transport Systems",
+    "year": 2017,
+    "authors": [
+     "Liessner",
+     "Fechert",
+     "B\u00e4ker"
+    ]
+   }
+  ],
+  "Data-driven capacity estimation of commercial lithium-ion batteries from voltage relaxation": [
+   {
+    "doi": "10.3390/batteries12090372",
+    "title": "Data-Driven Capacity Estimation of Commercial Lithium-Ion Batteries Using Full-Charge Voltage Relaxation Statistics",
+    "venue": "Batteries",
+    "year": 2026,
+    "authors": [
+     "Gong",
+     "Huang",
+     "Wu",
+     "Shao"
+    ]
+   },
+   {
+    "doi": "10.1038/s41467-022-29837-w",
+    "title": "Data-driven capacity estimation of commercial lithium-ion batteries from voltage relaxation",
+    "venue": "Nature Communications",
+    "year": 2022,
+    "authors": [
+     "Zhu",
+     "Wang",
+     "Huang",
+     "Bhushan Gopaluni"
+    ]
+   }
+  ],
+  "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning": [
+   {
+    "doi": "10.1038/s41467-020-15235-7",
+    "title": "Identifying degradation patterns of lithium ion batteries from impedance spectroscopy using machine learning",
+    "venue": "Nature Communications",
+    "year": 2020,
+    "authors": [
+     "Zhang",
+     "Tang",
+     "Zhang",
+     "Wang"
+    ]
+   },
+   {
+    "doi": "10.1016/j.ensm.2024.103394",
+    "title": "Revealing the degradation patterns of lithium-ion batteries from impedance spectroscopy using variational auto-encoders",
+    "venue": "Energy Storage Materials",
+    "year": 2024,
+    "authors": [
+     "Liu",
+     "Li",
+     "Wang"
+    ]
+   }
+  ]
+ }
+}
