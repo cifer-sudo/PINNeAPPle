@@ -175,7 +175,34 @@ components of combined faults (unbalance + misalignment, two misalignments) that
 
 | Step | Status | Result |
 |---|---|---|
-| Check its tachometer phase consistency and whether its bench matches MAFAULDA | planned | |
+| Check its tachometer phase consistency and whether its bench matches MAFAULDA | done | no pulse tachometer in the CSVs, so no phase reference; six accelerometers of two types instead of two triaxial at two bearings: no direct transfer of MAFAULDA models, an independent bench |
+
+**COMFAULDA, what the files are (2026-11-04, from reading two files of the archive).** 48 inner archives, one per
+scenario and level; CSV with 9 columns (time, then 8), sampled at 51.2 kHz (not 50 kHz), 4.88 s; normal files
+separated by ';', fault files by ', '. No column is a pulse tachometer; column 8 is near zero (the column users
+report as not tied to a sensor); columns 2-7 are the six accelerometers. The speed is taken from the file name,
+refined by the 1X peak within +-5 %; without a phase reference only phase-free features are used.
+
+**Criteria of the COMFAULDA study (written before any COMFAULDA feature was computed).**
+
+- K1 seven-class classification (normal, unbalance, horizontal, vertical, unbalance + horizontal, unbalance +
+  vertical, vertical + horizontal), same models and protocols as P1b: under Pa macro-F1 >= 0.95 for the random
+  forest; under Pb the drop is reported (P1b found 0.03-0.18 on MAFAULDA).
+- K2 combined faults from single faults: one detector per fault type (unbalance, horizontal, vertical) trained on
+  normal and single-fault runs only, applied to the combined runs never seen: exact-match accuracy of the predicted
+  pair >= 0.70 for at least one model, per-label F1 reported. Below that, combined faults are not recognisable
+  from single faults with these inputs.
+- K3 the FNO's gain over the random forest under Pb on K1 is reported (the C2 question, on an independent bench).
+
+**COMFAULDA results (2026-11-04; 2161 runs: one file has a CRC error inside the published archive, four file names
+are malformed and were parsed).** K1 seven classes, macro-F1, Pa / Pb: random forest 0.944 / 0.626, MLP 0.938 /
+0.695, KAN 0.938 / 0.625, FNO 0.913 / 0.690. K1 FAILS narrowly (0.944 < 0.95). The drop at unseen speeds is larger
+than on MAFAULDA (0.22-0.32): the speed effect found on MAFAULDA is confirmed on an independent bench. K3: FNO -
+random forest under Pb = +0.064 (MLP +0.069). K2 FAILS clearly: detectors trained on normal + single faults
+recognise the exact pair of a combined fault in 1.5 % (RF), 5.2 % (MLP), 5.0 % (KAN) of the 1143 combined runs;
+unbalance is still detected inside combinations (F1 0.76-0.86), misalignment is not (F1 0.38-0.53). With these
+phase-free inputs, the signature of a combined fault is not the sum of the single ones -- the superposition
+hypothesis is refuted on this bench. Results: `docs/research/results/comfaulda_results.json`.
 
 **Venue if the conditions are met:** Mechanical Systems and Signal Processing, Reliability Engineering & System
 Safety.

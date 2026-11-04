@@ -29,6 +29,9 @@ TASKS = {
     "unbalance": ["normal", "imbalance"],
     "bearings": ["normal"] + BEARINGS,
     "all": ["normal", "imbalance", "horizontal-misalignment", "vertical-misalignment"] + BEARINGS,
+    # COMFAULDA (comfaulda.labels_of): single and combined faults
+    "comfaulda7": ["normal", "unbalance", "horizontal", "vertical", "unbalance+horizontal", "unbalance+vertical",
+                   "horizontal+vertical"],
 }
 STEP = 0.01                                   # order grid of the cached spectra
 
@@ -143,9 +146,77 @@ class FNOClassifier:
             return self.net(torch.as_tensor(X), torch.as_tensor((sp - self.sp_mu) / self.sp_sd)).argmax(1).numpy()
 
 
+
+class _KANLayer:
+    """One Kolmogorov-Arnold layer (Liu et al., KAN, arXiv 2404.19756): every edge i->j carries
+    ``phi_ij(x) = w_ij silu(x) + sum_k c_ijk B_k(x)``, cubic B-splines on a fixed grid over [-g, g] (inputs
+    standardised); built lazily so the module imports without torch."""
+
+    @staticmethod
+    def make(n_in, n_out, grid=8, order=3, span=3.0):
+        import torch
+        import torch.nn as nn
+
+        class Layer(nn.Module):
+            def __init__(s):
+                super().__init__()
+                h = 2 * span / grid
+                knots = torch.arange(-order, grid + order + 1, dtype=torch.float32) * h - span
+                s.register_buffer("knots", knots)
+                s.order = order
+                s.base = nn.Linear(n_in, n_out)
+                s.coef = nn.Parameter(0.1 * torch.randn(n_out, n_in, grid + order))
+
+            def basis(s, x):                                   # Cox-de Boor, x (B, n_in) -> (B, n_in, n_basis)
+                t = s.knots
+                x = x.clamp(t[s.order].item(), t[-s.order - 1].item() - 1e-6)[..., None]
+                B = ((x >= t[:-1]) & (x < t[1:])).to(x.dtype)
+                for k in range(1, s.order + 1):
+                    B = ((x - t[:-(k + 1)]) / (t[k:-1] - t[:-(k + 1)]) * B[..., :-1]
+                         + (t[k + 1:] - x) / (t[k + 1:] - t[1:-k]) * B[..., 1:])
+                return B
+
+            def forward(s, x):
+                import torch.nn.functional as F
+                return s.base(F.silu(x)) + torch.einsum("bik,oik->bo", s.basis(x), s.coef)
+        return Layer()
+
+
+@dataclass
+class KANClassifier:
+    """Shallow KAN [n_features, hidden, n_classes] on standardised features (as in Rigas et al., arXiv 2412.01322,
+    without their feature selection), full-batch AdamW."""
+    hidden: int = 16
+    epochs: int = 400
+    lr: float = 1e-2
+    seed: int = 0
+
+    def fit(self, X, y):
+        import torch
+        torch.manual_seed(self.seed)
+        self.mu, self.sd = X.mean(0), X.std(0) + 1e-9
+        n_cls = int(y.max()) + 1
+        self.net = torch.nn.Sequential(_KANLayer.make(X.shape[1], self.hidden), _KANLayer.make(self.hidden, n_cls))
+        Xt = torch.as_tensor((X - self.mu) / self.sd, dtype=torch.float32)
+        yt = torch.as_tensor(y)
+        w = torch.as_tensor(len(y) / (n_cls * np.bincount(y, minlength=n_cls).clip(1)), dtype=torch.float32)
+        opt = torch.optim.AdamW(self.net.parameters(), lr=self.lr, weight_decay=1e-3)
+        for _ in range(self.epochs):
+            opt.zero_grad()
+            torch.nn.functional.cross_entropy(self.net(Xt), yt, weight=w).backward()
+            opt.step()
+        return self
+
+    def predict(self, X):
+        import torch
+        with torch.no_grad():
+            return self.net(torch.as_tensor((X - self.mu) / self.sd, dtype=torch.float32)).argmax(1).numpy()
+
 def _fit_predict(model, Xf, Xs, sp, y, tr, te, seed):
     if model == "fno":
         return FNOClassifier(seed=seed).fit(Xs[tr], sp[tr], y[tr]).predict(Xs[te], sp[te])
+    if model == "kan":
+        return KANClassifier(seed=seed).fit(Xf[tr], y[tr]).predict(Xf[te])
     from sklearn.ensemble import RandomForestClassifier
     from sklearn.neural_network import MLPClassifier
     from sklearn.pipeline import make_pipeline
@@ -195,6 +266,36 @@ def run_task(rows, task, models=("rf", "mlp", "fno"), protocols=("folds", "speed
             if save:
                 save(out)
     out.pop("incomplete", None)
+    return out
+
+
+def run_composition(rows, models=("rf", "mlp", "kan", "fno"), seed=0, log=print) -> dict[str, Any]:
+    """Combined faults recognised from single faults (COMFAULDA): one binary detector per fault type (unbalance,
+    horizontal, vertical) trained on the normal and single-fault runs only, applied to the combined runs, never seen;
+    exact match = the three labels right."""
+    from sklearn.metrics import f1_score
+    faults = ("unbalance", "horizontal", "vertical")
+    rows = [r for r in rows if "error" not in r]
+    tr = np.array([not r["combined"] for r in rows])
+    Y = np.array([[r["labels"][f] for f in faults] for r in rows], int)
+    Xf = feature_matrix(rows)
+    Xs, sp = spectrum_tensor(rows)
+    te_idx, tr_idx = np.flatnonzero(~tr), np.flatnonzero(tr)
+    out = {"n_train": int(tr.sum()), "n_test": int((~tr).sum()), "faults": list(faults), "results": {}}
+    for model in models:
+        P = np.zeros((len(te_idx), 3), int)
+        for j in range(3):
+            P[:, j] = _fit_predict(model, Xf, Xs, sp, Y[:, j], tr_idx, te_idx, seed)
+        exact = float(np.mean(np.all(P == Y[te_idx], 1)))
+        per = {f: float(f1_score(Y[te_idx, j], P[:, j], zero_division=0)) for j, f in enumerate(faults)}
+        by_state = {}
+        for st in sorted({rows[i]["state"] for i in te_idx}):
+            s_ = np.array([rows[i]["state"] == st for i in te_idx])
+            by_state[st] = float(np.mean(np.all(P[s_] == Y[te_idx][s_], 1)))
+        out["results"][model] = {"exact_match": exact, "per_label_f1": per, "exact_match_by_state": by_state}
+        log(f"composition {model:4s} exact match {exact:.3f} | per-label F1 "
+            + ", ".join(f"{k} {v:.2f}" for k, v in per.items()) + " | by state "
+            + ", ".join(f"{k} {v:.2f}" for k, v in by_state.items()))
     return out
 
 

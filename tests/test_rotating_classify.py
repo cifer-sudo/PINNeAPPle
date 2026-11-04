@@ -37,7 +37,7 @@ def test_shapes_and_splits():
         assert np.all(seen == 1)                                 # every run tested exactly once
 
 
-@pytest.mark.parametrize("model", ["rf", "mlp", "fno"])
+@pytest.mark.parametrize("model", ["rf", "mlp", "kan", "fno"])
 def test_models_learn_a_separable_problem(model, monkeypatch):
     monkeypatch.setattr(C.FNOClassifier, "epochs", 25)
     out = C.run_task(_rows(n_per=80), "misalignment", models=(model,), protocols=("folds",), log=lambda *_: None)
