@@ -4,3 +4,5 @@ phase1 misalignment osfno-E-phys           s2 speed macro-F1 0.858 (low 0.68, mi
 phase1 misalignment osfno-E-phys           s3 speed macro-F1 0.834 (low 0.64, mid 0.90, high 0.95) 172s
 phase1 misalignment osfno-E-phys           s4 speed macro-F1 0.871 (low 0.70, mid 0.96, high 0.98) 180s
 phase1 unbalance    osfno-E-phys           s0 speed macro-F1 0.953 (low 0.88, mid 1.00, high 0.98) 120s
+phase1 unbalance    osfno-E-phys           s1 speed macro-F1 0.965 (low 0.94, mid 1.00, high 0.96) 130s
+phase1 unbalance    osfno-E-phys           s2 speed macro-F1 0.954 (low 0.86, mid 1.00, high 1.00) 115s
