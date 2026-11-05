@@ -6,3 +6,11 @@ bearings rf 1 speed_low_12-27Hz clean F1 0.747
 bearings rf 1 speed_mid_27-41Hz clean F1 0.991
 bearings rf 1 speed_high_41-61Hz clean F1 0.791
 bearings rf 1 {'clean:None': 0.853, 'speed:-0.05': 0.508, 'speed:-0.02': 0.666, 'speed:-0.01': 0.823, 'speed:0.01': 0.825, 'speed:0.02': 0.677, 'speed:0.05': 0.526, 'dead:0': 0.801, 'dead:1': 0.847, 'dead:2': 0.847, 'dead:3': 0.807, 'dead:4': 0.576, 'dead:5': 0.844, 'dead:6': 0.527, 'gain2:0': 0.811, 'gain2:1': 0.863, 'gain2:2': 0.833, 'gain2:3': 0.855, 'gain2:4': 0.798, 'gain2:5': 0.865, 'gain2:6': 0.791}
+bearings rf 2 speed_low_12-27Hz clean F1 0.783
+bearings rf 2 speed_mid_27-41Hz clean F1 0.989
+bearings rf 2 speed_high_41-61Hz clean F1 0.802
+bearings rf 2 {'clean:None': 0.867, 'speed:-0.05': 0.586, 'speed:-0.02': 0.689, 'speed:-0.01': 0.828, 'speed:0.01': 0.825, 'speed:0.02': 0.696, 'speed:0.05': 0.567, 'dead:0': 0.799, 'dead:1': 0.849, 'dead:2': 0.868, 'dead:3': 0.817, 'dead:4': 0.565, 'dead:5': 0.866, 'dead:6': 0.599, 'gain2:0': 0.827, 'gain2:1': 0.874, 'gain2:2': 0.837, 'gain2:3': 0.864, 'gain2:4': 0.805, 'gain2:5': 0.878, 'gain2:6': 0.8}
+bearings rf 3 speed_low_12-27Hz clean F1 0.789
+bearings rf 3 speed_mid_27-41Hz clean F1 0.991
+bearings rf 3 speed_high_41-61Hz clean F1 0.816
+bearings rf 3 {'clean:None': 0.876, 'speed:-0.05': 0.518, 'speed:-0.02': 0.684, 'speed:-0.01': 0.833, 'speed:0.01': 0.835, 'speed:0.02': 0.696, 'speed:0.05': 0.54, 'dead:0': 0.803, 'dead:1': 0.856, 'dead:2': 0.874, 'dead:3': 0.83, 'dead:4': 0.538, 'dead:5': 0.869, 'dead:6': 0.52, 'gain2:0': 0.825, 'gain2:1': 0.882, 'gain2:2': 0.845, 'gain2:3': 0.869, 'gain2:4': 0.816, 'gain2:5': 0.88, 'gain2:6': 0.795}
