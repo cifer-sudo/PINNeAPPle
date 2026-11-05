@@ -60,3 +60,4 @@ unbalance xgb 4 speed_mid_28-44Hz clean F1 1.000
 unbalance xgb 4 speed_high_44-61Hz clean F1 0.620
 unbalance xgb 4 {'clean:None': 0.766, 'speed:-0.05': 0.572, 'speed:-0.02': 0.766, 'speed:-0.01': 0.77, 'speed:0.01': 0.77, 'speed:0.02': 0.774, 'speed:0.05': 0.57, 'dead:0': 0.766, 'dead:1': 0.737, 'dead:2': 0.705, 'dead:3': 0.679, 'dead:4': 0.746, 'dead:5': 0.743, 'dead:6': 0.766, 'gain2:0': 0.882, 'gain2:1': 0.77, 'gain2:2': 0.759, 'gain2:3': 0.702, 'gain2:4': 0.766, 'gain2:5': 0.766, 'gain2:6': 0.766}
 === END xgb rc=0 Thu Nov  5 10:10:14 UTC 2026 ===
+=== START cnn-spec Thu Nov  5 10:10:16 UTC 2026 ===
