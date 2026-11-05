@@ -14,3 +14,8 @@ misalignment rf 3 speed_low_12-28Hz clean F1 0.841
 misalignment rf 3 speed_mid_28-44Hz clean F1 1.000
 misalignment rf 3 speed_high_44-61Hz clean F1 0.690
 misalignment rf 3 {'clean:None': 0.87, 'speed:-0.05': 0.616, 'speed:-0.02': 0.789, 'speed:-0.01': 0.848, 'speed:0.01': 0.849, 'speed:0.02': 0.81, 'speed:0.05': 0.609, 'dead:0': 0.846, 'dead:1': 0.833, 'dead:2': 0.867, 'dead:3': 0.677, 'dead:4': 0.854, 'dead:5': 0.835, 'dead:6': 0.731, 'gain2:0': 0.882, 'gain2:1': 0.894, 'gain2:2': 0.867, 'gain2:3': 0.831, 'gain2:4': 0.858, 'gain2:5': 0.881, 'gain2:6': 0.298}
+misalignment rf 4 speed_low_12-28Hz clean F1 0.869
+misalignment rf 4 speed_mid_28-44Hz clean F1 1.000
+misalignment rf 4 speed_high_44-61Hz clean F1 0.699
+misalignment rf 4 {'clean:None': 0.882, 'speed:-0.05': 0.652, 'speed:-0.02': 0.792, 'speed:-0.01': 0.839, 'speed:0.01': 0.858, 'speed:0.02': 0.81, 'speed:0.05': 0.638, 'dead:0': 0.859, 'dead:1': 0.848, 'dead:2': 0.869, 'dead:3': 0.736, 'dead:4': 0.862, 'dead:5': 0.849, 'dead:6': 0.711, 'gain2:0': 0.884, 'gain2:1': 0.897, 'gain2:2': 0.873, 'gain2:3': 0.854, 'gain2:4': 0.869, 'gain2:5': 0.884, 'gain2:6': 0.294}
+== exit rf: 0
