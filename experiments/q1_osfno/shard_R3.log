@@ -14,3 +14,5 @@ phase1 bearings     osfno-E-phys           s2 speed macro-F1 0.847 (low 0.74, mi
 phase1 bearings     osfno-E-phys           s3 speed macro-F1 0.848 (low 0.79, mid 0.96, high 0.81) 314s
 phase1 bearings     osfno-E-phys           s4 speed macro-F1 0.867 (low 0.74, mid 0.98, high 0.88) 312s
 phase1 all          osfno-E-phys           s0 speed macro-F1 0.853 (low 0.71, mid 0.98, high 0.89) 547s
+phase1 all          osfno-E-phys           s1 speed macro-F1 0.840 (low 0.72, mid 0.95, high 0.84) 557s
+phase1 all          osfno-E-phys           s2 speed macro-F1 0.841 (low 0.70, mid 0.95, high 0.86) 577s
