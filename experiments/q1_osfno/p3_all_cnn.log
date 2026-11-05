@@ -14,3 +14,4 @@ locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_all_cnn.json bd76
 EXIT 0
 phase3 all          cnn-tuned              s0 speed macro-F1 0.914 (low 0.78, mid 1.00, high 0.95) 804s
 phase3 all          cnn-tuned              s1 speed macro-F1 0.913 (low 0.78, mid 1.00, high 0.94) 760s
+phase3 all          cnn-tuned              s2 speed macro-F1 0.904 (low 0.77, mid 1.00, high 0.92) 758s
