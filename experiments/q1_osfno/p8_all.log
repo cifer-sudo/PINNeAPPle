@@ -58,3 +58,12 @@ all xgb 4 speed_low_12-27Hz clean F1 0.745
 all xgb 4 speed_mid_27-42Hz clean F1 0.985
 all xgb 4 speed_high_42-61Hz clean F1 0.722
 all xgb 4 {'clean:None': 0.832, 'speed:-0.05': 0.491, 'speed:-0.02': 0.688, 'speed:-0.01': 0.808, 'speed:0.01': 0.815, 'speed:0.02': 0.708, 'speed:0.05': 0.496, 'dead:0': 0.718, 'dead:1': 0.805, 'dead:2': 0.797, 'dead:3': 0.529, 'dead:4': 0.61, 'dead:5': 0.811, 'dead:6': 0.548, 'gain2:0': 0.779, 'gain2:1': 0.826, 'gain2:2': 0.797, 'gain2:3': 0.794, 'gain2:4': 0.818, 'gain2:5': 0.843, 'gain2:6': 0.569}
+all cnn-spec 0 speed_low_12-27Hz clean F1 0.751
+all cnn-spec 0 speed_mid_27-42Hz clean F1 1.000
+all cnn-spec 0 speed_high_42-61Hz clean F1 0.914
+all cnn-spec 0 {'clean:None': 0.893, 'speed:-0.05': 0.727, 'speed:-0.02': 0.768, 'speed:-0.01': 0.768, 'speed:0.01': 0.754, 'speed:0.02': 0.83, 'speed:0.05': 0.696, 'dead:0': 0.577, 'dead:1': 0.609, 'dead:2': 0.426, 'dead:3': 0.609, 'dead:4': 0.319, 'dead:5': 0.243, 'dead:6': 0.5, 'gain2:0': 0.837, 'gain2:1': 0.848, 'gain2:2': 0.863, 'gain2:3': 0.875, 'gain2:4': 0.864, 'gain2:5': 0.825, 'gain2:6': 0.891}
+all cnn-spec 1 speed_low_12-27Hz clean F1 0.775
+all cnn-spec 1 speed_mid_27-42Hz clean F1 1.000
+all cnn-spec 1 speed_high_42-61Hz clean F1 0.943
+all cnn-spec 1 {'clean:None': 0.907, 'speed:-0.05': 0.702, 'speed:-0.02': 0.734, 'speed:-0.01': 0.773, 'speed:0.01': 0.747, 'speed:0.02': 0.824, 'speed:0.05': 0.719, 'dead:0': 0.459, 'dead:1': 0.68, 'dead:2': 0.326, 'dead:3': 0.478, 'dead:4': 0.493, 'dead:5': 0.317, 'dead:6': 0.667, 'gain2:0': 0.848, 'gain2:1': 0.901, 'gain2:2': 0.847, 'gain2:3': 0.888, 'gain2:4': 0.876, 'gain2:5': 0.808, 'gain2:6': 0.88}
+all cnn-spec 2 speed_low_12-27Hz clean F1 0.734
