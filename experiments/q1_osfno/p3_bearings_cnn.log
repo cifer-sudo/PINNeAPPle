@@ -8,3 +8,4 @@ bearings cnn speed_mid_27-41Hz {'width': 32, 'blocks': 4} inner 0.944
 bearings cnn speed_mid_27-41Hz {'width': 48, 'blocks': 5} inner 0.922
 bearings cnn speed_high_41-61Hz {'width': 16, 'blocks': 4} inner 0.944
 bearings cnn speed_high_41-61Hz {'width': 32, 'blocks': 3} inner 0.946
+bearings cnn speed_high_41-61Hz {'width': 32, 'blocks': 4} inner 0.939
