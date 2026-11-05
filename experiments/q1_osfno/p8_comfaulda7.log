@@ -58,3 +58,8 @@ comfaulda7 xgb 4 speed_low_12-27Hz clean F1 0.582
 comfaulda7 xgb 4 speed_mid_27-42Hz clean F1 0.808
 comfaulda7 xgb 4 speed_high_42-61Hz clean F1 0.562
 comfaulda7 xgb 4 {'clean:None': 0.651, 'speed:-0.05': 0.33, 'speed:-0.02': 0.514, 'speed:-0.01': 0.639, 'speed:0.01': 0.647, 'speed:0.02': 0.529, 'speed:0.05': 0.314, 'dead:0': 0.421, 'dead:1': 0.529, 'dead:2': 0.604, 'dead:3': 0.541, 'dead:4': 0.578, 'dead:5': 0.428, 'gain2:0': 0.59, 'gain2:1': 0.64, 'gain2:2': 0.62, 'gain2:3': 0.593, 'gain2:4': 0.641, 'gain2:5': 0.623}
+comfaulda7 cnn-spec 0 speed_low_12-27Hz clean F1 0.626
+comfaulda7 cnn-spec 0 speed_mid_27-42Hz clean F1 0.914
+comfaulda7 cnn-spec 0 speed_high_42-61Hz clean F1 0.761
+comfaulda7 cnn-spec 0 {'clean:None': 0.764, 'speed:-0.05': 0.319, 'speed:-0.02': 0.354, 'speed:-0.01': 0.497, 'speed:0.01': 0.41, 'speed:0.02': 0.488, 'speed:0.05': 0.296, 'dead:0': 0.493, 'dead:1': 0.379, 'dead:2': 0.308, 'dead:3': 0.353, 'dead:4': 0.362, 'dead:5': 0.183, 'gain2:0': 0.709, 'gain2:1': 0.709, 'gain2:2': 0.622, 'gain2:3': 0.633, 'gain2:4': 0.648, 'gain2:5': 0.592}
+comfaulda7 cnn-spec 1 speed_low_12-27Hz clean F1 0.604
