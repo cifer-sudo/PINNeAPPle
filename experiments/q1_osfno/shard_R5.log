@@ -28,3 +28,4 @@ phase1 unbalance    osfno-B-supcon         s0 speed macro-F1 0.919 (low 0.87, mi
 phase1 unbalance    osfno-B-supcon         s1 speed macro-F1 0.952 (low 0.95, mid 1.00, high 0.90) 220s
 phase1 unbalance    osfno-B-supcon         s2 speed macro-F1 0.955 (low 0.88, mid 1.00, high 1.00) 222s
 phase1 unbalance    osfno-B-supcon         s3 speed macro-F1 0.964 (low 0.89, mid 1.00, high 1.00) 226s
+phase1 unbalance    osfno-B-supcon         s4 speed macro-F1 0.941 (low 0.85, mid 1.00, high 1.00) 221s
