@@ -3,3 +3,5 @@ comfaulda7 fno speed_low_12-27Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0
 comfaulda7 fno speed_low_12-27Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.826
 comfaulda7 fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.777
 comfaulda7 fno speed_mid_27-42Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.664
+comfaulda7 fno speed_mid_27-42Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.725
+comfaulda7 fno speed_mid_27-42Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.727
