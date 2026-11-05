@@ -60,3 +60,20 @@ comparison family.
 * `SUMMARY.md`: regenerated from HISTORY.jsonl.
 * `autosave.sh`: every 10 minutes, registers new results, commits and pushes a checkpoint.
 * From this point, every result JSON also carries `provenance` (code commit, dirty flag, library versions).
+
+## Phase 6 pre-registration (written 2026-11-05, before any Phase 6 run)
+- Hypothesis H6: band-limited envelope order spectra (carriers 0.5-2, 2-5, 5-10, 10-20 kHz, extracted once with the
+  data, never tuned) improve the bearing classes over the single broadband envelope.
+- Models fixed in advance (no tuning, no selection): `rf-mb` = Phase 1 RF + amplitudes at FTF/BSF/BPFO/BPFI of each
+  band envelope and sensor; `cnn-mb` = Phase 1 cnn-spec + the band envelopes (0-8X) as extra input channels.
+- Tasks T3 (bearings) and T4 (all), 5 seeds, Phase 1 partitions; comparisons rf-mb vs rf and cnn-mb vs cnn-spec.
+- Decision: H6 is supported if the difference is > 0 with 95 % CI above 0 on both T3 and T4 and the bearing-class mean
+  F1 increases; otherwise it is reported as a negative result.
+- Fusion of RF and CNN probabilities (`fusion.py`, alpha = 0.5) is EXPLORATORY: the pair was chosen after seeing
+  Phase 1 per-band results; any fusion claim requires a gate selected on inner validation (Phase 5).
+
+## Phase 8 (added 2026-11-05, evaluation only)
+- Calibration (ECE, Brier, NLL), per-class F1, cost: from stored Phase 1 probabilities (`phase8_analysis.py`).
+- Robustness (`phase8_robust.py`): Phase 1 models retrained identically, evaluated on perturbed copies of the
+  held-out runs only (speed error ±1/2/5 %, dead sensor, gain x2 per sensor). Clean predictions reproduce Phase 1
+  exactly (checked: RF T2 seed 0 macro-F1 0.848 in both).
