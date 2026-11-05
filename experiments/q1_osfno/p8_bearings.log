@@ -1,0 +1,8 @@
+bearings rf 0 speed_low_12-27Hz clean F1 0.772
+bearings rf 0 speed_mid_27-41Hz clean F1 0.991
+bearings rf 0 speed_high_41-61Hz clean F1 0.809
+bearings rf 0 {'clean:None': 0.866, 'speed:-0.05': 0.515, 'speed:-0.02': 0.68, 'speed:-0.01': 0.835, 'speed:0.01': 0.839, 'speed:0.02': 0.686, 'speed:0.05': 0.529, 'dead:0': 0.788, 'dead:1': 0.859, 'dead:2': 0.85, 'dead:3': 0.806, 'dead:4': 0.531, 'dead:5': 0.854, 'dead:6': 0.543, 'gain2:0': 0.827, 'gain2:1': 0.869, 'gain2:2': 0.848, 'gain2:3': 0.855, 'gain2:4': 0.826, 'gain2:5': 0.877, 'gain2:6': 0.801}
+bearings rf 1 speed_low_12-27Hz clean F1 0.747
+bearings rf 1 speed_mid_27-41Hz clean F1 0.991
+bearings rf 1 speed_high_41-61Hz clean F1 0.791
+bearings rf 1 {'clean:None': 0.853, 'speed:-0.05': 0.508, 'speed:-0.02': 0.666, 'speed:-0.01': 0.823, 'speed:0.01': 0.825, 'speed:0.02': 0.677, 'speed:0.05': 0.526, 'dead:0': 0.801, 'dead:1': 0.847, 'dead:2': 0.847, 'dead:3': 0.807, 'dead:4': 0.576, 'dead:5': 0.844, 'dead:6': 0.527, 'gain2:0': 0.811, 'gain2:1': 0.863, 'gain2:2': 0.833, 'gain2:3': 0.855, 'gain2:4': 0.798, 'gain2:5': 0.865, 'gain2:6': 0.791}
