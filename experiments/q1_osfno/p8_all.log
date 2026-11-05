@@ -82,3 +82,7 @@ all osfno-A-nospeed 0 speed_low_12-27Hz clean F1 0.723
 all osfno-A-nospeed 0 speed_mid_27-42Hz clean F1 0.972
 all osfno-A-nospeed 0 speed_high_42-61Hz clean F1 0.907
 all osfno-A-nospeed 0 {'clean:None': 0.863, 'speed:-0.05': 0.374, 'speed:-0.02': 0.484, 'speed:-0.01': 0.722, 'speed:0.01': 0.675, 'speed:0.02': 0.52, 'speed:0.05': 0.351, 'dead:0': 0.834, 'dead:1': 0.813, 'dead:2': 0.717, 'dead:3': 0.676, 'dead:4': 0.639, 'dead:5': 0.722, 'dead:6': 0.799, 'gain2:0': 0.859, 'gain2:1': 0.863, 'gain2:2': 0.862, 'gain2:3': 0.857, 'gain2:4': 0.856, 'gain2:5': 0.848, 'gain2:6': 0.855}
+all osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.716
+all osfno-A-nospeed 1 speed_mid_27-42Hz clean F1 0.975
+all osfno-A-nospeed 1 speed_high_42-61Hz clean F1 0.881
+all osfno-A-nospeed 1 {'clean:None': 0.861, 'speed:-0.05': 0.42, 'speed:-0.02': 0.583, 'speed:-0.01': 0.745, 'speed:0.01': 0.719, 'speed:0.02': 0.576, 'speed:0.05': 0.346, 'dead:0': 0.813, 'dead:1': 0.813, 'dead:2': 0.774, 'dead:3': 0.685, 'dead:4': 0.672, 'dead:5': 0.663, 'dead:6': 0.812, 'gain2:0': 0.861, 'gain2:1': 0.859, 'gain2:2': 0.855, 'gain2:3': 0.86, 'gain2:4': 0.85, 'gain2:5': 0.859, 'gain2:6': 0.863}
