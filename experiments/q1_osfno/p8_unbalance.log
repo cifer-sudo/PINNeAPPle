@@ -127,3 +127,19 @@ unbalance osfno-B-head 4 speed_high_44-61Hz clean F1 1.000
 unbalance osfno-B-head 4 {'clean:None': 0.945, 'speed:-0.05': 0.956, 'speed:-0.02': 0.953, 'speed:-0.01': 0.943, 'speed:0.01': 0.946, 'speed:0.02': 0.956, 'speed:0.05': 0.778, 'dead:0': 0.922, 'dead:1': 0.9, 'dead:2': 0.876, 'dead:3': 0.466, 'dead:4': 0.96, 'dead:5': 0.565, 'dead:6': 0.922, 'gain2:0': 0.933, 'gain2:1': 0.939, 'gain2:2': 0.939, 'gain2:3': 0.887, 'gain2:4': 0.935, 'gain2:5': 0.94, 'gain2:6': 0.939}
 === END osfno-B-head rc=0 Thu Nov  5 10:57:29 UTC 2026 ===
 === START osfno-E-phys Thu Nov  5 10:57:31 UTC 2026 ===
+unbalance osfno-E-phys 0 speed_low_12-28Hz clean F1 0.878
+unbalance osfno-E-phys 0 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-E-phys 0 speed_high_44-61Hz clean F1 0.983
+unbalance osfno-E-phys 0 {'clean:None': 0.953, 'speed:-0.05': 0.949, 'speed:-0.02': 0.912, 'speed:-0.01': 0.925, 'speed:0.01': 0.945, 'speed:0.02': 0.983, 'speed:0.05': 0.893, 'dead:0': 0.921, 'dead:1': 0.94, 'dead:2': 0.906, 'dead:3': 0.466, 'dead:4': 0.859, 'dead:5': 0.715, 'dead:6': 0.92, 'gain2:0': 0.958, 'gain2:1': 0.947, 'gain2:2': 0.964, 'gain2:3': 0.894, 'gain2:4': 0.952, 'gain2:5': 0.957, 'gain2:6': 0.964}
+unbalance osfno-E-phys 1 speed_low_12-28Hz clean F1 0.935
+unbalance osfno-E-phys 1 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-E-phys 1 speed_high_44-61Hz clean F1 0.964
+unbalance osfno-E-phys 1 {'clean:None': 0.965, 'speed:-0.05': 0.961, 'speed:-0.02': 0.945, 'speed:-0.01': 0.93, 'speed:0.01': 0.955, 'speed:0.02': 0.966, 'speed:0.05': 0.971, 'dead:0': 0.953, 'dead:1': 0.94, 'dead:2': 0.898, 'dead:3': 0.466, 'dead:4': 0.887, 'dead:5': 0.73, 'dead:6': 0.9, 'gain2:0': 0.965, 'gain2:1': 0.965, 'gain2:2': 0.952, 'gain2:3': 0.918, 'gain2:4': 0.934, 'gain2:5': 0.965, 'gain2:6': 0.947}
+unbalance osfno-E-phys 2 speed_low_12-28Hz clean F1 0.864
+unbalance osfno-E-phys 2 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-E-phys 2 speed_high_44-61Hz clean F1 1.000
+unbalance osfno-E-phys 2 {'clean:None': 0.954, 'speed:-0.05': 0.954, 'speed:-0.02': 0.899, 'speed:-0.01': 0.918, 'speed:0.01': 0.966, 'speed:0.02': 0.938, 'speed:0.05': 0.912, 'dead:0': 0.961, 'dead:1': 0.955, 'dead:2': 0.955, 'dead:3': 0.466, 'dead:4': 0.92, 'dead:5': 0.848, 'dead:6': 0.909, 'gain2:0': 0.959, 'gain2:1': 0.959, 'gain2:2': 0.959, 'gain2:3': 0.936, 'gain2:4': 0.953, 'gain2:5': 0.952, 'gain2:6': 0.958}
+unbalance osfno-E-phys 3 speed_low_12-28Hz clean F1 0.849
+unbalance osfno-E-phys 3 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-E-phys 3 speed_high_44-61Hz clean F1 1.000
+unbalance osfno-E-phys 3 {'clean:None': 0.952, 'speed:-0.05': 0.934, 'speed:-0.02': 0.923, 'speed:-0.01': 0.933, 'speed:0.01': 0.934, 'speed:0.02': 0.94, 'speed:0.05': 0.454, 'dead:0': 0.963, 'dead:1': 0.953, 'dead:2': 0.748, 'dead:3': 0.486, 'dead:4': 0.927, 'dead:5': 0.928, 'dead:6': 0.947, 'gain2:0': 0.952, 'gain2:1': 0.945, 'gain2:2': 0.951, 'gain2:3': 0.948, 'gain2:4': 0.946, 'gain2:5': 0.939, 'gain2:6': 0.951}
