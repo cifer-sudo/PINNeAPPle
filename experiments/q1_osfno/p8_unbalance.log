@@ -61,3 +61,24 @@ unbalance xgb 4 speed_high_44-61Hz clean F1 0.620
 unbalance xgb 4 {'clean:None': 0.766, 'speed:-0.05': 0.572, 'speed:-0.02': 0.766, 'speed:-0.01': 0.77, 'speed:0.01': 0.77, 'speed:0.02': 0.774, 'speed:0.05': 0.57, 'dead:0': 0.766, 'dead:1': 0.737, 'dead:2': 0.705, 'dead:3': 0.679, 'dead:4': 0.746, 'dead:5': 0.743, 'dead:6': 0.766, 'gain2:0': 0.882, 'gain2:1': 0.77, 'gain2:2': 0.759, 'gain2:3': 0.702, 'gain2:4': 0.766, 'gain2:5': 0.766, 'gain2:6': 0.766}
 === END xgb rc=0 Thu Nov  5 10:10:14 UTC 2026 ===
 === START cnn-spec Thu Nov  5 10:10:16 UTC 2026 ===
+unbalance cnn-spec 0 speed_low_12-28Hz clean F1 0.907
+unbalance cnn-spec 0 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec 0 speed_high_44-61Hz clean F1 0.983
+unbalance cnn-spec 0 {'clean:None': 0.961, 'speed:-0.05': 0.961, 'speed:-0.02': 0.961, 'speed:-0.01': 0.955, 'speed:0.01': 0.955, 'speed:0.02': 0.955, 'speed:0.05': 0.886, 'dead:0': 0.869, 'dead:1': 0.859, 'dead:2': 0.889, 'dead:3': 0.466, 'dead:4': 0.707, 'dead:5': 0.361, 'dead:6': 0.863, 'gain2:0': 0.931, 'gain2:1': 0.889, 'gain2:2': 0.967, 'gain2:3': 0.761, 'gain2:4': 0.894, 'gain2:5': 0.889, 'gain2:6': 0.903}
+unbalance cnn-spec 1 speed_low_12-28Hz clean F1 0.871
+unbalance cnn-spec 1 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec 1 speed_high_44-61Hz clean F1 0.801
+unbalance cnn-spec 1 {'clean:None': 0.899, 'speed:-0.05': 0.75, 'speed:-0.02': 0.738, 'speed:-0.01': 0.762, 'speed:0.01': 0.759, 'speed:0.02': 0.753, 'speed:0.05': 0.721, 'dead:0': 0.79, 'dead:1': 0.866, 'dead:2': 0.623, 'dead:3': 0.466, 'dead:4': 0.726, 'dead:5': 0.761, 'dead:6': 0.855, 'gain2:0': 0.858, 'gain2:1': 0.891, 'gain2:2': 0.874, 'gain2:3': 0.854, 'gain2:4': 0.863, 'gain2:5': 0.866, 'gain2:6': 0.866}
+unbalance cnn-spec 2 speed_low_12-28Hz clean F1 0.858
+unbalance cnn-spec 2 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec 2 speed_high_44-61Hz clean F1 0.702
+unbalance cnn-spec 2 {'clean:None': 0.869, 'speed:-0.05': 0.864, 'speed:-0.02': 0.869, 'speed:-0.01': 0.864, 'speed:0.01': 0.864, 'speed:0.02': 0.876, 'speed:0.05': 0.869, 'dead:0': 0.853, 'dead:1': 0.869, 'dead:2': 0.628, 'dead:3': 0.466, 'dead:4': 0.524, 'dead:5': 0.497, 'dead:6': 0.885, 'gain2:0': 0.898, 'gain2:1': 0.869, 'gain2:2': 0.866, 'gain2:3': 0.888, 'gain2:4': 0.864, 'gain2:5': 0.885, 'gain2:6': 0.861}
+unbalance cnn-spec 3 speed_low_12-28Hz clean F1 0.814
+unbalance cnn-spec 3 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec 3 speed_high_44-61Hz clean F1 0.702
+unbalance cnn-spec 3 {'clean:None': 0.852, 'speed:-0.05': 0.879, 'speed:-0.02': 0.874, 'speed:-0.01': 0.869, 'speed:0.01': 0.874, 'speed:0.02': 0.879, 'speed:0.05': 0.874, 'dead:0': 0.809, 'dead:1': 0.859, 'dead:2': 0.922, 'dead:3': 0.466, 'dead:4': 0.632, 'dead:5': 0.715, 'dead:6': 0.854, 'gain2:0': 0.912, 'gain2:1': 0.854, 'gain2:2': 0.838, 'gain2:3': 0.893, 'gain2:4': 0.837, 'gain2:5': 0.846, 'gain2:6': 0.851}
+unbalance cnn-spec 4 speed_low_12-28Hz clean F1 0.889
+unbalance cnn-spec 4 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec 4 speed_high_44-61Hz clean F1 0.829
+unbalance cnn-spec 4 {'clean:None': 0.91, 'speed:-0.05': 0.955, 'speed:-0.02': 0.95, 'speed:-0.01': 0.95, 'speed:0.01': 0.943, 'speed:0.02': 0.95, 'speed:0.05': 0.91, 'dead:0': 0.855, 'dead:1': 0.879, 'dead:2': 0.637, 'dead:3': 0.466, 'dead:4': 0.63, 'dead:5': 0.72, 'dead:6': 0.646, 'gain2:0': 0.961, 'gain2:1': 0.955, 'gain2:2': 0.879, 'gain2:3': 0.922, 'gain2:4': 0.874, 'gain2:5': 0.892, 'gain2:6': 0.879}
+=== END cnn-spec rc=0 Thu Nov  5 10:26:30 UTC 2026 ===
