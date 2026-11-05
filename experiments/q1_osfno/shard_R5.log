@@ -11,3 +11,4 @@ phase1 unbalance    osfno-B-dro            s4 speed macro-F1 0.946 (low 0.86, mi
 phase1 bearings     osfno-B-dro            s0 speed macro-F1 0.849 (low 0.74, mid 0.95, high 0.86) 322s
 phase1 bearings     osfno-B-dro            s1 speed macro-F1 0.864 (low 0.75, mid 0.97, high 0.86) 316s
 phase1 bearings     osfno-B-dro            s2 speed macro-F1 0.878 (low 0.81, mid 0.97, high 0.85) 310s
+phase1 bearings     osfno-B-dro            s3 speed macro-F1 0.852 (low 0.76, mid 0.97, high 0.83) 312s
