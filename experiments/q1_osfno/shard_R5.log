@@ -19,3 +19,4 @@ phase1 all          osfno-B-dro            s1 speed macro-F1 0.843 (low 0.70, mi
 phase1 all          osfno-B-dro            s2 speed macro-F1 0.817 (low 0.70, mid 0.93, high 0.81) 578s
 phase1 all          osfno-B-dro            s3 speed macro-F1 0.839 (low 0.71, mid 0.97, high 0.84) 582s
 phase1 all          osfno-B-dro            s4 speed macro-F1 0.842 (low 0.71, mid 0.96, high 0.85) 576s
+phase1 misalignment osfno-B-supcon         s0 speed macro-F1 0.876 (low 0.73, mid 0.93, high 0.94) 322s
