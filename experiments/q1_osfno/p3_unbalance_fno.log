@@ -11,3 +11,8 @@ unbalance fno speed_high_44-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0
 unbalance fno speed_high_44-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.972
 unbalance fno speed_high_44-61Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.946
 locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_unbalance_fno.json 9955457d1e3f
+phase3 unbalance    fno-tuned              s0 speed macro-F1 0.965 (low 0.91, mid 1.00, high 0.98) 162s
+phase3 unbalance    fno-tuned              s1 speed macro-F1 0.959 (low 0.94, mid 1.00, high 0.94) 156s
+phase3 unbalance    fno-tuned              s2 speed macro-F1 0.988 (low 0.96, mid 1.00, high 1.00) 155s
+phase3 unbalance    fno-tuned              s3 speed macro-F1 0.926 (low 0.78, mid 1.00, high 1.00) 162s
+phase3 unbalance    fno-tuned              s4 speed macro-F1 0.965 (low 0.91, mid 1.00, high 0.98) 161s
