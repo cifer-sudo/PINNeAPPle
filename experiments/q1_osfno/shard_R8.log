@@ -9,3 +9,4 @@ phase1 comfaulda7   osfno-E-phys           s2 speed macro-F1 0.653 (low 0.60, mi
 phase1 comfaulda7   osfno-E-phys           s3 speed macro-F1 0.716 (low 0.67, mid 0.79, high 0.67) 844s
 phase1 comfaulda7   osfno-E-phys           s4 speed macro-F1 0.695 (low 0.60, mid 0.77, high 0.71) 890s
 phase1 comfaulda7   cnn-spec               s0 speed macro-F1 0.764 (low 0.63, mid 0.91, high 0.76) 970s
+phase1 comfaulda7   cnn-spec               s1 speed macro-F1 0.759 (low 0.60, mid 0.91, high 0.77) 961s
