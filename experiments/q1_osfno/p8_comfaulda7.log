@@ -1,0 +1,4 @@
+comfaulda7 rf 0 speed_low_12-27Hz clean F1 0.580
+comfaulda7 rf 0 speed_mid_27-42Hz clean F1 0.721
+comfaulda7 rf 0 speed_high_42-61Hz clean F1 0.557
+comfaulda7 rf 0 {'clean:None': 0.626, 'speed:-0.05': 0.43, 'speed:-0.02': 0.476, 'speed:-0.01': 0.637, 'speed:0.01': 0.625, 'speed:0.02': 0.489, 'speed:0.05': 0.402, 'dead:0': 0.518, 'dead:1': 0.548, 'dead:2': 0.615, 'dead:3': 0.577, 'dead:4': 0.606, 'dead:5': 0.474, 'gain2:0': 0.603, 'gain2:1': 0.611, 'gain2:2': 0.607, 'gain2:3': 0.589, 'gain2:4': 0.615, 'gain2:5': 0.601}
