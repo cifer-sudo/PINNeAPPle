@@ -1,0 +1,1 @@
+ml-cnn 0 exact 0.028 {'unbalance': 0.82, 'horizontal': 0.25, 'vertical': 0.6} hamming 0.417
