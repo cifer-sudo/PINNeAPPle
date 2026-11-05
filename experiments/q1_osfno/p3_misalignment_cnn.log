@@ -6,3 +6,8 @@ misalignment cnn speed_mid_28-44Hz {'width': 16, 'blocks': 4} inner 0.923
 misalignment cnn speed_mid_28-44Hz {'width': 32, 'blocks': 3} inner 0.901
 misalignment cnn speed_mid_28-44Hz {'width': 32, 'blocks': 4} inner 0.881
 misalignment cnn speed_mid_28-44Hz {'width': 48, 'blocks': 5} inner 0.827
+misalignment cnn speed_high_44-61Hz {'width': 16, 'blocks': 4} inner 0.878
+misalignment cnn speed_high_44-61Hz {'width': 32, 'blocks': 3} inner 0.934
+misalignment cnn speed_high_44-61Hz {'width': 32, 'blocks': 4} inner 0.938
+misalignment cnn speed_high_44-61Hz {'width': 48, 'blocks': 5} inner 0.870
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_misalignment_cnn.json cdce22913e23
