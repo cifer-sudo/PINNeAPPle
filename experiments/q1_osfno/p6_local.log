@@ -1,1 +1,10 @@
 phase6 bearings     rf-mb                  s0 speed macro-F1 0.861 (low 0.75, mid 1.00, high 0.82) 6s
+phase6 bearings     rf-mb                  s1 speed macro-F1 0.862 (low 0.74, mid 1.00, high 0.83) 6s
+phase6 bearings     rf-mb                  s2 speed macro-F1 0.847 (low 0.72, mid 0.99, high 0.81) 6s
+phase6 bearings     rf-mb                  s3 speed macro-F1 0.841 (low 0.71, mid 0.99, high 0.80) 6s
+phase6 bearings     rf-mb                  s4 speed macro-F1 0.854 (low 0.72, mid 1.00, high 0.82) 6s
+phase6 all          rf-mb                  s0 speed macro-F1 0.869 (low 0.74, mid 1.00, high 0.86) 9s
+phase6 all          rf-mb                  s1 speed macro-F1 0.870 (low 0.74, mid 0.99, high 0.86) 9s
+phase6 all          rf-mb                  s2 speed macro-F1 0.867 (low 0.73, mid 1.00, high 0.86) 9s
+phase6 all          rf-mb                  s3 speed macro-F1 0.867 (low 0.73, mid 1.00, high 0.86) 9s
+phase6 all          rf-mb                  s4 speed macro-F1 0.870 (low 0.75, mid 1.00, high 0.85) 9s
