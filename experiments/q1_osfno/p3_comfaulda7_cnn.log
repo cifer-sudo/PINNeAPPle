@@ -2,3 +2,4 @@ comfaulda7 cnn speed_low_12-27Hz {'width': 16, 'blocks': 4} inner 0.799
 comfaulda7 cnn speed_low_12-27Hz {'width': 32, 'blocks': 3} inner 0.868
 comfaulda7 cnn speed_low_12-27Hz {'width': 32, 'blocks': 4} inner 0.865
 comfaulda7 cnn speed_low_12-27Hz {'width': 48, 'blocks': 5} inner 0.855
+comfaulda7 cnn speed_mid_27-42Hz {'width': 16, 'blocks': 4} inner 0.626
