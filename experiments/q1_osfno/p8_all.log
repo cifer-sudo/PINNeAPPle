@@ -122,3 +122,4 @@ all osfno-E-phys 0 speed_low_12-27Hz clean F1 0.708
 all osfno-E-phys 0 speed_mid_27-42Hz clean F1 0.979
 all osfno-E-phys 0 speed_high_42-61Hz clean F1 0.892
 all osfno-E-phys 0 {'clean:None': 0.853, 'speed:-0.05': 0.464, 'speed:-0.02': 0.509, 'speed:-0.01': 0.7, 'speed:0.01': 0.692, 'speed:0.02': 0.579, 'speed:0.05': 0.312, 'dead:0': 0.811, 'dead:1': 0.818, 'dead:2': 0.764, 'dead:3': 0.675, 'dead:4': 0.59, 'dead:5': 0.711, 'dead:6': 0.812, 'gain2:0': 0.853, 'gain2:1': 0.853, 'gain2:2': 0.854, 'gain2:3': 0.847, 'gain2:4': 0.856, 'gain2:5': 0.847, 'gain2:6': 0.856}
+all osfno-E-phys 1 speed_low_12-27Hz clean F1 0.717
