@@ -6,3 +6,6 @@ all cnn speed_mid_27-42Hz {'width': 16, 'blocks': 4} inner 0.884
 all cnn speed_mid_27-42Hz {'width': 32, 'blocks': 3} inner 0.923
 all cnn speed_mid_27-42Hz {'width': 32, 'blocks': 4} inner 0.895
 all cnn speed_mid_27-42Hz {'width': 48, 'blocks': 5} inner 0.892
+all cnn speed_high_42-61Hz {'width': 16, 'blocks': 4} inner 0.927
+all cnn speed_high_42-61Hz {'width': 32, 'blocks': 3} inner 0.929
+all cnn speed_high_42-61Hz {'width': 32, 'blocks': 4} inner 0.927
