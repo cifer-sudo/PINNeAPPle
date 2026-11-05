@@ -11,3 +11,4 @@ misalignment cnn speed_high_44-61Hz {'width': 32, 'blocks': 3} inner 0.934
 misalignment cnn speed_high_44-61Hz {'width': 32, 'blocks': 4} inner 0.938
 misalignment cnn speed_high_44-61Hz {'width': 48, 'blocks': 5} inner 0.870
 locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_misalignment_cnn.json cdce22913e23
+phase3 misalignment cnn-tuned              s0 speed macro-F1 0.930 (low 0.83, mid 1.00, high 0.96) 117s
