@@ -1,1 +1,13 @@
 misalignment fno speed_low_12-28Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.992
+misalignment fno speed_low_12-28Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.985
+misalignment fno speed_low_12-28Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.989
+misalignment fno speed_low_12-28Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.988
+misalignment fno speed_mid_28-44Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.823
+misalignment fno speed_mid_28-44Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.879
+misalignment fno speed_mid_28-44Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.862
+misalignment fno speed_mid_28-44Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.834
+misalignment fno speed_high_44-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.858
+misalignment fno speed_high_44-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.876
+misalignment fno speed_high_44-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.879
+misalignment fno speed_high_44-61Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.806
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_misalignment_fno.json 4bd6dc7ead53
