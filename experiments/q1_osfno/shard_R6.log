@@ -6,3 +6,4 @@ phase1 bearings     osfno-B-head           s4 speed macro-F1 0.852 (low 0.71, mi
 phase1 all          osfno-B-head           s0 speed macro-F1 0.822 (low 0.70, mid 0.95, high 0.80) 562s
 phase1 all          osfno-B-head           s1 speed macro-F1 0.845 (low 0.70, mid 0.95, high 0.88) 551s
 phase1 all          osfno-B-head           s2 speed macro-F1 0.825 (low 0.71, mid 0.92, high 0.84) 552s
+phase1 all          osfno-B-head           s3 speed macro-F1 0.845 (low 0.71, mid 0.96, high 0.85) 558s
