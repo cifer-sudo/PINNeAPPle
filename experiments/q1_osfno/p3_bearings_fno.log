@@ -2,3 +2,12 @@ bearings fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.9
 bearings fno speed_low_12-27Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.964
 bearings fno speed_low_12-27Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.956
 bearings fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.961
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.867
+bearings fno speed_mid_27-41Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.892
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.879
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.877
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.914
+bearings fno speed_high_41-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.935
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.928
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.895
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_bearings_fno.json b49a4a62841d
