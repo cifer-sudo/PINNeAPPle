@@ -59,3 +59,12 @@ Status: MAFAULDA [DATA] items completed 2026-11-04 from the full re-extraction (
 4. Re-run the plain FNO with train-only scaling, or label its column.
 5. Store predictions, partitions and configs for every run (done in `experiments/q1_osfno/`).
 6. Do not present the FiLM ablation as causal until Phase 1 confirms it over 5 seeds and all tasks.
+
+## F. Claims of the research journal re-examined after Phases 1-8 (2026-11-05)
+
+| Claim (journal / manuscript) | New evidence | Status |
+|---|---|---|
+| COMFAULDA compound faults: "the superposition hypothesis is refuted" | `phase7.py superposition` (`results/phase7/superposition.json`): median relative error over 0-8X of Y_A + Y_B - Y_0 (nearest-speed single and normal runs) vs the real compound run: U+H 0.85, U+V 0.90, H+V 1.25; same-class noise floor over 0-8X (two runs of one single-fault class at the nearest speed): U 0.61, H 0.92, V 0.85 | **only partly supported**: for U+H and U+V the deviation is within the range of run-to-run variability of the constituent classes; for H+V (two misalignments) it exceeds both floors (1.25 vs 0.85-0.92). The claim must be restricted to the misalignment pair and stated against the noise floor |
+| Binary relevance from singles fails on compounds (exact match ≈ 0.01) | `phase7.py run br-rf`, 5 seeds: exact 0.010-0.018, per-label F1 0.86 / 0.36-0.40 / 0.42 | reproduced |
+| OS-FNO / OC-FNO is the strongest speed-generalising model | Phase 1, 5 tasks: only the residual CNN on order spectra beats the best feature baseline under R3; OS-FNO variants win only T2 | **not supported** (see PHASE1_REPORT.md) |
+| FiLM speed conditioning helps | R1: speed in the head (B) beats FiLM (C) with CI > 0 on 4/5 tasks; R2: no speed input (A) is as good as B | **reversed**: FiLM hurts; speed input not needed |
