@@ -1,0 +1,16 @@
+misalignment rf 0 speed_low_12-28Hz clean F1 0.842
+misalignment rf 0 speed_mid_28-44Hz clean F1 1.000
+misalignment rf 0 speed_high_44-61Hz clean F1 0.702
+misalignment rf 0 {'clean:None': 0.874, 'speed:-0.05': 0.526, 'speed:-0.02': 0.768, 'speed:-0.01': 0.847, 'speed:0.01': 0.856, 'speed:0.02': 0.808, 'speed:0.05': 0.545, 'dead:0': 0.857, 'dead:1': 0.802, 'dead:2': 0.859, 'dead:3': 0.652, 'dead:4': 0.85, 'dead:5': 0.838, 'dead:6': 0.723, 'gain2:0': 0.885, 'gain2:1': 0.896, 'gain2:2': 0.873, 'gain2:3': 0.842, 'gain2:4': 0.857, 'gain2:5': 0.883, 'gain2:6': 0.311}
+misalignment rf 1 speed_low_12-28Hz clean F1 0.874
+misalignment rf 1 speed_mid_28-44Hz clean F1 1.000
+misalignment rf 1 speed_high_44-61Hz clean F1 0.706
+misalignment rf 1 {'clean:None': 0.886, 'speed:-0.05': 0.583, 'speed:-0.02': 0.758, 'speed:-0.01': 0.874, 'speed:0.01': 0.867, 'speed:0.02': 0.806, 'speed:0.05': 0.559, 'dead:0': 0.866, 'dead:1': 0.841, 'dead:2': 0.873, 'dead:3': 0.753, 'dead:4': 0.891, 'dead:5': 0.86, 'dead:6': 0.699, 'gain2:0': 0.891, 'gain2:1': 0.881, 'gain2:2': 0.885, 'gain2:3': 0.857, 'gain2:4': 0.866, 'gain2:5': 0.887, 'gain2:6': 0.274}
+misalignment rf 2 speed_low_12-28Hz clean F1 0.828
+misalignment rf 2 speed_mid_28-44Hz clean F1 1.000
+misalignment rf 2 speed_high_44-61Hz clean F1 0.699
+misalignment rf 2 {'clean:None': 0.869, 'speed:-0.05': 0.548, 'speed:-0.02': 0.755, 'speed:-0.01': 0.845, 'speed:0.01': 0.853, 'speed:0.02': 0.762, 'speed:0.05': 0.508, 'dead:0': 0.857, 'dead:1': 0.849, 'dead:2': 0.859, 'dead:3': 0.703, 'dead:4': 0.865, 'dead:5': 0.837, 'dead:6': 0.722, 'gain2:0': 0.884, 'gain2:1': 0.9, 'gain2:2': 0.868, 'gain2:3': 0.847, 'gain2:4': 0.852, 'gain2:5': 0.886, 'gain2:6': 0.284}
+misalignment rf 3 speed_low_12-28Hz clean F1 0.841
+misalignment rf 3 speed_mid_28-44Hz clean F1 1.000
+misalignment rf 3 speed_high_44-61Hz clean F1 0.690
+misalignment rf 3 {'clean:None': 0.87, 'speed:-0.05': 0.616, 'speed:-0.02': 0.789, 'speed:-0.01': 0.848, 'speed:0.01': 0.849, 'speed:0.02': 0.81, 'speed:0.05': 0.609, 'dead:0': 0.846, 'dead:1': 0.833, 'dead:2': 0.867, 'dead:3': 0.677, 'dead:4': 0.854, 'dead:5': 0.835, 'dead:6': 0.731, 'gain2:0': 0.882, 'gain2:1': 0.894, 'gain2:2': 0.867, 'gain2:3': 0.831, 'gain2:4': 0.858, 'gain2:5': 0.881, 'gain2:6': 0.298}
