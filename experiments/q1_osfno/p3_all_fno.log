@@ -7,3 +7,5 @@ all fno speed_mid_27-42Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.879
 all fno speed_mid_27-42Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.864
 all fno speed_mid_27-42Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.836
 all fno speed_high_42-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.894
+all fno speed_high_42-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.921
+all fno speed_high_42-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.897
