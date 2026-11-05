@@ -14,3 +14,4 @@ locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_bearings_cnn.json
 phase3 bearings     cnn-tuned              s0 speed macro-F1 0.909 (low 0.75, mid 0.99, high 0.96) 304s
 phase3 bearings     cnn-tuned              s1 speed macro-F1 0.878 (low 0.72, mid 0.99, high 0.91) 276s
 phase3 bearings     cnn-tuned              s2 speed macro-F1 0.913 (low 0.77, mid 0.99, high 0.95) 268s
+phase3 bearings     cnn-tuned              s3 speed macro-F1 0.912 (low 0.79, mid 0.99, high 0.94) 265s
