@@ -7,3 +7,5 @@ comfaulda7 fno speed_mid_27-42Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0
 comfaulda7 fno speed_mid_27-42Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.727
 comfaulda7 fno speed_mid_27-42Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.647
 comfaulda7 fno speed_high_42-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.761
+comfaulda7 fno speed_high_42-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.813
+comfaulda7 fno speed_high_42-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.805
