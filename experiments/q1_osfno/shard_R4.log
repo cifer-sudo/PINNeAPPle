@@ -14,3 +14,5 @@ phase1 bearings     cnn-spec               s2 speed macro-F1 0.908 (low 0.77, mi
 phase1 bearings     cnn-spec               s3 speed macro-F1 0.914 (low 0.79, mid 0.99, high 0.94) 478s
 phase1 bearings     cnn-spec               s4 speed macro-F1 0.910 (low 0.79, mid 0.99, high 0.92) 456s
 phase1 all          cnn-spec               s0 speed macro-F1 0.893 (low 0.75, mid 1.00, high 0.91) 794s
+phase1 all          cnn-spec               s1 speed macro-F1 0.907 (low 0.77, mid 1.00, high 0.94) 787s
+phase1 all          cnn-spec               s2 speed macro-F1 0.894 (low 0.73, mid 1.00, high 0.94) 780s
