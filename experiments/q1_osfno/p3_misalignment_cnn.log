@@ -1,3 +1,4 @@
 misalignment cnn speed_low_12-28Hz {'width': 16, 'blocks': 4} inner 0.994
 misalignment cnn speed_low_12-28Hz {'width': 32, 'blocks': 3} inner 0.994
 misalignment cnn speed_low_12-28Hz {'width': 32, 'blocks': 4} inner 0.994
+misalignment cnn speed_low_12-28Hz {'width': 48, 'blocks': 5} inner 0.994
