@@ -39,3 +39,4 @@ phase1 all          osfno-B-supcon         s0 speed macro-F1 0.847 (low 0.71, mi
 phase1 all          osfno-B-supcon         s1 speed macro-F1 0.867 (low 0.79, mid 0.95, high 0.83) 1379s
 phase1 all          osfno-B-supcon         s2 speed macro-F1 0.870 (low 0.73, mid 0.97, high 0.89) 1324s
 phase1 all          osfno-B-supcon         s3 speed macro-F1 0.862 (low 0.75, mid 0.98, high 0.84) 1372s
+# [worker] container restarted; resuming queue R5 (finished results are skipped) Thu Nov  5 04:32:47 UTC 2026
