@@ -12,7 +12,7 @@ Models (configuration fixed in advance, identical to their Phase 1 parents excep
 Tasks: bearings (T3) and all (T4), 5 seeds, Phase 1 partitions; compared with rf and cnn-spec by stats_q1.compare.
 Also `diagnose`: Fisher ratio (between/within class variance, log amplitude) of the defect-order amplitudes, broadband
 vs best band, computed on all T3 runs (descriptive physics, not used for any selection).
-Needs the full cache (env_bands is not in the slim cache).
+Uses the full cache, or the slim cache + data_slim/mafaulda_envbands.npz (make_envbands_slim.py).
 usage: python phase6.py run <task> <model> | python phase6.py diagnose
 """
 from __future__ import annotations
@@ -78,9 +78,18 @@ def cnn_mb(epochs=100, lr=1e-3, width=32, blocks=4):
 MODELS = {"rf-mb": rf_mb, "cnn-mb": cnn_mb}
 
 
-def run(task, model):
+def load_rows():
+    """Full cache rows, or slim rows + data_slim/mafaulda_envbands.npz (identical float16 values, 0-8X)."""
     rows = L.load_rows("mafaulda")
-    assert "env_bands" in rows[0], "phase6 needs the full cache (env_bands)"
+    if "env_bands" not in rows[0]:
+        z = np.load(L.RESULTS.parent / "data_slim" / "mafaulda_envbands.npz", allow_pickle=True)
+        eb = dict(zip(z["paths"], z["env_bands"]))
+        rows = [{**r, "env_bands": eb[r["path"]]} for r in rows]
+    return rows
+
+
+def run(task, model):
+    rows = load_rows()
     for s in range(5):
         L.run(task, model, MODELS[model](), rows, s, exp="phase6", dataset="mafaulda",
               config={"model": model, "preregistered": "PROTOCOL.md Phase 6", "bands_khz": [[0.5, 2], [2, 5], [5, 10], [10, 20]],
@@ -88,7 +97,7 @@ def run(task, model):
 
 
 def diagnose():
-    rows = L.load_rows("mafaulda")
+    rows = load_rows()
     sel, y, paths, sp = L.task_data(rows, "bearings")
     classes = sorted(set(y))
 
