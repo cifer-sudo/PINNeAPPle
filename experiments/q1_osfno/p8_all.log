@@ -70,3 +70,7 @@ all cnn-spec 2 speed_low_12-27Hz clean F1 0.734
 all cnn-spec 2 speed_mid_27-42Hz clean F1 0.998
 all cnn-spec 2 speed_high_42-61Hz clean F1 0.935
 all cnn-spec 2 {'clean:None': 0.894, 'speed:-0.05': 0.873, 'speed:-0.02': 0.875, 'speed:-0.01': 0.864, 'speed:0.01': 0.871, 'speed:0.02': 0.878, 'speed:0.05': 0.854, 'dead:0': 0.459, 'dead:1': 0.688, 'dead:2': 0.474, 'dead:3': 0.405, 'dead:4': 0.283, 'dead:5': 0.374, 'dead:6': 0.532, 'gain2:0': 0.723, 'gain2:1': 0.84, 'gain2:2': 0.847, 'gain2:3': 0.856, 'gain2:4': 0.83, 'gain2:5': 0.78, 'gain2:6': 0.9}
+all cnn-spec 3 speed_low_12-27Hz clean F1 0.733
+all cnn-spec 3 speed_mid_27-42Hz clean F1 0.999
+all cnn-spec 3 speed_high_42-61Hz clean F1 0.968
+all cnn-spec 3 {'clean:None': 0.899, 'speed:-0.05': 0.749, 'speed:-0.02': 0.754, 'speed:-0.01': 0.769, 'speed:0.01': 0.766, 'speed:0.02': 0.793, 'speed:0.05': 0.73, 'dead:0': 0.475, 'dead:1': 0.663, 'dead:2': 0.306, 'dead:3': 0.606, 'dead:4': 0.347, 'dead:5': 0.418, 'dead:6': 0.68, 'gain2:0': 0.832, 'gain2:1': 0.831, 'gain2:2': 0.832, 'gain2:3': 0.885, 'gain2:4': 0.862, 'gain2:5': 0.803, 'gain2:6': 0.883}
