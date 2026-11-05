@@ -11,3 +11,4 @@ comfaulda7 cnn speed_high_42-61Hz {'width': 32, 'blocks': 3} inner 0.778
 comfaulda7 cnn speed_high_42-61Hz {'width': 32, 'blocks': 4} inner 0.766
 comfaulda7 cnn speed_high_42-61Hz {'width': 48, 'blocks': 5} inner 0.801
 locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_comfaulda7_cnn.json 6a51421a88f4
+phase3 comfaulda7   cnn-tuned              s0 speed macro-F1 0.765 (low 0.62, mid 0.92, high 0.76) 917s
