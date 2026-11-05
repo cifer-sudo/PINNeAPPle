@@ -98,3 +98,7 @@ bearings osfno-A-nospeed 4 speed_low_12-27Hz clean F1 0.722
 bearings osfno-A-nospeed 4 speed_mid_27-41Hz clean F1 0.985
 bearings osfno-A-nospeed 4 speed_high_41-61Hz clean F1 0.865
 bearings osfno-A-nospeed 4 {'clean:None': 0.853, 'speed:-0.05': 0.495, 'speed:-0.02': 0.571, 'speed:-0.01': 0.725, 'speed:0.01': 0.68, 'speed:0.02': 0.558, 'speed:0.05': 0.442, 'dead:0': 0.804, 'dead:1': 0.829, 'dead:2': 0.806, 'dead:3': 0.831, 'dead:4': 0.588, 'dead:5': 0.847, 'dead:6': 0.807, 'gain2:0': 0.853, 'gain2:1': 0.849, 'gain2:2': 0.861, 'gain2:3': 0.845, 'gain2:4': 0.851, 'gain2:5': 0.845, 'gain2:6': 0.851}
+bearings osfno-B-head 0 speed_low_12-27Hz clean F1 0.752
+bearings osfno-B-head 0 speed_mid_27-41Hz clean F1 0.958
+bearings osfno-B-head 0 speed_high_41-61Hz clean F1 0.866
+bearings osfno-B-head 0 {'clean:None': 0.854, 'speed:-0.05': 0.508, 'speed:-0.02': 0.462, 'speed:-0.01': 0.716, 'speed:0.01': 0.609, 'speed:0.02': 0.513, 'speed:0.05': 0.428, 'dead:0': 0.809, 'dead:1': 0.828, 'dead:2': 0.807, 'dead:3': 0.811, 'dead:4': 0.449, 'dead:5': 0.809, 'dead:6': 0.788, 'gain2:0': 0.859, 'gain2:1': 0.864, 'gain2:2': 0.867, 'gain2:3': 0.859, 'gain2:4': 0.846, 'gain2:5': 0.841, 'gain2:6': 0.851}
