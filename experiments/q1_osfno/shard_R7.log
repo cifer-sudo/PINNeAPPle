@@ -60,3 +60,6 @@ phase1 comfaulda7   osfno-B-head           s3 speed macro-F1 0.654 (low 0.58, mi
 phase1 comfaulda7   osfno-B-head           s4 speed macro-F1 0.713 (low 0.61, mid 0.79, high 0.73) 870s
 phase1 comfaulda7   osfno-C-film           s0 speed macro-F1 0.587 (low 0.46, mid 0.81, high 0.50) 1002s
 phase1 comfaulda7   osfno-C-film           s1 speed macro-F1 0.600 (low 0.43, mid 0.84, high 0.53) 992s
+phase1 comfaulda7   osfno-C-film           s2 speed macro-F1 0.623 (low 0.49, mid 0.82, high 0.54) 921s
+phase1 comfaulda7   osfno-C-film           s3 speed macro-F1 0.592 (low 0.47, mid 0.78, high 0.52) 894s
+phase1 comfaulda7   osfno-C-film           s4 speed macro-F1 0.557 (low 0.39, mid 0.78, high 0.51) 907s
