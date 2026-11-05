@@ -15,3 +15,4 @@ phase1 bearings     osfno-B-dro            s3 speed macro-F1 0.852 (low 0.76, mi
 # [worker] container restarted; resuming queue R5 (finished results are skipped) Thu Nov  5 00:09:35 UTC 2026
 phase1 bearings     osfno-B-dro            s4 speed macro-F1 0.857 (low 0.72, mid 0.97, high 0.89) 345s
 phase1 all          osfno-B-dro            s0 speed macro-F1 0.827 (low 0.70, mid 0.96, high 0.81) 572s
+phase1 all          osfno-B-dro            s1 speed macro-F1 0.843 (low 0.70, mid 0.95, high 0.87) 578s
