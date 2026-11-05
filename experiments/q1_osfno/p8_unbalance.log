@@ -100,3 +100,7 @@ unbalance osfno-A-nospeed 3 speed_mid_28-44Hz clean F1 1.000
 unbalance osfno-A-nospeed 3 speed_high_44-61Hz clean F1 1.000
 unbalance osfno-A-nospeed 3 {'clean:None': 0.926, 'speed:-0.05': 0.929, 'speed:-0.02': 0.951, 'speed:-0.01': 0.886, 'speed:0.01': 0.913, 'speed:0.02': 0.887, 'speed:0.05': 0.487, 'dead:0': 0.926, 'dead:1': 0.938, 'dead:2': 0.78, 'dead:3': 0.486, 'dead:4': 0.909, 'dead:5': 0.915, 'dead:6': 0.906, 'gain2:0': 0.921, 'gain2:1': 0.926, 'gain2:2': 0.936, 'gain2:3': 0.901, 'gain2:4': 0.926, 'gain2:5': 0.926, 'gain2:6': 0.936}
 unbalance osfno-A-nospeed 4 speed_low_12-28Hz clean F1 0.913
+unbalance osfno-A-nospeed 4 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-A-nospeed 4 speed_high_44-61Hz clean F1 0.983
+unbalance osfno-A-nospeed 4 {'clean:None': 0.965, 'speed:-0.05': 0.956, 'speed:-0.02': 0.976, 'speed:-0.01': 0.988, 'speed:0.01': 0.956, 'speed:0.02': 0.983, 'speed:0.05': 0.72, 'dead:0': 0.931, 'dead:1': 0.912, 'dead:2': 0.875, 'dead:3': 0.466, 'dead:4': 0.965, 'dead:5': 0.608, 'dead:6': 0.918, 'gain2:0': 0.959, 'gain2:1': 0.959, 'gain2:2': 0.959, 'gain2:3': 0.927, 'gain2:4': 0.942, 'gain2:5': 0.945, 'gain2:6': 0.965}
+=== END osfno-A-nospeed rc=0 Thu Nov  5 10:41:41 UTC 2026 ===
