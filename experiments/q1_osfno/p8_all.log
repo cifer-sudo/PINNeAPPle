@@ -79,3 +79,6 @@ all cnn-spec 4 speed_mid_27-42Hz clean F1 0.998
 all cnn-spec 4 speed_high_42-61Hz clean F1 0.943
 all cnn-spec 4 {'clean:None': 0.907, 'speed:-0.05': 0.7, 'speed:-0.02': 0.728, 'speed:-0.01': 0.765, 'speed:0.01': 0.752, 'speed:0.02': 0.819, 'speed:0.05': 0.69, 'dead:0': 0.556, 'dead:1': 0.585, 'dead:2': 0.331, 'dead:3': 0.504, 'dead:4': 0.485, 'dead:5': 0.285, 'dead:6': 0.686, 'gain2:0': 0.855, 'gain2:1': 0.82, 'gain2:2': 0.828, 'gain2:3': 0.87, 'gain2:4': 0.861, 'gain2:5': 0.814, 'gain2:6': 0.895}
 all osfno-A-nospeed 0 speed_low_12-27Hz clean F1 0.723
+all osfno-A-nospeed 0 speed_mid_27-42Hz clean F1 0.972
+all osfno-A-nospeed 0 speed_high_42-61Hz clean F1 0.907
+all osfno-A-nospeed 0 {'clean:None': 0.863, 'speed:-0.05': 0.374, 'speed:-0.02': 0.484, 'speed:-0.01': 0.722, 'speed:0.01': 0.675, 'speed:0.02': 0.52, 'speed:0.05': 0.351, 'dead:0': 0.834, 'dead:1': 0.813, 'dead:2': 0.717, 'dead:3': 0.676, 'dead:4': 0.639, 'dead:5': 0.722, 'dead:6': 0.799, 'gain2:0': 0.859, 'gain2:1': 0.863, 'gain2:2': 0.862, 'gain2:3': 0.857, 'gain2:4': 0.856, 'gain2:5': 0.848, 'gain2:6': 0.855}
