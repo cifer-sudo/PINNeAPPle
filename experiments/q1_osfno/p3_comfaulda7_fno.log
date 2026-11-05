@@ -15,3 +15,4 @@ phase3 comfaulda7   fno-tuned              s0 speed macro-F1 0.741 (low 0.64, mi
 phase3 comfaulda7   fno-tuned              s1 speed macro-F1 0.742 (low 0.66, mid 0.82, high 0.73) 1162s
 phase3 comfaulda7   fno-tuned              s2 speed macro-F1 0.733 (low 0.64, mid 0.87, high 0.68) 1253s
 phase3 comfaulda7   fno-tuned              s3 speed macro-F1 0.708 (low 0.62, mid 0.80, high 0.68) 1222s
+phase3 comfaulda7   fno-tuned              s4 speed macro-F1 0.705 (low 0.62, mid 0.81, high 0.66) 1142s
