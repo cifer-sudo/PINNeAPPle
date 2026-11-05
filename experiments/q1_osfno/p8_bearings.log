@@ -70,3 +70,7 @@ bearings cnn-spec 2 speed_low_12-27Hz clean F1 0.771
 bearings cnn-spec 2 speed_mid_27-41Hz clean F1 0.991
 bearings cnn-spec 2 speed_high_41-61Hz clean F1 0.939
 bearings cnn-spec 2 {'clean:None': 0.908, 'speed:-0.05': 0.903, 'speed:-0.02': 0.909, 'speed:-0.01': 0.91, 'speed:0.01': 0.903, 'speed:0.02': 0.913, 'speed:0.05': 0.905, 'dead:0': 0.651, 'dead:1': 0.663, 'dead:2': 0.5, 'dead:3': 0.65, 'dead:4': 0.373, 'dead:5': 0.336, 'dead:6': 0.643, 'gain2:0': 0.78, 'gain2:1': 0.9, 'gain2:2': 0.856, 'gain2:3': 0.912, 'gain2:4': 0.856, 'gain2:5': 0.787, 'gain2:6': 0.892}
+bearings cnn-spec 3 speed_low_12-27Hz clean F1 0.795
+bearings cnn-spec 3 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 3 speed_high_41-61Hz clean F1 0.938
+bearings cnn-spec 3 {'clean:None': 0.914, 'speed:-0.05': 0.911, 'speed:-0.02': 0.904, 'speed:-0.01': 0.906, 'speed:0.01': 0.905, 'speed:0.02': 0.899, 'speed:0.05': 0.9, 'dead:0': 0.611, 'dead:1': 0.741, 'dead:2': 0.521, 'dead:3': 0.641, 'dead:4': 0.325, 'dead:5': 0.556, 'dead:6': 0.769, 'gain2:0': 0.846, 'gain2:1': 0.853, 'gain2:2': 0.847, 'gain2:3': 0.936, 'gain2:4': 0.864, 'gain2:5': 0.837, 'gain2:6': 0.892}
