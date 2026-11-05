@@ -58,3 +58,7 @@ bearings xgb 4 speed_low_12-27Hz clean F1 0.709
 bearings xgb 4 speed_mid_27-41Hz clean F1 0.989
 bearings xgb 4 speed_high_41-61Hz clean F1 0.624
 bearings xgb 4 {'clean:None': 0.796, 'speed:-0.05': 0.543, 'speed:-0.02': 0.77, 'speed:-0.01': 0.785, 'speed:0.01': 0.789, 'speed:0.02': 0.774, 'speed:0.05': 0.538, 'dead:0': 0.664, 'dead:1': 0.763, 'dead:2': 0.746, 'dead:3': 0.737, 'dead:4': 0.502, 'dead:5': 0.785, 'dead:6': 0.408, 'gain2:0': 0.763, 'gain2:1': 0.802, 'gain2:2': 0.776, 'gain2:3': 0.795, 'gain2:4': 0.788, 'gain2:5': 0.797, 'gain2:6': 0.691}
+bearings cnn-spec 0 speed_low_12-27Hz clean F1 0.748
+bearings cnn-spec 0 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 0 speed_high_41-61Hz clean F1 0.950
+bearings cnn-spec 0 {'clean:None': 0.907, 'speed:-0.05': 0.599, 'speed:-0.02': 0.669, 'speed:-0.01': 0.729, 'speed:0.01': 0.657, 'speed:0.02': 0.761, 'speed:0.05': 0.576, 'dead:0': 0.642, 'dead:1': 0.697, 'dead:2': 0.505, 'dead:3': 0.658, 'dead:4': 0.417, 'dead:5': 0.409, 'dead:6': 0.47, 'gain2:0': 0.891, 'gain2:1': 0.861, 'gain2:2': 0.879, 'gain2:3': 0.901, 'gain2:4': 0.872, 'gain2:5': 0.809, 'gain2:6': 0.872}
