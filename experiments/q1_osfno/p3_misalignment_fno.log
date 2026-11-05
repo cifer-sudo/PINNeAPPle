@@ -11,3 +11,8 @@ misalignment fno speed_high_44-61Hz {'width': 64, 'modes': 64, 'layers': 3} inne
 misalignment fno speed_high_44-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.879
 misalignment fno speed_high_44-61Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.806
 locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_misalignment_fno.json 4bd6dc7ead53
+phase3 misalignment fno-tuned              s0 speed macro-F1 0.835 (low 0.64, mid 0.99, high 0.85) 353s
+phase3 misalignment fno-tuned              s1 speed macro-F1 0.844 (low 0.70, mid 0.98, high 0.80) 374s
+phase3 misalignment fno-tuned              s2 speed macro-F1 0.863 (low 0.67, mid 0.96, high 0.95) 360s
+phase3 misalignment fno-tuned              s3 speed macro-F1 0.871 (low 0.68, mid 0.97, high 0.96) 354s
+phase3 misalignment fno-tuned              s4 speed macro-F1 0.830 (low 0.66, mid 0.96, high 0.89) 351s
