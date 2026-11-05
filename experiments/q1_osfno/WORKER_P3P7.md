@@ -12,3 +12,8 @@
    commit, `git push -u origin exp/q1-shard-<NAME>`. Never modify code or other files; never push to exp/q1-audit-osfno.
 5. Rules: do not change grids, epochs, seeds or partitions; do not delete any result; the test tercile is never used for
    selection (the script enforces it). If a job fails, record the error in the log, push, and stop.
+
+## Phase 8 robustness shard (NAME=P8-<task>)
+`for m in rf mlp xgb cnn-spec osfno-A-nospeed osfno-B-head osfno-E-phys; do Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase8_robust.py <ds> <task> $m 2>&1 | tee -a p8_<task>.log; done`
+(existing result files are skipped). Push `experiments/q1_osfno/results experiments/q1_osfno/p8_<task>.log` to
+`exp/q1-shard-P8-<task>` after each model and at the end, as in step 4.
