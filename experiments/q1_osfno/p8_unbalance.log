@@ -143,3 +143,8 @@ unbalance osfno-E-phys 3 speed_low_12-28Hz clean F1 0.849
 unbalance osfno-E-phys 3 speed_mid_28-44Hz clean F1 1.000
 unbalance osfno-E-phys 3 speed_high_44-61Hz clean F1 1.000
 unbalance osfno-E-phys 3 {'clean:None': 0.952, 'speed:-0.05': 0.934, 'speed:-0.02': 0.923, 'speed:-0.01': 0.933, 'speed:0.01': 0.934, 'speed:0.02': 0.94, 'speed:0.05': 0.454, 'dead:0': 0.963, 'dead:1': 0.953, 'dead:2': 0.748, 'dead:3': 0.486, 'dead:4': 0.927, 'dead:5': 0.928, 'dead:6': 0.947, 'gain2:0': 0.952, 'gain2:1': 0.945, 'gain2:2': 0.951, 'gain2:3': 0.948, 'gain2:4': 0.946, 'gain2:5': 0.939, 'gain2:6': 0.951}
+unbalance osfno-E-phys 4 speed_low_12-28Hz clean F1 0.864
+unbalance osfno-E-phys 4 speed_mid_28-44Hz clean F1 1.000
+unbalance osfno-E-phys 4 speed_high_44-61Hz clean F1 0.983
+unbalance osfno-E-phys 4 {'clean:None': 0.948, 'speed:-0.05': 0.967, 'speed:-0.02': 0.958, 'speed:-0.01': 0.953, 'speed:0.01': 0.961, 'speed:0.02': 0.972, 'speed:0.05': 0.813, 'dead:0': 0.955, 'dead:1': 0.927, 'dead:2': 0.94, 'dead:3': 0.466, 'dead:4': 0.969, 'dead:5': 0.611, 'dead:6': 0.931, 'gain2:0': 0.941, 'gain2:1': 0.941, 'gain2:2': 0.948, 'gain2:3': 0.936, 'gain2:4': 0.95, 'gain2:5': 0.934, 'gain2:6': 0.948}
+=== END osfno-E-phys rc=0 Thu Nov  5 11:13:39 UTC 2026 ===
