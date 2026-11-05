@@ -78,3 +78,10 @@ comfaulda7 cnn-spec 4 speed_low_12-27Hz clean F1 0.580
 comfaulda7 cnn-spec 4 speed_mid_27-42Hz clean F1 0.935
 comfaulda7 cnn-spec 4 speed_high_42-61Hz clean F1 0.751
 comfaulda7 cnn-spec 4 {'clean:None': 0.754, 'speed:-0.05': 0.309, 'speed:-0.02': 0.349, 'speed:-0.01': 0.456, 'speed:0.01': 0.391, 'speed:0.02': 0.504, 'speed:0.05': 0.286, 'dead:0': 0.368, 'dead:1': 0.509, 'dead:2': 0.21, 'dead:3': 0.285, 'dead:4': 0.315, 'dead:5': 0.118, 'gain2:0': 0.691, 'gain2:1': 0.688, 'gain2:2': 0.622, 'gain2:3': 0.659, 'gain2:4': 0.698, 'gain2:5': 0.59}
+comfaulda7 osfno-A-nospeed 0 speed_low_12-27Hz clean F1 0.620
+comfaulda7 osfno-A-nospeed 0 speed_mid_27-42Hz clean F1 0.763
+comfaulda7 osfno-A-nospeed 0 speed_high_42-61Hz clean F1 0.635
+comfaulda7 osfno-A-nospeed 0 {'clean:None': 0.675, 'speed:-0.05': 0.197, 'speed:-0.02': 0.3, 'speed:-0.01': 0.416, 'speed:0.01': 0.303, 'speed:0.02': 0.171, 'speed:0.05': 0.18, 'dead:0': 0.603, 'dead:1': 0.65, 'dead:2': 0.667, 'dead:3': 0.625, 'dead:4': 0.631, 'dead:5': 0.578, 'gain2:0': 0.667, 'gain2:1': 0.674, 'gain2:2': 0.671, 'gain2:3': 0.674, 'gain2:4': 0.674, 'gain2:5': 0.668}
+comfaulda7 osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.601
+comfaulda7 osfno-A-nospeed 1 speed_mid_27-42Hz clean F1 0.834
+WORKER NOTE: run stopped by the 2h background time limit during osfno-A-nospeed seed1; osfno-A-nospeed seeds1-4, osfno-B-head, osfno-E-phys not run.
