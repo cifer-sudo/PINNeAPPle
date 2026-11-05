@@ -50,3 +50,14 @@ misalignment xgb 1 speed_high_44-61Hz clean F1 0.647
 misalignment xgb 1 {'clean:None': 0.841, 'speed:-0.05': 0.304, 'speed:-0.02': 0.581, 'speed:-0.01': 0.708, 'speed:0.01': 0.778, 'speed:0.02': 0.67, 'speed:0.05': 0.271, 'dead:0': 0.834, 'dead:1': 0.742, 'dead:2': 0.823, 'dead:3': 0.762, 'dead:4': 0.817, 'dead:5': 0.794, 'dead:6': 0.468, 'gain2:0': 0.845, 'gain2:1': 0.812, 'gain2:2': 0.842, 'gain2:3': 0.824, 'gain2:4': 0.839, 'gain2:5': 0.872, 'gain2:6': 0.269}
 misalignment xgb 2 speed_low_12-28Hz clean F1 0.820
 misalignment xgb 2 speed_mid_28-44Hz clean F1 0.942
+misalignment xgb 2 speed_high_44-61Hz clean F1 0.643
+misalignment xgb 2 {'clean:None': 0.835, 'speed:-0.05': 0.258, 'speed:-0.02': 0.553, 'speed:-0.01': 0.637, 'speed:0.01': 0.723, 'speed:0.02': 0.621, 'speed:0.05': 0.312, 'dead:0': 0.834, 'dead:1': 0.736, 'dead:2': 0.818, 'dead:3': 0.801, 'dead:4': 0.821, 'dead:5': 0.805, 'dead:6': 0.462, 'gain2:0': 0.843, 'gain2:1': 0.803, 'gain2:2': 0.843, 'gain2:3': 0.829, 'gain2:4': 0.843, 'gain2:5': 0.867, 'gain2:6': 0.28}
+misalignment xgb 3 speed_low_12-28Hz clean F1 0.831
+misalignment xgb 3 speed_mid_28-44Hz clean F1 0.952
+misalignment xgb 3 speed_high_44-61Hz clean F1 0.683
+misalignment xgb 3 {'clean:None': 0.849, 'speed:-0.05': 0.264, 'speed:-0.02': 0.552, 'speed:-0.01': 0.644, 'speed:0.01': 0.723, 'speed:0.02': 0.612, 'speed:0.05': 0.284, 'dead:0': 0.84, 'dead:1': 0.721, 'dead:2': 0.824, 'dead:3': 0.806, 'dead:4': 0.82, 'dead:5': 0.806, 'dead:6': 0.451, 'gain2:0': 0.852, 'gain2:1': 0.821, 'gain2:2': 0.85, 'gain2:3': 0.829, 'gain2:4': 0.845, 'gain2:5': 0.872, 'gain2:6': 0.282}
+misalignment xgb 4 speed_low_12-28Hz clean F1 0.835
+misalignment xgb 4 speed_mid_28-44Hz clean F1 0.952
+misalignment xgb 4 speed_high_44-61Hz clean F1 0.686
+misalignment xgb 4 {'clean:None': 0.851, 'speed:-0.05': 0.258, 'speed:-0.02': 0.541, 'speed:-0.01': 0.643, 'speed:0.01': 0.749, 'speed:0.02': 0.619, 'speed:0.05': 0.281, 'dead:0': 0.85, 'dead:1': 0.744, 'dead:2': 0.821, 'dead:3': 0.807, 'dead:4': 0.831, 'dead:5': 0.809, 'dead:6': 0.474, 'gain2:0': 0.849, 'gain2:1': 0.818, 'gain2:2': 0.852, 'gain2:3': 0.828, 'gain2:4': 0.844, 'gain2:5': 0.869, 'gain2:6': 0.271}
+== exit xgb: 0
