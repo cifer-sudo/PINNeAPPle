@@ -94,3 +94,4 @@ bearings osfno-A-nospeed 3 speed_low_12-27Hz clean F1 0.749
 bearings osfno-A-nospeed 3 speed_mid_27-41Hz clean F1 0.977
 bearings osfno-A-nospeed 3 speed_high_41-61Hz clean F1 0.833
 bearings osfno-A-nospeed 3 {'clean:None': 0.855, 'speed:-0.05': 0.42, 'speed:-0.02': 0.497, 'speed:-0.01': 0.693, 'speed:0.01': 0.712, 'speed:0.02': 0.597, 'speed:0.05': 0.416, 'dead:0': 0.811, 'dead:1': 0.836, 'dead:2': 0.809, 'dead:3': 0.839, 'dead:4': 0.619, 'dead:5': 0.829, 'dead:6': 0.803, 'gain2:0': 0.859, 'gain2:1': 0.856, 'gain2:2': 0.856, 'gain2:3': 0.859, 'gain2:4': 0.85, 'gain2:5': 0.858, 'gain2:6': 0.857}
+bearings osfno-A-nospeed 4 speed_low_12-27Hz clean F1 0.722
