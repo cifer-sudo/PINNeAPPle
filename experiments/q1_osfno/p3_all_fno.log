@@ -15,3 +15,5 @@ phase3 all          fno-tuned              s0 speed macro-F1 0.887 (low 0.77, mi
 phase3 all          fno-tuned              s1 speed macro-F1 0.877 (low 0.76, mid 0.98, high 0.89) 1336s
 phase3 all          fno-tuned              s2 speed macro-F1 0.861 (low 0.74, mid 0.96, high 0.87) 1345s
 phase3 all          fno-tuned              s3 speed macro-F1 0.868 (low 0.75, mid 0.98, high 0.87) 1339s
+phase3 all          fno-tuned              s4 speed macro-F1 0.871 (low 0.75, mid 0.98, high 0.88) 1357s
+confirm exit 0
