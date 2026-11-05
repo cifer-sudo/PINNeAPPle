@@ -1,1 +1,2 @@
 bearings fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.971
+bearings fno speed_low_12-27Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.964
