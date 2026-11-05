@@ -66,3 +66,5 @@ bearings cnn-spec 1 speed_low_12-27Hz clean F1 0.719
 bearings cnn-spec 1 speed_mid_27-41Hz clean F1 0.991
 bearings cnn-spec 1 speed_high_41-61Hz clean F1 0.916
 bearings cnn-spec 1 {'clean:None': 0.88, 'speed:-0.05': 0.687, 'speed:-0.02': 0.767, 'speed:-0.01': 0.782, 'speed:0.01': 0.779, 'speed:0.02': 0.807, 'speed:0.05': 0.728, 'dead:0': 0.63, 'dead:1': 0.737, 'dead:2': 0.419, 'dead:3': 0.547, 'dead:4': 0.437, 'dead:5': 0.271, 'dead:6': 0.663, 'gain2:0': 0.858, 'gain2:1': 0.873, 'gain2:2': 0.84, 'gain2:3': 0.915, 'gain2:4': 0.87, 'gain2:5': 0.811, 'gain2:6': 0.867}
+bearings cnn-spec 2 speed_low_12-27Hz clean F1 0.771
+bearings cnn-spec 2 speed_mid_27-41Hz clean F1 0.991
