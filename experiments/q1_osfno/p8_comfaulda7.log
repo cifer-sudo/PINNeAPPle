@@ -2,3 +2,19 @@ comfaulda7 rf 0 speed_low_12-27Hz clean F1 0.580
 comfaulda7 rf 0 speed_mid_27-42Hz clean F1 0.721
 comfaulda7 rf 0 speed_high_42-61Hz clean F1 0.557
 comfaulda7 rf 0 {'clean:None': 0.626, 'speed:-0.05': 0.43, 'speed:-0.02': 0.476, 'speed:-0.01': 0.637, 'speed:0.01': 0.625, 'speed:0.02': 0.489, 'speed:0.05': 0.402, 'dead:0': 0.518, 'dead:1': 0.548, 'dead:2': 0.615, 'dead:3': 0.577, 'dead:4': 0.606, 'dead:5': 0.474, 'gain2:0': 0.603, 'gain2:1': 0.611, 'gain2:2': 0.607, 'gain2:3': 0.589, 'gain2:4': 0.615, 'gain2:5': 0.601}
+comfaulda7 rf 1 speed_low_12-27Hz clean F1 0.566
+comfaulda7 rf 1 speed_mid_27-42Hz clean F1 0.738
+comfaulda7 rf 1 speed_high_42-61Hz clean F1 0.564
+comfaulda7 rf 1 {'clean:None': 0.628, 'speed:-0.05': 0.365, 'speed:-0.02': 0.466, 'speed:-0.01': 0.636, 'speed:0.01': 0.623, 'speed:0.02': 0.468, 'speed:0.05': 0.325, 'dead:0': 0.51, 'dead:1': 0.55, 'dead:2': 0.618, 'dead:3': 0.593, 'dead:4': 0.604, 'dead:5': 0.484, 'gain2:0': 0.612, 'gain2:1': 0.616, 'gain2:2': 0.618, 'gain2:3': 0.583, 'gain2:4': 0.612, 'gain2:5': 0.607}
+comfaulda7 rf 2 speed_low_12-27Hz clean F1 0.586
+comfaulda7 rf 2 speed_mid_27-42Hz clean F1 0.740
+comfaulda7 rf 2 speed_high_42-61Hz clean F1 0.581
+comfaulda7 rf 2 {'clean:None': 0.639, 'speed:-0.05': 0.349, 'speed:-0.02': 0.459, 'speed:-0.01': 0.642, 'speed:0.01': 0.632, 'speed:0.02': 0.465, 'speed:0.05': 0.327, 'dead:0': 0.494, 'dead:1': 0.545, 'dead:2': 0.628, 'dead:3': 0.603, 'dead:4': 0.613, 'dead:5': 0.49, 'gain2:0': 0.599, 'gain2:1': 0.622, 'gain2:2': 0.618, 'gain2:3': 0.59, 'gain2:4': 0.615, 'gain2:5': 0.606}
+comfaulda7 rf 3 speed_low_12-27Hz clean F1 0.591
+comfaulda7 rf 3 speed_mid_27-42Hz clean F1 0.733
+comfaulda7 rf 3 speed_high_42-61Hz clean F1 0.582
+comfaulda7 rf 3 {'clean:None': 0.64, 'speed:-0.05': 0.375, 'speed:-0.02': 0.466, 'speed:-0.01': 0.641, 'speed:0.01': 0.627, 'speed:0.02': 0.474, 'speed:0.05': 0.349, 'dead:0': 0.532, 'dead:1': 0.529, 'dead:2': 0.633, 'dead:3': 0.601, 'dead:4': 0.63, 'dead:5': 0.471, 'gain2:0': 0.607, 'gain2:1': 0.625, 'gain2:2': 0.612, 'gain2:3': 0.584, 'gain2:4': 0.618, 'gain2:5': 0.603}
+comfaulda7 rf 4 speed_low_12-27Hz clean F1 0.599
+comfaulda7 rf 4 speed_mid_27-42Hz clean F1 0.741
+comfaulda7 rf 4 speed_high_42-61Hz clean F1 0.555
+comfaulda7 rf 4 {'clean:None': 0.636, 'speed:-0.05': 0.363, 'speed:-0.02': 0.442, 'speed:-0.01': 0.642, 'speed:0.01': 0.631, 'speed:0.02': 0.462, 'speed:0.05': 0.333, 'dead:0': 0.533, 'dead:1': 0.551, 'dead:2': 0.645, 'dead:3': 0.593, 'dead:4': 0.611, 'dead:5': 0.495, 'gain2:0': 0.603, 'gain2:1': 0.614, 'gain2:2': 0.611, 'gain2:3': 0.59, 'gain2:4': 0.614, 'gain2:5': 0.599}
