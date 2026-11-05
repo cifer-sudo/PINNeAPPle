@@ -31,3 +31,5 @@ phase1 all          osfno-B-noprior        s4 speed macro-F1 0.834 (low 0.70, mi
 phase1 all          osfno-B-commonaug      s0 speed macro-F1 0.840 (low 0.72, mid 0.96, high 0.84) 583s
 phase1 all          osfno-B-commonaug      s1 speed macro-F1 0.846 (low 0.70, mid 0.95, high 0.88) 603s
 phase1 all          osfno-B-commonaug      s2 speed macro-F1 0.815 (low 0.67, mid 0.93, high 0.84) 564s
+phase1 all          osfno-B-commonaug      s3 speed macro-F1 0.847 (low 0.72, mid 0.96, high 0.87) 555s
+phase1 all          osfno-B-commonaug      s4 speed macro-F1 0.837 (low 0.69, mid 0.97, high 0.85) 565s
