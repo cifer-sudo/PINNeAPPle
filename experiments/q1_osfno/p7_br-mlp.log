@@ -1,0 +1,1 @@
+br-mlp 0 exact 0.052 {'unbalance': 0.81, 'horizontal': 0.45, 'vertical': 0.53} hamming 0.387
