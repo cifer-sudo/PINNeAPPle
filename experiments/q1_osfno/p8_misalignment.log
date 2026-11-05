@@ -82,3 +82,17 @@ misalignment cnn-spec 4 speed_mid_28-44Hz clean F1 1.000
 misalignment cnn-spec 4 speed_high_44-61Hz clean F1 0.926
 misalignment cnn-spec 4 {'clean:None': 0.926, 'speed:-0.05': 0.926, 'speed:-0.02': 0.931, 'speed:-0.01': 0.933, 'speed:0.01': 0.936, 'speed:0.02': 0.932, 'speed:0.05': 0.942, 'dead:0': 0.735, 'dead:1': 0.556, 'dead:2': 0.448, 'dead:3': 0.607, 'dead:4': 0.498, 'dead:5': 0.456, 'dead:6': 0.839, 'gain2:0': 0.916, 'gain2:1': 0.758, 'gain2:2': 0.916, 'gain2:3': 0.9, 'gain2:4': 0.865, 'gain2:5': 0.833, 'gain2:6': 0.915}
 == exit cnn-spec: 0
+misalignment osfno-A-nospeed 0 speed_low_12-28Hz clean F1 0.636
+misalignment osfno-A-nospeed 0 speed_mid_28-44Hz clean F1 0.956
+misalignment osfno-A-nospeed 0 speed_high_44-61Hz clean F1 0.892
+misalignment osfno-A-nospeed 0 {'clean:None': 0.836, 'speed:-0.05': 0.529, 'speed:-0.02': 0.543, 'speed:-0.01': 0.707, 'speed:0.01': 0.77, 'speed:0.02': 0.72, 'speed:0.05': 0.402, 'dead:0': 0.848, 'dead:1': 0.764, 'dead:2': 0.785, 'dead:3': 0.478, 'dead:4': 0.729, 'dead:5': 0.862, 'dead:6': 0.849, 'gain2:0': 0.822, 'gain2:1': 0.843, 'gain2:2': 0.824, 'gain2:3': 0.838, 'gain2:4': 0.814, 'gain2:5': 0.821, 'gain2:6': 0.837}
+misalignment osfno-A-nospeed 1 speed_low_12-28Hz clean F1 0.703
+misalignment osfno-A-nospeed 1 speed_mid_28-44Hz clean F1 0.951
+misalignment osfno-A-nospeed 1 speed_high_44-61Hz clean F1 0.975
+misalignment osfno-A-nospeed 1 {'clean:None': 0.886, 'speed:-0.05': 0.413, 'speed:-0.02': 0.544, 'speed:-0.01': 0.824, 'speed:0.01': 0.783, 'speed:0.02': 0.673, 'speed:0.05': 0.449, 'dead:0': 0.887, 'dead:1': 0.753, 'dead:2': 0.7, 'dead:3': 0.483, 'dead:4': 0.781, 'dead:5': 0.864, 'dead:6': 0.874, 'gain2:0': 0.886, 'gain2:1': 0.888, 'gain2:2': 0.893, 'gain2:3': 0.898, 'gain2:4': 0.873, 'gain2:5': 0.882, 'gain2:6': 0.886}
+misalignment osfno-A-nospeed 2 speed_low_12-28Hz clean F1 0.669
+misalignment osfno-A-nospeed 2 speed_mid_28-44Hz clean F1 0.972
+misalignment osfno-A-nospeed 2 speed_high_44-61Hz clean F1 0.947
+misalignment osfno-A-nospeed 2 {'clean:None': 0.871, 'speed:-0.05': 0.505, 'speed:-0.02': 0.782, 'speed:-0.01': 0.85, 'speed:0.01': 0.816, 'speed:0.02': 0.576, 'speed:0.05': 0.462, 'dead:0': 0.859, 'dead:1': 0.823, 'dead:2': 0.808, 'dead:3': 0.701, 'dead:4': 0.754, 'dead:5': 0.804, 'dead:6': 0.809, 'gain2:0': 0.868, 'gain2:1': 0.862, 'gain2:2': 0.874, 'gain2:3': 0.876, 'gain2:4': 0.859, 'gain2:5': 0.86, 'gain2:6': 0.881}
+misalignment osfno-A-nospeed 3 speed_low_12-28Hz clean F1 0.678
+misalignment osfno-A-nospeed 3 speed_mid_28-44Hz clean F1 0.935
