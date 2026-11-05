@@ -2,7 +2,7 @@
 
 Branch audited: `claude/laughing-carson-yotf6f` at `243841cd`. Experimental branch: `exp/q1-audit-osfno`
 (nothing on the audited branch is modified; the manuscript is untouched).
-Status: MAFAULDA [DATA] items completed 2026-11-04 from the full re-extraction (`results/audit_data.json`); COMFAULDA items pending its extraction.
+Status: MAFAULDA [DATA] items completed 2026-11-04 from the full re-extraction (`results/audit_data.json`); COMFAULDA items completed 2026-11-05.
 
 ## A. Traceability JSON → tables → manuscript
 
@@ -46,7 +46,10 @@ Status: MAFAULDA [DATA] items completed 2026-11-04 from the full re-extraction (
 | Duplicates | **PASS: no identical CSV (SHA-1) and no pair of runs with spectral cosine > 0.9999** |
 | Folders with 50-51 files (HM 0.5 mm, UH ball 0 g, VM 0.51 mm) vs 49 nominal speeds | **PASS: no repeated nominal speed inside any folder** (the extra files are extra speeds); speed range of used runs 11.8-60.7 Hz; Pb tercile edges per task: T1 11.8/28.0/43.8/60.7, T2 11.8/27.9/43.5/60.5, T3 11.9/26.6/41.2/60.6, T4 11.8/27.0/42.3/60.7 Hz |
 | Sessions | each folder (state × level) is a recording session; all sessions span all speeds → Pb never holds out a session. A session-disjoint check (e.g. underhang vs overhang folders of the same fault type) is a stronger OOD test (Phase 8) |
-| COMFAULDA 2162 vs 2161 | one CRC error inside the published archive (documented); [DATA] re-checked during the COMFAULDA re-extraction |
+| COMFAULDA 2162 vs 2161 | **Confirmed: 2162 runs, one CRC error inside the published archive (`Vertical_Misalignment_1.27_mm.zip/18.78.csv`) → 2161** |
+| COMFAULDA duplicates (NEW) | **Two pairs of byte-identical CSV files published under different speeds**: `Normal_1.zip/36.26.csv` = `Normal_1.zip/37.23.csv`, `Horizontal_misalignment_2_0mm.zip/18.07.csv` = `19.88.csv` (SHA-1 identical). Each pair falls inside one Pb tercile (27.0-42.4 Hz and 12.4-27.0 Hz), so Pb is not affected; under Pa (5-fold by run) a pair can be split across train and test (a leak of 1 recording each). The speed of one file of each pair is wrong (refined speed from the 1X line is the same for both). Report to the dataset authors; drop one file of each pair or keep both in the same fold |
+| COMFAULDA repeated nominal speeds (NEW) | two folders contain two files with the same nominal speed: `Unbalance_6_g+Hor. Misalignment_1_mm.zip` (25.0 Hz) and `Normal_5.zip` (20.0 Hz) — distinct recordings (different SHA-1), dependent samples at the same condition |
+| COMFAULDA population | 2161 used: normal 245, unbalance 336, horizontal 195, vertical 242, unbalance+horizontal 351, unbalance+vertical 351, horizontal+vertical 441; speeds 12.4-61.0 Hz; Pb tercile edges 12.35 / 27.04 / 42.42 / 61.05 Hz |
 
 ## E. Consequences and corrections (to apply only after Phase 1-3 confirmation; manuscript untouched)
 

@@ -24,6 +24,8 @@ QUEUES = {
     "R4": [("mafaulda", t, m, SEEDS) for m in ("cnn-spec", "fno-trainonly") for t in MAF],
     "R5": [("mafaulda", t, m, SEEDS) for m in ("osfno-B-dro", "osfno-B-supcon") for t in MAF],
     "R6": [("mafaulda", t, "osfno-B-head", SEEDS) for t in ("bearings", "all")],
+    "R7": [("comfaulda", "comfaulda7", m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb", "osfno-B-head",
+                                                          "osfno-C-film", "osfno-A-nospeed", "osfno-E-phys")],
     "local_B_rest": [("mafaulda", t, "osfno-B-head", SEEDS) for t in ("bearings", "all")],
     "features": [("mafaulda", t, m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb") for t in MAF]
                 + [("comfaulda", "comfaulda7", m, SEEDS) for m in ("rf", "mlp", "kan", "svm", "xgb")],
