@@ -15,3 +15,4 @@ phase3 comfaulda7   cnn-tuned              s0 speed macro-F1 0.765 (low 0.62, mi
 phase3 comfaulda7   cnn-tuned              s1 speed macro-F1 0.770 (low 0.62, mid 0.92, high 0.77) 897s
 phase3 comfaulda7   cnn-tuned              s2 speed macro-F1 0.780 (low 0.61, mid 0.93, high 0.81) 868s
 phase3 comfaulda7   cnn-tuned              s3 speed macro-F1 0.779 (low 0.63, mid 0.92, high 0.78) 882s
+phase3 comfaulda7   cnn-tuned              s4 speed macro-F1 0.751 (low 0.59, mid 0.89, high 0.78) 872s
