@@ -1,2 +1,5 @@
 all cnn speed_low_12-27Hz {'width': 16, 'blocks': 4} inner 0.985
 all cnn speed_low_12-27Hz {'width': 32, 'blocks': 3} inner 0.992
+all cnn speed_low_12-27Hz {'width': 32, 'blocks': 4} inner 0.991
+all cnn speed_low_12-27Hz {'width': 48, 'blocks': 5} inner 0.984
+all cnn speed_mid_27-42Hz {'width': 16, 'blocks': 4} inner 0.884
