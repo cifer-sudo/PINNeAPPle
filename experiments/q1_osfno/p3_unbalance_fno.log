@@ -8,3 +8,4 @@ unbalance fno speed_mid_28-44Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0
 unbalance fno speed_mid_28-44Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.972
 unbalance fno speed_high_44-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 1.000
 unbalance fno speed_high_44-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.991
+unbalance fno speed_high_44-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.972
