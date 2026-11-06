@@ -1,1 +1,6 @@
 phase5 all          rf-rob                 s0 speed macro-F1 0.851 (low 0.77, mid 0.98, high 0.80) 11s
+all rf-rob 0 speed_low_12-27Hz clean F1 0.771
+all rf-rob 0 speed_mid_27-42Hz clean F1 0.978
+all rf-rob 0 speed_high_42-61Hz clean F1 0.796
+all rf-rob 0 {'clean:None': 0.851, 'speed:-0.05': 0.809, 'speed:-0.02': 0.84, 'speed:-0.01': 0.847, 'speed:0.01': 0.845, 'speed:0.02': 0.843, 'speed:0.05': 0.791, 'dead:0': 0.802, 'dead:1': 0.833, 'dead:2': 0.845, 'dead:3': 0.774, 'dead:4': 0.784, 'dead:5': 0.832, 'dead:6': 0.808, 'gain2:0': 0.731, 'gain2:1': 0.851, 'gain2:2': 0.774, 'gain2:3': 0.79, 'gain2:4': 0.752, 'gain2:5': 0.833, 'gain2:6': 0.746}
+[worker] rf-rob seed 0 exit=0 Fri Nov  6 20:54:33 UTC 2026
