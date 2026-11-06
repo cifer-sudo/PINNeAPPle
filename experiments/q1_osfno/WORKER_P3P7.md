@@ -31,3 +31,9 @@ Push `experiments/q1_osfno/results experiments/q1_osfno/p5_<task>.log` to `exp/q
 ## Phase 5b robust-training shard (NAME=P5b-<task>)
 `for m in rf-rob cnn-spec-rob; do Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase5b.py <ds> <task> $m 2>&1 | tee -a p5b_<task>.log; done`
 Push `experiments/q1_osfno/results experiments/q1_osfno/p5b_<task>.log` to `exp/q1-shard-P5b-<task>` every ~30 min and at the end.
+
+## Time limit (applies to every shard)
+Background jobs are stopped after 2 h and should not be relaunched after hitting that maximum. Therefore run ONE SEED
+PER BACKGROUND COMMAND (each well under 2 h), e.g. `phase5.py <ds> <task> 3`, `phase5b.py <ds> <task> <model> 3`,
+`phase6.py run <task> cnn-mb 3`, `phase8_robust.py <ds> <task> <model> 3`, one after the other; existing result files
+are skipped. Push after each seed.
