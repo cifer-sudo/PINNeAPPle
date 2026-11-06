@@ -23,3 +23,8 @@ comfaulda7 rf-rob 4 speed_low_12-27Hz clean F1 0.600
 comfaulda7 rf-rob 4 speed_mid_27-42Hz clean F1 0.765
 comfaulda7 rf-rob 4 speed_high_42-61Hz clean F1 0.518
 comfaulda7 rf-rob 4 {'clean:None': 0.637, 'speed:-0.05': 0.543, 'speed:-0.02': 0.593, 'speed:-0.01': 0.64, 'speed:0.01': 0.636, 'speed:0.02': 0.61, 'speed:0.05': 0.499, 'dead:0': 0.598, 'dead:1': 0.595, 'dead:2': 0.634, 'dead:3': 0.599, 'dead:4': 0.622, 'dead:5': 0.516, 'gain2:0': 0.598, 'gain2:1': 0.612, 'gain2:2': 0.603, 'gain2:3': 0.577, 'gain2:4': 0.614, 'gain2:5': 0.599}
+phase5 comfaulda7   cnn-spec-rob           s0 speed macro-F1 0.785 (low 0.68, mid 0.93, high 0.74) 515s
+comfaulda7 cnn-spec-rob 0 speed_low_12-27Hz clean F1 0.679
+comfaulda7 cnn-spec-rob 0 speed_mid_27-42Hz clean F1 0.930
+comfaulda7 cnn-spec-rob 0 speed_high_42-61Hz clean F1 0.744
+comfaulda7 cnn-spec-rob 0 {'clean:None': 0.785, 'speed:-0.05': 0.748, 'speed:-0.02': 0.78, 'speed:-0.01': 0.785, 'speed:0.01': 0.78, 'speed:0.02': 0.78, 'speed:0.05': 0.731, 'dead:0': 0.777, 'dead:1': 0.785, 'dead:2': 0.784, 'dead:3': 0.767, 'dead:4': 0.776, 'dead:5': 0.739, 'gain2:0': 0.775, 'gain2:1': 0.776, 'gain2:2': 0.755, 'gain2:3': 0.764, 'gain2:4': 0.775, 'gain2:5': 0.723}
