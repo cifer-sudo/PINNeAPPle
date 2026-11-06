@@ -31,3 +31,4 @@ Please also refer to the documentation for alternative solver options:
     https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
   n_iter_i = _check_optimize_result(
 phase5 comfaulda7   stack-rf-mlp-cnn       s2 speed macro-F1 0.747 (low 0.62, mid 0.92, high 0.70) 1519s
+=== seed 3 ===
