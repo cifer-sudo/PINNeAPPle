@@ -27,3 +27,7 @@ Push `experiments/q1_osfno/results experiments/q1_osfno/p5_<task>.log` to `exp/q
 `Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase6.py run <task> cnn-mb 2>&1 | tee -a p6_<task>.log`
 (uses data_slim/mafaulda_envbands.npz). Push `experiments/q1_osfno/results experiments/q1_osfno/p6_<task>.log` to
 `exp/q1-shard-P6-<task>` every ~30 min and at the end.
+
+## Phase 5b robust-training shard (NAME=P5b-<task>)
+`for m in rf-rob cnn-spec-rob; do Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase5b.py <ds> <task> $m 2>&1 | tee -a p5b_<task>.log; done`
+Push `experiments/q1_osfno/results experiments/q1_osfno/p5b_<task>.log` to `exp/q1-shard-P5b-<task>` every ~30 min and at the end.

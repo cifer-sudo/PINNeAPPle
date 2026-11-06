@@ -77,3 +77,15 @@ comparison family.
 - Robustness (`phase8_robust.py`): Phase 1 models retrained identically, evaluated on perturbed copies of the
   held-out runs only (speed error ±1/2/5 %, dead sensor, gain x2 per sensor). Clean predictions reproduce Phase 1
   exactly (checked: RF T2 seed 0 macro-F1 0.848 in both).
+
+## Phase 5b pre-registration (written 2026-11-06, after Phase 8 robustness, before any Phase 5b run)
+- Observation that motivates it (Phase 8, evaluation only): cnn-spec loses 0.1-0.4 macro-F1 with one dead sensor and,
+  on T3/T4/C1, with a 1-2 % speed error; feature models break at +-2 %; OS-FNO variants break at +-2 %.
+- Models fixed a priori (models3.py, no tuning): `cnn-spec-rob` (order-axis jitter U(+-2 %) with prob. 0.5, sensor
+  dropout 0.1 per sensor) and `rf-rob` (training set + 2 speed-error copies + 1 dead-sensor copy per run).
+- Runs: 5 tasks x 5 seeds, Phase 1 partitions (`phase5b.py`: standard results in results/phase5, then phase8_robust).
+- Primary end points, paired with the parent (cnn-spec, rf) on the same partitions and seeds:
+  (a) clean macro-F1 difference; (b) robustness score = mean macro-F1 over the 6 speed-error conditions and the
+  dead-sensor conditions (mean over sensors), per seed.
+- Decision: robust training is retained if (b) > 0 with 95 % CI above 0 on >= 3/5 tasks and (a) has a CI that does not
+  lie entirely below 0 on any task. The +-5 % and gain x2 conditions are out-of-training-range checks, reported only.
