@@ -85,3 +85,7 @@ comfaulda7 osfno-A-nospeed 0 {'clean:None': 0.675, 'speed:-0.05': 0.197, 'speed:
 comfaulda7 osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.601
 comfaulda7 osfno-A-nospeed 1 speed_mid_27-42Hz clean F1 0.834
 WORKER NOTE: run stopped by the 2h background time limit during osfno-A-nospeed seed1; osfno-A-nospeed seeds1-4, osfno-B-head, osfno-E-phys not run.
+comfaulda7 osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.601
+comfaulda7 osfno-A-nospeed 1 speed_mid_27-42Hz clean F1 0.834
+comfaulda7 osfno-A-nospeed 1 speed_high_42-61Hz clean F1 0.653
+comfaulda7 osfno-A-nospeed 1 {'clean:None': 0.705, 'speed:-0.05': 0.203, 'speed:-0.02': 0.335, 'speed:-0.01': 0.479, 'speed:0.01': 0.372, 'speed:0.02': 0.234, 'speed:0.05': 0.091, 'dead:0': 0.663, 'dead:1': 0.7, 'dead:2': 0.699, 'dead:3': 0.633, 'dead:4': 0.619, 'dead:5': 0.594, 'gain2:0': 0.703, 'gain2:1': 0.703, 'gain2:2': 0.7, 'gain2:3': 0.706, 'gain2:4': 0.703, 'gain2:5': 0.71}
