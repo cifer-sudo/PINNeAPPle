@@ -14,3 +14,7 @@ bearings osfno-E-phys 1 speed_low_12-27Hz clean F1 0.746
 bearings osfno-E-phys 1 speed_mid_27-41Hz clean F1 0.957
 bearings osfno-E-phys 1 speed_high_41-61Hz clean F1 0.876
 bearings osfno-E-phys 1 {'clean:None': 0.859, 'speed:-0.05': 0.589, 'speed:-0.02': 0.566, 'speed:-0.01': 0.733, 'speed:0.01': 0.741, 'speed:0.02': 0.649, 'speed:0.05': 0.543, 'dead:0': 0.798, 'dead:1': 0.822, 'dead:2': 0.813, 'dead:3': 0.81, 'dead:4': 0.543, 'dead:5': 0.779, 'dead:6': 0.803, 'gain2:0': 0.86, 'gain2:1': 0.861, 'gain2:2': 0.862, 'gain2:3': 0.852, 'gain2:4': 0.843, 'gain2:5': 0.854, 'gain2:6': 0.863}
+bearings osfno-E-phys 2 speed_low_12-27Hz clean F1 0.735
+bearings osfno-E-phys 2 speed_mid_27-41Hz clean F1 0.984
+bearings osfno-E-phys 2 speed_high_41-61Hz clean F1 0.823
+bearings osfno-E-phys 2 {'clean:None': 0.847, 'speed:-0.05': 0.594, 'speed:-0.02': 0.583, 'speed:-0.01': 0.717, 'speed:0.01': 0.642, 'speed:0.02': 0.569, 'speed:0.05': 0.498, 'dead:0': 0.786, 'dead:1': 0.827, 'dead:2': 0.809, 'dead:3': 0.823, 'dead:4': 0.541, 'dead:5': 0.815, 'dead:6': 0.774, 'gain2:0': 0.849, 'gain2:1': 0.847, 'gain2:2': 0.853, 'gain2:3': 0.847, 'gain2:4': 0.835, 'gain2:5': 0.847, 'gain2:6': 0.848}
