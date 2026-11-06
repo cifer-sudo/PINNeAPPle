@@ -1,2 +1,3 @@
 [worker] all-seed run stopped at seed 0 (no seed finished) to switch to one seed per job
 phase5 unbalance    stack-rf-mlp-cnn       s0 speed macro-F1 0.896 (low 0.91, mid 1.00, high 0.74) 350s
+phase5 unbalance    stack-rf-mlp-cnn       s1 speed macro-F1 0.874 (low 0.87, mid 1.00, high 0.70) 348s
