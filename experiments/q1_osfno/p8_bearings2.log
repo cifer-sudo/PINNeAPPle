@@ -1,0 +1,4 @@
+bearings osfno-B-head 3 speed_low_12-27Hz clean F1 0.761
+bearings osfno-B-head 3 speed_mid_27-41Hz clean F1 0.969
+bearings osfno-B-head 3 speed_high_41-61Hz clean F1 0.820
+bearings osfno-B-head 3 {'clean:None': 0.851, 'speed:-0.05': 0.417, 'speed:-0.02': 0.418, 'speed:-0.01': 0.661, 'speed:0.01': 0.616, 'speed:0.02': 0.46, 'speed:0.05': 0.291, 'dead:0': 0.816, 'dead:1': 0.836, 'dead:2': 0.813, 'dead:3': 0.825, 'dead:4': 0.539, 'dead:5': 0.842, 'dead:6': 0.804, 'gain2:0': 0.853, 'gain2:1': 0.855, 'gain2:2': 0.86, 'gain2:3': 0.851, 'gain2:4': 0.857, 'gain2:5': 0.853, 'gain2:6': 0.856}
