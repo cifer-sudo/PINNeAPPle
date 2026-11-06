@@ -4,3 +4,6 @@ phase5 bearings     stack-rf-mlp-cnn       s0 speed macro-F1 0.910 (low 0.78, mi
 === seed 1 start 2026-11-06T21:01:00Z
 phase5 bearings     stack-rf-mlp-cnn       s1 speed macro-F1 0.909 (low 0.79, mid 0.99, high 0.93) 808s
 === seed 1 exit 0 2026-11-06T21:14:32Z
+=== seed 2 start 2026-11-06T21:14:44Z
+phase5 bearings     stack-rf-mlp-cnn       s2 speed macro-F1 0.913 (low 0.80, mid 0.99, high 0.93) 829s
+=== seed 2 exit 0 2026-11-06T21:28:36Z
