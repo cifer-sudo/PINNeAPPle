@@ -235,6 +235,8 @@ REGISTRY = {
 def _register_extra():
     from models2 import EXTRA
     REGISTRY.update(EXTRA)
+    from models3 import EXTRA3                  # Phase 5b measurement-robust training
+    REGISTRY.update(EXTRA3)
 
 
 try:

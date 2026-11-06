@@ -13,7 +13,7 @@ Tasks: bearings (T3) and all (T4), 5 seeds, Phase 1 partitions; compared with rf
 Also `diagnose`: Fisher ratio (between/within class variance, log amplitude) of the defect-order amplitudes, broadband
 vs best band, computed on all T3 runs (descriptive physics, not used for any selection).
 Uses the full cache, or the slim cache + data_slim/mafaulda_envbands.npz (make_envbands_slim.py).
-usage: python phase6.py run <task> <model> | python phase6.py diagnose
+usage: python phase6.py run <task> <model> [seeds] | python phase6.py diagnose
 """
 from __future__ import annotations
 
@@ -88,9 +88,9 @@ def load_rows():
     return rows
 
 
-def run(task, model):
+def run(task, model, seeds=range(5)):
     rows = load_rows()
-    for s in range(5):
+    for s in seeds:
         L.run(task, model, MODELS[model](), rows, s, exp="phase6", dataset="mafaulda",
               config={"model": model, "preregistered": "PROTOCOL.md Phase 6", "bands_khz": [[0.5, 2], [2, 5], [5, 10], [10, 20]],
                       "orders": BO})
@@ -123,6 +123,6 @@ def diagnose():
 
 if __name__ == "__main__":
     if sys.argv[1] == "run":
-        run(sys.argv[2], sys.argv[3])
+        run(sys.argv[2], sys.argv[3], [int(x) for x in sys.argv[4].split(",")] if len(sys.argv) > 4 else range(5))
     else:
         diagnose()
