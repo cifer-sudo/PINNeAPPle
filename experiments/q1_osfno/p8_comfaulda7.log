@@ -89,3 +89,7 @@ comfaulda7 osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.601
 comfaulda7 osfno-A-nospeed 1 speed_mid_27-42Hz clean F1 0.834
 comfaulda7 osfno-A-nospeed 1 speed_high_42-61Hz clean F1 0.653
 comfaulda7 osfno-A-nospeed 1 {'clean:None': 0.705, 'speed:-0.05': 0.203, 'speed:-0.02': 0.335, 'speed:-0.01': 0.479, 'speed:0.01': 0.372, 'speed:0.02': 0.234, 'speed:0.05': 0.091, 'dead:0': 0.663, 'dead:1': 0.7, 'dead:2': 0.699, 'dead:3': 0.633, 'dead:4': 0.619, 'dead:5': 0.594, 'gain2:0': 0.703, 'gain2:1': 0.703, 'gain2:2': 0.7, 'gain2:3': 0.706, 'gain2:4': 0.703, 'gain2:5': 0.71}
+comfaulda7 osfno-A-nospeed 2 speed_low_12-27Hz clean F1 0.630
+comfaulda7 osfno-A-nospeed 2 speed_mid_27-42Hz clean F1 0.794
+comfaulda7 osfno-A-nospeed 2 speed_high_42-61Hz clean F1 0.640
+comfaulda7 osfno-A-nospeed 2 {'clean:None': 0.692, 'speed:-0.05': 0.195, 'speed:-0.02': 0.347, 'speed:-0.01': 0.465, 'speed:0.01': 0.331, 'speed:0.02': 0.238, 'speed:0.05': 0.17, 'dead:0': 0.656, 'dead:1': 0.692, 'dead:2': 0.689, 'dead:3': 0.623, 'dead:4': 0.544, 'dead:5': 0.567, 'gain2:0': 0.691, 'gain2:1': 0.691, 'gain2:2': 0.687, 'gain2:3': 0.69, 'gain2:4': 0.686, 'gain2:5': 0.696}
