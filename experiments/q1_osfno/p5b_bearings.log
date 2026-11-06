@@ -1,3 +1,5 @@
 phase5 bearings     rf-rob                 s0 speed macro-F1 0.858 (low 0.79, mid 0.99, high 0.76) 6s
 bearings rf-rob 0 speed_low_12-27Hz clean F1 0.787
 bearings rf-rob 0 speed_mid_27-41Hz clean F1 0.989
+bearings rf-rob 0 speed_high_41-61Hz clean F1 0.762
+bearings rf-rob 0 {'clean:None': 0.858, 'speed:-0.05': 0.811, 'speed:-0.02': 0.852, 'speed:-0.01': 0.86, 'speed:0.01': 0.859, 'speed:0.02': 0.847, 'speed:0.05': 0.801, 'dead:0': 0.808, 'dead:1': 0.796, 'dead:2': 0.858, 'dead:3': 0.843, 'dead:4': 0.724, 'dead:5': 0.84, 'dead:6': 0.813, 'gain2:0': 0.701, 'gain2:1': 0.845, 'gain2:2': 0.777, 'gain2:3': 0.839, 'gain2:4': 0.784, 'gain2:5': 0.86, 'gain2:6': 0.82}
