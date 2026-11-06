@@ -11,3 +11,5 @@ phase5 all          stack-rf-mlp-cnn       s2 speed macro-F1 0.895 (low 0.77, mi
 phase5 all          stack-rf-mlp-cnn       s3 speed macro-F1 0.903 (low 0.75, mid 1.00, high 0.96) 1643s
 === seed 3 exit 0 Fri Nov  6 22:31:32 UTC 2026
 === seed 4 start Fri Nov  6 22:31:41 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s4 speed macro-F1 0.896 (low 0.79, mid 1.00, high 0.88) 1616s
+=== seed 4 exit 0 Fri Nov  6 22:58:41 UTC 2026
