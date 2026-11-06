@@ -28,3 +28,9 @@ misalignment rf-rob 4 speed_mid_28-44Hz clean F1 0.974
 misalignment rf-rob 4 speed_high_44-61Hz clean F1 0.668
 misalignment rf-rob 4 {'clean:None': 0.828, 'speed:-0.05': 0.787, 'speed:-0.02': 0.758, 'speed:-0.01': 0.784, 'speed:0.01': 0.806, 'speed:0.02': 0.752, 'speed:0.05': 0.627, 'dead:0': 0.806, 'dead:1': 0.832, 'dead:2': 0.864, 'dead:3': 0.814, 'dead:4': 0.786, 'dead:5': 0.748, 'dead:6': 0.823, 'gain2:0': 0.829, 'gain2:1': 0.853, 'gain2:2': 0.744, 'gain2:3': 0.64, 'gain2:4': 0.734, 'gain2:5': 0.788, 'gain2:6': 0.415}
 [seed.sh] model=rf-rob seed=4 exit=0
+phase5 misalignment cnn-spec-rob           s0 speed macro-F1 0.818 (low 0.59, mid 1.00, high 0.99) 129s
+misalignment cnn-spec-rob 0 speed_low_12-28Hz clean F1 0.585
+misalignment cnn-spec-rob 0 speed_mid_28-44Hz clean F1 1.000
+misalignment cnn-spec-rob 0 speed_high_44-61Hz clean F1 0.988
+misalignment cnn-spec-rob 0 {'clean:None': 0.818, 'speed:-0.05': 0.844, 'speed:-0.02': 0.844, 'speed:-0.01': 0.847, 'speed:0.01': 0.862, 'speed:0.02': 0.855, 'speed:0.05': 0.848, 'dead:0': 0.836, 'dead:1': 0.823, 'dead:2': 0.76, 'dead:3': 0.898, 'dead:4': 0.804, 'dead:5': 0.853, 'dead:6': 0.811, 'gain2:0': 0.787, 'gain2:1': 0.759, 'gain2:2': 0.837, 'gain2:3': 0.799, 'gain2:4': 0.82, 'gain2:5': 0.804, 'gain2:6': 0.827}
+[seed.sh] model=cnn-spec-rob seed=0 exit=0
