@@ -24,3 +24,8 @@ unbalance rf-rob 4 speed_mid_28-44Hz clean F1 1.000
 unbalance rf-rob 4 speed_high_44-61Hz clean F1 0.620
 unbalance rf-rob 4 {'clean:None': 0.879, 'speed:-0.05': 0.867, 'speed:-0.02': 0.89, 'speed:-0.01': 0.879, 'speed:0.01': 0.879, 'speed:0.02': 0.874, 'speed:0.05': 0.867, 'dead:0': 0.874, 'dead:1': 0.881, 'dead:2': 0.876, 'dead:3': 0.801, 'dead:4': 0.874, 'dead:5': 0.811, 'dead:6': 0.879, 'gain2:0': 0.893, 'gain2:1': 0.882, 'gain2:2': 0.869, 'gain2:3': 0.799, 'gain2:4': 0.879, 'gain2:5': 0.906, 'gain2:6': 0.884}
 # stopped cnn-spec-rob all-seed job to switch to one-seed-per-command (WORKER_P3P7.md Time limit)
+phase5 unbalance    cnn-spec-rob           s0 speed macro-F1 0.873 (low 0.70, mid 1.00, high 1.00) 113s
+unbalance cnn-spec-rob 0 speed_low_12-28Hz clean F1 0.702
+unbalance cnn-spec-rob 0 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec-rob 0 speed_high_44-61Hz clean F1 1.000
+unbalance cnn-spec-rob 0 {'clean:None': 0.873, 'speed:-0.05': 0.898, 'speed:-0.02': 0.89, 'speed:-0.01': 0.894, 'speed:0.01': 0.894, 'speed:0.02': 0.89, 'speed:0.05': 0.916, 'dead:0': 0.861, 'dead:1': 0.866, 'dead:2': 0.886, 'dead:3': 0.841, 'dead:4': 0.9, 'dead:5': 0.825, 'dead:6': 0.88, 'gain2:0': 0.869, 'gain2:1': 0.857, 'gain2:2': 0.873, 'gain2:3': 0.841, 'gain2:4': 0.839, 'gain2:5': 0.86, 'gain2:6': 0.854}
