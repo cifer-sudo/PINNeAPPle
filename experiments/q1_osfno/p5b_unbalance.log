@@ -44,3 +44,8 @@ unbalance cnn-spec-rob 3 speed_low_12-28Hz clean F1 0.710
 unbalance cnn-spec-rob 3 speed_mid_28-44Hz clean F1 1.000
 unbalance cnn-spec-rob 3 speed_high_44-61Hz clean F1 1.000
 unbalance cnn-spec-rob 3 {'clean:None': 0.875, 'speed:-0.05': 0.871, 'speed:-0.02': 0.879, 'speed:-0.01': 0.895, 'speed:0.01': 0.927, 'speed:0.02': 0.918, 'speed:0.05': 0.927, 'dead:0': 0.887, 'dead:1': 0.886, 'dead:2': 0.825, 'dead:3': 0.8, 'dead:4': 0.841, 'dead:5': 0.883, 'dead:6': 0.867, 'gain2:0': 0.855, 'gain2:1': 0.863, 'gain2:2': 0.863, 'gain2:3': 0.806, 'gain2:4': 0.844, 'gain2:5': 0.836, 'gain2:6': 0.863}
+phase5 unbalance    cnn-spec-rob           s4 speed macro-F1 0.884 (low 0.73, mid 1.00, high 0.98) 112s
+unbalance cnn-spec-rob 4 speed_low_12-28Hz clean F1 0.734
+unbalance cnn-spec-rob 4 speed_mid_28-44Hz clean F1 1.000
+unbalance cnn-spec-rob 4 speed_high_44-61Hz clean F1 0.983
+unbalance cnn-spec-rob 4 {'clean:None': 0.884, 'speed:-0.05': 0.881, 'speed:-0.02': 0.886, 'speed:-0.01': 0.886, 'speed:0.01': 0.886, 'speed:0.02': 0.894, 'speed:0.05': 0.886, 'dead:0': 0.9, 'dead:1': 0.886, 'dead:2': 0.894, 'dead:3': 0.878, 'dead:4': 0.927, 'dead:5': 0.778, 'dead:6': 0.884, 'gain2:0': 0.876, 'gain2:1': 0.876, 'gain2:2': 0.878, 'gain2:3': 0.823, 'gain2:4': 0.859, 'gain2:5': 0.855, 'gain2:6': 0.864}
