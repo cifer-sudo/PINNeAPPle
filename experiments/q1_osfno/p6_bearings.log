@@ -1,3 +1,4 @@
 phase6 bearings     cnn-mb                 s0 speed macro-F1 0.909 (low 0.80, mid 0.99, high 0.94) 308s
 phase6 bearings     cnn-mb                 s1 speed macro-F1 0.880 (low 0.71, mid 1.00, high 0.94) 319s
 phase6 bearings     cnn-mb                 s2 speed macro-F1 0.918 (low 0.78, mid 1.00, high 0.97) 295s
+phase6 bearings     cnn-mb                 s3 speed macro-F1 0.922 (low 0.82, mid 0.99, high 0.95) 295s
