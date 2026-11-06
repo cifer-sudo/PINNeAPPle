@@ -10,3 +10,9 @@ all rf-rob 1 speed_mid_27-42Hz clean F1 0.960
 all rf-rob 1 speed_high_42-61Hz clean F1 0.796
 all rf-rob 1 {'clean:None': 0.853, 'speed:-0.05': 0.811, 'speed:-0.02': 0.846, 'speed:-0.01': 0.85, 'speed:0.01': 0.851, 'speed:0.02': 0.841, 'speed:0.05': 0.781, 'dead:0': 0.79, 'dead:1': 0.842, 'dead:2': 0.858, 'dead:3': 0.818, 'dead:4': 0.752, 'dead:5': 0.836, 'dead:6': 0.803, 'gain2:0': 0.718, 'gain2:1': 0.841, 'gain2:2': 0.774, 'gain2:3': 0.792, 'gain2:4': 0.761, 'gain2:5': 0.839, 'gain2:6': 0.699}
 [worker] rf-rob seed 1 exit=0 Fri Nov  6 20:55:17 UTC 2026
+phase5 all          rf-rob                 s2 speed macro-F1 0.853 (low 0.79, mid 0.98, high 0.77) 11s
+all rf-rob 2 speed_low_12-27Hz clean F1 0.795
+all rf-rob 2 speed_mid_27-42Hz clean F1 0.983
+all rf-rob 2 speed_high_42-61Hz clean F1 0.766
+all rf-rob 2 {'clean:None': 0.853, 'speed:-0.05': 0.817, 'speed:-0.02': 0.856, 'speed:-0.01': 0.852, 'speed:0.01': 0.852, 'speed:0.02': 0.858, 'speed:0.05': 0.774, 'dead:0': 0.796, 'dead:1': 0.864, 'dead:2': 0.86, 'dead:3': 0.819, 'dead:4': 0.752, 'dead:5': 0.846, 'dead:6': 0.778, 'gain2:0': 0.744, 'gain2:1': 0.835, 'gain2:2': 0.786, 'gain2:3': 0.786, 'gain2:4': 0.757, 'gain2:5': 0.835, 'gain2:6': 0.71}
+[worker] rf-rob seed 2 exit=0 Fri Nov  6 20:55:59 UTC 2026
