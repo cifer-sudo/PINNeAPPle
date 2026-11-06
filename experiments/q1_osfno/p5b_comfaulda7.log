@@ -1,0 +1,5 @@
+phase5 comfaulda7   rf-rob                 s0 speed macro-F1 0.639 (low 0.61, mid 0.76, high 0.52) 10s
+comfaulda7 rf-rob 0 speed_low_12-27Hz clean F1 0.610
+comfaulda7 rf-rob 0 speed_mid_27-42Hz clean F1 0.762
+comfaulda7 rf-rob 0 speed_high_42-61Hz clean F1 0.516
+comfaulda7 rf-rob 0 {'clean:None': 0.639, 'speed:-0.05': 0.543, 'speed:-0.02': 0.589, 'speed:-0.01': 0.637, 'speed:0.01': 0.635, 'speed:0.02': 0.6, 'speed:0.05': 0.496, 'dead:0': 0.582, 'dead:1': 0.591, 'dead:2': 0.637, 'dead:3': 0.595, 'dead:4': 0.627, 'dead:5': 0.488, 'gain2:0': 0.592, 'gain2:1': 0.599, 'gain2:2': 0.606, 'gain2:3': 0.578, 'gain2:4': 0.612, 'gain2:5': 0.597}
