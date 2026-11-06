@@ -13,3 +13,8 @@ bearings rf-rob 2 speed_low_12-27Hz clean F1 0.792
 bearings rf-rob 2 speed_mid_27-41Hz clean F1 0.991
 bearings rf-rob 2 speed_high_41-61Hz clean F1 0.743
 bearings rf-rob 2 {'clean:None': 0.856, 'speed:-0.05': 0.821, 'speed:-0.02': 0.847, 'speed:-0.01': 0.856, 'speed:0.01': 0.861, 'speed:0.02': 0.852, 'speed:0.05': 0.816, 'dead:0': 0.797, 'dead:1': 0.847, 'dead:2': 0.85, 'dead:3': 0.841, 'dead:4': 0.718, 'dead:5': 0.843, 'dead:6': 0.818, 'gain2:0': 0.74, 'gain2:1': 0.85, 'gain2:2': 0.776, 'gain2:3': 0.836, 'gain2:4': 0.788, 'gain2:5': 0.857, 'gain2:6': 0.824}
+phase5 bearings     rf-rob                 s3 speed macro-F1 0.863 (low 0.80, mid 0.99, high 0.76) 6s
+bearings rf-rob 3 speed_low_12-27Hz clean F1 0.801
+bearings rf-rob 3 speed_mid_27-41Hz clean F1 0.991
+bearings rf-rob 3 speed_high_41-61Hz clean F1 0.757
+bearings rf-rob 3 {'clean:None': 0.863, 'speed:-0.05': 0.836, 'speed:-0.02': 0.857, 'speed:-0.01': 0.864, 'speed:0.01': 0.863, 'speed:0.02': 0.859, 'speed:0.05': 0.823, 'dead:0': 0.804, 'dead:1': 0.858, 'dead:2': 0.863, 'dead:3': 0.849, 'dead:4': 0.764, 'dead:5': 0.85, 'dead:6': 0.767, 'gain2:0': 0.767, 'gain2:1': 0.854, 'gain2:2': 0.794, 'gain2:3': 0.85, 'gain2:4': 0.803, 'gain2:5': 0.857, 'gain2:6': 0.814}
