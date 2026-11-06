@@ -1,0 +1,3 @@
+phase5 bearings     rf-rob                 s0 speed macro-F1 0.858 (low 0.79, mid 0.99, high 0.76) 6s
+bearings rf-rob 0 speed_low_12-27Hz clean F1 0.787
+bearings rf-rob 0 speed_mid_27-41Hz clean F1 0.989
