@@ -3,3 +3,4 @@ phase5 unbalance    stack-rf-mlp-cnn       s0 speed macro-F1 0.896 (low 0.91, mi
 phase5 unbalance    stack-rf-mlp-cnn       s1 speed macro-F1 0.874 (low 0.87, mid 1.00, high 0.70) 348s
 phase5 unbalance    stack-rf-mlp-cnn       s2 speed macro-F1 0.869 (low 0.86, mid 1.00, high 0.70) 352s
 phase5 unbalance    stack-rf-mlp-cnn       s3 speed macro-F1 0.852 (low 0.81, mid 1.00, high 0.70) 353s
+phase5 unbalance    stack-rf-mlp-cnn       s4 speed macro-F1 0.911 (low 0.89, mid 1.00, high 0.84) 344s
