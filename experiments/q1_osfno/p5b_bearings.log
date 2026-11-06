@@ -33,3 +33,4 @@ bearings cnn-spec-rob 1 speed_low_12-27Hz clean F1 0.724
 bearings cnn-spec-rob 1 speed_mid_27-41Hz clean F1 0.991
 bearings cnn-spec-rob 1 speed_high_41-61Hz clean F1 0.929
 bearings cnn-spec-rob 1 {'clean:None': 0.889, 'speed:-0.05': 0.889, 'speed:-0.02': 0.884, 'speed:-0.01': 0.882, 'speed:0.01': 0.883, 'speed:0.02': 0.886, 'speed:0.05': 0.884, 'dead:0': 0.887, 'dead:1': 0.843, 'dead:2': 0.863, 'dead:3': 0.848, 'dead:4': 0.862, 'dead:5': 0.838, 'dead:6': 0.878, 'gain2:0': 0.871, 'gain2:1': 0.865, 'gain2:2': 0.86, 'gain2:3': 0.856, 'gain2:4': 0.878, 'gain2:5': 0.859, 'gain2:6': 0.88}
+phase5 bearings     cnn-spec-rob           s2 speed macro-F1 0.877 (low 0.72, mid 0.97, high 0.92) 230s
