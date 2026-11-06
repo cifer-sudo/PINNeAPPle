@@ -52,3 +52,4 @@ Please also refer to the documentation for alternative solver options:
   n_iter_i = _check_optimize_result(
 phase5 comfaulda7   stack-rf-mlp-cnn       s3 speed macro-F1 0.763 (low 0.65, mid 0.92, high 0.71) 1785s
 === seed 4 ===
+phase5 comfaulda7   stack-rf-mlp-cnn       s4 speed macro-F1 0.755 (low 0.63, mid 0.93, high 0.71) 1853s
