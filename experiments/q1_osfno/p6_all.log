@@ -1,1 +1,2 @@
 phase6 all          cnn-mb                 s0 speed macro-F1 0.929 (low 0.84, mid 1.00, high 0.96) 541s
+phase6 all          cnn-mb                 s1 speed macro-F1 0.921 (low 0.80, mid 1.00, high 0.96) 552s
