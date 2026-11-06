@@ -21,3 +21,13 @@ Please also refer to the documentation for alternative solver options:
   n_iter_i = _check_optimize_result(
 phase5 comfaulda7   stack-rf-mlp-cnn       s1 speed macro-F1 0.779 (low 0.63, mid 0.93, high 0.78) 1536s
 === seed 2 ===
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=2000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+phase5 comfaulda7   stack-rf-mlp-cnn       s2 speed macro-F1 0.747 (low 0.62, mid 0.92, high 0.70) 1519s
