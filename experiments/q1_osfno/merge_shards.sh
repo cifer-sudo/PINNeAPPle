@@ -4,8 +4,8 @@
 cd "$(dirname "$0")/../.." || exit 1
 for b in $(git ls-remote --heads origin 'exp/q1-shard-*' | awk '{print $2}' | sed 's#refs/heads/##'); do
   git fetch -q origin "$b"
-  for f in $(git ls-tree -r --name-only "origin/$b" -- experiments/q1_osfno/results experiments/q1_osfno/locks "experiments/q1_osfno/shard_*.log" "experiments/q1_osfno/p3_*.log" "experiments/q1_osfno/p7_*.log" "experiments/q1_osfno/p8_*.log"); do
-    if [ ! -e "$f" ] || echo "$f" | grep -qE "(shard|p3|p7|p8)_.*\.log"; then
+  for f in $(git ls-tree -r --name-only "origin/$b" -- experiments/q1_osfno/results experiments/q1_osfno/locks "experiments/q1_osfno/shard_*.log" "experiments/q1_osfno/p3_*.log" "experiments/q1_osfno/p7_*.log" "experiments/q1_osfno/p8_*.log" "experiments/q1_osfno/p5_*.log" "experiments/q1_osfno/p6_*.log"); do
+    if [ ! -e "$f" ] || echo "$f" | grep -qE "(shard|p3|p5|p6|p7|p8)_.*\.log"; then
       mkdir -p "$(dirname "$f")"; git show "origin/$b:$f" > "$f"
     fi
   done

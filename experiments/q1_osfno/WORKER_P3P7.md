@@ -17,3 +17,13 @@
 `for m in rf mlp xgb cnn-spec osfno-A-nospeed osfno-B-head osfno-E-phys; do Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase8_robust.py <ds> <task> $m 2>&1 | tee -a p8_<task>.log; done`
 (existing result files are skipped). Push `experiments/q1_osfno/results experiments/q1_osfno/p8_<task>.log` to
 `exp/q1-shard-P8-<task>` after each model and at the end, as in step 4.
+
+## Phase 5 stacking shard (NAME=P5-<task>)
+`Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase5.py <ds> <task> 2>&1 | tee -a p5_<task>.log`
+(reuses the committed Phase 1 expert probabilities for the outer test folds; trains experts only on inner folds).
+Push `experiments/q1_osfno/results experiments/q1_osfno/p5_<task>.log` to `exp/q1-shard-P5-<task>` every ~30 min and at the end.
+
+## Phase 6 bearing shard (NAME=P6-<task>)
+`Q1_SLIM=1 /home/user/venv-scout/bin/python -u phase6.py run <task> cnn-mb 2>&1 | tee -a p6_<task>.log`
+(uses data_slim/mafaulda_envbands.npz). Push `experiments/q1_osfno/results experiments/q1_osfno/p6_<task>.log` to
+`exp/q1-shard-P6-<task>` every ~30 min and at the end.
