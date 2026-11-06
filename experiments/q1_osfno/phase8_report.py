@@ -9,7 +9,7 @@ import numpy as np
 from q1lib import RESULTS
 
 TASKS = ["misalignment", "unbalance", "bearings", "all", "comfaulda7"]
-MODELS = ["rf", "mlp", "xgb", "cnn-spec", "osfno-A-nospeed", "osfno-B-head", "osfno-E-phys"]
+MODELS = ["rf", "rf-rob", "mlp", "xgb", "cnn-spec", "cnn-spec-rob", "osfno-A-nospeed", "osfno-B-head", "osfno-E-phys"]
 lines = ["# Phase 8: robustness to test-time measurement errors", "",
          "Models trained exactly as in Phase 1; perturbations applied to the held-out runs only (phase8_robust.py). "
          "Macro-F1 pooled over the three held-out terciles, mean over seeds (n). Dead / gain: mean and worst over sensors.", ""]
