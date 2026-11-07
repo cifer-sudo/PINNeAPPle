@@ -1,0 +1,112 @@
+bearings rf 0 speed_low_12-27Hz clean F1 0.772
+bearings rf 0 speed_mid_27-41Hz clean F1 0.991
+bearings rf 0 speed_high_41-61Hz clean F1 0.809
+bearings rf 0 {'clean:None': 0.866, 'speed:-0.05': 0.515, 'speed:-0.02': 0.68, 'speed:-0.01': 0.835, 'speed:0.01': 0.839, 'speed:0.02': 0.686, 'speed:0.05': 0.529, 'dead:0': 0.788, 'dead:1': 0.859, 'dead:2': 0.85, 'dead:3': 0.806, 'dead:4': 0.531, 'dead:5': 0.854, 'dead:6': 0.543, 'gain2:0': 0.827, 'gain2:1': 0.869, 'gain2:2': 0.848, 'gain2:3': 0.855, 'gain2:4': 0.826, 'gain2:5': 0.877, 'gain2:6': 0.801}
+bearings rf 1 speed_low_12-27Hz clean F1 0.747
+bearings rf 1 speed_mid_27-41Hz clean F1 0.991
+bearings rf 1 speed_high_41-61Hz clean F1 0.791
+bearings rf 1 {'clean:None': 0.853, 'speed:-0.05': 0.508, 'speed:-0.02': 0.666, 'speed:-0.01': 0.823, 'speed:0.01': 0.825, 'speed:0.02': 0.677, 'speed:0.05': 0.526, 'dead:0': 0.801, 'dead:1': 0.847, 'dead:2': 0.847, 'dead:3': 0.807, 'dead:4': 0.576, 'dead:5': 0.844, 'dead:6': 0.527, 'gain2:0': 0.811, 'gain2:1': 0.863, 'gain2:2': 0.833, 'gain2:3': 0.855, 'gain2:4': 0.798, 'gain2:5': 0.865, 'gain2:6': 0.791}
+bearings rf 2 speed_low_12-27Hz clean F1 0.783
+bearings rf 2 speed_mid_27-41Hz clean F1 0.989
+bearings rf 2 speed_high_41-61Hz clean F1 0.802
+bearings rf 2 {'clean:None': 0.867, 'speed:-0.05': 0.586, 'speed:-0.02': 0.689, 'speed:-0.01': 0.828, 'speed:0.01': 0.825, 'speed:0.02': 0.696, 'speed:0.05': 0.567, 'dead:0': 0.799, 'dead:1': 0.849, 'dead:2': 0.868, 'dead:3': 0.817, 'dead:4': 0.565, 'dead:5': 0.866, 'dead:6': 0.599, 'gain2:0': 0.827, 'gain2:1': 0.874, 'gain2:2': 0.837, 'gain2:3': 0.864, 'gain2:4': 0.805, 'gain2:5': 0.878, 'gain2:6': 0.8}
+bearings rf 3 speed_low_12-27Hz clean F1 0.789
+bearings rf 3 speed_mid_27-41Hz clean F1 0.991
+bearings rf 3 speed_high_41-61Hz clean F1 0.816
+bearings rf 3 {'clean:None': 0.876, 'speed:-0.05': 0.518, 'speed:-0.02': 0.684, 'speed:-0.01': 0.833, 'speed:0.01': 0.835, 'speed:0.02': 0.696, 'speed:0.05': 0.54, 'dead:0': 0.803, 'dead:1': 0.856, 'dead:2': 0.874, 'dead:3': 0.83, 'dead:4': 0.538, 'dead:5': 0.869, 'dead:6': 0.52, 'gain2:0': 0.825, 'gain2:1': 0.882, 'gain2:2': 0.845, 'gain2:3': 0.869, 'gain2:4': 0.816, 'gain2:5': 0.88, 'gain2:6': 0.795}
+bearings rf 4 speed_low_12-27Hz clean F1 0.764
+bearings rf 4 speed_mid_27-41Hz clean F1 0.991
+bearings rf 4 speed_high_41-61Hz clean F1 0.822
+bearings rf 4 {'clean:None': 0.869, 'speed:-0.05': 0.535, 'speed:-0.02': 0.689, 'speed:-0.01': 0.835, 'speed:0.01': 0.843, 'speed:0.02': 0.709, 'speed:0.05': 0.53, 'dead:0': 0.799, 'dead:1': 0.855, 'dead:2': 0.863, 'dead:3': 0.817, 'dead:4': 0.578, 'dead:5': 0.855, 'dead:6': 0.559, 'gain2:0': 0.817, 'gain2:1': 0.872, 'gain2:2': 0.837, 'gain2:3': 0.847, 'gain2:4': 0.816, 'gain2:5': 0.876, 'gain2:6': 0.816}
+bearings mlp 0 speed_low_12-27Hz clean F1 0.740
+bearings mlp 0 speed_mid_27-41Hz clean F1 0.972
+bearings mlp 0 speed_high_41-61Hz clean F1 0.806
+bearings mlp 0 {'clean:None': 0.836, 'speed:-0.05': 0.57, 'speed:-0.02': 0.688, 'speed:-0.01': 0.769, 'speed:0.01': 0.779, 'speed:0.02': 0.69, 'speed:0.05': 0.536, 'dead:0': 0.725, 'dead:1': 0.804, 'dead:2': 0.738, 'dead:3': 0.693, 'dead:4': 0.682, 'dead:5': 0.799, 'dead:6': 0.634, 'gain2:0': 0.777, 'gain2:1': 0.834, 'gain2:2': 0.829, 'gain2:3': 0.813, 'gain2:4': 0.809, 'gain2:5': 0.814, 'gain2:6': 0.77}
+bearings mlp 1 speed_low_12-27Hz clean F1 0.745
+bearings mlp 1 speed_mid_27-41Hz clean F1 0.961
+bearings mlp 1 speed_high_41-61Hz clean F1 0.814
+bearings mlp 1 {'clean:None': 0.842, 'speed:-0.05': 0.538, 'speed:-0.02': 0.621, 'speed:-0.01': 0.785, 'speed:0.01': 0.785, 'speed:0.02': 0.635, 'speed:0.05': 0.5, 'dead:0': 0.761, 'dead:1': 0.792, 'dead:2': 0.74, 'dead:3': 0.694, 'dead:4': 0.689, 'dead:5': 0.841, 'dead:6': 0.638, 'gain2:0': 0.811, 'gain2:1': 0.836, 'gain2:2': 0.842, 'gain2:3': 0.831, 'gain2:4': 0.835, 'gain2:5': 0.823, 'gain2:6': 0.771}
+bearings mlp 2 speed_low_12-27Hz clean F1 0.759
+bearings mlp 2 speed_mid_27-41Hz clean F1 0.962
+bearings mlp 2 speed_high_41-61Hz clean F1 0.783
+bearings mlp 2 {'clean:None': 0.834, 'speed:-0.05': 0.545, 'speed:-0.02': 0.656, 'speed:-0.01': 0.759, 'speed:0.01': 0.765, 'speed:0.02': 0.675, 'speed:0.05': 0.531, 'dead:0': 0.727, 'dead:1': 0.776, 'dead:2': 0.75, 'dead:3': 0.652, 'dead:4': 0.66, 'dead:5': 0.804, 'dead:6': 0.641, 'gain2:0': 0.782, 'gain2:1': 0.836, 'gain2:2': 0.842, 'gain2:3': 0.808, 'gain2:4': 0.831, 'gain2:5': 0.808, 'gain2:6': 0.758}
+bearings mlp 3 speed_low_12-27Hz clean F1 0.733
+bearings mlp 3 speed_mid_27-41Hz clean F1 0.967
+bearings mlp 3 speed_high_41-61Hz clean F1 0.801
+bearings mlp 3 {'clean:None': 0.835, 'speed:-0.05': 0.552, 'speed:-0.02': 0.653, 'speed:-0.01': 0.78, 'speed:0.01': 0.779, 'speed:0.02': 0.671, 'speed:0.05': 0.526, 'dead:0': 0.726, 'dead:1': 0.771, 'dead:2': 0.75, 'dead:3': 0.709, 'dead:4': 0.676, 'dead:5': 0.79, 'dead:6': 0.634, 'gain2:0': 0.808, 'gain2:1': 0.842, 'gain2:2': 0.834, 'gain2:3': 0.818, 'gain2:4': 0.818, 'gain2:5': 0.832, 'gain2:6': 0.758}
+bearings mlp 4 speed_low_12-27Hz clean F1 0.729
+bearings mlp 4 speed_mid_27-41Hz clean F1 0.964
+bearings mlp 4 speed_high_41-61Hz clean F1 0.823
+bearings mlp 4 {'clean:None': 0.839, 'speed:-0.05': 0.582, 'speed:-0.02': 0.679, 'speed:-0.01': 0.78, 'speed:0.01': 0.784, 'speed:0.02': 0.704, 'speed:0.05': 0.601, 'dead:0': 0.724, 'dead:1': 0.804, 'dead:2': 0.733, 'dead:3': 0.668, 'dead:4': 0.697, 'dead:5': 0.798, 'dead:6': 0.649, 'gain2:0': 0.798, 'gain2:1': 0.833, 'gain2:2': 0.824, 'gain2:3': 0.807, 'gain2:4': 0.83, 'gain2:5': 0.814, 'gain2:6': 0.785}
+bearings xgb 0 speed_low_12-27Hz clean F1 0.725
+bearings xgb 0 speed_mid_27-41Hz clean F1 0.986
+bearings xgb 0 speed_high_41-61Hz clean F1 0.639
+bearings xgb 0 {'clean:None': 0.803, 'speed:-0.05': 0.588, 'speed:-0.02': 0.762, 'speed:-0.01': 0.783, 'speed:0.01': 0.788, 'speed:0.02': 0.785, 'speed:0.05': 0.592, 'dead:0': 0.672, 'dead:1': 0.755, 'dead:2': 0.752, 'dead:3': 0.743, 'dead:4': 0.519, 'dead:5': 0.788, 'dead:6': 0.427, 'gain2:0': 0.765, 'gain2:1': 0.803, 'gain2:2': 0.777, 'gain2:3': 0.784, 'gain2:4': 0.789, 'gain2:5': 0.805, 'gain2:6': 0.691}
+bearings xgb 1 speed_low_12-27Hz clean F1 0.740
+bearings xgb 1 speed_mid_27-41Hz clean F1 0.986
+bearings xgb 1 speed_high_41-61Hz clean F1 0.662
+bearings xgb 1 {'clean:None': 0.815, 'speed:-0.05': 0.583, 'speed:-0.02': 0.765, 'speed:-0.01': 0.796, 'speed:0.01': 0.796, 'speed:0.02': 0.779, 'speed:0.05': 0.57, 'dead:0': 0.669, 'dead:1': 0.779, 'dead:2': 0.748, 'dead:3': 0.755, 'dead:4': 0.495, 'dead:5': 0.797, 'dead:6': 0.419, 'gain2:0': 0.758, 'gain2:1': 0.816, 'gain2:2': 0.786, 'gain2:3': 0.799, 'gain2:4': 0.809, 'gain2:5': 0.816, 'gain2:6': 0.692}
+bearings xgb 2 speed_low_12-27Hz clean F1 0.735
+bearings xgb 2 speed_mid_27-41Hz clean F1 0.986
+bearings xgb 2 speed_high_41-61Hz clean F1 0.667
+bearings xgb 2 {'clean:None': 0.815, 'speed:-0.05': 0.556, 'speed:-0.02': 0.773, 'speed:-0.01': 0.793, 'speed:0.01': 0.796, 'speed:0.02': 0.79, 'speed:0.05': 0.553, 'dead:0': 0.668, 'dead:1': 0.777, 'dead:2': 0.755, 'dead:3': 0.748, 'dead:4': 0.513, 'dead:5': 0.788, 'dead:6': 0.418, 'gain2:0': 0.766, 'gain2:1': 0.819, 'gain2:2': 0.786, 'gain2:3': 0.798, 'gain2:4': 0.799, 'gain2:5': 0.818, 'gain2:6': 0.677}
+bearings xgb 3 speed_low_12-27Hz clean F1 0.723
+bearings xgb 3 speed_mid_27-41Hz clean F1 0.986
+bearings xgb 3 speed_high_41-61Hz clean F1 0.624
+bearings xgb 3 {'clean:None': 0.799, 'speed:-0.05': 0.57, 'speed:-0.02': 0.764, 'speed:-0.01': 0.787, 'speed:0.01': 0.786, 'speed:0.02': 0.788, 'speed:0.05': 0.556, 'dead:0': 0.657, 'dead:1': 0.763, 'dead:2': 0.745, 'dead:3': 0.737, 'dead:4': 0.514, 'dead:5': 0.782, 'dead:6': 0.451, 'gain2:0': 0.768, 'gain2:1': 0.799, 'gain2:2': 0.78, 'gain2:3': 0.792, 'gain2:4': 0.788, 'gain2:5': 0.806, 'gain2:6': 0.682}
+bearings xgb 4 speed_low_12-27Hz clean F1 0.709
+bearings xgb 4 speed_mid_27-41Hz clean F1 0.989
+bearings xgb 4 speed_high_41-61Hz clean F1 0.624
+bearings xgb 4 {'clean:None': 0.796, 'speed:-0.05': 0.543, 'speed:-0.02': 0.77, 'speed:-0.01': 0.785, 'speed:0.01': 0.789, 'speed:0.02': 0.774, 'speed:0.05': 0.538, 'dead:0': 0.664, 'dead:1': 0.763, 'dead:2': 0.746, 'dead:3': 0.737, 'dead:4': 0.502, 'dead:5': 0.785, 'dead:6': 0.408, 'gain2:0': 0.763, 'gain2:1': 0.802, 'gain2:2': 0.776, 'gain2:3': 0.795, 'gain2:4': 0.788, 'gain2:5': 0.797, 'gain2:6': 0.691}
+bearings cnn-spec 0 speed_low_12-27Hz clean F1 0.748
+bearings cnn-spec 0 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 0 speed_high_41-61Hz clean F1 0.950
+bearings cnn-spec 0 {'clean:None': 0.907, 'speed:-0.05': 0.599, 'speed:-0.02': 0.669, 'speed:-0.01': 0.729, 'speed:0.01': 0.657, 'speed:0.02': 0.761, 'speed:0.05': 0.576, 'dead:0': 0.642, 'dead:1': 0.697, 'dead:2': 0.505, 'dead:3': 0.658, 'dead:4': 0.417, 'dead:5': 0.409, 'dead:6': 0.47, 'gain2:0': 0.891, 'gain2:1': 0.861, 'gain2:2': 0.879, 'gain2:3': 0.901, 'gain2:4': 0.872, 'gain2:5': 0.809, 'gain2:6': 0.872}
+bearings cnn-spec 1 speed_low_12-27Hz clean F1 0.719
+bearings cnn-spec 1 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 1 speed_high_41-61Hz clean F1 0.916
+bearings cnn-spec 1 {'clean:None': 0.88, 'speed:-0.05': 0.687, 'speed:-0.02': 0.767, 'speed:-0.01': 0.782, 'speed:0.01': 0.779, 'speed:0.02': 0.807, 'speed:0.05': 0.728, 'dead:0': 0.63, 'dead:1': 0.737, 'dead:2': 0.419, 'dead:3': 0.547, 'dead:4': 0.437, 'dead:5': 0.271, 'dead:6': 0.663, 'gain2:0': 0.858, 'gain2:1': 0.873, 'gain2:2': 0.84, 'gain2:3': 0.915, 'gain2:4': 0.87, 'gain2:5': 0.811, 'gain2:6': 0.867}
+bearings cnn-spec 2 speed_low_12-27Hz clean F1 0.771
+bearings cnn-spec 2 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 2 speed_high_41-61Hz clean F1 0.939
+bearings cnn-spec 2 {'clean:None': 0.908, 'speed:-0.05': 0.903, 'speed:-0.02': 0.909, 'speed:-0.01': 0.91, 'speed:0.01': 0.903, 'speed:0.02': 0.913, 'speed:0.05': 0.905, 'dead:0': 0.651, 'dead:1': 0.663, 'dead:2': 0.5, 'dead:3': 0.65, 'dead:4': 0.373, 'dead:5': 0.336, 'dead:6': 0.643, 'gain2:0': 0.78, 'gain2:1': 0.9, 'gain2:2': 0.856, 'gain2:3': 0.912, 'gain2:4': 0.856, 'gain2:5': 0.787, 'gain2:6': 0.892}
+bearings cnn-spec 3 speed_low_12-27Hz clean F1 0.795
+bearings cnn-spec 3 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 3 speed_high_41-61Hz clean F1 0.938
+bearings cnn-spec 3 {'clean:None': 0.914, 'speed:-0.05': 0.911, 'speed:-0.02': 0.904, 'speed:-0.01': 0.906, 'speed:0.01': 0.905, 'speed:0.02': 0.899, 'speed:0.05': 0.9, 'dead:0': 0.611, 'dead:1': 0.741, 'dead:2': 0.521, 'dead:3': 0.641, 'dead:4': 0.325, 'dead:5': 0.556, 'dead:6': 0.769, 'gain2:0': 0.846, 'gain2:1': 0.853, 'gain2:2': 0.847, 'gain2:3': 0.936, 'gain2:4': 0.864, 'gain2:5': 0.837, 'gain2:6': 0.892}
+bearings cnn-spec 4 speed_low_12-27Hz clean F1 0.789
+bearings cnn-spec 4 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec 4 speed_high_41-61Hz clean F1 0.923
+bearings cnn-spec 4 {'clean:None': 0.91, 'speed:-0.05': 0.621, 'speed:-0.02': 0.653, 'speed:-0.01': 0.73, 'speed:0.01': 0.677, 'speed:0.02': 0.776, 'speed:0.05': 0.604, 'dead:0': 0.627, 'dead:1': 0.623, 'dead:2': 0.492, 'dead:3': 0.612, 'dead:4': 0.39, 'dead:5': 0.443, 'dead:6': 0.642, 'gain2:0': 0.864, 'gain2:1': 0.859, 'gain2:2': 0.863, 'gain2:3': 0.911, 'gain2:4': 0.888, 'gain2:5': 0.81, 'gain2:6': 0.875}
+bearings osfno-A-nospeed 0 speed_low_12-27Hz clean F1 0.784
+bearings osfno-A-nospeed 0 speed_mid_27-41Hz clean F1 0.968
+bearings osfno-A-nospeed 0 speed_high_41-61Hz clean F1 0.863
+bearings osfno-A-nospeed 0 {'clean:None': 0.872, 'speed:-0.05': 0.537, 'speed:-0.02': 0.511, 'speed:-0.01': 0.71, 'speed:0.01': 0.625, 'speed:0.02': 0.53, 'speed:0.05': 0.42, 'dead:0': 0.814, 'dead:1': 0.846, 'dead:2': 0.817, 'dead:3': 0.829, 'dead:4': 0.529, 'dead:5': 0.842, 'dead:6': 0.827, 'gain2:0': 0.873, 'gain2:1': 0.877, 'gain2:2': 0.881, 'gain2:3': 0.872, 'gain2:4': 0.87, 'gain2:5': 0.866, 'gain2:6': 0.866}
+bearings osfno-A-nospeed 1 speed_low_12-27Hz clean F1 0.785
+bearings osfno-A-nospeed 1 speed_mid_27-41Hz clean F1 0.968
+bearings osfno-A-nospeed 1 speed_high_41-61Hz clean F1 0.907
+bearings osfno-A-nospeed 1 {'clean:None': 0.891, 'speed:-0.05': 0.482, 'speed:-0.02': 0.524, 'speed:-0.01': 0.686, 'speed:0.01': 0.642, 'speed:0.02': 0.484, 'speed:0.05': 0.376, 'dead:0': 0.795, 'dead:1': 0.875, 'dead:2': 0.86, 'dead:3': 0.855, 'dead:4': 0.59, 'dead:5': 0.778, 'dead:6': 0.834, 'gain2:0': 0.888, 'gain2:1': 0.89, 'gain2:2': 0.891, 'gain2:3': 0.888, 'gain2:4': 0.879, 'gain2:5': 0.887, 'gain2:6': 0.885}
+bearings osfno-A-nospeed 2 speed_low_12-27Hz clean F1 0.784
+bearings osfno-A-nospeed 2 speed_mid_27-41Hz clean F1 0.969
+bearings osfno-A-nospeed 2 speed_high_41-61Hz clean F1 0.822
+bearings osfno-A-nospeed 2 {'clean:None': 0.862, 'speed:-0.05': 0.557, 'speed:-0.02': 0.558, 'speed:-0.01': 0.719, 'speed:0.01': 0.636, 'speed:0.02': 0.513, 'speed:0.05': 0.393, 'dead:0': 0.778, 'dead:1': 0.836, 'dead:2': 0.801, 'dead:3': 0.832, 'dead:4': 0.519, 'dead:5': 0.801, 'dead:6': 0.809, 'gain2:0': 0.862, 'gain2:1': 0.863, 'gain2:2': 0.857, 'gain2:3': 0.852, 'gain2:4': 0.846, 'gain2:5': 0.857, 'gain2:6': 0.863}
+bearings osfno-A-nospeed 3 speed_low_12-27Hz clean F1 0.749
+bearings osfno-A-nospeed 3 speed_mid_27-41Hz clean F1 0.977
+bearings osfno-A-nospeed 3 speed_high_41-61Hz clean F1 0.833
+bearings osfno-A-nospeed 3 {'clean:None': 0.855, 'speed:-0.05': 0.42, 'speed:-0.02': 0.497, 'speed:-0.01': 0.693, 'speed:0.01': 0.712, 'speed:0.02': 0.597, 'speed:0.05': 0.416, 'dead:0': 0.811, 'dead:1': 0.836, 'dead:2': 0.809, 'dead:3': 0.839, 'dead:4': 0.619, 'dead:5': 0.829, 'dead:6': 0.803, 'gain2:0': 0.859, 'gain2:1': 0.856, 'gain2:2': 0.856, 'gain2:3': 0.859, 'gain2:4': 0.85, 'gain2:5': 0.858, 'gain2:6': 0.857}
+bearings osfno-A-nospeed 4 speed_low_12-27Hz clean F1 0.722
+bearings osfno-A-nospeed 4 speed_mid_27-41Hz clean F1 0.985
+bearings osfno-A-nospeed 4 speed_high_41-61Hz clean F1 0.865
+bearings osfno-A-nospeed 4 {'clean:None': 0.853, 'speed:-0.05': 0.495, 'speed:-0.02': 0.571, 'speed:-0.01': 0.725, 'speed:0.01': 0.68, 'speed:0.02': 0.558, 'speed:0.05': 0.442, 'dead:0': 0.804, 'dead:1': 0.829, 'dead:2': 0.806, 'dead:3': 0.831, 'dead:4': 0.588, 'dead:5': 0.847, 'dead:6': 0.807, 'gain2:0': 0.853, 'gain2:1': 0.849, 'gain2:2': 0.861, 'gain2:3': 0.845, 'gain2:4': 0.851, 'gain2:5': 0.845, 'gain2:6': 0.851}
+bearings osfno-B-head 0 speed_low_12-27Hz clean F1 0.752
+bearings osfno-B-head 0 speed_mid_27-41Hz clean F1 0.958
+bearings osfno-B-head 0 speed_high_41-61Hz clean F1 0.866
+bearings osfno-B-head 0 {'clean:None': 0.854, 'speed:-0.05': 0.508, 'speed:-0.02': 0.462, 'speed:-0.01': 0.716, 'speed:0.01': 0.609, 'speed:0.02': 0.513, 'speed:0.05': 0.428, 'dead:0': 0.809, 'dead:1': 0.828, 'dead:2': 0.807, 'dead:3': 0.811, 'dead:4': 0.449, 'dead:5': 0.809, 'dead:6': 0.788, 'gain2:0': 0.859, 'gain2:1': 0.864, 'gain2:2': 0.867, 'gain2:3': 0.859, 'gain2:4': 0.846, 'gain2:5': 0.841, 'gain2:6': 0.851}
+bearings osfno-B-head 1 speed_low_12-27Hz clean F1 0.751
+bearings osfno-B-head 1 speed_mid_27-41Hz clean F1 0.973
+bearings osfno-B-head 1 speed_high_41-61Hz clean F1 0.861
+bearings osfno-B-head 1 {'clean:None': 0.863, 'speed:-0.05': 0.657, 'speed:-0.02': 0.631, 'speed:-0.01': 0.762, 'speed:0.01': 0.66, 'speed:0.02': 0.543, 'speed:0.05': 0.488, 'dead:0': 0.807, 'dead:1': 0.822, 'dead:2': 0.835, 'dead:3': 0.82, 'dead:4': 0.557, 'dead:5': 0.795, 'dead:6': 0.792, 'gain2:0': 0.877, 'gain2:1': 0.877, 'gain2:2': 0.871, 'gain2:3': 0.859, 'gain2:4': 0.868, 'gain2:5': 0.855, 'gain2:6': 0.873}
+bearings osfno-B-head 2 speed_low_12-27Hz clean F1 0.805
+bearings osfno-B-head 2 speed_mid_27-41Hz clean F1 0.978
+bearings osfno-B-head 2 speed_high_41-61Hz clean F1 0.839
+bearings osfno-B-head 2 {'clean:None': 0.873, 'speed:-0.05': 0.577, 'speed:-0.02': 0.617, 'speed:-0.01': 0.745, 'speed:0.01': 0.691, 'speed:0.02': 0.551, 'speed:0.05': 0.378, 'dead:0': 0.789, 'dead:1': 0.862, 'dead:2': 0.825, 'dead:3': 0.81, 'dead:4': 0.546, 'dead:5': 0.827, 'dead:6': 0.831, 'gain2:0': 0.873, 'gain2:1': 0.871, 'gain2:2': 0.871, 'gain2:3': 0.871, 'gain2:4': 0.868, 'gain2:5': 0.867, 'gain2:6': 0.873}

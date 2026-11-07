@@ -1,0 +1,18 @@
+unbalance cnn speed_low_12-28Hz {'width': 16, 'blocks': 4} inner 1.000
+unbalance cnn speed_low_12-28Hz {'width': 32, 'blocks': 3} inner 1.000
+unbalance cnn speed_low_12-28Hz {'width': 32, 'blocks': 4} inner 1.000
+unbalance cnn speed_low_12-28Hz {'width': 48, 'blocks': 5} inner 1.000
+unbalance cnn speed_mid_28-44Hz {'width': 16, 'blocks': 4} inner 0.962
+unbalance cnn speed_mid_28-44Hz {'width': 32, 'blocks': 3} inner 0.962
+unbalance cnn speed_mid_28-44Hz {'width': 32, 'blocks': 4} inner 0.962
+unbalance cnn speed_mid_28-44Hz {'width': 48, 'blocks': 5} inner 0.967
+unbalance cnn speed_high_44-61Hz {'width': 16, 'blocks': 4} inner 0.951
+unbalance cnn speed_high_44-61Hz {'width': 32, 'blocks': 3} inner 0.951
+unbalance cnn speed_high_44-61Hz {'width': 32, 'blocks': 4} inner 0.951
+unbalance cnn speed_high_44-61Hz {'width': 48, 'blocks': 5} inner 0.921
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_unbalance_cnn.json 9a495916ace4
+phase3 unbalance    cnn-tuned              s0 speed macro-F1 0.862 (low 0.85, mid 0.98, high 0.70) 97s
+phase3 unbalance    cnn-tuned              s1 speed macro-F1 0.877 (low 0.85, mid 1.00, high 0.74) 94s
+phase3 unbalance    cnn-tuned              s2 speed macro-F1 0.890 (low 0.87, mid 1.00, high 0.77) 100s
+phase3 unbalance    cnn-tuned              s3 speed macro-F1 0.958 (low 0.86, mid 1.00, high 1.00) 105s
+phase3 unbalance    cnn-tuned              s4 speed macro-F1 0.857 (low 0.85, mid 1.00, high 0.66) 104s

@@ -1,0 +1,201 @@
+task,model,speed_hz_bin_centre,accuracy
+misalignment,RF,14.30,0.8182
+misalignment,RF,19.23,0.9455
+misalignment,RF,24.01,1.0000
+misalignment,RF,28.86,1.0000
+misalignment,RF,33.88,1.0000
+misalignment,RF,38.75,1.0000
+misalignment,RF,43.54,1.0000
+misalignment,RF,48.39,0.9259
+misalignment,RF,53.21,0.8704
+misalignment,RF,58.27,0.8889
+misalignment,CNN (order spectra),14.30,0.6727
+misalignment,CNN (order spectra),19.23,0.9091
+misalignment,CNN (order spectra),24.01,1.0000
+misalignment,CNN (order spectra),28.86,1.0000
+misalignment,CNN (order spectra),33.88,1.0000
+misalignment,CNN (order spectra),38.75,1.0000
+misalignment,CNN (order spectra),43.54,1.0000
+misalignment,CNN (order spectra),48.39,0.9630
+misalignment,CNN (order spectra),53.21,0.9074
+misalignment,CNN (order spectra),58.27,0.9444
+misalignment,OS-FNO A (no speed),14.30,0.5818
+misalignment,OS-FNO A (no speed),19.23,0.7091
+misalignment,OS-FNO A (no speed),24.01,0.9091
+misalignment,OS-FNO A (no speed),28.86,0.9636
+misalignment,OS-FNO A (no speed),33.88,0.9636
+misalignment,OS-FNO A (no speed),38.75,1.0000
+misalignment,OS-FNO A (no speed),43.54,1.0000
+misalignment,OS-FNO A (no speed),48.39,0.9815
+misalignment,OS-FNO A (no speed),53.21,0.9815
+misalignment,OS-FNO A (no speed),58.27,0.9444
+misalignment,CNN robust (5b),14.30,0.2909
+misalignment,CNN robust (5b),19.23,0.6182
+misalignment,CNN robust (5b),24.01,0.9455
+misalignment,CNN robust (5b),28.86,1.0000
+misalignment,CNN robust (5b),33.88,1.0000
+misalignment,CNN robust (5b),38.75,1.0000
+misalignment,CNN robust (5b),43.54,1.0000
+misalignment,CNN robust (5b),48.39,1.0000
+misalignment,CNN robust (5b),53.21,0.9630
+misalignment,CNN robust (5b),58.27,0.9815
+unbalance,RF,14.31,0.7179
+unbalance,RF,19.25,0.9487
+unbalance,RF,23.94,1.0000
+unbalance,RF,28.63,1.0000
+unbalance,RF,33.45,1.0000
+unbalance,RF,38.26,1.0000
+unbalance,RF,42.87,1.0000
+unbalance,RF,47.71,0.9474
+unbalance,RF,52.28,0.8684
+unbalance,RF,57.58,0.8421
+unbalance,CNN (order spectra),14.31,0.8205
+unbalance,CNN (order spectra),19.25,0.9744
+unbalance,CNN (order spectra),23.94,1.0000
+unbalance,CNN (order spectra),28.63,1.0000
+unbalance,CNN (order spectra),33.45,1.0000
+unbalance,CNN (order spectra),38.26,1.0000
+unbalance,CNN (order spectra),42.87,1.0000
+unbalance,CNN (order spectra),47.71,0.9737
+unbalance,CNN (order spectra),52.28,0.8947
+unbalance,CNN (order spectra),57.58,0.8684
+unbalance,OS-FNO A (no speed),14.31,0.9487
+unbalance,OS-FNO A (no speed),19.25,1.0000
+unbalance,OS-FNO A (no speed),23.94,1.0000
+unbalance,OS-FNO A (no speed),28.63,1.0000
+unbalance,OS-FNO A (no speed),33.45,1.0000
+unbalance,OS-FNO A (no speed),38.26,1.0000
+unbalance,OS-FNO A (no speed),42.87,1.0000
+unbalance,OS-FNO A (no speed),47.71,1.0000
+unbalance,OS-FNO A (no speed),52.28,1.0000
+unbalance,OS-FNO A (no speed),57.58,1.0000
+unbalance,CNN robust (5b),14.31,0.5897
+unbalance,CNN robust (5b),19.25,0.8205
+unbalance,CNN robust (5b),23.94,0.9211
+unbalance,CNN robust (5b),28.63,0.9474
+unbalance,CNN robust (5b),33.45,1.0000
+unbalance,CNN robust (5b),38.26,1.0000
+unbalance,CNN robust (5b),42.87,1.0000
+unbalance,CNN robust (5b),47.71,1.0000
+unbalance,CNN robust (5b),52.28,1.0000
+unbalance,CNN robust (5b),57.58,0.9737
+bearings,RF,14.33,0.6262
+bearings,RF,18.83,0.7570
+bearings,RF,22.98,0.9252
+bearings,RF,27.24,0.9813
+bearings,RF,31.39,1.0000
+bearings,RF,35.61,1.0000
+bearings,RF,40.20,1.0000
+bearings,RF,45.33,0.9434
+bearings,RF,51.00,0.8396
+bearings,RF,57.26,0.7736
+bearings,CNN (order spectra),14.33,0.6636
+bearings,CNN (order spectra),18.83,0.8224
+bearings,CNN (order spectra),22.98,0.9065
+bearings,CNN (order spectra),27.24,0.9813
+bearings,CNN (order spectra),31.39,1.0000
+bearings,CNN (order spectra),35.61,1.0000
+bearings,CNN (order spectra),40.20,1.0000
+bearings,CNN (order spectra),45.33,0.9717
+bearings,CNN (order spectra),51.00,0.9340
+bearings,CNN (order spectra),57.26,0.9151
+bearings,OS-FNO A (no speed),14.33,0.5888
+bearings,OS-FNO A (no speed),18.83,0.8224
+bearings,OS-FNO A (no speed),22.98,0.9533
+bearings,OS-FNO A (no speed),27.24,0.9813
+bearings,OS-FNO A (no speed),31.39,0.9906
+bearings,OS-FNO A (no speed),35.61,0.9528
+bearings,OS-FNO A (no speed),40.20,1.0000
+bearings,OS-FNO A (no speed),45.33,0.9528
+bearings,OS-FNO A (no speed),51.00,0.8113
+bearings,OS-FNO A (no speed),57.26,0.7736
+bearings,CNN robust (5b),14.33,0.5421
+bearings,CNN robust (5b),18.83,0.7944
+bearings,CNN robust (5b),22.98,0.9346
+bearings,CNN robust (5b),27.24,0.9720
+bearings,CNN robust (5b),31.39,1.0000
+bearings,CNN robust (5b),35.61,1.0000
+bearings,CNN robust (5b),40.20,1.0000
+bearings,CNN robust (5b),45.33,1.0000
+bearings,CNN robust (5b),51.00,0.8774
+bearings,CNN robust (5b),57.26,0.8962
+all,RF,14.31,0.5316
+all,RF,18.96,0.8053
+all,RF,23.34,0.9474
+all,RF,27.77,0.9842
+all,RF,32.20,1.0000
+all,RF,36.90,1.0000
+all,RF,41.62,0.9947
+all,RF,46.49,0.9841
+all,RF,51.82,0.8995
+all,RF,57.68,0.7831
+all,CNN (order spectra),14.31,0.5421
+all,CNN (order spectra),18.96,0.8474
+all,CNN (order spectra),23.34,0.9368
+all,CNN (order spectra),27.77,0.9895
+all,CNN (order spectra),32.20,1.0000
+all,CNN (order spectra),36.90,1.0000
+all,CNN (order spectra),41.62,1.0000
+all,CNN (order spectra),46.49,0.9947
+all,CNN (order spectra),51.82,0.9630
+all,CNN (order spectra),57.68,0.9471
+all,OS-FNO A (no speed),14.31,0.5579
+all,OS-FNO A (no speed),18.96,0.7632
+all,OS-FNO A (no speed),23.34,0.9579
+all,OS-FNO A (no speed),27.77,0.9842
+all,OS-FNO A (no speed),32.20,1.0000
+all,OS-FNO A (no speed),36.90,0.9683
+all,OS-FNO A (no speed),41.62,1.0000
+all,OS-FNO A (no speed),46.49,0.9630
+all,OS-FNO A (no speed),51.82,0.8624
+all,OS-FNO A (no speed),57.68,0.8571
+all,CNN robust (5b),14.31,0.4737
+all,CNN robust (5b),18.96,0.7579
+all,CNN robust (5b),23.34,0.9368
+all,CNN robust (5b),27.77,0.9842
+all,CNN robust (5b),32.20,1.0000
+all,CNN robust (5b),36.90,1.0000
+all,CNN robust (5b),41.62,1.0000
+all,CNN robust (5b),46.49,0.9947
+all,CNN robust (5b),51.82,0.9630
+all,CNN robust (5b),57.68,0.9312
+comfaulda7,RF,14.54,0.2350
+comfaulda7,RF,19.05,0.5833
+comfaulda7,RF,23.46,0.8287
+comfaulda7,RF,27.79,0.8611
+comfaulda7,RF,32.29,0.6852
+comfaulda7,RF,36.86,0.6806
+comfaulda7,RF,41.66,0.8704
+comfaulda7,RF,46.76,0.7222
+comfaulda7,RF,52.26,0.5000
+comfaulda7,RF,58.12,0.4028
+comfaulda7,CNN (order spectra),14.54,0.2258
+comfaulda7,CNN (order spectra),19.05,0.6620
+comfaulda7,CNN (order spectra),23.46,0.8935
+comfaulda7,CNN (order spectra),27.79,0.9259
+comfaulda7,CNN (order spectra),32.29,0.9444
+comfaulda7,CNN (order spectra),36.86,0.9306
+comfaulda7,CNN (order spectra),41.66,0.9352
+comfaulda7,CNN (order spectra),46.76,0.9213
+comfaulda7,CNN (order spectra),52.26,0.7963
+comfaulda7,CNN (order spectra),58.12,0.7222
+comfaulda7,OS-FNO A (no speed),14.54,0.3917
+comfaulda7,OS-FNO A (no speed),19.05,0.6528
+comfaulda7,OS-FNO A (no speed),23.46,0.7778
+comfaulda7,OS-FNO A (no speed),27.79,0.8981
+comfaulda7,OS-FNO A (no speed),32.29,0.7778
+comfaulda7,OS-FNO A (no speed),36.86,0.7593
+comfaulda7,OS-FNO A (no speed),41.66,0.9120
+comfaulda7,OS-FNO A (no speed),46.76,0.8287
+comfaulda7,OS-FNO A (no speed),52.26,0.6343
+comfaulda7,OS-FNO A (no speed),58.12,0.6296
+comfaulda7,CNN robust (5b),14.54,0.3318
+comfaulda7,CNN robust (5b),19.05,0.8056
+comfaulda7,CNN robust (5b),23.46,0.8981
+comfaulda7,CNN robust (5b),27.79,0.9722
+comfaulda7,CNN robust (5b),32.29,0.9398
+comfaulda7,CNN robust (5b),36.86,0.9259
+comfaulda7,CNN robust (5b),41.66,0.9398
+comfaulda7,CNN robust (5b),46.76,0.8981
+comfaulda7,CNN robust (5b),52.26,0.7870
+comfaulda7,CNN robust (5b),58.12,0.6528

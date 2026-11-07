@@ -1,0 +1,7 @@
+combination,1X,2X,3X,4X,0-8X
+unbalance+horizontal,0.694,0.954,0.797,0.746,0.846
+unbalance+vertical,0.658,0.903,0.856,0.840,0.897
+horizontal+vertical,0.694,0.898,0.901,0.927,1.250
+noise floor: unbalance,,,,,0.606
+noise floor: horizontal,,,,,0.917
+noise floor: vertical,,,,,0.853

@@ -1,0 +1,31 @@
+method_or_item,metric,value
+br-rf,exact unbalance+horizontal,0.0023
+br-rf,exact unbalance+vertical,0.0103
+br-rf,exact horizontal+vertical,0.0272
+br-rf,F1 unbalance,0.8606
+br-rf,F1 horizontal,0.3748
+br-rf,F1 vertical,0.4228
+br-mlp,exact unbalance+horizontal,0.0165
+br-mlp,exact unbalance+vertical,0.0279
+br-mlp,exact horizontal+vertical,0.1628
+br-mlp,F1 unbalance,0.8040
+br-mlp,F1 horizontal,0.4896
+br-mlp,F1 vertical,0.5185
+ml-cnn,exact unbalance+horizontal,0.0051
+ml-cnn,exact unbalance+vertical,0.0057
+ml-cnn,exact horizontal+vertical,0.0417
+ml-cnn,F1 unbalance,0.8078
+ml-cnn,F1 horizontal,0.2839
+ml-cnn,F1 vertical,0.5660
+ml-cnn-mix,exact unbalance+horizontal,0.0370
+ml-cnn-mix,exact unbalance+vertical,0.0815
+ml-cnn-mix,exact horizontal+vertical,0.1329
+ml-cnn-mix,F1 unbalance,0.8835
+ml-cnn-mix,F1 horizontal,0.3686
+ml-cnn-mix,F1 vertical,0.5336
+superposition,unbalance+horizontal,0.8459
+superposition,unbalance+vertical,0.8969
+superposition,horizontal+vertical,1.2498
+noise_floor,unbalance,0.6063
+noise_floor,horizontal,0.9167
+noise_floor,vertical,0.8531

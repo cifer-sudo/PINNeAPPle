@@ -1,0 +1,76 @@
+task,model,macro_f1_mean,ci95_halfwidth
+misalignment,RF,0.8764,0.0093
+misalignment,MLP,0.8383,0.0290
+misalignment,KAN,0.8575,0.0157
+misalignment,SVM-RBF,0.7763,0.0089
+misalignment,XGBoost,0.8476,0.0130
+misalignment,CNN (order spectra),0.9235,0.0183
+misalignment,CNN nested-tuned,0.9092,0.0156
+misalignment,CNN robust (5b),0.8295,0.0422
+misalignment,OS-FNO A (no speed),0.8557,0.0270
+misalignment,OS-FNO B (speed in head),0.8558,0.0209
+misalignment,OS-FNO C = OC-FNO (FiLM),0.7645,0.0242
+misalignment,OS-FNO E (physical speed),0.8614,0.0309
+misalignment,FNO nested-tuned,0.8485,0.0218
+misalignment,RF+CNN fusion α=0.5 (exploratory),0.9323,0.0166
+misalignment,Stack RF+MLP+CNN (nested gate),0.8839,0.0267
+unbalance,RF,0.8525,0.0101
+unbalance,MLP,0.8839,0.0150
+unbalance,KAN,0.8729,0.0090
+unbalance,SVM-RBF,0.8302,0.0102
+unbalance,XGBoost,0.7649,0.0048
+unbalance,CNN (order spectra),0.8980,0.0522
+unbalance,CNN nested-tuned,0.8887,0.0507
+unbalance,CNN robust (5b),0.8483,0.0590
+unbalance,OS-FNO A (no speed),0.9607,0.0279
+unbalance,OS-FNO B (speed in head),0.9416,0.0324
+unbalance,OS-FNO C = OC-FNO (FiLM),0.9341,0.0219
+unbalance,OS-FNO E (physical speed),0.9546,0.0082
+unbalance,FNO nested-tuned,0.9607,0.0279
+unbalance,RF+CNN fusion α=0.5 (exploratory),0.8815,0.0091
+unbalance,Stack RF+MLP+CNN (nested gate),0.8805,0.0291
+bearings,RF,0.8664,0.0103
+bearings,MLP,0.8371,0.0039
+bearings,KAN,0.8110,0.0114
+bearings,SVM-RBF,0.7819,0.0040
+bearings,XGBoost,0.8054,0.0110
+bearings,CNN (order spectra),0.9039,0.0166
+bearings,CNN nested-tuned,0.9044,0.0188
+bearings,CNN robust (5b),0.8816,0.0172
+bearings,OS-FNO A (no speed),0.8666,0.0194
+bearings,OS-FNO B (speed in head),0.8588,0.0116
+bearings,OS-FNO C = OC-FNO (FiLM),0.8157,0.0296
+bearings,OS-FNO E (physical speed),0.8536,0.0109
+bearings,FNO nested-tuned,0.8728,0.0164
+bearings,RF+CNN fusion α=0.5 (exploratory),0.9140,0.0085
+bearings,Stack RF+MLP+CNN (nested gate),0.9138,0.0062
+all,RF,0.8782,0.0026
+all,MLP,0.8169,0.0061
+all,KAN,0.8238,0.0166
+all,SVM-RBF,0.7802,0.0032
+all,XGBoost,0.8263,0.0049
+all,CNN (order spectra),0.9001,0.0085
+all,CNN nested-tuned,0.9130,0.0150
+all,CNN robust (5b),0.8808,0.0211
+all,OS-FNO A (no speed),0.8498,0.0172
+all,OS-FNO B (speed in head),0.8362,0.0139
+all,OS-FNO C = OC-FNO (FiLM),0.7609,0.0598
+all,OS-FNO E (physical speed),0.8414,0.0102
+all,FNO nested-tuned,0.8730,0.0122
+all,RF+CNN fusion α=0.5 (exploratory),0.9057,0.0133
+all,Stack RF+MLP+CNN (nested gate),0.8992,0.0046
+comfaulda7,RF,0.6338,0.0078
+comfaulda7,MLP,0.6904,0.0097
+comfaulda7,KAN,0.6409,0.0200
+comfaulda7,SVM-RBF,0.6435,0.0024
+comfaulda7,XGBoost,0.6552,0.0060
+comfaulda7,CNN (order spectra),0.7543,0.0215
+comfaulda7,CNN nested-tuned,0.7690,0.0146
+comfaulda7,CNN robust (5b),0.7914,0.0108
+comfaulda7,OS-FNO A (no speed),0.6844,0.0263
+comfaulda7,OS-FNO B (speed in head),0.6888,0.0283
+comfaulda7,OS-FNO C = OC-FNO (FiLM),0.5917,0.0296
+comfaulda7,OS-FNO E (physical speed),0.6958,0.0355
+comfaulda7,FNO nested-tuned,0.7256,0.0224
+comfaulda7,RF+CNN fusion α=0.5 (exploratory),0.7655,0.0173
+comfaulda7,Stack RF+MLP+CNN (nested gate),0.7653,0.0193

@@ -1,0 +1,239 @@
+48 inner archives
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_20_g+Hor. Misalignment_0.5_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_20_g+Hor. Misalignment_1_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_20_g+Hor. Misalignment_2.0_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_30_g+Hor. Misalignment_0.5_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_30_g+Hor. Misalignment_1_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_30_g+Hor. Misalignment_2.0_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_6_g+Hor. Misalignment_0.5_mm.zip 49 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_6_g+Hor. Misalignment_1_mm.zip 49 runs 0 errors
+Combined Faults/Unbalance+Horizontal_misalignment/Unbalance_6_g+Hor. Misalignment_2_mm.zip 49 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_20_g+Ver. Misalignment_0.51_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_20_g+Ver. Misalignment_1.27_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_20_g+Ver. Misalignment_1.91_mm.zip 39 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_30_g+Ver. Misalignment_0.51_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_30_g+Ver. Misalignment_1.27_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_30_g+Ver. Misalignment_1.91_mm.zip 29 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_6_g+Ver. Misalignment_0.51_mm.zip 49 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_6_g+Ver. Misalignment_1.27_mm.zip 49 runs 0 errors
+Combined Faults/Unbalance+Vertical_Misalignment/Unbalance_6_g+Ver. Misalignment_1.91_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_0.51_mm+Hor. Misalignment_0.5_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_0.51_mm+Hor. Misalignment_1_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_0.51_mm+Hor. Misalignment_2_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.27_mm+Hor. Misalignment_0.5_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.27_mm+Hor. Misalignment_1_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.27_mm+Hor. Misalignment_2_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.91_mm+Hor. Misalignment_0.5_mm.zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.91_mm+Hor. Misalignment_1_mm..zip 49 runs 0 errors
+Combined Faults/Vertical_misalignment+Horizontal_misalignment/Ver. Misalignment_1.91_mm+Hor. Misalignment_2_mm..zip 49 runs 0 errors
+Normal_Condition/Normal_1.zip 49 runs 0 errors
+Normal_Condition/Normal_2.zip 49 runs 0 errors
+Normal_Condition/Normal_3.zip 49 runs 0 errors
+Normal_Condition/Normal_4.zip 49 runs 0 errors
+Normal_Condition/Normal_5.zip 49 runs 0 errors
+Single Faults/Horizontal Misalignment/Horizontal_misalignment_0_5mm.zip 48 runs 0 errors
+Single Faults/Horizontal Misalignment/Horizontal_misalignment_1_0mm.zip 49 runs 0 errors
+Single Faults/Horizontal Misalignment/Horizontal_misalignment_1_5mm.zip 49 runs 0 errors
+Single Faults/Horizontal Misalignment/Horizontal_misalignment_2_0mm.zip 49 runs 0 errors
+Single Faults/Unbalance/Unbalance_10_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_15_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_20_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_25_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_30_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_35_g.zip 48 runs 0 errors
+Single Faults/Unbalance/Unbalance_6_g.zip 48 runs 0 errors
+Single Faults/Vertical Misalignment/Vertical_Misalignment_0.51_mm.zip 49 runs 0 errors
+Single Faults/Vertical Misalignment/Vertical_Misalignment_1.27_mm.zip 48 runs 1 errors
+retry Single Faults/Vertical Misalignment/Vertical_Misalignment_1.4_mm.zip IncompleteRead(19287040 bytes read, 488223744 more expected)
+Traceback (most recent call last):
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 71, in main
+    data = outer.read(inner)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1647, in read
+    return fp.read()
+           ~~~~~~~^^
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1031, in read
+    buf += self._read1(self.MAX_N)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1115, in _read1
+    data = self._read2(n)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1161, in _read2
+    data = self._fileobj.read(n)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 864, in read
+    data = self._file.read(n)
+  File "/home/user/tools/remote_zip.py", line 49, in readinto
+    data = self.read(len(b))
+  File "/home/user/tools/remote_zip.py", line 44, in read
+    data = r.read()
+  File "/usr/local/lib/python3.13/http/client.py", line 510, in read
+    s = self._safe_read(self.length)
+  File "/usr/local/lib/python3.13/http/client.py", line 684, in _safe_read
+    raise IncompleteRead(data.getvalue(), amt - data.tell())
+http.client.IncompleteRead: IncompleteRead(19287040 bytes read, 488223744 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1331, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1520, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1051, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 75, in main
+    outer = zipfile.ZipFile(io.BufferedReader(HttpRangeFile(URL), buffer_size=1 << 22))
+                                              ~~~~~~~~~~~~~^^^^^
+  File "/home/user/tools/remote_zip.py", line 18, in __init__
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1334, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+48 inner archives
+Single Faults/Vertical Misalignment/Vertical_Misalignment_1.4_mm.zip 49 runs 0 errors
+Single Faults/Vertical Misalignment/Vertical_Misalignment_1.78_mm.zip 48 runs 0 errors
+retry Single Faults/Vertical Misalignment/Vertical_Misalignment_1.91_mm.zip IncompleteRead(293596532 bytes read, 209719948 more expected)
+Traceback (most recent call last):
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 71, in main
+    data = outer.read(inner)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1647, in read
+    return fp.read()
+           ~~~~~~~^^
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1031, in read
+    buf += self._read1(self.MAX_N)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1115, in _read1
+    data = self._read2(n)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 1161, in _read2
+    data = self._fileobj.read(n)
+  File "/usr/local/lib/python3.13/zipfile/__init__.py", line 864, in read
+    data = self._file.read(n)
+  File "/home/user/tools/remote_zip.py", line 49, in readinto
+    data = self.read(len(b))
+  File "/home/user/tools/remote_zip.py", line 44, in read
+    data = r.read()
+  File "/usr/local/lib/python3.13/http/client.py", line 510, in read
+    s = self._safe_read(self.length)
+  File "/usr/local/lib/python3.13/http/client.py", line 684, in _safe_read
+    raise IncompleteRead(data.getvalue(), amt - data.tell())
+http.client.IncompleteRead: IncompleteRead(293596532 bytes read, 209719948 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1331, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1520, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1051, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 94, in <module>
+    main()
+    ~~~~^^
+  File "/home/user/Q1 paper/PINNeAPPle/experiments/q1_osfno/extract_comfaulda.py", line 75, in main
+    outer = zipfile.ZipFile(io.BufferedReader(HttpRangeFile(URL), buffer_size=1 << 22))
+                                              ~~~~~~~~~~~~~^^^^^
+  File "/home/user/tools/remote_zip.py", line 18, in __init__
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1334, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+48 inner archives
+Single Faults/Vertical Misalignment/Vertical_Misalignment_1.91_mm.zip 49 runs 0 errors

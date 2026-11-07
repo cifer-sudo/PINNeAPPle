@@ -1,0 +1,15 @@
+=== seed 0 start Fri Nov  6 20:47:00 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s0 speed macro-F1 0.899 (low 0.78, mid 1.00, high 0.90) 1525s
+=== seed 0 exit 0 Fri Nov  6 21:12:29 UTC 2026
+=== seed 1 start Fri Nov  6 21:12:38 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s1 speed macro-F1 0.903 (low 0.81, mid 1.00, high 0.89) 1512s
+=== seed 1 exit 0 Fri Nov  6 21:37:53 UTC 2026
+=== seed 2 start Fri Nov  6 21:38:03 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s2 speed macro-F1 0.895 (low 0.77, mid 1.00, high 0.90) 1548s
+=== seed 2 exit 0 Fri Nov  6 22:03:55 UTC 2026
+=== seed 3 start Fri Nov  6 22:04:05 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s3 speed macro-F1 0.903 (low 0.75, mid 1.00, high 0.96) 1643s
+=== seed 3 exit 0 Fri Nov  6 22:31:32 UTC 2026
+=== seed 4 start Fri Nov  6 22:31:41 UTC 2026
+phase5 all          stack-rf-mlp-cnn       s4 speed macro-F1 0.896 (low 0.79, mid 1.00, high 0.88) 1616s
+=== seed 4 exit 0 Fri Nov  6 22:58:41 UTC 2026

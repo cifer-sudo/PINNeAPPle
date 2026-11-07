@@ -34,3 +34,16 @@ Multi-Sensor Spectral Fusion" 10.21203/rs.3.rs-9410125/v1 may be it — open bef
 | Physical explanation of the speed-extrapolation failure (transfer function / resonances in the low tercile) | none found on these datasets | partly argued in §4; Phase 8 adds per-band and per-class evidence |
 | When speed conditioning hurts (FiLM vs speed in head vs none vs physical descriptor) | Speed adaptive gate (Measurement 2023) shows it helps under their protocol | Phase 1/3, R1-R2 |
 | Compound faults from single faults with a factorised multi-label model | multi-label DG (PHM-AP 2023, 10.36001/phmap.2023.v4i1.3651, not yet read) | Phase 7 |
+
+## Added 2026-11-07 (Phase 9; Crossref-checked: DOI, title, venue, year)
+
+| # | Work | Venue, year, DOI | Use |
+|---|---|---|---|
+| 14 | Lu et al. — *Tacholess Speed Estimation in Order Tracking: A Review With Application to Rotating Machine Fault Diagnosis* | IEEE TIM 2019, 10.1109/tim.2019.2902806 | speed estimates have errors in practice → motivates the speed-error robustness test |
+| 15 | Liu et al. — *Rotating Machinery Fault Diagnosis Under Time-Varying Speeds: A Review* | IEEE Sensors J 2023, 10.1109/jsen.2023.3326112 | context: order tracking and DL under varying speed |
+| 16 | Ji et al. — *A Two-Stage, Intelligent Bearing-Fault-Diagnosis Method Using Order-Tracking and a 1-D CNN with Variable Speeds* | Sensors 2021, 10.3390/s21030675 | order tracking + 1-D CNN is an established baseline |
+| 17 | Jeong et al. — *Source-Free Domain Adaptation Framework for Rotary Machine Fault Diagnosis* | Sensors 2025, 10.3390/s25144383 | cross-dataset benchmark with order-frequency preprocessing |
+
+Search for "sensitivity of trained classifiers to speed-estimation error" and "dead-sensor robustness" on these
+datasets returned no direct match in this search (Consensus, 2026-11-07, rate-limited after one query); the novelty
+table says "not found", not "absent". Positioning and journal recommendation: `POSITIONING.md`.

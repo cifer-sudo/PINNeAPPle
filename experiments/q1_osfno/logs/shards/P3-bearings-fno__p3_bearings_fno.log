@@ -1,0 +1,18 @@
+bearings fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.971
+bearings fno speed_low_12-27Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.964
+bearings fno speed_low_12-27Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.956
+bearings fno speed_low_12-27Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.961
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.867
+bearings fno speed_mid_27-41Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.892
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.879
+bearings fno speed_mid_27-41Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.877
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 64, 'layers': 3} inner 0.914
+bearings fno speed_high_41-61Hz {'width': 64, 'modes': 64, 'layers': 3} inner 0.935
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 128, 'layers': 3} inner 0.928
+bearings fno speed_high_41-61Hz {'width': 32, 'modes': 64, 'layers': 4} inner 0.895
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_bearings_fno.json b49a4a62841d
+phase3 bearings     fno-tuned              s0 speed macro-F1 0.879 (low 0.78, mid 0.98, high 0.87) 563s
+phase3 bearings     fno-tuned              s1 speed macro-F1 0.888 (low 0.79, mid 0.98, high 0.88) 574s
+phase3 bearings     fno-tuned              s2 speed macro-F1 0.879 (low 0.78, mid 0.98, high 0.87) 612s
+phase3 bearings     fno-tuned              s3 speed macro-F1 0.863 (low 0.75, mid 0.98, high 0.86) 596s
+phase3 bearings     fno-tuned              s4 speed macro-F1 0.855 (low 0.72, mid 0.99, high 0.87) 600s

@@ -1,0 +1,110 @@
+task,model,role,experiment,seeds,macro_f1 mean ± 95% CI,low (extrap.),mid,high (extrap.),worst tercile
+T1,rf,feature baseline,phase1,5,0.876 ± 0.009,0.851,1.000,0.699,0.699
+T2,rf,feature baseline,phase1,5,0.852 ± 0.010,0.836,1.000,0.663,0.663
+T3,rf,feature baseline,phase1,5,0.866 ± 0.010,0.771,0.991,0.808,0.771
+T4,rf,feature baseline,phase1,5,0.878 ± 0.003,0.770,0.997,0.853,0.770
+C1,rf,feature baseline,phase1,5,0.634 ± 0.008,0.584,0.735,0.568,0.568
+T1,mlp,feature baseline,phase1,5,0.838 ± 0.029,0.842,0.977,0.642,0.642
+T2,mlp,feature baseline,phase1,5,0.884 ± 0.015,0.895,1.000,0.702,0.702
+T3,mlp,feature baseline,phase1,5,0.837 ± 0.004,0.741,0.965,0.806,0.741
+T4,mlp,feature baseline,phase1,5,0.817 ± 0.006,0.707,0.965,0.756,0.707
+C1,mlp,feature baseline,phase1,5,0.690 ± 0.010,0.609,0.820,0.628,0.609
+T1,kan,feature baseline,phase1,5,0.858 ± 0.016,0.869,0.996,0.659,0.659
+T2,kan,feature baseline,phase1,5,0.873 ± 0.009,0.867,1.000,0.702,0.702
+T3,kan,feature baseline,phase1,5,0.811 ± 0.011,0.695,0.974,0.779,0.695
+T4,kan,feature baseline,phase1,5,0.824 ± 0.017,0.741,0.971,0.749,0.741
+C1,kan,feature baseline,phase1,5,0.641 ± 0.020,0.571,0.775,0.560,0.560
+T1,svm,feature baseline,phase1,5,0.776 ± 0.009,0.701,1.000,0.529,0.529
+T2,svm,feature baseline,phase1,5,0.830 ± 0.010,0.844,1.000,0.522,0.522
+T3,svm,feature baseline,phase1,5,0.782 ± 0.004,0.764,0.973,0.566,0.566
+T4,svm,feature baseline,phase1,5,0.780 ± 0.003,0.747,0.965,0.601,0.601
+C1,svm,feature baseline,phase1,5,0.644 ± 0.002,0.617,0.824,0.456,0.456
+T1,xgb,feature baseline,phase1,5,0.848 ± 0.013,0.835,0.950,0.670,0.670
+T2,xgb,feature baseline,phase1,5,0.765 ± 0.005,0.663,1.000,0.620,0.620
+T3,xgb,feature baseline,phase1,5,0.805 ± 0.011,0.726,0.987,0.643,0.643
+T4,xgb,feature baseline,phase1,5,0.826 ± 0.005,0.732,0.986,0.716,0.716
+C1,xgb,feature baseline,phase1,5,0.655 ± 0.006,0.591,0.801,0.571,0.571
+T1,cnn-spec,spectral baseline,phase1,5,0.924 ± 0.018,0.814,1.000,0.946,0.814
+T2,cnn-spec,spectral baseline,phase1,5,0.898 ± 0.052,0.868,1.000,0.803,0.803
+T3,cnn-spec,spectral baseline,phase1,5,0.904 ± 0.017,0.764,0.991,0.933,0.764
+T4,cnn-spec,spectral baseline,phase1,5,0.900 ± 0.008,0.751,0.999,0.941,0.751
+C1,cnn-spec,spectral baseline,phase1,5,0.754 ± 0.022,0.591,0.915,0.764,0.591
+T1,fno-trainonly,repo FNO (train-only scaling),phase1,5,0.804 ± 0.041,0.642,0.993,0.740,0.642
+T2,fno-trainonly,repo FNO (train-only scaling),phase1,5,0.865 ± 0.060,0.796,1.000,0.791,0.791
+T3,fno-trainonly,repo FNO (train-only scaling),phase1,5,0.800 ± 0.033,0.600,0.979,0.814,0.600
+T4,fno-trainonly,repo FNO (train-only scaling),phase1,5,0.790 ± 0.034,0.621,0.982,0.764,0.621
+T1,osfno-A-nospeed,OS-FNO A,phase1,5,0.856 ± 0.027,0.670,0.952,0.934,0.670
+T2,osfno-A-nospeed,OS-FNO A,phase1,5,0.961 ± 0.028,0.902,1.000,0.982,0.902
+T3,osfno-A-nospeed,OS-FNO A,phase1,5,0.867 ± 0.019,0.765,0.973,0.858,0.765
+T4,osfno-A-nospeed,OS-FNO A,phase1,5,0.850 ± 0.017,0.718,0.967,0.865,0.718
+C1,osfno-A-nospeed,OS-FNO A,phase1,5,0.684 ± 0.026,0.609,0.779,0.649,0.609
+T1,osfno-B-head,OS-FNO B,phase1,5,0.856 ± 0.021,0.704,0.950,0.920,0.704
+T2,osfno-B-head,OS-FNO B,phase1,5,0.942 ± 0.032,0.872,1.000,0.955,0.872
+T3,osfno-B-head,OS-FNO B,phase1,5,0.859 ± 0.012,0.756,0.971,0.854,0.756
+T4,osfno-B-head,OS-FNO B,phase1,5,0.836 ± 0.014,0.703,0.951,0.847,0.703
+C1,osfno-B-head,OS-FNO B,phase1,5,0.689 ± 0.028,0.610,0.776,0.661,0.610
+T1,osfno-C-film,OS-FNO C (= OC-FNO),phase1,5,0.765 ± 0.024,0.600,0.943,0.815,0.600
+T2,osfno-C-film,OS-FNO C (= OC-FNO),phase1,5,0.934 ± 0.022,0.878,1.000,0.935,0.878
+T3,osfno-C-film,OS-FNO C (= OC-FNO),phase1,5,0.816 ± 0.030,0.772,0.989,0.706,0.706
+T4,osfno-C-film,OS-FNO C (= OC-FNO),phase1,5,0.761 ± 0.060,0.682,0.969,0.656,0.656
+C1,osfno-C-film,OS-FNO C (= OC-FNO),phase1,5,0.592 ± 0.030,0.449,0.805,0.520,0.449
+T1,osfno-E-phys,OS-FNO E,phase1,5,0.861 ± 0.031,0.681,0.937,0.960,0.681
+T2,osfno-E-phys,OS-FNO E,phase1,5,0.955 ± 0.008,0.878,1.000,0.986,0.878
+T3,osfno-E-phys,OS-FNO E,phase1,5,0.854 ± 0.011,0.755,0.965,0.848,0.755
+T4,osfno-E-phys,OS-FNO E,phase1,5,0.841 ± 0.010,0.703,0.957,0.862,0.703
+C1,osfno-E-phys,OS-FNO E,phase1,5,0.696 ± 0.035,0.623,0.793,0.653,0.623
+T1,osfno-B-dro,B + GroupDRO,phase1,5,0.847 ± 0.015,0.703,0.935,0.913,0.703
+T2,osfno-B-dro,B + GroupDRO,phase1,5,0.937 ± 0.032,0.860,1.000,0.955,0.860
+T3,osfno-B-dro,B + GroupDRO,phase1,5,0.860 ± 0.014,0.757,0.967,0.858,0.757
+T4,osfno-B-dro,B + GroupDRO,phase1,5,0.834 ± 0.014,0.704,0.955,0.835,0.704
+T1,osfno-B-supcon,B + SupCon,phase1,5,0.868 ± 0.011,0.720,0.939,0.925,0.720
+T2,osfno-B-supcon,B + SupCon,phase1,5,0.946 ± 0.022,0.886,1.000,0.956,0.886
+T3,osfno-B-supcon,B + SupCon,phase1,5,0.869 ± 0.015,0.760,0.977,0.869,0.760
+T4,osfno-B-supcon,B + SupCon,phase1,5,0.862 ± 0.011,0.749,0.975,0.844,0.749
+T4,osfno-B-noaug,ablation,phase1,5,0.836 ± 0.017,0.692,0.952,0.855,0.692
+T4,osfno-B-noprior,ablation,phase1,5,0.858 ± 0.020,0.729,0.968,0.870,0.729
+T4,osfno-B-commonaug,ablation,phase1,5,0.837 ± 0.016,0.701,0.952,0.855,0.701
+T1,fuse-rf+cnn-spec,EXPLORATORY fusion,phase1,5,0.932 ± 0.017,0.835,1.000,0.949,0.835
+T2,fuse-rf+cnn-spec,EXPLORATORY fusion,phase1,5,0.882 ± 0.009,0.890,1.000,0.702,0.702
+T3,fuse-rf+cnn-spec,EXPLORATORY fusion,phase1,5,0.914 ± 0.009,0.780,0.991,0.945,0.780
+T4,fuse-rf+cnn-spec,EXPLORATORY fusion,phase1,5,0.906 ± 0.013,0.774,1.000,0.932,0.774
+C1,fuse-rf+cnn-spec,EXPLORATORY fusion,phase1,5,0.766 ± 0.017,0.613,0.923,0.769,0.613
+T1,fuse-mlp+cnn-spec,EXPLORATORY fusion,phase1,5,0.894 ± 0.028,0.862,1.000,0.781,0.781
+T2,fuse-mlp+cnn-spec,EXPLORATORY fusion,phase1,5,0.891 ± 0.010,0.910,1.000,0.709,0.709
+T3,fuse-mlp+cnn-spec,EXPLORATORY fusion,phase1,5,0.881 ± 0.006,0.800,0.977,0.857,0.800
+T4,fuse-mlp+cnn-spec,EXPLORATORY fusion,phase1,5,0.871 ± 0.007,0.759,0.989,0.851,0.759
+C1,fuse-mlp+cnn-spec,EXPLORATORY fusion,phase1,5,0.742 ± 0.010,0.638,0.890,0.691,0.638
+T1,fuse-rf+osfno-A-nospeed,EXPLORATORY fusion,phase1,5,0.913 ± 0.028,0.810,1.000,0.907,0.810
+T2,fuse-rf+osfno-A-nospeed,EXPLORATORY fusion,phase1,5,0.898 ± 0.016,0.892,1.000,0.774,0.774
+T3,fuse-rf+osfno-A-nospeed,EXPLORATORY fusion,phase1,5,0.907 ± 0.010,0.801,0.989,0.916,0.801
+T4,fuse-rf+osfno-A-nospeed,EXPLORATORY fusion,phase1,5,0.912 ± 0.012,0.822,0.997,0.910,0.822
+C1,fuse-rf+osfno-A-nospeed,EXPLORATORY fusion,phase1,5,0.722 ± 0.015,0.644,0.831,0.686,0.644
+T1,cnn-tuned,Phase 3 nested,phase3,5,0.909 ± 0.016,0.778,0.994,0.946,0.778
+T2,cnn-tuned,Phase 3 nested,phase3,5,0.889 ± 0.051,0.858,0.997,0.774,0.774
+T3,cnn-tuned,Phase 3 nested,phase3,5,0.904 ± 0.019,0.764,0.989,0.936,0.764
+T4,cnn-tuned,Phase 3 nested,phase3,5,0.913 ± 0.015,0.785,0.999,0.941,0.785
+C1,cnn-tuned,Phase 3 nested,phase3,5,0.769 ± 0.015,0.616,0.916,0.780,0.616
+T1,fno-tuned,Phase 3 nested,phase3,5,0.848 ± 0.022,0.670,0.971,0.890,0.670
+T2,fno-tuned,Phase 3 nested,phase3,5,0.961 ± 0.028,0.902,1.000,0.982,0.902
+T3,fno-tuned,Phase 3 nested,phase3,5,0.873 ± 0.016,0.765,0.982,0.869,0.765
+T4,fno-tuned,Phase 3 nested,phase3,5,0.873 ± 0.012,0.754,0.973,0.886,0.754
+C1,fno-tuned,Phase 3 nested,phase3,5,0.726 ± 0.022,0.636,0.826,0.701,0.636
+T1,stack-rf-mlp-cnn,Phase 4/5 nested gate,phase5,5,0.884 ± 0.027,0.814,1.000,0.803,0.803
+T2,stack-rf-mlp-cnn,Phase 4/5 nested gate,phase5,5,0.880 ± 0.029,0.868,1.000,0.736,0.736
+T3,stack-rf-mlp-cnn,Phase 4/5 nested gate,phase5,5,0.914 ± 0.006,0.797,0.991,0.933,0.797
+T4,stack-rf-mlp-cnn,Phase 4/5 nested gate,phase5,5,0.899 ± 0.005,0.777,0.999,0.905,0.777
+C1,stack-rf-mlp-cnn,Phase 4/5 nested gate,phase5,5,0.765 ± 0.019,0.639,0.926,0.732,0.639
+T1,rf-rob,Phase 5b,phase5,5,0.843 ± 0.012,0.799,0.984,0.673,0.673
+T2,rf-rob,Phase 5b,phase5,5,0.877 ± 0.007,0.916,1.000,0.620,0.620
+T3,rf-rob,Phase 5b,phase5,5,0.857 ± 0.007,0.792,0.991,0.747,0.747
+T4,rf-rob,Phase 5b,phase5,5,0.851 ± 0.011,0.781,0.974,0.784,0.781
+C1,rf-rob,Phase 5b,phase5,5,0.632 ± 0.009,0.599,0.754,0.512,0.512
+T1,cnn-spec-rob,Phase 5b,phase5,5,0.829 ± 0.042,0.609,0.998,0.981,0.609
+T2,cnn-spec-rob,Phase 5b,phase5,5,0.848 ± 0.059,0.676,1.000,0.966,0.676
+T3,cnn-spec-rob,Phase 5b,phase5,5,0.882 ± 0.017,0.728,0.984,0.909,0.728
+T4,cnn-spec-rob,Phase 5b,phase5,5,0.881 ± 0.021,0.696,0.998,0.934,0.696
+C1,cnn-spec-rob,Phase 5b,phase5,5,0.791 ± 0.011,0.676,0.932,0.765,0.676
+T3,rf-mb,Phase 6,phase6,5,0.853 ± 0.011,0.730,0.992,0.813,0.730
+T4,rf-mb,Phase 6,phase6,5,0.869 ± 0.002,0.738,0.996,0.855,0.738
+T3,cnn-mb,Phase 6,phase6,5,0.904 ± 0.022,0.765,0.993,0.952,0.765
+T4,cnn-mb,Phase 6,phase6,5,0.925 ± 0.007,0.828,0.999,0.952,0.828

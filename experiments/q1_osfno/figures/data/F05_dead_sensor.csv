@@ -1,0 +1,46 @@
+task,model,clean,dead_mean,dead_worst
+misalignment,RF,0.8764,0.8124,0.7043
+misalignment,RF robust (5b),0.8432,0.8173,0.7648
+misalignment,MLP,0.8383,0.6453,0.2575
+misalignment,XGBoost,0.8476,0.7558,0.4591
+misalignment,CNN (order spectra),0.9235,0.5763,0.4471
+misalignment,CNN robust (5b),0.8295,0.8313,0.7991
+misalignment,OS-FNO A (no speed),0.8557,0.7725,0.5741
+misalignment,OS-FNO B (speed in head),0.8558,0.7671,0.5812
+misalignment,OS-FNO E (physical speed),0.8614,0.7700,0.5699
+unbalance,RF,0.8525,0.7865,0.4657
+unbalance,RF robust (5b),0.8772,0.8544,0.8035
+unbalance,MLP,0.8839,0.8180,0.4656
+unbalance,XGBoost,0.7649,0.7178,0.5374
+unbalance,CNN (order spectra),0.8980,0.7117,0.4657
+unbalance,CNN robust (5b),0.8483,0.8424,0.8158
+unbalance,OS-FNO A (no speed),0.9607,0.8330,0.4699
+unbalance,OS-FNO B (speed in head),0.9416,0.8210,0.4657
+unbalance,OS-FNO E (physical speed),0.9546,0.8362,0.4699
+bearings,RF,0.8664,0.7560,0.5495
+bearings,RF robust (5b),0.8570,0.8184,0.7386
+bearings,MLP,0.8371,0.7248,0.6391
+bearings,XGBoost,0.8054,0.6640,0.4246
+bearings,CNN (order spectra),0.9039,0.5517,0.3881
+bearings,CNN robust (5b),0.8816,0.8627,0.8340
+bearings,OS-FNO A (no speed),0.8666,0.7864,0.5691
+bearings,OS-FNO B (speed in head),0.8588,0.7795,0.5585
+bearings,OS-FNO E (physical speed),0.8536,0.7767,0.5695
+all,RF,0.8782,0.7351,0.4678
+all,RF robust (5b),0.8511,0.8106,0.7556
+all,MLP,0.8169,0.6779,0.5395
+all,XGBoost,0.8263,0.6842,0.5293
+all,CNN (order spectra),0.9001,0.4813,0.3275
+all,CNN robust (5b),0.8808,0.8646,0.8506
+all,OS-FNO A (no speed),0.8498,0.7413,0.6578
+all,OS-FNO B (speed in head),0.8362,0.7299,0.6323
+all,OS-FNO E (physical speed),0.8414,0.7340,0.6367
+comfaulda7,RF,0.6338,0.5631,0.4828
+comfaulda7,RF robust (5b),0.6316,0.5888,0.5154
+comfaulda7,MLP,0.6904,0.5395,0.4364
+comfaulda7,XGBoost,0.6552,0.5184,0.4148
+comfaulda7,CNN (order spectra),0.7543,0.2910,0.1290
+comfaulda7,CNN robust (5b),0.7914,0.7771,0.7522
+comfaulda7,OS-FNO A (no speed),0.6844,0.6360,0.5795
+comfaulda7,OS-FNO B (speed in head),0.6888,0.6314,0.5782
+comfaulda7,OS-FNO E (physical speed),0.6958,0.6413,0.5853

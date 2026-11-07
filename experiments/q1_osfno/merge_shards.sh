@@ -4,10 +4,13 @@
 cd "$(dirname "$0")/../.." || exit 1
 for b in $(git ls-remote --heads origin 'exp/q1-shard-*' | awk '{print $2}' | sed 's#refs/heads/##'); do
   git fetch -q origin "$b"
-  for f in $(git ls-tree -r --name-only "origin/$b" -- experiments/q1_osfno/results experiments/q1_osfno/locks "experiments/q1_osfno/shard_*.log" "experiments/q1_osfno/p3_*.log" "experiments/q1_osfno/p7_*.log" "experiments/q1_osfno/p8_*.log" "experiments/q1_osfno/p5_*.log" "experiments/q1_osfno/p6_*.log" "experiments/q1_osfno/p5b_*.log"); do
-    if [ ! -e "$f" ] || echo "$f" | grep -qE "(shard|p3|p5|p5b|p6|p7|p8)_.*\.log"; then
-      mkdir -p "$(dirname "$f")"; git show "origin/$b:$f" > "$f"
-    fi
+  s=${b#exp/q1-shard-}
+  for f in $(git ls-tree -r --name-only "origin/$b" -- experiments/q1_osfno/results experiments/q1_osfno/locks); do
+    if [ ! -e "$f" ]; then mkdir -p "$(dirname "$f")"; git show "origin/$b:$f" > "$f"; fi
+  done
+  for f in $(git ls-tree -r --name-only "origin/$b" -- experiments/q1_osfno | grep -E "q1_osfno/[^/]*\.log$"); do
+    case "$(basename "$f")" in p6_local.log) continue;; esac       # copy of the main-branch file
+    mkdir -p experiments/q1_osfno/logs/shards; git show "origin/$b:$f" > "experiments/q1_osfno/logs/shards/${s}__$(basename "$f")"
   done
 done
 (cd experiments/q1_osfno && /home/user/venv-scout/bin/python history.py update)

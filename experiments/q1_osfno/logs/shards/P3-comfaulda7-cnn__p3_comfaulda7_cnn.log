@@ -1,0 +1,18 @@
+comfaulda7 cnn speed_low_12-27Hz {'width': 16, 'blocks': 4} inner 0.799
+comfaulda7 cnn speed_low_12-27Hz {'width': 32, 'blocks': 3} inner 0.868
+comfaulda7 cnn speed_low_12-27Hz {'width': 32, 'blocks': 4} inner 0.865
+comfaulda7 cnn speed_low_12-27Hz {'width': 48, 'blocks': 5} inner 0.855
+comfaulda7 cnn speed_mid_27-42Hz {'width': 16, 'blocks': 4} inner 0.626
+comfaulda7 cnn speed_mid_27-42Hz {'width': 32, 'blocks': 3} inner 0.723
+comfaulda7 cnn speed_mid_27-42Hz {'width': 32, 'blocks': 4} inner 0.709
+comfaulda7 cnn speed_mid_27-42Hz {'width': 48, 'blocks': 5} inner 0.725
+comfaulda7 cnn speed_high_42-61Hz {'width': 16, 'blocks': 4} inner 0.687
+comfaulda7 cnn speed_high_42-61Hz {'width': 32, 'blocks': 3} inner 0.778
+comfaulda7 cnn speed_high_42-61Hz {'width': 32, 'blocks': 4} inner 0.766
+comfaulda7 cnn speed_high_42-61Hz {'width': 48, 'blocks': 5} inner 0.801
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_comfaulda7_cnn.json 6a51421a88f4
+phase3 comfaulda7   cnn-tuned              s0 speed macro-F1 0.765 (low 0.62, mid 0.92, high 0.76) 917s
+phase3 comfaulda7   cnn-tuned              s1 speed macro-F1 0.770 (low 0.62, mid 0.92, high 0.77) 897s
+phase3 comfaulda7   cnn-tuned              s2 speed macro-F1 0.780 (low 0.61, mid 0.93, high 0.81) 868s
+phase3 comfaulda7   cnn-tuned              s3 speed macro-F1 0.779 (low 0.63, mid 0.92, high 0.78) 882s
+phase3 comfaulda7   cnn-tuned              s4 speed macro-F1 0.751 (low 0.59, mid 0.89, high 0.78) 872s

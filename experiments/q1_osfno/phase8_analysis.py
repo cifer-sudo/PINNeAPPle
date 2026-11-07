@@ -16,7 +16,9 @@ from stats_q1 import ci, load
 
 TASKS = ["misalignment", "unbalance", "bearings", "all", "comfaulda7"]
 MODELS = ["rf", "mlp", "kan", "svm", "xgb", "cnn-spec", "fno-trainonly", "osfno-A-nospeed", "osfno-B-head", "osfno-C-film",
-          "osfno-E-phys", "osfno-B-dro", "osfno-B-supcon", "fuse-rf+cnn-spec"]
+          "osfno-E-phys", "osfno-B-dro", "osfno-B-supcon", "fuse-rf+cnn-spec",
+          "phase5:stack-rf-mlp-cnn", "phase5:rf-rob", "phase5:cnn-spec-rob", "phase6:rf-mb", "phase6:cnn-mb",
+          "phase3:cnn-tuned", "phase3:fno-tuned"]
 
 
 def calib(y, P, n_bins=15):
@@ -43,7 +45,8 @@ def main():
         lines += [f"## {t}", "", "| model | macro-F1 | ECE | Brier | NLL | mean conf. | acc. | fit s / fold | params |",
                   "|---|---|---|---|---|---|---|---|---|"]
         for m in MODELS:
-            R = load("phase1", m, t)
+            exp, m = m.split(":") if ":" in m else ("phase1", m)
+            R = load(exp, m, t)
             if len(R) < 5 or not isinstance(R[0]["runs"][0].get("proba"), list):
                 continue                        # kan, fno-trainonly: repo classifiers store no probabilities
             cs = [calib(np.array([r["y"] for r in d["runs"]]), [r["proba"] for r in d["runs"]]) for d in R]

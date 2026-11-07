@@ -1,0 +1,50 @@
+phase5 bearings     rf-rob                 s0 speed macro-F1 0.858 (low 0.79, mid 0.99, high 0.76) 6s
+bearings rf-rob 0 speed_low_12-27Hz clean F1 0.787
+bearings rf-rob 0 speed_mid_27-41Hz clean F1 0.989
+bearings rf-rob 0 speed_high_41-61Hz clean F1 0.762
+bearings rf-rob 0 {'clean:None': 0.858, 'speed:-0.05': 0.811, 'speed:-0.02': 0.852, 'speed:-0.01': 0.86, 'speed:0.01': 0.859, 'speed:0.02': 0.847, 'speed:0.05': 0.801, 'dead:0': 0.808, 'dead:1': 0.796, 'dead:2': 0.858, 'dead:3': 0.843, 'dead:4': 0.724, 'dead:5': 0.84, 'dead:6': 0.813, 'gain2:0': 0.701, 'gain2:1': 0.845, 'gain2:2': 0.777, 'gain2:3': 0.839, 'gain2:4': 0.784, 'gain2:5': 0.86, 'gain2:6': 0.82}
+phase5 bearings     rf-rob                 s1 speed macro-F1 0.860 (low 0.80, mid 0.99, high 0.75) 6s
+bearings rf-rob 1 speed_low_12-27Hz clean F1 0.796
+bearings rf-rob 1 speed_mid_27-41Hz clean F1 0.991
+bearings rf-rob 1 speed_high_41-61Hz clean F1 0.750
+bearings rf-rob 1 {'clean:None': 0.86, 'speed:-0.05': 0.839, 'speed:-0.02': 0.855, 'speed:-0.01': 0.859, 'speed:0.01': 0.854, 'speed:0.02': 0.857, 'speed:0.05': 0.815, 'dead:0': 0.802, 'dead:1': 0.855, 'dead:2': 0.851, 'dead:3': 0.839, 'dead:4': 0.758, 'dead:5': 0.852, 'dead:6': 0.817, 'gain2:0': 0.736, 'gain2:1': 0.854, 'gain2:2': 0.783, 'gain2:3': 0.848, 'gain2:4': 0.789, 'gain2:5': 0.858, 'gain2:6': 0.827}
+phase5 bearings     rf-rob                 s2 speed macro-F1 0.856 (low 0.79, mid 0.99, high 0.74) 6s
+bearings rf-rob 2 speed_low_12-27Hz clean F1 0.792
+bearings rf-rob 2 speed_mid_27-41Hz clean F1 0.991
+bearings rf-rob 2 speed_high_41-61Hz clean F1 0.743
+bearings rf-rob 2 {'clean:None': 0.856, 'speed:-0.05': 0.821, 'speed:-0.02': 0.847, 'speed:-0.01': 0.856, 'speed:0.01': 0.861, 'speed:0.02': 0.852, 'speed:0.05': 0.816, 'dead:0': 0.797, 'dead:1': 0.847, 'dead:2': 0.85, 'dead:3': 0.841, 'dead:4': 0.718, 'dead:5': 0.843, 'dead:6': 0.818, 'gain2:0': 0.74, 'gain2:1': 0.85, 'gain2:2': 0.776, 'gain2:3': 0.836, 'gain2:4': 0.788, 'gain2:5': 0.857, 'gain2:6': 0.824}
+phase5 bearings     rf-rob                 s3 speed macro-F1 0.863 (low 0.80, mid 0.99, high 0.76) 6s
+bearings rf-rob 3 speed_low_12-27Hz clean F1 0.801
+bearings rf-rob 3 speed_mid_27-41Hz clean F1 0.991
+bearings rf-rob 3 speed_high_41-61Hz clean F1 0.757
+bearings rf-rob 3 {'clean:None': 0.863, 'speed:-0.05': 0.836, 'speed:-0.02': 0.857, 'speed:-0.01': 0.864, 'speed:0.01': 0.863, 'speed:0.02': 0.859, 'speed:0.05': 0.823, 'dead:0': 0.804, 'dead:1': 0.858, 'dead:2': 0.863, 'dead:3': 0.849, 'dead:4': 0.764, 'dead:5': 0.85, 'dead:6': 0.767, 'gain2:0': 0.767, 'gain2:1': 0.854, 'gain2:2': 0.794, 'gain2:3': 0.85, 'gain2:4': 0.803, 'gain2:5': 0.857, 'gain2:6': 0.814}
+phase5 bearings     rf-rob                 s4 speed macro-F1 0.848 (low 0.78, mid 0.99, high 0.72) 6s
+bearings rf-rob 4 speed_low_12-27Hz clean F1 0.784
+bearings rf-rob 4 speed_mid_27-41Hz clean F1 0.991
+bearings rf-rob 4 speed_high_41-61Hz clean F1 0.723
+bearings rf-rob 4 {'clean:None': 0.848, 'speed:-0.05': 0.81, 'speed:-0.02': 0.844, 'speed:-0.01': 0.842, 'speed:0.01': 0.841, 'speed:0.02': 0.849, 'speed:0.05': 0.794, 'dead:0': 0.808, 'dead:1': 0.841, 'dead:2': 0.854, 'dead:3': 0.831, 'dead:4': 0.728, 'dead:5': 0.829, 'dead:6': 0.821, 'gain2:0': 0.731, 'gain2:1': 0.829, 'gain2:2': 0.783, 'gain2:3': 0.835, 'gain2:4': 0.796, 'gain2:5': 0.848, 'gain2:6': 0.81}
+phase5 bearings     cnn-spec-rob           s0 speed macro-F1 0.897 (low 0.79, mid 0.98, high 0.91) 234s
+bearings cnn-spec-rob 0 speed_low_12-27Hz clean F1 0.787
+bearings cnn-spec-rob 0 speed_mid_27-41Hz clean F1 0.982
+bearings cnn-spec-rob 0 speed_high_41-61Hz clean F1 0.909
+bearings cnn-spec-rob 0 {'clean:None': 0.897, 'speed:-0.05': 0.898, 'speed:-0.02': 0.9, 'speed:-0.01': 0.899, 'speed:0.01': 0.901, 'speed:0.02': 0.896, 'speed:0.05': 0.883, 'dead:0': 0.889, 'dead:1': 0.878, 'dead:2': 0.895, 'dead:3': 0.899, 'dead:4': 0.861, 'dead:5': 0.841, 'dead:6': 0.856, 'gain2:0': 0.861, 'gain2:1': 0.875, 'gain2:2': 0.873, 'gain2:3': 0.891, 'gain2:4': 0.878, 'gain2:5': 0.841, 'gain2:6': 0.895}
+phase5 bearings     cnn-spec-rob           s1 speed macro-F1 0.889 (low 0.72, mid 0.99, high 0.93) 239s
+bearings cnn-spec-rob 1 speed_low_12-27Hz clean F1 0.724
+bearings cnn-spec-rob 1 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec-rob 1 speed_high_41-61Hz clean F1 0.929
+bearings cnn-spec-rob 1 {'clean:None': 0.889, 'speed:-0.05': 0.889, 'speed:-0.02': 0.884, 'speed:-0.01': 0.882, 'speed:0.01': 0.883, 'speed:0.02': 0.886, 'speed:0.05': 0.884, 'dead:0': 0.887, 'dead:1': 0.843, 'dead:2': 0.863, 'dead:3': 0.848, 'dead:4': 0.862, 'dead:5': 0.838, 'dead:6': 0.878, 'gain2:0': 0.871, 'gain2:1': 0.865, 'gain2:2': 0.86, 'gain2:3': 0.856, 'gain2:4': 0.878, 'gain2:5': 0.859, 'gain2:6': 0.88}
+phase5 bearings     cnn-spec-rob           s2 speed macro-F1 0.877 (low 0.72, mid 0.97, high 0.92) 230s
+bearings cnn-spec-rob 2 speed_low_12-27Hz clean F1 0.718
+bearings cnn-spec-rob 2 speed_mid_27-41Hz clean F1 0.970
+bearings cnn-spec-rob 2 speed_high_41-61Hz clean F1 0.920
+bearings cnn-spec-rob 2 {'clean:None': 0.877, 'speed:-0.05': 0.897, 'speed:-0.02': 0.892, 'speed:-0.01': 0.894, 'speed:0.01': 0.897, 'speed:0.02': 0.894, 'speed:0.05': 0.895, 'dead:0': 0.884, 'dead:1': 0.848, 'dead:2': 0.853, 'dead:3': 0.866, 'dead:4': 0.855, 'dead:5': 0.838, 'dead:6': 0.849, 'gain2:0': 0.841, 'gain2:1': 0.867, 'gain2:2': 0.851, 'gain2:3': 0.871, 'gain2:4': 0.879, 'gain2:5': 0.844, 'gain2:6': 0.883}
+phase5 bearings     cnn-spec-rob           s3 speed macro-F1 0.884 (low 0.71, mid 0.98, high 0.92) 226s
+bearings cnn-spec-rob 3 speed_low_12-27Hz clean F1 0.712
+bearings cnn-spec-rob 3 speed_mid_27-41Hz clean F1 0.984
+bearings cnn-spec-rob 3 speed_high_41-61Hz clean F1 0.923
+bearings cnn-spec-rob 3 {'clean:None': 0.884, 'speed:-0.05': 0.885, 'speed:-0.02': 0.886, 'speed:-0.01': 0.887, 'speed:0.01': 0.886, 'speed:0.02': 0.884, 'speed:0.05': 0.894, 'dead:0': 0.892, 'dead:1': 0.867, 'dead:2': 0.87, 'dead:3': 0.859, 'dead:4': 0.86, 'dead:5': 0.82, 'dead:6': 0.857, 'gain2:0': 0.853, 'gain2:1': 0.855, 'gain2:2': 0.812, 'gain2:3': 0.859, 'gain2:4': 0.865, 'gain2:5': 0.807, 'gain2:6': 0.882}
+phase5 bearings     cnn-spec-rob           s4 speed macro-F1 0.861 (low 0.70, mid 0.99, high 0.86) 234s
+bearings cnn-spec-rob 4 speed_low_12-27Hz clean F1 0.701
+bearings cnn-spec-rob 4 speed_mid_27-41Hz clean F1 0.991
+bearings cnn-spec-rob 4 speed_high_41-61Hz clean F1 0.865
+bearings cnn-spec-rob 4 {'clean:None': 0.861, 'speed:-0.05': 0.869, 'speed:-0.02': 0.873, 'speed:-0.01': 0.876, 'speed:0.01': 0.881, 'speed:0.02': 0.878, 'speed:0.05': 0.864, 'dead:0': 0.891, 'dead:1': 0.866, 'dead:2': 0.866, 'dead:3': 0.869, 'dead:4': 0.857, 'dead:5': 0.833, 'dead:6': 0.856, 'gain2:0': 0.816, 'gain2:1': 0.858, 'gain2:2': 0.842, 'gain2:3': 0.858, 'gain2:4': 0.869, 'gain2:5': 0.846, 'gain2:6': 0.861}

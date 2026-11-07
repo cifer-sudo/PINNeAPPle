@@ -1,0 +1,88 @@
+task,model,per-class F1 (mean of 5 seeds)
+T1,rf,normal: 0.71; horizontal-misalignment: 0.94; vertical-misalignment: 0.97
+T1,mlp,normal: 0.68; horizontal-misalignment: 0.91; vertical-misalignment: 0.93
+T1,svm,normal: 0.69; horizontal-misalignment: 0.78; vertical-misalignment: 0.86
+T1,xgb,normal: 0.67; horizontal-misalignment: 0.92; vertical-misalignment: 0.95
+T1,cnn-spec,normal: 0.90; horizontal-misalignment: 0.92; vertical-misalignment: 0.95
+T1,osfno-A-nospeed,normal: 0.77; horizontal-misalignment: 0.86; vertical-misalignment: 0.94
+T1,osfno-B-head,normal: 0.75; horizontal-misalignment: 0.87; vertical-misalignment: 0.95
+T1,osfno-C-film,normal: 0.57; horizontal-misalignment: 0.81; vertical-misalignment: 0.92
+T1,osfno-E-phys,normal: 0.78; horizontal-misalignment: 0.86; vertical-misalignment: 0.94
+T1,osfno-B-dro,normal: 0.73; horizontal-misalignment: 0.86; vertical-misalignment: 0.95
+T1,osfno-B-supcon,normal: 0.79; horizontal-misalignment: 0.87; vertical-misalignment: 0.94
+T1,fuse-rf+cnn-spec,normal: 0.89; horizontal-misalignment: 0.94; vertical-misalignment: 0.97
+T1,stack-rf-mlp-cnn,normal: 0.78; horizontal-misalignment: 0.92; vertical-misalignment: 0.95
+T1,rf-rob,normal: 0.66; horizontal-misalignment: 0.91; vertical-misalignment: 0.95
+T1,cnn-spec-rob,normal: 0.68; horizontal-misalignment: 0.88; vertical-misalignment: 0.94
+T1,cnn-tuned,normal: 0.88; horizontal-misalignment: 0.90; vertical-misalignment: 0.94
+T1,fno-tuned,normal: 0.75; horizontal-misalignment: 0.86; vertical-misalignment: 0.94
+T2,rf,normal: 0.74; imbalance: 0.96
+T2,mlp,normal: 0.80; imbalance: 0.97
+T2,svm,normal: 0.69; imbalance: 0.97
+T2,xgb,normal: 0.60; imbalance: 0.93
+T2,cnn-spec,normal: 0.82; imbalance: 0.98
+T2,osfno-A-nospeed,normal: 0.93; imbalance: 0.99
+T2,osfno-B-head,normal: 0.90; imbalance: 0.98
+T2,osfno-C-film,normal: 0.89; imbalance: 0.98
+T2,osfno-E-phys,normal: 0.92; imbalance: 0.99
+T2,osfno-B-dro,normal: 0.89; imbalance: 0.98
+T2,osfno-B-supcon,normal: 0.91; imbalance: 0.99
+T2,fuse-rf+cnn-spec,normal: 0.79; imbalance: 0.97
+T2,stack-rf-mlp-cnn,normal: 0.79; imbalance: 0.97
+T2,rf-rob,normal: 0.78; imbalance: 0.97
+T2,cnn-spec-rob,normal: 0.75; imbalance: 0.95
+T2,cnn-tuned,normal: 0.80; imbalance: 0.97
+T2,fno-tuned,normal: 0.93; imbalance: 0.99
+T3,rf,normal: 0.72; underhang/ball_fault: 0.92; underhang/cage_fault: 0.94; underhang/outer_race: 0.95; overhang/ball_fault: 0.92; overhang/cage_fault: 0.81; overhang/outer_race: 0.80
+T3,mlp,normal: 0.75; underhang/ball_fault: 0.96; underhang/cage_fault: 0.86; underhang/outer_race: 0.97; overhang/ball_fault: 0.94; overhang/cage_fault: 0.69; overhang/outer_race: 0.70
+T3,svm,normal: 0.83; underhang/ball_fault: 0.88; underhang/cage_fault: 0.68; underhang/outer_race: 0.90; overhang/ball_fault: 0.79; overhang/cage_fault: 0.70; overhang/outer_race: 0.69
+T3,xgb,normal: 0.63; underhang/ball_fault: 0.82; underhang/cage_fault: 0.92; underhang/outer_race: 0.93; overhang/ball_fault: 0.86; overhang/cage_fault: 0.74; overhang/outer_race: 0.72
+T3,cnn-spec,normal: 0.85; underhang/ball_fault: 0.94; underhang/cage_fault: 0.87; underhang/outer_race: 0.99; overhang/ball_fault: 0.99; overhang/cage_fault: 0.86; overhang/outer_race: 0.82
+T3,osfno-A-nospeed,normal: 0.81; underhang/ball_fault: 0.94; underhang/cage_fault: 0.84; underhang/outer_race: 0.97; overhang/ball_fault: 0.96; overhang/cage_fault: 0.80; overhang/outer_race: 0.75
+T3,osfno-B-head,normal: 0.72; underhang/ball_fault: 0.95; underhang/cage_fault: 0.82; underhang/outer_race: 0.98; overhang/ball_fault: 0.98; overhang/cage_fault: 0.79; overhang/outer_race: 0.76
+T3,osfno-C-film,normal: 0.59; underhang/ball_fault: 0.91; underhang/cage_fault: 0.80; underhang/outer_race: 0.91; overhang/ball_fault: 0.97; overhang/cage_fault: 0.74; overhang/outer_race: 0.79
+T3,osfno-E-phys,normal: 0.73; underhang/ball_fault: 0.95; underhang/cage_fault: 0.83; underhang/outer_race: 0.97; overhang/ball_fault: 0.97; overhang/cage_fault: 0.78; overhang/outer_race: 0.74
+T3,osfno-B-dro,normal: 0.73; underhang/ball_fault: 0.95; underhang/cage_fault: 0.82; underhang/outer_race: 0.98; overhang/ball_fault: 0.98; overhang/cage_fault: 0.79; overhang/outer_race: 0.77
+T3,osfno-B-supcon,normal: 0.74; underhang/ball_fault: 0.96; underhang/cage_fault: 0.86; underhang/outer_race: 0.97; overhang/ball_fault: 0.97; overhang/cage_fault: 0.80; overhang/outer_race: 0.78
+T3,fuse-rf+cnn-spec,normal: 0.89; underhang/ball_fault: 0.94; underhang/cage_fault: 0.90; underhang/outer_race: 0.99; overhang/ball_fault: 0.99; overhang/cage_fault: 0.86; overhang/outer_race: 0.82
+T3,stack-rf-mlp-cnn,normal: 0.90; underhang/ball_fault: 0.94; underhang/cage_fault: 0.92; underhang/outer_race: 0.99; overhang/ball_fault: 0.99; overhang/cage_fault: 0.84; overhang/outer_race: 0.81
+T3,rf-rob,normal: 0.69; underhang/ball_fault: 0.91; underhang/cage_fault: 0.94; underhang/outer_race: 0.98; overhang/ball_fault: 0.91; overhang/cage_fault: 0.78; overhang/outer_race: 0.80
+T3,cnn-spec-rob,normal: 0.82; underhang/ball_fault: 0.94; underhang/cage_fault: 0.84; underhang/outer_race: 0.96; overhang/ball_fault: 0.98; overhang/cage_fault: 0.81; overhang/outer_race: 0.81
+T3,rf-mb,normal: 0.70; underhang/ball_fault: 0.88; underhang/cage_fault: 0.90; underhang/outer_race: 0.97; overhang/ball_fault: 0.89; overhang/cage_fault: 0.81; overhang/outer_race: 0.82
+T3,cnn-mb,normal: 0.86; underhang/ball_fault: 0.92; underhang/cage_fault: 0.93; underhang/outer_race: 0.98; overhang/ball_fault: 0.95; overhang/cage_fault: 0.80; overhang/outer_race: 0.88
+T3,cnn-tuned,normal: 0.85; underhang/ball_fault: 0.94; underhang/cage_fault: 0.87; underhang/outer_race: 0.99; overhang/ball_fault: 0.99; overhang/cage_fault: 0.86; overhang/outer_race: 0.82
+T3,fno-tuned,normal: 0.80; underhang/ball_fault: 0.94; underhang/cage_fault: 0.86; underhang/outer_race: 0.98; overhang/ball_fault: 0.97; overhang/cage_fault: 0.80; overhang/outer_race: 0.77
+T4,rf,normal: 0.72; imbalance: 0.91; horizontal-misalignment: 0.92; vertical-misalignment: 0.91; underhang/ball_fault: 0.92; underhang/cage_fault: 0.92; underhang/outer_race: 0.96; overhang/ball_fault: 0.94; overhang/cage_fault: 0.80; overhang/outer_race: 0.80
+T4,mlp,normal: 0.63; imbalance: 0.88; horizontal-misalignment: 0.85; vertical-misalignment: 0.83; underhang/ball_fault: 0.93; underhang/cage_fault: 0.82; underhang/outer_race: 0.95; overhang/ball_fault: 0.92; overhang/cage_fault: 0.66; overhang/outer_race: 0.70
+T4,svm,normal: 0.76; imbalance: 0.83; horizontal-misalignment: 0.87; vertical-misalignment: 0.84; underhang/ball_fault: 0.87; underhang/cage_fault: 0.72; underhang/outer_race: 0.87; overhang/ball_fault: 0.66; overhang/cage_fault: 0.70; overhang/outer_race: 0.69
+T4,xgb,normal: 0.68; imbalance: 0.92; horizontal-misalignment: 0.84; vertical-misalignment: 0.88; underhang/ball_fault: 0.82; underhang/cage_fault: 0.93; underhang/outer_race: 0.95; overhang/ball_fault: 0.87; overhang/cage_fault: 0.69; overhang/outer_race: 0.68
+T4,cnn-spec,normal: 0.81; imbalance: 0.93; horizontal-misalignment: 0.88; vertical-misalignment: 0.92; underhang/ball_fault: 0.95; underhang/cage_fault: 0.86; underhang/outer_race: 1.00; overhang/ball_fault: 1.00; overhang/cage_fault: 0.84; overhang/outer_race: 0.82
+T4,osfno-A-nospeed,normal: 0.63; imbalance: 0.92; horizontal-misalignment: 0.84; vertical-misalignment: 0.90; underhang/ball_fault: 0.94; underhang/cage_fault: 0.78; underhang/outer_race: 0.97; overhang/ball_fault: 0.97; overhang/cage_fault: 0.78; overhang/outer_race: 0.77
+T4,osfno-B-head,normal: 0.63; imbalance: 0.91; horizontal-misalignment: 0.82; vertical-misalignment: 0.88; underhang/ball_fault: 0.95; underhang/cage_fault: 0.73; underhang/outer_race: 0.97; overhang/ball_fault: 0.96; overhang/cage_fault: 0.79; overhang/outer_race: 0.73
+T4,osfno-C-film,normal: 0.38; imbalance: 0.81; horizontal-misalignment: 0.75; vertical-misalignment: 0.81; underhang/ball_fault: 0.86; underhang/cage_fault: 0.65; underhang/outer_race: 0.87; overhang/ball_fault: 0.94; overhang/cage_fault: 0.77; overhang/outer_race: 0.76
+T4,osfno-E-phys,normal: 0.59; imbalance: 0.89; horizontal-misalignment: 0.84; vertical-misalignment: 0.89; underhang/ball_fault: 0.95; underhang/cage_fault: 0.77; underhang/outer_race: 0.97; overhang/ball_fault: 0.97; overhang/cage_fault: 0.79; overhang/outer_race: 0.75
+T4,osfno-B-dro,normal: 0.62; imbalance: 0.91; horizontal-misalignment: 0.81; vertical-misalignment: 0.88; underhang/ball_fault: 0.94; underhang/cage_fault: 0.74; underhang/outer_race: 0.96; overhang/ball_fault: 0.95; overhang/cage_fault: 0.78; overhang/outer_race: 0.73
+T4,osfno-B-supcon,normal: 0.64; imbalance: 0.94; horizontal-misalignment: 0.84; vertical-misalignment: 0.90; underhang/ball_fault: 0.96; underhang/cage_fault: 0.84; underhang/outer_race: 0.97; overhang/ball_fault: 0.96; overhang/cage_fault: 0.81; overhang/outer_race: 0.76
+T4,fuse-rf+cnn-spec,normal: 0.81; imbalance: 0.93; horizontal-misalignment: 0.90; vertical-misalignment: 0.92; underhang/ball_fault: 0.95; underhang/cage_fault: 0.89; underhang/outer_race: 1.00; overhang/ball_fault: 1.00; overhang/cage_fault: 0.84; overhang/outer_race: 0.83
+T4,stack-rf-mlp-cnn,normal: 0.74; imbalance: 0.93; horizontal-misalignment: 0.91; vertical-misalignment: 0.91; underhang/ball_fault: 0.95; underhang/cage_fault: 0.90; underhang/outer_race: 1.00; overhang/ball_fault: 1.00; overhang/cage_fault: 0.83; overhang/outer_race: 0.82
+T4,rf-rob,normal: 0.63; imbalance: 0.89; horizontal-misalignment: 0.85; vertical-misalignment: 0.89; underhang/ball_fault: 0.92; underhang/cage_fault: 0.92; underhang/outer_race: 0.98; overhang/ball_fault: 0.94; overhang/cage_fault: 0.75; overhang/outer_race: 0.75
+T4,cnn-spec-rob,normal: 0.82; imbalance: 0.92; horizontal-misalignment: 0.85; vertical-misalignment: 0.89; underhang/ball_fault: 0.94; underhang/cage_fault: 0.87; underhang/outer_race: 0.99; overhang/ball_fault: 0.97; overhang/cage_fault: 0.79; overhang/outer_race: 0.78
+T4,rf-mb,normal: 0.73; imbalance: 0.95; horizontal-misalignment: 0.89; vertical-misalignment: 0.92; underhang/ball_fault: 0.89; underhang/cage_fault: 0.91; underhang/outer_race: 0.97; overhang/ball_fault: 0.90; overhang/cage_fault: 0.73; overhang/outer_race: 0.80
+T4,cnn-mb,normal: 0.85; imbalance: 0.94; horizontal-misalignment: 0.92; vertical-misalignment: 0.94; underhang/ball_fault: 0.94; underhang/cage_fault: 0.93; underhang/outer_race: 0.99; overhang/ball_fault: 0.97; overhang/cage_fault: 0.85; overhang/outer_race: 0.91
+T4,cnn-tuned,normal: 0.83; imbalance: 0.93; horizontal-misalignment: 0.89; vertical-misalignment: 0.91; underhang/ball_fault: 0.95; underhang/cage_fault: 0.89; underhang/outer_race: 1.00; overhang/ball_fault: 1.00; overhang/cage_fault: 0.89; overhang/outer_race: 0.84
+T4,fno-tuned,normal: 0.68; imbalance: 0.94; horizontal-misalignment: 0.86; vertical-misalignment: 0.94; underhang/ball_fault: 0.96; underhang/cage_fault: 0.81; underhang/outer_race: 0.98; overhang/ball_fault: 0.98; overhang/cage_fault: 0.82; overhang/outer_race: 0.76
+C1,rf,normal: 0.68; unbalance: 0.58; horizontal: 0.51; vertical: 0.69; unbalance+horizontal: 0.64; unbalance+vertical: 0.66; horizontal+vertical: 0.67
+C1,mlp,normal: 0.64; unbalance: 0.69; horizontal: 0.54; vertical: 0.75; unbalance+horizontal: 0.68; unbalance+vertical: 0.80; horizontal+vertical: 0.74
+C1,svm,normal: 0.65; unbalance: 0.54; horizontal: 0.48; vertical: 0.77; unbalance+horizontal: 0.58; unbalance+vertical: 0.78; horizontal+vertical: 0.70
+C1,xgb,normal: 0.71; unbalance: 0.65; horizontal: 0.51; vertical: 0.71; unbalance+horizontal: 0.63; unbalance+vertical: 0.69; horizontal+vertical: 0.69
+C1,cnn-spec,normal: 0.74; unbalance: 0.73; horizontal: 0.62; vertical: 0.80; unbalance+horizontal: 0.74; unbalance+vertical: 0.78; horizontal+vertical: 0.87
+C1,osfno-A-nospeed,normal: 0.65; unbalance: 0.68; horizontal: 0.52; vertical: 0.76; unbalance+horizontal: 0.64; unbalance+vertical: 0.77; horizontal+vertical: 0.77
+C1,osfno-B-head,normal: 0.66; unbalance: 0.68; horizontal: 0.54; vertical: 0.78; unbalance+horizontal: 0.63; unbalance+vertical: 0.78; horizontal+vertical: 0.76
+C1,osfno-C-film,normal: 0.60; unbalance: 0.62; horizontal: 0.48; vertical: 0.53; unbalance+horizontal: 0.59; unbalance+vertical: 0.68; horizontal+vertical: 0.66
+C1,osfno-E-phys,normal: 0.67; unbalance: 0.71; horizontal: 0.56; vertical: 0.77; unbalance+horizontal: 0.64; unbalance+vertical: 0.77; horizontal+vertical: 0.75
+C1,fuse-rf+cnn-spec,normal: 0.78; unbalance: 0.74; horizontal: 0.61; vertical: 0.82; unbalance+horizontal: 0.75; unbalance+vertical: 0.79; horizontal+vertical: 0.87
+C1,stack-rf-mlp-cnn,normal: 0.74; unbalance: 0.76; horizontal: 0.62; vertical: 0.82; unbalance+horizontal: 0.75; unbalance+vertical: 0.82; horizontal+vertical: 0.84
+C1,rf-rob,normal: 0.63; unbalance: 0.60; horizontal: 0.56; vertical: 0.69; unbalance+horizontal: 0.62; unbalance+vertical: 0.66; horizontal+vertical: 0.67
+C1,cnn-spec-rob,normal: 0.71; unbalance: 0.78; horizontal: 0.77; vertical: 0.79; unbalance+horizontal: 0.76; unbalance+vertical: 0.85; horizontal+vertical: 0.88
+C1,cnn-tuned,normal: 0.72; unbalance: 0.77; horizontal: 0.66; vertical: 0.79; unbalance+horizontal: 0.76; unbalance+vertical: 0.81; horizontal+vertical: 0.88
+C1,fno-tuned,normal: 0.74; unbalance: 0.73; horizontal: 0.57; vertical: 0.77; unbalance+horizontal: 0.68; unbalance+vertical: 0.78; horizontal+vertical: 0.79

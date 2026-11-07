@@ -1,0 +1,18 @@
+bearings cnn speed_low_12-27Hz {'width': 16, 'blocks': 4} inner 0.963
+bearings cnn speed_low_12-27Hz {'width': 32, 'blocks': 3} inner 0.974
+bearings cnn speed_low_12-27Hz {'width': 32, 'blocks': 4} inner 0.982
+bearings cnn speed_low_12-27Hz {'width': 48, 'blocks': 5} inner 0.969
+bearings cnn speed_mid_27-41Hz {'width': 16, 'blocks': 4} inner 0.897
+bearings cnn speed_mid_27-41Hz {'width': 32, 'blocks': 3} inner 0.947
+bearings cnn speed_mid_27-41Hz {'width': 32, 'blocks': 4} inner 0.944
+bearings cnn speed_mid_27-41Hz {'width': 48, 'blocks': 5} inner 0.922
+bearings cnn speed_high_41-61Hz {'width': 16, 'blocks': 4} inner 0.944
+bearings cnn speed_high_41-61Hz {'width': 32, 'blocks': 3} inner 0.946
+bearings cnn speed_high_41-61Hz {'width': 32, 'blocks': 4} inner 0.939
+bearings cnn speed_high_41-61Hz {'width': 48, 'blocks': 5} inner 0.931
+locked /home/user/PINNeAPPle/experiments/q1_osfno/locks/phase3_bearings_cnn.json bfcbd5773989
+phase3 bearings     cnn-tuned              s0 speed macro-F1 0.909 (low 0.75, mid 0.99, high 0.96) 304s
+phase3 bearings     cnn-tuned              s1 speed macro-F1 0.878 (low 0.72, mid 0.99, high 0.91) 276s
+phase3 bearings     cnn-tuned              s2 speed macro-F1 0.913 (low 0.77, mid 0.99, high 0.95) 268s
+phase3 bearings     cnn-tuned              s3 speed macro-F1 0.912 (low 0.79, mid 0.99, high 0.94) 265s
+phase3 bearings     cnn-tuned              s4 speed macro-F1 0.911 (low 0.79, mid 0.99, high 0.93) 282s

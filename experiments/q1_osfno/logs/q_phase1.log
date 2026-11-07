@@ -1,0 +1,230 @@
+phase1 misalignment rf                     s0 speed macro-F1 0.874 (low 0.84, mid 1.00, high 0.70) 4s
+phase1 misalignment rf                     s1 speed macro-F1 0.886 (low 0.87, mid 1.00, high 0.71) 4s
+phase1 misalignment rf                     s2 speed macro-F1 0.869 (low 0.83, mid 1.00, high 0.70) 4s
+phase1 misalignment rf                     s3 speed macro-F1 0.870 (low 0.84, mid 1.00, high 0.69) 4s
+phase1 misalignment rf                     s4 speed macro-F1 0.882 (low 0.87, mid 1.00, high 0.70) 5s
+phase1 unbalance    rf                     s0 speed macro-F1 0.848 (low 0.82, mid 1.00, high 0.66) 4s
+phase1 unbalance    rf                     s1 speed macro-F1 0.852 (low 0.84, mid 1.00, high 0.66) 4s
+phase1 unbalance    rf                     s2 speed macro-F1 0.867 (low 0.87, mid 1.00, high 0.66) 4s
+phase1 unbalance    rf                     s3 speed macro-F1 0.848 (low 0.82, mid 1.00, high 0.66) 4s
+phase1 unbalance    rf                     s4 speed macro-F1 0.848 (low 0.82, mid 1.00, high 0.66) 4s
+phase1 bearings     rf                     s0 speed macro-F1 0.866 (low 0.77, mid 0.99, high 0.81) 6s
+phase1 bearings     rf                     s1 speed macro-F1 0.853 (low 0.75, mid 0.99, high 0.79) 6s
+phase1 bearings     rf                     s2 speed macro-F1 0.867 (low 0.78, mid 0.99, high 0.80) 6s
+phase1 bearings     rf                     s3 speed macro-F1 0.876 (low 0.79, mid 0.99, high 0.82) 6s
+phase1 bearings     rf                     s4 speed macro-F1 0.869 (low 0.76, mid 0.99, high 0.82) 6s
+phase1 all          rf                     s0 speed macro-F1 0.881 (low 0.78, mid 1.00, high 0.85) 6s
+phase1 all          rf                     s1 speed macro-F1 0.880 (low 0.78, mid 1.00, high 0.85) 7s
+phase1 all          rf                     s2 speed macro-F1 0.877 (low 0.76, mid 1.00, high 0.86) 7s
+phase1 all          rf                     s3 speed macro-F1 0.877 (low 0.77, mid 1.00, high 0.85) 7s
+phase1 all          rf                     s4 speed macro-F1 0.876 (low 0.76, mid 1.00, high 0.85) 7s
+phase1 misalignment mlp                    s0 speed macro-F1 0.810 (low 0.85, mid 0.96, high 0.58) 1s
+phase1 misalignment mlp                    s1 speed macro-F1 0.866 (low 0.85, mid 0.98, high 0.75) 1s
+phase1 misalignment mlp                    s2 speed macro-F1 0.828 (low 0.82, mid 1.00, high 0.58) 1s
+phase1 misalignment mlp                    s3 speed macro-F1 0.858 (low 0.86, mid 0.97, high 0.67) 1s
+phase1 misalignment mlp                    s4 speed macro-F1 0.829 (low 0.84, mid 0.97, high 0.63) 1s
+phase1 unbalance    mlp                    s0 speed macro-F1 0.879 (low 0.88, mid 1.00, high 0.70) 1s
+phase1 unbalance    mlp                    s1 speed macro-F1 0.874 (low 0.87, mid 1.00, high 0.70) 1s
+phase1 unbalance    mlp                    s2 speed macro-F1 0.905 (low 0.95, mid 1.00, high 0.70) 1s
+phase1 unbalance    mlp                    s3 speed macro-F1 0.879 (low 0.88, mid 1.00, high 0.70) 1s
+phase1 unbalance    mlp                    s4 speed macro-F1 0.884 (low 0.89, mid 1.00, high 0.70) 1s
+phase1 bearings     mlp                    s0 speed macro-F1 0.836 (low 0.74, mid 0.97, high 0.81) 3s
+phase1 bearings     mlp                    s1 speed macro-F1 0.842 (low 0.74, mid 0.96, high 0.81) 3s
+phase1 bearings     mlp                    s2 speed macro-F1 0.834 (low 0.76, mid 0.96, high 0.78) 3s
+phase1 bearings     mlp                    s3 speed macro-F1 0.835 (low 0.73, mid 0.97, high 0.80) 3s
+phase1 bearings     mlp                    s4 speed macro-F1 0.839 (low 0.73, mid 0.96, high 0.82) 3s
+phase1 all          mlp                    s0 speed macro-F1 0.814 (low 0.69, mid 0.96, high 0.76) 5s
+phase1 all          mlp                    s1 speed macro-F1 0.817 (low 0.71, mid 0.97, high 0.75) 4s
+phase1 all          mlp                    s2 speed macro-F1 0.823 (low 0.71, mid 0.95, high 0.76) 69s
+phase1 all          mlp                    s3 speed macro-F1 0.810 (low 0.70, mid 0.97, high 0.75) 4s
+phase1 all          mlp                    s4 speed macro-F1 0.820 (low 0.72, mid 0.97, high 0.75) 4s
+phase1 misalignment kan                    s0 speed macro-F1 0.846 (low 0.88, mid 1.00, high 0.61) 19s
+phase1 misalignment kan                    s1 speed macro-F1 0.841 (low 0.81, mid 1.00, high 0.65) 18s
+phase1 misalignment kan                    s2 speed macro-F1 0.869 (low 0.89, mid 1.00, high 0.68) 18s
+phase1 misalignment kan                    s3 speed macro-F1 0.864 (low 0.85, mid 1.00, high 0.69) 17s
+phase1 misalignment kan                    s4 speed macro-F1 0.867 (low 0.92, mid 1.00, high 0.67) 22s
+phase1 unbalance    kan                    s0 speed macro-F1 0.869 (low 0.86, mid 1.00, high 0.70) 77s
+phase1 unbalance    kan                    s1 speed macro-F1 0.884 (low 0.89, mid 1.00, high 0.70) 12s
+phase1 unbalance    kan                    s2 speed macro-F1 0.864 (low 0.85, mid 1.00, high 0.70) 12s
+phase1 unbalance    kan                    s3 speed macro-F1 0.874 (low 0.87, mid 1.00, high 0.70) 12s
+phase1 unbalance    kan                    s4 speed macro-F1 0.874 (low 0.87, mid 1.00, high 0.70) 12s
+phase1 bearings     kan                    s0 speed macro-F1 0.815 (low 0.71, mid 0.98, high 0.78) 27s
+phase1 bearings     kan                    s1 speed macro-F1 0.825 (low 0.72, mid 0.97, high 0.80) 27s
+phase1 bearings     kan                    s2 speed macro-F1 0.807 (low 0.68, mid 0.97, high 0.79) 93s
+phase1 bearings     kan                    s3 speed macro-F1 0.803 (low 0.68, mid 0.97, high 0.77) 28s
+phase1 bearings     kan                    s4 speed macro-F1 0.804 (low 0.69, mid 0.97, high 0.75) 28s
+phase1 all          kan                    s0 speed macro-F1 0.802 (low 0.74, mid 0.96, high 0.71) 46s
+phase1 all          kan                    s1 speed macro-F1 0.820 (low 0.71, mid 0.98, high 0.75) 106s
+phase1 all          kan                    s2 speed macro-F1 0.835 (low 0.75, mid 0.98, high 0.77) 42s
+phase1 all          kan                    s3 speed macro-F1 0.827 (low 0.76, mid 0.96, high 0.76) 40s
+phase1 all          kan                    s4 speed macro-F1 0.834 (low 0.75, mid 0.98, high 0.76) 95s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 misalignment svm                    s0 speed macro-F1 0.778 (low 0.69, mid 1.00, high 0.54) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 misalignment svm                    s1 speed macro-F1 0.781 (low 0.71, mid 1.00, high 0.53) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 misalignment svm                    s2 speed macro-F1 0.779 (low 0.70, mid 1.00, high 0.54) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 misalignment svm                    s3 speed macro-F1 0.764 (low 0.70, mid 1.00, high 0.50) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 misalignment svm                    s4 speed macro-F1 0.779 (low 0.69, mid 1.00, high 0.54) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 unbalance    svm                    s0 speed macro-F1 0.825 (low 0.83, mid 1.00, high 0.52) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 unbalance    svm                    s1 speed macro-F1 0.825 (low 0.83, mid 1.00, high 0.52) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 unbalance    svm                    s2 speed macro-F1 0.834 (low 0.85, mid 1.00, high 0.52) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 unbalance    svm                    s3 speed macro-F1 0.825 (low 0.83, mid 1.00, high 0.52) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 unbalance    svm                    s4 speed macro-F1 0.843 (low 0.88, mid 1.00, high 0.52) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 bearings     svm                    s0 speed macro-F1 0.782 (low 0.76, mid 0.97, high 0.57) 1s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 bearings     svm                    s1 speed macro-F1 0.779 (low 0.76, mid 0.97, high 0.56) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 bearings     svm                    s2 speed macro-F1 0.781 (low 0.77, mid 0.97, high 0.56) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 bearings     svm                    s3 speed macro-F1 0.780 (low 0.76, mid 0.97, high 0.57) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 bearings     svm                    s4 speed macro-F1 0.787 (low 0.77, mid 0.97, high 0.58) 0s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 all          svm                    s0 speed macro-F1 0.783 (low 0.76, mid 0.97, high 0.60) 1s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 all          svm                    s1 speed macro-F1 0.776 (low 0.73, mid 0.96, high 0.60) 1s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 all          svm                    s2 speed macro-F1 0.780 (low 0.74, mid 0.97, high 0.60) 1s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 all          svm                    s3 speed macro-F1 0.781 (low 0.75, mid 0.96, high 0.60) 1s
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+/home/user/venv-scout/lib/python3.13/site-packages/sklearn/svm/_base.py:236: FutureWarning: The `probability` parameter was deprecated in 1.9 and will be removed in version 1.11. Use `CalibratedClassifierCV(SVC(), ensemble=False)` instead of `SVC(probability=True)`
+  warnings.warn(
+phase1 all          svm                    s4 speed macro-F1 0.781 (low 0.75, mid 0.96, high 0.60) 1s
+phase1 misalignment xgb                    s0 speed macro-F1 0.862 (low 0.86, mid 0.95, high 0.69) 2s
+phase1 misalignment xgb                    s1 speed macro-F1 0.841 (low 0.83, mid 0.95, high 0.65) 2s
+phase1 misalignment xgb                    s2 speed macro-F1 0.835 (low 0.82, mid 0.94, high 0.64) 2s
+phase1 misalignment xgb                    s3 speed macro-F1 0.849 (low 0.83, mid 0.95, high 0.68) 2s
+phase1 misalignment xgb                    s4 speed macro-F1 0.851 (low 0.83, mid 0.95, high 0.69) 2s
+phase1 unbalance    xgb                    s0 speed macro-F1 0.770 (low 0.67, mid 1.00, high 0.62) 1s
+phase1 unbalance    xgb                    s1 speed macro-F1 0.766 (low 0.67, mid 1.00, high 0.62) 1s
+phase1 unbalance    xgb                    s2 speed macro-F1 0.759 (low 0.65, mid 1.00, high 0.62) 0s
+phase1 unbalance    xgb                    s3 speed macro-F1 0.763 (low 0.66, mid 1.00, high 0.62) 1s
+phase1 unbalance    xgb                    s4 speed macro-F1 0.766 (low 0.67, mid 1.00, high 0.62) 1s
+phase1 bearings     xgb                    s0 speed macro-F1 0.803 (low 0.72, mid 0.99, high 0.64) 7s
+phase1 bearings     xgb                    s1 speed macro-F1 0.815 (low 0.74, mid 0.99, high 0.66) 7s
+phase1 bearings     xgb                    s2 speed macro-F1 0.815 (low 0.74, mid 0.99, high 0.67) 7s
+phase1 bearings     xgb                    s3 speed macro-F1 0.799 (low 0.72, mid 0.99, high 0.62) 6s
+phase1 bearings     xgb                    s4 speed macro-F1 0.796 (low 0.71, mid 0.99, high 0.62) 7s
+phase1 all          xgb                    s0 speed macro-F1 0.825 (low 0.72, mid 0.99, high 0.73) 11s
+phase1 all          xgb                    s1 speed macro-F1 0.827 (low 0.74, mid 0.99, high 0.71) 11s
+phase1 all          xgb                    s2 speed macro-F1 0.826 (low 0.73, mid 0.99, high 0.71) 12s
+phase1 all          xgb                    s3 speed macro-F1 0.821 (low 0.73, mid 0.99, high 0.71) 71s
+phase1 all          xgb                    s4 speed macro-F1 0.832 (low 0.75, mid 0.99, high 0.72) 12s
+phase1 misalignment osfno-B-head           s0 speed macro-F1 0.839 (low 0.71, mid 0.94, high 0.89) 293s
+phase1 misalignment osfno-B-head           s1 speed macro-F1 0.884 (low 0.73, mid 0.97, high 0.96) 244s
+phase1 misalignment osfno-B-head           s2 speed macro-F1 0.851 (low 0.73, mid 0.93, high 0.89) 351s
+phase1 misalignment osfno-B-head           s3 speed macro-F1 0.856 (low 0.71, mid 0.94, high 0.90) 284s
+phase1 misalignment osfno-B-head           s4 speed macro-F1 0.849 (low 0.65, mid 0.97, high 0.96) 288s
+phase1 unbalance    osfno-B-head           s0 speed macro-F1 0.896 (low 0.85, mid 1.00, high 0.83) 240s
+phase1 unbalance    osfno-B-head           s1 speed macro-F1 0.959 (low 0.94, mid 1.00, high 0.94) 288s
+phase1 unbalance    osfno-B-head           s2 speed macro-F1 0.956 (low 0.88, mid 1.00, high 1.00) 322s
+phase1 unbalance    osfno-B-head           s3 speed macro-F1 0.951 (low 0.84, mid 1.00, high 1.00) 253s
+phase1 unbalance    osfno-B-head           s4 speed macro-F1 0.945 (low 0.85, mid 1.00, high 1.00) 237s

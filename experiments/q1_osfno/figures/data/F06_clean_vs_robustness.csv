@@ -1,0 +1,46 @@
+task,model,clean_macro_f1,robustness_score
+misalignment,MLP,0.8383,0.5607
+misalignment,XGBoost,0.8476,0.5601
+misalignment,OS-FNO A (no speed),0.8557,0.6364
+misalignment,OS-FNO B (speed in head),0.8558,0.6223
+misalignment,OS-FNO E (physical speed),0.8614,0.6395
+misalignment,RF,0.8764,0.7498
+misalignment,RF robust (5b),0.8432,0.7709
+misalignment,CNN (order spectra),0.9235,0.8723
+misalignment,CNN robust (5b),0.8295,0.8456
+unbalance,MLP,0.8839,0.8045
+unbalance,XGBoost,0.7649,0.7189
+unbalance,OS-FNO A (no speed),0.9607,0.9073
+unbalance,OS-FNO B (speed in head),0.9416,0.9062
+unbalance,OS-FNO E (physical speed),0.9546,0.9098
+unbalance,RF,0.8525,0.7610
+unbalance,RF robust (5b),0.8772,0.8730
+unbalance,CNN (order spectra),0.8980,0.8522
+unbalance,CNN robust (5b),0.8483,0.8604
+bearings,MLP,0.8371,0.6726
+bearings,XGBoost,0.8054,0.7034
+bearings,OS-FNO A (no speed),0.8666,0.5898
+bearings,OS-FNO B (speed in head),0.8588,0.5986
+bearings,OS-FNO E (physical speed),0.8536,0.6089
+bearings,RF,0.8664,0.6950
+bearings,RF robust (5b),0.8570,0.8382
+bearings,CNN (order spectra),0.9039,0.7494
+bearings,CNN robust (5b),0.8816,0.8837
+all,MLP,0.8169,0.5826
+all,XGBoost,0.8263,0.6712
+all,OS-FNO A (no speed),0.8498,0.5618
+all,OS-FNO B (speed in head),0.8362,0.5503
+all,OS-FNO E (physical speed),0.8414,0.5523
+all,RF,0.8782,0.6907
+all,RF robust (5b),0.8511,0.8266
+all,CNN (order spectra),0.9001,0.7336
+all,CNN robust (5b),0.8808,0.8815
+comfaulda7,MLP,0.6904,0.5572
+comfaulda7,XGBoost,0.6552,0.5026
+comfaulda7,OS-FNO A (no speed),0.6844,0.3267
+comfaulda7,OS-FNO B (speed in head),0.6888,0.3320
+comfaulda7,OS-FNO E (physical speed),0.6958,0.3229
+comfaulda7,RF,0.6338,0.4982
+comfaulda7,RF robust (5b),0.6316,0.5804
+comfaulda7,CNN (order spectra),0.7543,0.4001
+comfaulda7,CNN robust (5b),0.7914,0.7736

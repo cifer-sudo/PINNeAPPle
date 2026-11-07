@@ -1,0 +1,60 @@
+phase5 all          rf-rob                 s0 speed macro-F1 0.851 (low 0.77, mid 0.98, high 0.80) 11s
+all rf-rob 0 speed_low_12-27Hz clean F1 0.771
+all rf-rob 0 speed_mid_27-42Hz clean F1 0.978
+all rf-rob 0 speed_high_42-61Hz clean F1 0.796
+all rf-rob 0 {'clean:None': 0.851, 'speed:-0.05': 0.809, 'speed:-0.02': 0.84, 'speed:-0.01': 0.847, 'speed:0.01': 0.845, 'speed:0.02': 0.843, 'speed:0.05': 0.791, 'dead:0': 0.802, 'dead:1': 0.833, 'dead:2': 0.845, 'dead:3': 0.774, 'dead:4': 0.784, 'dead:5': 0.832, 'dead:6': 0.808, 'gain2:0': 0.731, 'gain2:1': 0.851, 'gain2:2': 0.774, 'gain2:3': 0.79, 'gain2:4': 0.752, 'gain2:5': 0.833, 'gain2:6': 0.746}
+[worker] rf-rob seed 0 exit=0 Fri Nov  6 20:54:33 UTC 2026
+phase5 all          rf-rob                 s1 speed macro-F1 0.853 (low 0.79, mid 0.96, high 0.80) 11s
+all rf-rob 1 speed_low_12-27Hz clean F1 0.795
+all rf-rob 1 speed_mid_27-42Hz clean F1 0.960
+all rf-rob 1 speed_high_42-61Hz clean F1 0.796
+all rf-rob 1 {'clean:None': 0.853, 'speed:-0.05': 0.811, 'speed:-0.02': 0.846, 'speed:-0.01': 0.85, 'speed:0.01': 0.851, 'speed:0.02': 0.841, 'speed:0.05': 0.781, 'dead:0': 0.79, 'dead:1': 0.842, 'dead:2': 0.858, 'dead:3': 0.818, 'dead:4': 0.752, 'dead:5': 0.836, 'dead:6': 0.803, 'gain2:0': 0.718, 'gain2:1': 0.841, 'gain2:2': 0.774, 'gain2:3': 0.792, 'gain2:4': 0.761, 'gain2:5': 0.839, 'gain2:6': 0.699}
+[worker] rf-rob seed 1 exit=0 Fri Nov  6 20:55:17 UTC 2026
+phase5 all          rf-rob                 s2 speed macro-F1 0.853 (low 0.79, mid 0.98, high 0.77) 11s
+all rf-rob 2 speed_low_12-27Hz clean F1 0.795
+all rf-rob 2 speed_mid_27-42Hz clean F1 0.983
+all rf-rob 2 speed_high_42-61Hz clean F1 0.766
+all rf-rob 2 {'clean:None': 0.853, 'speed:-0.05': 0.817, 'speed:-0.02': 0.856, 'speed:-0.01': 0.852, 'speed:0.01': 0.852, 'speed:0.02': 0.858, 'speed:0.05': 0.774, 'dead:0': 0.796, 'dead:1': 0.864, 'dead:2': 0.86, 'dead:3': 0.819, 'dead:4': 0.752, 'dead:5': 0.846, 'dead:6': 0.778, 'gain2:0': 0.744, 'gain2:1': 0.835, 'gain2:2': 0.786, 'gain2:3': 0.786, 'gain2:4': 0.757, 'gain2:5': 0.835, 'gain2:6': 0.71}
+[worker] rf-rob seed 2 exit=0 Fri Nov  6 20:55:59 UTC 2026
+phase5 all          rf-rob                 s3 speed macro-F1 0.861 (low 0.78, mid 0.99, high 0.79) 11s
+all rf-rob 3 speed_low_12-27Hz clean F1 0.784
+all rf-rob 3 speed_mid_27-42Hz clean F1 0.992
+all rf-rob 3 speed_high_42-61Hz clean F1 0.787
+all rf-rob 3 {'clean:None': 0.861, 'speed:-0.05': 0.799, 'speed:-0.02': 0.853, 'speed:-0.01': 0.846, 'speed:0.01': 0.852, 'speed:0.02': 0.856, 'speed:0.05': 0.779, 'dead:0': 0.809, 'dead:1': 0.864, 'dead:2': 0.838, 'dead:3': 0.791, 'dead:4': 0.755, 'dead:5': 0.852, 'dead:6': 0.782, 'gain2:0': 0.742, 'gain2:1': 0.846, 'gain2:2': 0.782, 'gain2:3': 0.786, 'gain2:4': 0.752, 'gain2:5': 0.844, 'gain2:6': 0.738}
+[worker] rf-rob seed 3 exit=0 Fri Nov  6 20:56:38 UTC 2026
+phase5 all          rf-rob                 s4 speed macro-F1 0.837 (low 0.76, mid 0.96, high 0.78) 11s
+all rf-rob 4 speed_low_12-27Hz clean F1 0.762
+all rf-rob 4 speed_mid_27-42Hz clean F1 0.960
+all rf-rob 4 speed_high_42-61Hz clean F1 0.775
+all rf-rob 4 {'clean:None': 0.837, 'speed:-0.05': 0.805, 'speed:-0.02': 0.841, 'speed:-0.01': 0.822, 'speed:0.01': 0.83, 'speed:0.02': 0.836, 'speed:0.05': 0.795, 'dead:0': 0.799, 'dead:1': 0.824, 'dead:2': 0.838, 'dead:3': 0.766, 'dead:4': 0.736, 'dead:5': 0.83, 'dead:6': 0.795, 'gain2:0': 0.71, 'gain2:1': 0.818, 'gain2:2': 0.762, 'gain2:3': 0.778, 'gain2:4': 0.754, 'gain2:5': 0.816, 'gain2:6': 0.711}
+[worker] rf-rob seed 4 exit=0 Fri Nov  6 20:57:16 UTC 2026
+phase5 all          cnn-spec-rob           s0 speed macro-F1 0.889 (low 0.70, mid 1.00, high 0.97) 562s
+all cnn-spec-rob 0 speed_low_12-27Hz clean F1 0.699
+all cnn-spec-rob 0 speed_mid_27-42Hz clean F1 0.998
+all cnn-spec-rob 0 speed_high_42-61Hz clean F1 0.966
+all cnn-spec-rob 0 {'clean:None': 0.889, 'speed:-0.05': 0.888, 'speed:-0.02': 0.889, 'speed:-0.01': 0.896, 'speed:0.01': 0.893, 'speed:0.02': 0.889, 'speed:0.05': 0.883, 'dead:0': 0.885, 'dead:1': 0.865, 'dead:2': 0.874, 'dead:3': 0.888, 'dead:4': 0.858, 'dead:5': 0.846, 'dead:6': 0.875, 'gain2:0': 0.841, 'gain2:1': 0.86, 'gain2:2': 0.875, 'gain2:3': 0.851, 'gain2:4': 0.888, 'gain2:5': 0.773, 'gain2:6': 0.885}
+[worker] cnn-spec-rob seed 0 exit=0 Fri Nov  6 21:16:12 UTC 2026
+phase5 all          cnn-spec-rob           s1 speed macro-F1 0.869 (low 0.68, mid 1.00, high 0.93) 548s
+all cnn-spec-rob 1 speed_low_12-27Hz clean F1 0.676
+all cnn-spec-rob 1 speed_mid_27-42Hz clean F1 0.995
+all cnn-spec-rob 1 speed_high_42-61Hz clean F1 0.925
+all cnn-spec-rob 1 {'clean:None': 0.869, 'speed:-0.05': 0.858, 'speed:-0.02': 0.867, 'speed:-0.01': 0.87, 'speed:0.01': 0.868, 'speed:0.02': 0.869, 'speed:0.05': 0.854, 'dead:0': 0.866, 'dead:1': 0.858, 'dead:2': 0.84, 'dead:3': 0.87, 'dead:4': 0.857, 'dead:5': 0.829, 'dead:6': 0.848, 'gain2:0': 0.824, 'gain2:1': 0.833, 'gain2:2': 0.845, 'gain2:3': 0.85, 'gain2:4': 0.848, 'gain2:5': 0.785, 'gain2:6': 0.861}
+[worker] cnn-spec-rob seed 1 exit=0 Fri Nov  6 21:34:53 UTC 2026
+phase5 all          cnn-spec-rob           s2 speed macro-F1 0.857 (low 0.68, mid 1.00, high 0.87) 546s
+all cnn-spec-rob 2 speed_low_12-27Hz clean F1 0.683
+all cnn-spec-rob 2 speed_mid_27-42Hz clean F1 1.000
+all cnn-spec-rob 2 speed_high_42-61Hz clean F1 0.873
+all cnn-spec-rob 2 {'clean:None': 0.857, 'speed:-0.05': 0.875, 'speed:-0.02': 0.865, 'speed:-0.01': 0.871, 'speed:0.01': 0.868, 'speed:0.02': 0.873, 'speed:0.05': 0.875, 'dead:0': 0.884, 'dead:1': 0.834, 'dead:2': 0.831, 'dead:3': 0.844, 'dead:4': 0.843, 'dead:5': 0.846, 'dead:6': 0.859, 'gain2:0': 0.792, 'gain2:1': 0.842, 'gain2:2': 0.825, 'gain2:3': 0.852, 'gain2:4': 0.822, 'gain2:5': 0.767, 'gain2:6': 0.857}
+[worker] cnn-spec-rob seed 2 exit=0 Fri Nov  6 21:53:29 UTC 2026
+phase5 all          cnn-spec-rob           s3 speed macro-F1 0.894 (low 0.71, mid 1.00, high 0.96) 543s
+all cnn-spec-rob 3 speed_low_12-27Hz clean F1 0.710
+all cnn-spec-rob 3 speed_mid_27-42Hz clean F1 0.998
+all cnn-spec-rob 3 speed_high_42-61Hz clean F1 0.955
+all cnn-spec-rob 3 {'clean:None': 0.894, 'speed:-0.05': 0.902, 'speed:-0.02': 0.9, 'speed:-0.01': 0.905, 'speed:0.01': 0.897, 'speed:0.02': 0.899, 'speed:0.05': 0.897, 'dead:0': 0.889, 'dead:1': 0.897, 'dead:2': 0.856, 'dead:3': 0.881, 'dead:4': 0.882, 'dead:5': 0.863, 'dead:6': 0.877, 'gain2:0': 0.837, 'gain2:1': 0.883, 'gain2:2': 0.846, 'gain2:3': 0.86, 'gain2:4': 0.887, 'gain2:5': 0.816, 'gain2:6': 0.9}
+[worker] cnn-spec-rob seed 3 exit=0 Fri Nov  6 22:11:58 UTC 2026
+phase5 all          cnn-spec-rob           s4 speed macro-F1 0.895 (low 0.71, mid 1.00, high 0.95) 556s
+all cnn-spec-rob 4 speed_low_12-27Hz clean F1 0.711
+all cnn-spec-rob 4 speed_mid_27-42Hz clean F1 1.000
+all cnn-spec-rob 4 speed_high_42-61Hz clean F1 0.951
+all cnn-spec-rob 4 {'clean:None': 0.895, 'speed:-0.05': 0.896, 'speed:-0.02': 0.899, 'speed:-0.01': 0.899, 'speed:0.01': 0.9, 'speed:0.02': 0.899, 'speed:0.05': 0.888, 'dead:0': 0.899, 'dead:1': 0.872, 'dead:2': 0.864, 'dead:3': 0.884, 'dead:4': 0.85, 'dead:5': 0.87, 'dead:6': 0.878, 'gain2:0': 0.861, 'gain2:1': 0.884, 'gain2:2': 0.89, 'gain2:3': 0.86, 'gain2:4': 0.891, 'gain2:5': 0.79, 'gain2:6': 0.887}
+[worker] cnn-spec-rob seed 4 exit=0 Fri Nov  6 22:30:55 UTC 2026

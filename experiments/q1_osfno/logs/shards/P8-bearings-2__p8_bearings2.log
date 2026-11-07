@@ -1,0 +1,28 @@
+bearings osfno-B-head 3 speed_low_12-27Hz clean F1 0.761
+bearings osfno-B-head 3 speed_mid_27-41Hz clean F1 0.969
+bearings osfno-B-head 3 speed_high_41-61Hz clean F1 0.820
+bearings osfno-B-head 3 {'clean:None': 0.851, 'speed:-0.05': 0.417, 'speed:-0.02': 0.418, 'speed:-0.01': 0.661, 'speed:0.01': 0.616, 'speed:0.02': 0.46, 'speed:0.05': 0.291, 'dead:0': 0.816, 'dead:1': 0.836, 'dead:2': 0.813, 'dead:3': 0.825, 'dead:4': 0.539, 'dead:5': 0.842, 'dead:6': 0.804, 'gain2:0': 0.853, 'gain2:1': 0.855, 'gain2:2': 0.86, 'gain2:3': 0.851, 'gain2:4': 0.857, 'gain2:5': 0.853, 'gain2:6': 0.856}
+bearings osfno-B-head 4 speed_low_12-27Hz clean F1 0.712
+bearings osfno-B-head 4 speed_mid_27-41Hz clean F1 0.975
+bearings osfno-B-head 4 speed_high_41-61Hz clean F1 0.885
+bearings osfno-B-head 4 {'clean:None': 0.852, 'speed:-0.05': 0.495, 'speed:-0.02': 0.613, 'speed:-0.01': 0.706, 'speed:0.01': 0.73, 'speed:0.02': 0.631, 'speed:0.05': 0.481, 'dead:0': 0.829, 'dead:1': 0.837, 'dead:2': 0.797, 'dead:3': 0.772, 'dead:4': 0.701, 'dead:5': 0.858, 'dead:6': 0.795, 'gain2:0': 0.861, 'gain2:1': 0.863, 'gain2:2': 0.856, 'gain2:3': 0.858, 'gain2:4': 0.857, 'gain2:5': 0.852, 'gain2:6': 0.852}
+bearings osfno-E-phys 0 speed_low_12-27Hz clean F1 0.762
+bearings osfno-E-phys 0 speed_mid_27-41Hz clean F1 0.943
+bearings osfno-E-phys 0 speed_high_41-61Hz clean F1 0.854
+bearings osfno-E-phys 0 {'clean:None': 0.847, 'speed:-0.05': 0.482, 'speed:-0.02': 0.486, 'speed:-0.01': 0.725, 'speed:0.01': 0.646, 'speed:0.02': 0.486, 'speed:0.05': 0.422, 'dead:0': 0.803, 'dead:1': 0.837, 'dead:2': 0.81, 'dead:3': 0.819, 'dead:4': 0.491, 'dead:5': 0.837, 'dead:6': 0.779, 'gain2:0': 0.85, 'gain2:1': 0.843, 'gain2:2': 0.861, 'gain2:3': 0.857, 'gain2:4': 0.847, 'gain2:5': 0.847, 'gain2:6': 0.85}
+bearings osfno-E-phys 1 speed_low_12-27Hz clean F1 0.746
+bearings osfno-E-phys 1 speed_mid_27-41Hz clean F1 0.957
+bearings osfno-E-phys 1 speed_high_41-61Hz clean F1 0.876
+bearings osfno-E-phys 1 {'clean:None': 0.859, 'speed:-0.05': 0.589, 'speed:-0.02': 0.566, 'speed:-0.01': 0.733, 'speed:0.01': 0.741, 'speed:0.02': 0.649, 'speed:0.05': 0.543, 'dead:0': 0.798, 'dead:1': 0.822, 'dead:2': 0.813, 'dead:3': 0.81, 'dead:4': 0.543, 'dead:5': 0.779, 'dead:6': 0.803, 'gain2:0': 0.86, 'gain2:1': 0.861, 'gain2:2': 0.862, 'gain2:3': 0.852, 'gain2:4': 0.843, 'gain2:5': 0.854, 'gain2:6': 0.863}
+bearings osfno-E-phys 2 speed_low_12-27Hz clean F1 0.735
+bearings osfno-E-phys 2 speed_mid_27-41Hz clean F1 0.984
+bearings osfno-E-phys 2 speed_high_41-61Hz clean F1 0.823
+bearings osfno-E-phys 2 {'clean:None': 0.847, 'speed:-0.05': 0.594, 'speed:-0.02': 0.583, 'speed:-0.01': 0.717, 'speed:0.01': 0.642, 'speed:0.02': 0.569, 'speed:0.05': 0.498, 'dead:0': 0.786, 'dead:1': 0.827, 'dead:2': 0.809, 'dead:3': 0.823, 'dead:4': 0.541, 'dead:5': 0.815, 'dead:6': 0.774, 'gain2:0': 0.849, 'gain2:1': 0.847, 'gain2:2': 0.853, 'gain2:3': 0.847, 'gain2:4': 0.835, 'gain2:5': 0.847, 'gain2:6': 0.848}
+bearings osfno-E-phys 3 speed_low_12-27Hz clean F1 0.786
+bearings osfno-E-phys 3 speed_mid_27-41Hz clean F1 0.959
+bearings osfno-E-phys 3 speed_high_41-61Hz clean F1 0.806
+bearings osfno-E-phys 3 {'clean:None': 0.848, 'speed:-0.05': 0.522, 'speed:-0.02': 0.496, 'speed:-0.01': 0.66, 'speed:0.01': 0.572, 'speed:0.02': 0.5, 'speed:0.05': 0.36, 'dead:0': 0.794, 'dead:1': 0.83, 'dead:2': 0.818, 'dead:3': 0.799, 'dead:4': 0.58, 'dead:5': 0.822, 'dead:6': 0.799, 'gain2:0': 0.841, 'gain2:1': 0.848, 'gain2:2': 0.846, 'gain2:3': 0.844, 'gain2:4': 0.84, 'gain2:5': 0.844, 'gain2:6': 0.849}
+bearings osfno-E-phys 4 speed_low_12-27Hz clean F1 0.745
+bearings osfno-E-phys 4 speed_mid_27-41Hz clean F1 0.979
+bearings osfno-E-phys 4 speed_high_41-61Hz clean F1 0.883
+bearings osfno-E-phys 4 {'clean:None': 0.867, 'speed:-0.05': 0.615, 'speed:-0.02': 0.579, 'speed:-0.01': 0.703, 'speed:0.01': 0.676, 'speed:0.02': 0.607, 'speed:0.05': 0.469, 'dead:0': 0.792, 'dead:1': 0.828, 'dead:2': 0.829, 'dead:3': 0.835, 'dead:4': 0.692, 'dead:5': 0.838, 'dead:6': 0.807, 'gain2:0': 0.878, 'gain2:1': 0.872, 'gain2:2': 0.876, 'gain2:3': 0.863, 'gain2:4': 0.857, 'gain2:5': 0.864, 'gain2:6': 0.862}
